@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rachel Mishra — UI/UX Designer</title>
+<meta name="description" content="UI/UX Designer portfolio of Rachel Mishra, final-year design student at Symbiosis Institute of Design (SID), Nagpur.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,12 +16,12 @@
 
 <!-- NAV -->
 <header class="nav">
-  <a href="#top" class="nav-mark">RM</a>
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links">
-    <a href="#about">About</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#education">Education</a>
-    <a href="#contact" class="nav-cta">Contact</a>
+    <a href="about.html">About</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span></span><span></span>
@@ -39,140 +40,75 @@
     </h1>
     <p class="hero-sub">4th-year Design student at Symbiosis Institute of Design (SID), Nagpur — building interfaces that feel obvious in hindsight.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Let's work together</a>
-      <a href="#achievements" class="btn btn-ghost">See my work</a>
+      <a href="contact.html" class="btn btn-primary">Let's work together</a>
+      <a href="achievements.html" class="btn btn-ghost">See my work</a>
     </div>
   </div>
-  <div class="scroll-hint">Scroll</div>
+  <div class="scroll-hint">Scroll down to explore</div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="section-head">
-    <span class="section-num">01</span>
-    <h2>About</h2>
+<!-- EXPLORE SECTIONS -->
+<section class="home-explore">
+  <div class="explore-heading">
+    <h2>Explore My Work &amp; Story</h2>
+    <p>Selected chapters from my design practice</p>
   </div>
-  <div class="about-grid">
-    <p class="about-lead">
-      I'm a fourth-year UI/UX design student at Symbiosis Institute of Design, Nagpur, 
-      interested in how small interaction details change whether a product feels 
-      effortless or exhausting.
-    </p>
-    <div class="about-details">
-      <p>
-        <!-- EDIT ME: replace with your own bio — process, tools, interests, what kind of design work excites you -->
-        My process usually starts with research and messy sketches before anything 
-        touches Figma. I care about accessibility, clean design systems, and interfaces 
-        that respect a user's time. Outside of coursework, I like picking apart apps 
-        I use daily and asking why they were built that way.
-      </p>
-      <ul class="about-tags">
-        <li>UI Design</li>
-        <li>UX Research</li>
-        <li>Prototyping</li>
-        <li>Design Systems</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <div class="explore-grid">
+    <a href="about.html" class="explore-card">
+      <div>
+        <div class="explore-card-top">
+          <span class="explore-card-num">01 · About</span>
+          <span class="explore-card-arrow">→</span>
+        </div>
+        <h3>Design Philosophy &amp; Skills</h3>
+        <p>User research approach, design systems, Figma workflows, and my focus on accessible interaction.</p>
+      </div>
+      <span class="explore-card-cta">Read my story →</span>
+    </a>
 
-<!-- ACHIEVEMENTS -->
-<section class="achievements" id="achievements">
-  <div class="section-head light">
-    <span class="section-num">02</span>
-    <h2>Achievements</h2>
-  </div>
-  <p class="section-note">Edit these cards in index.html — swap in your real awards, selected projects, and recognitions.</p>
-  <div class="achieve-grid">
-    <article class="achieve-card">
-      <span class="achieve-tag">Award</span>
-      <h3>Add your achievement title</h3>
-      <p>Short description of the award, competition, or recognition — who gave it and why it mattered.</p>
-    </article>
-    <article class="achieve-card">
-      <span class="achieve-tag">Project</span>
-      <h3>Add a featured project</h3>
-      <p>A case study, client project, or academic project you're proud of. Link it if you have a Behance or portfolio page.</p>
-    </article>
-    <article class="achieve-card">
-      <span class="achieve-tag">Recognition</span>
-      <h3>Add another highlight</h3>
-      <p>Hackathon win, publication, exhibition, selected showcase — anything that shows your work in the world.</p>
-    </article>
-    <article class="achieve-card">
-      <span class="achieve-tag">Skill</span>
-      <h3>Add a certification</h3>
-      <p>Any course, certification, or workshop worth mentioning — Google UX, design bootcamps, etc.</p>
-    </article>
+    <a href="achievements.html" class="explore-card">
+      <div>
+        <div class="explore-card-top">
+          <span class="explore-card-num">02 · Achievements</span>
+          <span class="explore-card-arrow">→</span>
+        </div>
+        <h3>Featured Work &amp; Awards</h3>
+        <p>Selected project case studies, competition recognitions, design showcases, and certifications.</p>
+      </div>
+      <span class="explore-card-cta">View achievements →</span>
+    </a>
+
+    <a href="education.html" class="explore-card">
+      <div>
+        <div class="explore-card-top">
+          <span class="explore-card-num">03 · Education</span>
+          <span class="explore-card-arrow">→</span>
+        </div>
+        <h3>Academic Journey</h3>
+        <p>4th-year UI/UX specialization at Symbiosis Institute of Design (SID), Nagpur, and earlier schooling.</p>
+      </div>
+      <span class="explore-card-cta">See timeline →</span>
+    </a>
+
+    <a href="contact.html" class="explore-card">
+      <div>
+        <div class="explore-card-top">
+          <span class="explore-card-num">04 · Contact</span>
+          <span class="explore-card-arrow">→</span>
+        </div>
+        <h3>Get In Touch</h3>
+        <p>Have a project, internship opportunity, or want to discuss design? Let's talk.</p>
+      </div>
+      <span class="explore-card-cta">Start conversation →</span>
+    </a>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="education" id="education">
-  <div class="section-head">
-    <span class="section-num">03</span>
-    <h2>Education</h2>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-year">2022 — 2026</div>
-      <div class="timeline-body">
-        <h3>Symbiosis Institute of Design (SID), Nagpur</h3>
-        <p>Bachelor's in Design, specializing in UI/UX — currently in final year.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <!-- EDIT ME: add your school / earlier education here -->
-      <div class="timeline-year">Earlier</div>
-      <div class="timeline-body">
-        <h3>Add your schooling here</h3>
-        <p>e.g. your senior secondary school, board, and year of completion.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-shape"></div>
-  <div class="section-head">
-    <span class="section-num">04</span>
-    <h2>Contact</h2>
-  </div>
-  <div class="contact-inner">
-    <h3 class="contact-lead">Got a project, an internship, or just want to talk design?</h3>
-    <a href="mailto:rachelmishra487@gmail.com" class="contact-email">rachelmishra487@gmail.com</a>
-
-    <form class="contact-form" id="contactForm">
-      <div class="form-row">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your name">
-      </div>
-      <div class="form-row">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
-      </div>
-      <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send message</button>
-      <p class="form-status" id="formStatus" aria-live="polite"></p>
-    </form>
-
-    <div class="socials">
-      <!-- EDIT ME: replace # with your real links -->
-      <a href="#" target="_blank" rel="noopener">Behance</a>
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-    </div>
-  </div>
-  <footer class="footer">
-    <span>© <span id="year"></span> Rachel Mishra</span>
-    <span>Designed &amp; built with care</span>
-  </footer>
-</section>
+<!-- FOOTER -->
+<footer class="footer footer-light">
+  <span>© <span id="year"></span> Rachel Mishra</span>
+  <span>Designed &amp; built with care</span>
+</footer>
 
 <script src="script.js"></script>
 </body>

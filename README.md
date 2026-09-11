@@ -1,12 +1,16 @@
-# Rachel Mishra — Portfolio
+# Rachel Mishra — UI/UX Portfolio
 
-A single-page portfolio site: About, Achievements, Education, Contact.
+A clean, multi-page portfolio website for Rachel Mishra, UI/UX Designer & student at Symbiosis Institute of Design (SID), Nagpur.
 Plain HTML/CSS/JS — no build step, no dependencies to install.
 
-## Files
-- `index.html` — page structure and content
-- `style.css` — all styling
-- `script.js` — nav menu, contact form, small interactions
+## Structure & Pages
+- `index.html` — Home page with hero and section preview portals
+- `about.html` — About Rachel, design philosophy, research methods, and skills tags
+- `achievements.html` — Selected design projects, awards, hackathons, and certifications
+- `education.html` — Academic timeline at SID Nagpur and foundational studies
+- `contact.html` — Direct email, contact form, and social media links
+- `style.css` — Modern design system and responsive layout styling
+- `script.js` — Mobile navigation drawer, active link indicators, and contact form handling
 
 ## Running it in Antigravity
 1. Unzip/open this `portfolio` folder as a project in Antigravity.

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Rachel Mishra</title>
+<meta name="description" content="Get in touch with Rachel Mishra, UI/UX Designer. Available for projects, internships, and design conversations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage dark-theme">
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+  <nav class="nav-links">
+    <a href="about.html">About</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html" class="nav-cta active">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main class="subpage-main">
+  <!-- CONTACT HERO / SECTION -->
+  <section class="contact" style="background: transparent; padding-top: 2rem;">
+    <div class="contact-shape"></div>
+    <div class="contact-inner">
+      <p class="eyebrow" style="color: var(--yellow); margin-bottom: 0.8rem;">04 · Contact</p>
+      <h1 class="contact-lead" style="font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1; margin-bottom: 1.5rem;">
+        Got a project, an internship, or just want to talk design?
+      </h1>
+      <a href="mailto:rachelmishra487@gmail.com" class="contact-email">rachelmishra487@gmail.com</a>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+      <div class="socials">
+        <!-- EDIT ME: replace # with your real links -->
+        <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>© <span id="year"></span> Rachel Mishra</span>
+  <span>Designed &amp; built with care</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
