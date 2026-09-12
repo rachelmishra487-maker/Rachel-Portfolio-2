@@ -1792,17 +1792,235 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   }
 }
 
-/* ---------- CONTACT PAGE (Phone & Email Only) ---------- */
+/* ---------- CONTACT PAGE (Recruiter-Friendly & Polished) ---------- */
 .contact-container {
   padding: 0 6vw 4rem;
-  max-width: 860px;
+  max-width: 900px;
 }
 
+.contact-page-header {
+  max-width: 900px;
+}
+
+.recruiter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 1.15rem;
+  background: rgba(255, 42, 58, 0.08);
+  border: 1px solid var(--red-border);
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 18px rgba(255, 42, 58, 0.12);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 10px var(--red);
+  animation: badge-pulse 2s infinite ease-in-out;
+}
+
+@keyframes badge-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.6; }
+}
+
+.contact-intro-text {
+  max-width: 62ch;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 1.2rem 0 1.8rem;
+}
+
+.contact-intro-text strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Recruiter CTA Buttons Row */
+.recruiter-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.8rem;
+}
+
+.btn-recruiter-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.85rem;
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--ff-display);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1.5px solid var(--red);
+  box-shadow: 0 6px 22px rgba(255, 42, 58, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-recruiter-primary:hover {
+  background: var(--red-hover);
+  border-color: var(--red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(255, 42, 58, 0.55);
+}
+
+.btn-recruiter-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.85rem;
+  background: var(--bg-card);
+  color: var(--white);
+  font-family: var(--ff-display);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-recruiter-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--red-border);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 42, 58, 0.2);
+}
+
+.btn-recruiter-tertiary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.4rem;
+  color: var(--text-muted);
+  font-family: var(--ff-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-recruiter-tertiary:hover {
+  color: var(--white);
+}
+
+.btn-arrow {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-recruiter-primary:hover .btn-arrow,
+.btn-recruiter-secondary:hover .btn-arrow,
+.btn-recruiter-tertiary:hover .btn-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* Recruiter Fast Facts Card */
+.recruiter-snapshot-card {
+  background: linear-gradient(145deg, rgba(22, 22, 31, 0.95) 0%, rgba(14, 14, 20, 0.98) 100%);
+  border: 1.5px solid rgba(255, 42, 58, 0.22);
+  border-radius: var(--radius);
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 2.8rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+}
+
+.recruiter-snapshot-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+}
+
+.snapshot-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.snapshot-icon {
+  font-size: 1.3rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--red-subtle);
+  border: 1px solid var(--red-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snapshot-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+}
+
+.snapshot-header p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+}
+
+.snapshot-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.snapshot-label {
+  font-family: var(--ff-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.snapshot-val {
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.snapshot-val.highlight {
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* Contact Cards Grid */
 .contact-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.8rem;
-  margin-top: 2rem;
   margin-bottom: 3.5rem;
 }
 
@@ -1842,7 +2060,14 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   font-weight: 600;
   color: var(--white);
   word-break: break-word;
+  margin-bottom: 0.6rem;
+}
+
+.contact-tile-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
+  line-height: 1.5;
 }
 
 .contact-tile-actions {
@@ -1864,6 +2089,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   background: var(--red);
   color: var(--white);
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .contact-action-btn:hover {
@@ -1883,8 +2109,9 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   color: var(--white);
 }
 
+/* Social Profiles Section */
 .socials-section {
-  padding-top: 2rem;
+  padding-top: 2.2rem;
   border-top: 1px solid var(--line);
 }
 
@@ -1894,7 +2121,67 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.social-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--red-border);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(255, 42, 58, 0.12);
+}
+
+.social-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-name {
+  font-family: var(--ff-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+  transition: color 0.2s ease;
+}
+
+.social-card:hover .social-name {
+  color: var(--red);
+}
+
+.social-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.social-arrow {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-card:hover .social-arrow {
+  color: var(--red);
+  transform: translate(2px, -2px);
 }
 
 .socials-list {
@@ -2026,6 +2313,28 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 
   .contact-cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .socials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiter-actions-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-recruiter-primary,
+  .btn-recruiter-secondary,
+  .btn-recruiter-tertiary {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
   }
 }
 
