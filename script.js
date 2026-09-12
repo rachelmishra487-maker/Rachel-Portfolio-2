@@ -87,3 +87,51 @@ function showToast(message) {
     toast.classList.remove('show');
   }, 2500);
 }
+
+// GoUni Real Screen Switcher (Tabs & Thumbnails)
+const screenTabs = document.querySelectorAll('.screen-tab, .showcase-thumb-btn');
+const mainScreenImg = document.getElementById('gouniMainScreen');
+const screenCaption = document.getElementById('gouniScreenCaption');
+
+if (screenTabs.length && mainScreenImg) {
+  const gouniScreens = {
+    storyboard: {
+      src: 'project_gouni.jpg',
+      alt: 'GoUni UX Storyboard - Making studying abroad less overwhelming',
+      caption: '<strong>Real Project Artifact:</strong> 6-stage UX Storyboard mapping student pain points, platform discovery, personalized application support, and international enrollment.'
+    },
+    components: {
+      src: 'project_gouni_components.png',
+      alt: 'GoUni Figma UI Design System Components and Course Cards',
+      caption: '<strong>Real Project Artifact:</strong> Scalable Figma component architecture showing 3 interactive course card variants (Default, Hover, Active) and university profile tiles.'
+    }
+  };
+
+  screenTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const screenKey = tab.dataset.screen;
+      if (!gouniScreens[screenKey]) return;
+
+      // Sync active state on both header tabs and thumbnail buttons
+      document.querySelectorAll('.screen-tab, .showcase-thumb-btn').forEach(btn => {
+        if (btn.dataset.screen === screenKey) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Smooth crossfade
+      mainScreenImg.style.opacity = '0.2';
+      setTimeout(() => {
+        mainScreenImg.src = gouniScreens[screenKey].src;
+        mainScreenImg.alt = gouniScreens[screenKey].alt;
+        mainScreenImg.style.opacity = '1';
+        if (screenCaption) {
+          screenCaption.innerHTML = gouniScreens[screenKey].caption;
+        }
+      }, 150);
+    });
+  });
+}
+
