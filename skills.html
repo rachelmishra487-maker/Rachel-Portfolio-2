@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills &amp; Expertise — Rachel Mishra</title>
-<meta name="description" content="Skills, software competencies, and design areas of Rachel Mishra, UI/UX Designer.">
+<title>Skills &amp; Toolkit — Rachel Mishra</title>
+<meta name="description" content="Core UX/Product design disciplines and software toolkit of Rachel Mishra: User Research, Information Architecture, User Flows, Wireframing, Prototyping, UI Design, Usability Testing, and Design Systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
 
-<!-- NAV -->
-<header class="nav">
+<!-- STICKY NAVBAR -->
+<header class="nav" id="navbar">
   <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links" id="navLinks">
     <a href="about.html">About</a>
@@ -37,92 +37,249 @@
       <span></span><span></span><span></span><span></span><span></span><span></span>
       <span></span><span></span><span></span><span></span><span></span><span></span>
     </div>
-    <p class="eyebrow">03 · Capabilities</p>
+    <p class="eyebrow">03 · Capabilities &amp; Toolkit</p>
     <h1>Skills &amp; Expertise</h1>
-    <p class="page-desc">My core toolkit, design disciplines, and foundational competencies developed across coursework, personal projects, and design systems.</p>
+    <p class="page-desc">My end-to-end UX/product design disciplines and industry software competencies, honed across academic case studies and real-world interface systems.</p>
   </header>
 
-  <!-- SKILLS MATRIX (3 COLUMNS AS IN DESIGN SLIDE) -->
-  <section class="skills-container">
-    <div class="skills-grid">
-      <!-- COLUMN 1: SOFTWARE -->
-      <div class="skills-col">
-        <span class="skills-badge">SOFTWARE</span>
-        <ul class="software-list">
-          <li class="software-item">
-            <span class="software-icon" style="background: rgba(255, 42, 58, 0.1); border: 1px solid rgba(255, 42, 58, 0.3);">
-              <!-- Figma SVG icon -->
-              <svg width="22" height="22" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="skills-container">
+
+    <!-- 1. UX & PRODUCT DESIGN SKILLS (PRIORITIZED FIRST) -->
+    <section class="skills-section-block">
+      <div class="skills-section-header">
+        <div>
+          <span class="skills-badge" style="margin-bottom: 0.5rem; display: inline-block;">CORE DISCIPLINES</span>
+          <h2>UX &amp; Product Design Skills</h2>
+        </div>
+        <p>From early problem definition and user inquiry to interactive systems, validation, and design-to-code scalability.</p>
+      </div>
+
+      <div class="ux-skills-grid">
+        <!-- 1. USER RESEARCH -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">01</span>
+            <span class="ux-skill-tag">Discovery</span>
+          </div>
+          <h3>User Research</h3>
+          <p>Uncovering real user pain points, behavioral motivations, and unmet needs through qualitative interviews, contextual inquiry, and persona modeling.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">User Interviews</span>
+            <span class="deliverable-chip">Empathy Maps</span>
+            <span class="deliverable-chip">Competitor Audits</span>
+            <span class="deliverable-chip">User Personas</span>
+          </div>
+        </article>
+
+        <!-- 2. INFORMATION ARCHITECTURE -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">02</span>
+            <span class="ux-skill-tag">Structure</span>
+          </div>
+          <h3>Information Architecture</h3>
+          <p>Structuring complex product ecosystems and categorization logic into intuitive navigation hierarchies so users find what they need with zero cognitive strain.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Sitemaps</span>
+            <span class="deliverable-chip">Card Sorting</span>
+            <span class="deliverable-chip">Navigation Hierarchies</span>
+            <span class="deliverable-chip">Taxonomy</span>
+          </div>
+        </article>
+
+        <!-- 3. USER FLOWS -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">03</span>
+            <span class="ux-skill-tag">Logic</span>
+          </div>
+          <h3>User Flows</h3>
+          <p>Mapping out decision pathways, state progressions, and edge cases to ensure frictionless journeys from initial entry point to successful task completion.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Task Flows</span>
+            <span class="deliverable-chip">Journey Maps</span>
+            <span class="deliverable-chip">Decision Trees</span>
+            <span class="deliverable-chip">Edge Case Handling</span>
+          </div>
+        </article>
+
+        <!-- 4. WIREFRAMING -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">04</span>
+            <span class="ux-skill-tag">Layout</span>
+          </div>
+          <h3>Wireframing</h3>
+          <p>Translating conceptual ideas into low-to-mid-fidelity wireframes to iterate rapidly on spatial composition, content prioritization, and screen layout.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Low-Fi Sketches</span>
+            <span class="deliverable-chip">Mid-Fi Wireframes</span>
+            <span class="deliverable-chip">Content Hierarchy</span>
+            <span class="deliverable-chip">Responsive Grids</span>
+          </div>
+        </article>
+
+        <!-- 5. PROTOTYPING -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">05</span>
+            <span class="ux-skill-tag">Interaction</span>
+          </div>
+          <h3>Prototyping</h3>
+          <p>Constructing realistic, clickable prototypes with fluid state transitions, dynamic variables, and micro-interactions that test and communicate product behavior.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Interactive Prototypes</span>
+            <span class="deliverable-chip">Smart Animations</span>
+            <span class="deliverable-chip">Micro-interactions</span>
+            <span class="deliverable-chip">Clickable Flows</span>
+          </div>
+        </article>
+
+        <!-- 6. UI DESIGN -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">06</span>
+            <span class="ux-skill-tag">Visual Craft</span>
+          </div>
+          <h3>UI Design</h3>
+          <p>Crafting modern, accessible, and aesthetically engaging user interfaces with balanced whitespace, deliberate typographic scale, and cohesive color systems.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">High-Fi UI</span>
+            <span class="deliverable-chip">Typographic Scale</span>
+            <span class="deliverable-chip">Color Palettes</span>
+            <span class="deliverable-chip">WCAG Accessibility</span>
+          </div>
+        </article>
+
+        <!-- 7. USABILITY TESTING -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">07</span>
+            <span class="ux-skill-tag">Validation</span>
+          </div>
+          <h3>Usability Testing</h3>
+          <p>Validating design assumptions with target users through moderated walkthroughs and task analysis to identify bottlenecks and guide iterative refinement.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Think-Aloud Testing</span>
+            <span class="deliverable-chip">Task Completion Rates</span>
+            <span class="deliverable-chip">Heuristic Evaluation</span>
+            <span class="deliverable-chip">Design Iteration</span>
+          </div>
+        </article>
+
+        <!-- 8. DESIGN SYSTEMS -->
+        <article class="ux-skill-card">
+          <div class="ux-skill-top">
+            <span class="ux-skill-index">08</span>
+            <span class="ux-skill-tag">Scalability</span>
+          </div>
+          <h3>Design Systems</h3>
+          <p>Architecting modular design tokens, reusable component libraries with auto-layout variants, and clear documentation that ensure product consistency at scale.</p>
+          <div class="ux-skill-deliverables">
+            <span class="deliverable-chip">Design Tokens</span>
+            <span class="deliverable-chip">Component Libraries</span>
+            <span class="deliverable-chip">Auto-Layout Variants</span>
+            <span class="deliverable-chip">Handoff Specs</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. TOOLS & SOFTWARE (SHOWN AFTER UX SKILLS) -->
+    <section class="skills-section-block">
+      <div class="skills-section-header">
+        <div>
+          <span class="skills-badge" style="margin-bottom: 0.5rem; display: inline-block;">SOFTWARE TOOLKIT</span>
+          <h2>Design Tools &amp; Software</h2>
+        </div>
+        <p>Industry-standard applications I use daily for UX exploration, visual design, motion studies, and asset production.</p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- TOOL 1: FIGMA -->
+        <article class="tool-card">
+          <div class="tool-top">
+            <div class="tool-icon-box" style="background: rgba(255, 42, 58, 0.1); border: 1.5px solid rgba(255, 42, 58, 0.35);">
+              <svg width="24" height="24" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
                 <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
                 <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
                 <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
                 <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
               </svg>
-            </span>
-            <span>FIGMA</span>
-          </li>
+            </div>
+            <div class="tool-meta">
+              <h3>Figma</h3>
+              <span class="tool-category">Primary Product Tool</span>
+            </div>
+          </div>
+          <p>My core environment for UI design, design token architecture, auto-layout components, interactive prototypes, and developer handoff.</p>
+        </article>
 
-          <li class="software-item">
-            <span class="software-icon" style="background: #330000; border: 1px solid #FF7C00; color: #FF9A00; font-weight: 800; font-size: 0.9rem;">
-              Ai
-            </span>
-            <span>ADOBE ILLUSTRATOR</span>
-          </li>
+        <!-- TOOL 2: ADOBE ILLUSTRATOR -->
+        <article class="tool-card">
+          <div class="tool-top">
+            <div class="tool-icon-box" style="background: #331400; border: 1.5px solid #FF7C00;">
+              <span style="color: #FFAA44; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ai</span>
+            </div>
+            <div class="tool-meta">
+              <h3>Illustrator</h3>
+              <span class="tool-category">Vector &amp; Identity</span>
+            </div>
+          </div>
+          <p>Precision vector illustration, custom iconography systems, scalable identity assets, and brand design elements.</p>
+        </article>
 
-          <li class="software-item">
-            <span class="software-icon" style="background: #00C4CC; border: 1px solid #00C4CC; color: #0A0A0C; font-weight: 900; font-size: 1rem;">
-              C
-            </span>
-            <span>CANVA</span>
-          </li>
+        <!-- TOOL 3: ADOBE PHOTOSHOP -->
+        <article class="tool-card">
+          <div class="tool-top">
+            <div class="tool-icon-box" style="background: #001E36; border: 1.5px solid #31A8FF;">
+              <span style="color: #31A8FF; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ps</span>
+            </div>
+            <div class="tool-meta">
+              <h3>Photoshop</h3>
+              <span class="tool-category">Image Editing</span>
+            </div>
+          </div>
+          <p>High-resolution image editing, photo manipulation, background retouching, texture work, and composite asset creation.</p>
+        </article>
 
-          <li class="software-item">
-            <span class="software-icon" style="background: #00005B; border: 1px solid #9999FF; color: #D1D1FF; font-weight: 800; font-size: 0.9rem;">
-              Ae
-            </span>
-            <span>ADOBE AFTER EFFECTS</span>
-          </li>
+        <!-- TOOL 4: ADOBE AFTER EFFECTS -->
+        <article class="tool-card">
+          <div class="tool-top">
+            <div class="tool-icon-box" style="background: #180036; border: 1.5px solid #9999FF;">
+              <span style="color: #D1D1FF; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ae</span>
+            </div>
+            <div class="tool-meta">
+              <h3>After Effects</h3>
+              <span class="tool-category">Motion &amp; Animation</span>
+            </div>
+          </div>
+          <p>UI motion studies, dynamic screen choreography, kinetic micro-interactions, and visual animation demonstrations.</p>
+        </article>
 
-          <li class="software-item">
-            <span class="software-icon" style="background: #001E36; border: 1px solid #31A8FF; color: #31A8FF; font-weight: 800; font-size: 0.9rem;">
-              Ps
-            </span>
-            <span>ADOBE PHOTOSHOP</span>
-          </li>
-        </ul>
+        <!-- TOOL 5: CANVA -->
+        <article class="tool-card">
+          <div class="tool-top">
+            <div class="tool-icon-box" style="background: linear-gradient(135deg, #00C4CC 0%, #7D2AE8 100%); border: 1.5px solid #00C4CC;">
+              <span style="color: #FFFFFF; font-family: var(--ff-display); font-weight: 900; font-size: 1.25rem;">C</span>
+            </div>
+            <div class="tool-meta">
+              <h3>Canva</h3>
+              <span class="tool-category">Visual Collateral</span>
+            </div>
+          </div>
+          <p>Rapid presentation deck layouts, visual documentation, concept pitch slides, and social collateral design.</p>
+        </article>
       </div>
+    </section>
 
-      <!-- COLUMN 2: DESIGN AREAS -->
-      <div class="skills-col">
-        <span class="skills-badge">DESIGN AREAS</span>
-        <ul class="skills-bullet-list">
-          <li>User Research &amp; Analysis</li>
-          <li>Wireframing &amp; Prototyping</li>
-          <li>UI Design (Typography, Color, Layout)</li>
-          <li>User Flows &amp; Information Architecture</li>
-          <li>Basic Usability Testing &amp; Iteration</li>
-        </ul>
-      </div>
-
-      <!-- COLUMN 3: ADDITIONAL SKILLS -->
-      <div class="skills-col">
-        <span class="skills-badge">ADDITIONAL SKILLS</span>
-        <ul class="skills-bullet-list">
-          <li>Design Thinking &amp; UserCentered Approach</li>
-          <li>Strong Communication &amp; Problem Solving Skills</li>
-          <li>Basic Knowledge of HTML/CSS &amp; Responsive Design</li>
-          <li>Experience with Design Systems &amp; Prototyping (Figma)</li>
-          <li>Interest in UX Writing &amp; Interaction Design</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- BOTTOM ACTIONS -->
     <div class="page-actions" style="padding-left: 0; padding-right: 0;">
-      <a href="projects.html" class="btn btn-primary">Explore my featured projects →</a>
-      <a href="contact.html" class="btn btn-ghost">Reach out directly</a>
+      <a href="projects.html" class="btn btn-primary">See my skills in action on GoUni →</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch for internships</a>
     </div>
-  </section>
+  </div>
 </main>
 
 <!-- FOOTER -->
