@@ -13,17 +13,37 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
-// Mobile nav toggle
+// Sticky navbar scroll elevation
+const navbar = document.querySelector('.nav');
+if (navbar) {
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  };
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+}
+
+// Mobile nav toggle with accessible state and smooth animation
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
 
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 

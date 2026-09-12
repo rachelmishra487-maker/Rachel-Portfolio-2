@@ -6,9 +6,10 @@ Plain HTML/CSS/JS — no build step, zero dependencies.
 ## Structure & Pages
 - `index.html` — Home page with hero and section preview portals
 - `about.html` — About Rachel, design philosophy, research methods, and skills tags
-- `projects.html` — Featured project case studies, Figma prototypes, and live project links
+- `projects.html` — Featured project case studies, Figma prototypes, and live project links ("Work")
 - `skills.html` — Skills & Expertise matrix (Software, Design Areas, Additional Skills)
 - `contact.html` — Direct contact info (Phone Number and Email) with quick-copy actions
+- `resume.pdf` — Rachel Mishra's downloadable/viewable design resume
 - `style.css` — Red & Black design system, typography, and responsive layouts
 - `script.js` — Navigation drawer, active link indicators, and copy-to-clipboard helpers
 
