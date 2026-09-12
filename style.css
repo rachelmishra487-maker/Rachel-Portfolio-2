@@ -706,59 +706,128 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 }
 
 .about-hero-grid {
-  padding: 2rem 6vw 4rem;
+  padding: 2rem 6vw 5rem;
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 4.5rem;
-  align-items: center;
+  align-items: start;
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-photo-wrapper {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .about-photo-card {
   position: relative;
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+  border: 2px solid var(--red-border);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 42, 58, 0.2);
+  background: var(--bg-card);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 42, 58, 0.35);
 }
 
 .about-photo-card img {
   width: 100%;
-  max-width: 360px;
-  aspect-ratio: 1 / 1.06;
+  height: auto;
+  aspect-ratio: 1 / 1.08;
   object-fit: cover;
-  border-radius: var(--radius);
-  border: 2px solid var(--red-border);
-  box-shadow: 0 16px 40px rgba(255, 42, 58, 0.25);
   display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.about-photo-card img:hover {
-  transform: translateY(-4px);
-  border-color: var(--red);
-  box-shadow: 0 20px 48px rgba(255, 42, 58, 0.45);
+.about-photo-meta {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
+.about-status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.86rem;
+  color: #34D399;
+  font-weight: 600;
+}
+
+.status-dot-green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34D399;
+  box-shadow: 0 0 10px #34D399;
+  animation: pulseGreen 2s infinite ease-in-out;
+}
+
+@keyframes pulseGreen {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.about-location-row {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* About Narrative */
 .about-journey-content {
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .about-journey-title {
   font-family: var(--ff-display);
-  font-size: 1.75rem;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 700;
-  color: var(--red);
-  margin-bottom: 1.2rem;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
 }
 
-.about-journey-text {
-  font-size: clamp(1.1rem, 1.8vw, 1.28rem);
-  line-height: 1.75;
-  color: var(--text-primary);
-  margin-bottom: 2rem;
+.about-subtitle-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--red);
+  margin-bottom: 1.8rem;
+  font-family: var(--ff-display);
+  letter-spacing: 0.02em;
+}
+
+.about-narrative p {
+  font-size: 1.06rem;
+  line-height: 1.8;
+  color: #D1D5DB;
+  margin-bottom: 1.4rem;
+}
+
+.about-narrative strong {
+  color: var(--white);
+  font-weight: 600;
 }
 
 .about-tags {
   list-style: none;
   padding: 0;
-  margin: 1.5rem 0 0;
+  margin: 1.8rem 0 2.2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
@@ -772,12 +841,123 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: border-color 0.2s, color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .about-tags li:hover {
   border-color: var(--red);
   color: var(--white);
+  background: var(--red-subtle);
+}
+
+/* "A little more about me" section (Dance, Design, Driving) */
+.about-passions-section {
+  padding: 4.5rem 6vw 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+}
+
+.passions-header {
+  margin-bottom: 2.8rem;
+  max-width: 720px;
+}
+
+.passions-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--white);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.passions-header p {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.passions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.passion-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.passion-card::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(255, 42, 58, 0.08) 0%, rgba(255, 42, 58, 0) 70%);
+  pointer-events: none;
+}
+
+.passion-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--red-border);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 42, 58, 0.15);
+}
+
+.passion-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.passion-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(255, 42, 58, 0.1);
+  border: 1px solid var(--red-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.passion-num {
+  font-family: var(--ff-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.08em;
+}
+
+.passion-card h3 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.passion-tagline {
+  font-size: 0.84rem;
+  color: var(--red);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.passion-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* ---------- SKILLS & EXPERTISE PAGE (Matches Screenshot) ---------- */
@@ -1718,13 +1898,24 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 
   .about-hero-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    text-align: center;
+    gap: 3rem;
+  }
+
+  .about-photo-wrapper {
+    position: static;
+    max-width: 360px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .about-photo-card img {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 100%;
+  }
+
+  .passions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .about-arrow-badge {

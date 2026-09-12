@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me — Rachel Mishra</title>
-<meta name="description" content="About Rachel Mishra, UI/UX Designer and 4th-year student at Symbiosis Institute of Design (SID), Nagpur.">
+<meta name="description" content="About Rachel Mishra, fourth-year UI/UX design student at Symbiosis Institute of Design (SID), Nagpur, specializing in UX research, user flows, UI design, prototyping, and design systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
 
-<!-- NAV -->
-<header class="nav">
+<!-- STICKY NAVBAR -->
+<header class="nav" id="navbar">
   <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links" id="navLinks">
     <a href="about.html" class="active">About</a>
@@ -30,7 +30,7 @@
 </header>
 
 <main class="subpage-main">
-  <!-- ABOUT ME HEADER MATCHING DESIGN SLIDE -->
+  <!-- ABOUT ME HEADER -->
   <header class="about-page-header">
     <div class="about-arrow-badge" aria-hidden="true">↗</div>
     
@@ -51,35 +51,114 @@
     </div>
   </header>
 
-  <!-- ABOUT HERO SECTION (PHOTO + JOURNEY CONTENT) -->
+  <!-- ABOUT HERO SECTION (PHOTO + PERSONAL NARRATIVE) -->
   <section class="about-hero-grid">
-    <!-- LEFT: RACHEL'S PHOTO -->
-    <div class="about-photo-card">
-      <img src="rachel.png" alt="Rachel Mishra — UI/UX Designer" width="355" height="376">
+    <!-- LEFT: RACHEL'S PHOTO & STATUS CARD -->
+    <div class="about-photo-wrapper">
+      <div class="about-photo-card">
+        <img src="rachel.png" alt="Rachel Mishra — UI/UX Designer" width="355" height="376" loading="eager">
+      </div>
+      
+      <div class="about-photo-meta">
+        <div class="about-status-row">
+          <span class="status-dot-green"></span>
+          <span>Actively Looking for Internships</span>
+        </div>
+        <div class="about-location-row">
+          <span>📍 Symbiosis Institute of Design · Nagpur</span>
+        </div>
+      </div>
     </div>
 
-    <!-- RIGHT: MY JOURNEY STORY -->
+    <!-- RIGHT: PERSONAL JOURNEY & FOCUS -->
     <div class="about-journey-content">
-      <h2 class="about-journey-title">My Journey</h2>
-      <p class="about-journey-text">
-        I’m Rachel Mishra a fourth year UI/UX design student who enjoys creating simple and intuitive digital experiences. I like breaking down complex problems and turning them into clean, user friendly designs through research and thoughtful design decisions. I focus on making interfaces that not only look good but also feel easy and natural to use. I’m currently looking for internship opportunities where I can learn, grow, and contribute to meaningful design projects.
-      </p>
+      <p class="eyebrow" style="margin-bottom: 0.8rem;">01 · My Story &amp; Approach</p>
+      <h2 class="about-journey-title">Hi, I'm Rachel Mishra.</h2>
+      <p class="about-subtitle-role">Fourth-Year UI/UX Design Student &amp; Product Thinker</p>
 
-      <ul class="about-tags">
-        <li>UI Design</li>
+      <div class="about-narrative">
+        <p>
+          I believe the best digital experiences are the ones that feel second nature—effortless, transparent, and built with genuine empathy. As a <strong>fourth-year UI/UX design student</strong> at Symbiosis Institute of Design (SID), Nagpur, I'm fascinated by human psychology: uncovering how people make decisions, where they experience friction, and how thoughtful design can turn complex workflows into calm, intuitive interactions.
+        </p>
+
+        <p>
+          My design practice spans the entire product journey, with a core focus on <strong>UX research</strong> to uncover real user needs, mapping clear <strong>user flows</strong> and information architecture, crafting tactile, accessible <strong>UI design</strong>, and validating interactions through high-fidelity <strong>prototyping</strong>. I have a particular obsession with <strong>design systems</strong>—establishing design tokens, reusable component libraries, and scalable guidelines that empower teams to build cohesively.
+        </p>
+
+        <p>
+          As I approach graduation, I am <strong>currently looking for UI/UX &amp; Product Design internship opportunities</strong> where I can collaborate with forward-thinking teams, learn from seasoned design mentors, and contribute to meaningful, real-world digital products.
+        </p>
+      </div>
+
+      <!-- FOCUS PILLS -->
+      <ul class="about-tags" aria-label="Core Design Focus Areas">
         <li>UX Research</li>
-        <li>Design Systems</li>
-        <li>Prototyping</li>
-        <li>Figma</li>
-        <li>Wireframing</li>
         <li>User Flows</li>
+        <li>UI Design</li>
+        <li>Prototyping</li>
+        <li>Design Systems</li>
+        <li>Figma</li>
+        <li>Information Architecture</li>
+        <li>Wireframing</li>
+        <li>Usability Testing</li>
         <li>Problem Solving</li>
       </ul>
 
+      <!-- CTA ACTIONS -->
       <div class="page-actions" style="padding-left: 0; padding-right: 0; padding-bottom: 0;">
-        <a href="projects.html" class="btn btn-primary">See my project links →</a>
-        <a href="skills.html" class="btn btn-ghost">View skills &amp; expertise</a>
+        <a href="projects.html" class="btn btn-primary">Explore my projects →</a>
+        <a href="contact.html" class="btn btn-ghost">Get in touch for internships</a>
       </div>
+    </div>
+  </section>
+
+  <!-- A LITTLE MORE ABOUT ME SECTION (Dance, Design, Driving) -->
+  <section class="about-passions-section">
+    <div class="passions-header">
+      <p class="eyebrow">02 · Beyond the Screen</p>
+      <h2>A Little More About Me</h2>
+      <p>Three personal passions that keep my mind creative, curious, and grounded outside of design tools.</p>
+    </div>
+
+    <div class="passions-grid">
+      <!-- PASSION 1: DANCE -->
+      <article class="passion-card">
+        <div class="passion-top">
+          <div class="passion-icon-box" aria-hidden="true">💃</div>
+          <span class="passion-num">01 · RHYTHM</span>
+        </div>
+        <h3>Dance</h3>
+        <p class="passion-tagline">Expression, Energy &amp; Flow</p>
+        <p class="passion-desc">
+          Dance is my creative recharge. It has trained my instinct for rhythm, spatial awareness, and non-verbal expression—disciplines that directly inspire how I approach motion, pacing, and micro-interactions in digital product interfaces.
+        </p>
+      </article>
+
+      <!-- PASSION 2: DESIGN -->
+      <article class="passion-card">
+        <div class="passion-top">
+          <div class="passion-icon-box" aria-hidden="true">✦</div>
+          <span class="passion-num">02 · PASSION</span>
+        </div>
+        <h3>Design</h3>
+        <p class="passion-tagline">Curiosity, Systems &amp; Craft</p>
+        <p class="passion-desc">
+          Design is much more than my coursework; it's how I observe the world around me. From dissecting confusing airport signage to organizing component token architectures in Figma, I love untangling messy problems into elegant, human solutions.
+        </p>
+      </article>
+
+      <!-- PASSION 3: DRIVING -->
+      <article class="passion-card">
+        <div class="passion-top">
+          <div class="passion-icon-box" aria-hidden="true">🚗</div>
+          <span class="passion-num">03 · CLARITY</span>
+        </div>
+        <h3>Driving</h3>
+        <p class="passion-tagline">Focus, Playlists &amp; Perspective</p>
+        <p class="passion-desc">
+          There’s nothing quite like cruising down open highways with a great playlist. Driving demands total focus, quick anticipation, and situational presence—giving me the mental space to step back and return to complex design problems with fresh clarity.
+        </p>
+      </article>
     </div>
   </section>
 </main>
