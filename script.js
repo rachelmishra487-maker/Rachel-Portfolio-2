@@ -4,7 +4,7 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-// Active nav link highlight based on current page
+// Active nav link highlight based on current page URL
 const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(link => {
   const href = link.getAttribute('href');
@@ -27,7 +27,7 @@ if (navToggle && navLinks) {
   });
 }
 
-// Decorative cursor dot (desktop only — CSS already hides it on touch devices)
+// Decorative cursor dot (desktop only)
 const cursorDot = document.getElementById('cursorDot');
 if (cursorDot && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   window.addEventListener('mousemove', (e) => {
@@ -37,30 +37,33 @@ if (cursorDot && window.matchMedia('(hover: hover) and (pointer: fine)').matches
   });
 }
 
-// Contact form (only runs on contact.html)
-const form = document.getElementById('contactForm');
-if (form) {
-  const status = document.getElementById('formStatus');
-  const CONTACT_EMAIL = 'rachelmishra487@gmail.com';
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-      if (status) status.textContent = 'Please fill in every field.';
-      return;
-    }
-
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-
-    if (status) status.textContent = 'Opening your email app…';
-    form.reset();
+// Copy to clipboard utility for contact tiles
+function copyToClipboard(text, label) {
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(`${label} copied to clipboard!`);
+  }).catch(() => {
+    // Fallback
+    const tempInput = document.createElement('input');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    showToast(`${label} copied!`);
   });
 }
 
+function showToast(message) {
+  let toast = document.getElementById('copyToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'copyToast';
+    toast.className = 'copy-toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
