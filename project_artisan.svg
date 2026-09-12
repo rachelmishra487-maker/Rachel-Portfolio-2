@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="artBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120F11"/>
+      <stop offset="50%" stop-color="#1A1519"/>
+      <stop offset="100%" stop-color="#0D0A0C"/>
+    </linearGradient>
+    <linearGradient id="artAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5463"/>
+      <stop offset="100%" stop-color="#FF2A3A"/>
+    </linearGradient>
+    <linearGradient id="artWarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E28743"/>
+      <stop offset="100%" stop-color="#D9682B"/>
+    </linearGradient>
+    <linearGradient id="artGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A3A" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="artShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#artBgGrad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="450" x2="1200" y2="450" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Glow -->
+  <circle cx="850" cy="300" r="320" fill="url(#artGlow)"/>
+
+  <!-- Left Column Info -->
+  <g transform="translate(80, 140)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="240" height="32" rx="16" fill="#251B22" stroke="#3C2A36" stroke-width="1"/>
+    <circle cx="16" cy="16" r="4" fill="#FF2A3A"/>
+    <text x="28" y="20" fill="#FF808C" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">E-COMMERCE · INTERACTION DESIGN</text>
+
+    <!-- Project Title -->
+    <text x="0" y="85" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="44" font-weight="700">Artisan</text>
+    <text x="0" y="125" fill="#C4B4C0" font-family="'Inter', -apple-system, sans-serif" font-size="18" font-weight="400">Handcrafted Goods Marketplace</text>
+
+    <!-- Key UX Pillars -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#1B1419" stroke="#31222E" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Artisan Storytelling Cards</text>
+      <text x="20" y="48" fill="#998394" font-family="'Inter', sans-serif" font-size="12">Origin heritage, craft video, and impact</text>
+    </g>
+
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#1B1419" stroke="#31222E" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Frictionless Mini-Cart</text>
+      <text x="20" y="48" fill="#998394" font-family="'Inter', sans-serif" font-size="12">Slide-over drawer with transparent shipping</text>
+    </g>
+
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#1B1419" stroke="#31222E" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Fair-Trade Trust Architecture</text>
+      <text x="20" y="48" fill="#998394" font-family="'Inter', sans-serif" font-size="12">Direct maker payouts &amp; authenticity proof</text>
+    </g>
+  </g>
+
+  <!-- Right: Marketplace Browser Window Mockup -->
+  <g transform="translate(480, 80)" filter="url(#artShadow)">
+    <rect x="0" y="0" width="640" height="580" rx="18" fill="#110E12" stroke="#2D202B" stroke-width="2"/>
+
+    <!-- Window Bar -->
+    <rect x="0" y="0" width="640" height="42" rx="18" fill="#1A141B"/>
+    <rect x="0" y="24" width="640" height="18" fill="#1A141B"/>
+    <circle cx="24" cy="21" r="5" fill="#FF5F56"/>
+    <circle cx="42" cy="21" r="5" fill="#FFBD2E"/>
+    <circle cx="60" cy="21" r="5" fill="#27C93F"/>
+    <text x="320" y="26" fill="#90798C" font-family="'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle">artisan-crafts.market/discover/ceramics</text>
+
+    <!-- Content -->
+    <g transform="translate(30, 65)">
+      <!-- Category Chips -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="85" height="30" rx="15" fill="url(#artAccent)"/>
+        <text x="42" y="19" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Ceramics</text>
+
+        <rect x="95" y="0" width="85" height="30" rx="15" fill="#1C151D" stroke="#332431" stroke-width="1"/>
+        <text x="137" y="19" fill="#C4B4C0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Textiles</text>
+
+        <rect x="190" y="0" width="95" height="30" rx="15" fill="#1C151D" stroke="#332431" stroke-width="1"/>
+        <text x="237" y="19" fill="#C4B4C0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Woodcraft</text>
+
+        <rect x="295" y="0" width="95" height="30" rx="15" fill="#1C151D" stroke="#332431" stroke-width="1"/>
+        <text x="342" y="19" fill="#C4B4C0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Metalware</text>
+      </g>
+
+      <!-- Main Showcase Product Card -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="580" height="300" rx="14" fill="#171219" stroke="#2F212D" stroke-width="1"/>
+        
+        <!-- Left Visual Block -->
+        <rect x="16" y="16" width="240" height="268" rx="10" fill="#241B26"/>
+        <circle cx="136" cy="130" r="60" fill="#3D293B"/>
+        <ellipse cx="136" cy="145" rx="50" ry="25" fill="#D9682B" opacity="0.85"/>
+        <path d="M 86 145 C 86 195, 186 195, 186 145 Z" fill="#E28743"/>
+        <text x="136" y="240" fill="#E8D8E5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Terracotta Glazed Vase</text>
+        <text x="136" y="258" fill="#A892A4" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Handmade in Khurja, UP</text>
+
+        <!-- Right Story & Details Block -->
+        <g transform="translate(280, 30)">
+          <rect x="0" y="0" width="130" height="20" rx="4" fill="#2E1C29"/>
+          <text x="8" y="14" fill="#FF808C" font-family="'Inter', sans-serif" font-size="10" font-weight="600">✦ ARTISAN OF THE WEEK</text>
+          
+          <text x="0" y="46" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Studio Mitti Heritage</text>
+          <text x="0" y="70" fill="#C4B4C0" font-family="'Inter', sans-serif" font-size="12">Master Potter Devendra Sharma carries a 4th-generation pottery lineage preserving ancestral kiln firings.</text>
+          
+          <g transform="translate(0, 110)">
+            <text x="0" y="0" fill="#998394" font-family="'Inter', sans-serif" font-size="11">Direct to Maker</text>
+            <text x="0" y="22" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">₹2,850</text>
+            <text x="95" y="20" fill="#4ADE80" font-family="'Inter', sans-serif" font-size="11" font-weight="600">82% goes to artisan</text>
+          </g>
+
+          <g transform="translate(0, 165)">
+            <rect x="0" y="0" width="180" height="42" rx="8" fill="url(#artAccent)"/>
+            <text x="90" y="26" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Add to Cart &amp; Support →</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Bottom Marketplace Highlights -->
+      <g transform="translate(0, 370)">
+        <rect x="0" y="0" width="280" height="70" rx="10" fill="#171219" stroke="#2F212D" stroke-width="1"/>
+        <text x="20" y="30" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Verified Provenance</text>
+        <text x="20" y="50" fill="#998394" font-family="'Inter', sans-serif" font-size="11">Each piece numbered &amp; signed</text>
+
+        <rect x="300" y="0" width="280" height="70" rx="10" fill="#171219" stroke="#2F212D" stroke-width="1"/>
+        <text x="320" y="30" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Frictionless 2-Step Checkout</text>
+        <text x="320" y="50" fill="#998394" font-family="'Inter', sans-serif" font-size="11">38% decrease in cart abandonment</text>
+      </g>
+    </g>
+  </g>
+</svg>

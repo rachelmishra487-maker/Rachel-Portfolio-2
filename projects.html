@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — Rachel Mishra</title>
-<meta name="description" content="Featured UI/UX design projects, case studies, and Figma prototypes by Rachel Mishra.">
+<title>Projects &amp; Case Studies — Rachel Mishra</title>
+<meta name="description" content="Featured UI/UX design case studies, design systems, and Figma prototypes by Rachel Mishra, UI/UX Designer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
 
-<!-- NAV -->
-<header class="nav">
+<!-- STICKY NAVBAR -->
+<header class="nav" id="navbar">
   <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links" id="navLinks">
     <a href="about.html">About</a>
@@ -34,119 +34,190 @@
   <header class="page-header">
     <p class="eyebrow">02 · Selected Work</p>
     <h1>Projects &amp; Case Studies</h1>
-    <p class="page-desc">Explore my recent product design projects, interactive Figma prototypes, design systems, and case studies.</p>
+    <p class="page-desc">Human-centered digital products, design systems, and end-to-end interactive prototypes designed to solve complex user problems.</p>
   </header>
 
   <!-- PROJECTS SECTION -->
   <section class="projects-container">
-    <div class="projects-grid">
-      <!-- PROJECT 1 -->
-      <article class="project-card">
-        <div>
-          <span class="project-tag">Design System · Web App</span>
-          <h3>GoUni — Higher Education Portal</h3>
-          <p>A scalable design token and component library created in Figma for a modern university portal, addressing student onboarding, course management, and accessibility.</p>
-          <div class="project-tech">
-            <span>Figma</span>
-            <span>Design Tokens</span>
-            <span>Component Library</span>
-            <span>User Flows</span>
-          </div>
-        </div>
-        <div class="project-links">
-          <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="project-link-btn primary">
-            <span>View Figma Deck</span>
-            <span>↗</span>
-          </a>
-          <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="project-link-btn">
-            <span>Open Figma Prototype</span>
-            <span>↗</span>
-          </a>
-        </div>
-      </article>
 
-      <!-- PROJECT 2 -->
-      <article class="project-card">
-        <div>
-          <span class="project-tag">Mobile App · Fintech</span>
-          <h3>FinPulse — Micro-Investment App</h3>
-          <p>An intuitive mobile application designed to simplify wealth tracking and micro-investing for first-time investors with conversational onboarding and clear data visualization.</p>
-          <div class="project-tech">
-            <span>UX Research</span>
-            <span>Wireframing</span>
-            <span>Interaction Design</span>
-            <span>Figma</span>
+    <!-- FEATURED PROJECT: GOUNI -->
+    <div class="featured-project-section">
+      <article class="featured-project-card" id="project-gouni">
+        <!-- Visual Media Frame -->
+        <div class="featured-visual-wrapper">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="browser-title">
+              <span>gouni-portal.design / user-journey-storyboard</span>
+            </div>
+            <span class="browser-tag">FIGMA PROTOTYPE &amp; STORYBOARD</span>
           </div>
+          <img src="project_gouni.jpg" alt="GoUni Higher Education Portal Storyboard and UX Flow by Rachel Mishra" class="featured-project-img" loading="eager">
         </div>
-        <div class="project-links">
-          <!-- EDIT ME: Replace # with your Figma link -->
-          <a href="https://figma.com" target="_blank" rel="noopener" class="project-link-btn primary">
-            <span>Open Figma Prototype</span>
-            <span>↗</span>
-          </a>
-          <!-- EDIT ME: Replace # with your Behance or portfolio case study -->
-          <a href="https://behance.net" target="_blank" rel="noopener" class="project-link-btn">
-            <span>Behance Case Study</span>
-            <span>↗</span>
-          </a>
-        </div>
-      </article>
 
-      <!-- PROJECT 3 -->
-      <article class="project-card">
-        <div>
-          <span class="project-tag">Healthcare · Mobile &amp; Web</span>
-          <h3>HealthBridge — Patient Booking Flow</h3>
-          <p>Redesigning the doctor discovery, appointment scheduling, and digital prescription flow to reduce drop-offs, streamline teleconsultations, and enhance patient trust.</p>
-          <div class="project-tech">
-            <span>Usability Testing</span>
-            <span>User Flows</span>
-            <span>Information Architecture</span>
-            <span>WCAG</span>
+        <!-- Featured Info & Case Study Specs -->
+        <div class="featured-project-content">
+          <div class="featured-badge-row">
+            <span class="featured-star-badge">★ Featured Project</span>
+            <span class="featured-category-badge">Design System · Web App</span>
+            <span class="featured-scope-badge">SID Nagpur · Assignment 2</span>
           </div>
-        </div>
-        <div class="project-links">
-          <!-- EDIT ME: Replace # with your Figma link -->
-          <a href="https://figma.com" target="_blank" rel="noopener" class="project-link-btn primary">
-            <span>Open Figma Prototype</span>
-            <span>↗</span>
-          </a>
-          <!-- EDIT ME: Replace # with your Behance case study -->
-          <a href="https://behance.net" target="_blank" rel="noopener" class="project-link-btn">
-            <span>Behance Case Study</span>
-            <span>↗</span>
-          </a>
-        </div>
-      </article>
 
-      <!-- PROJECT 4 -->
-      <article class="project-card">
-        <div>
-          <span class="project-tag">E-Commerce · Interaction Design</span>
-          <h3>Artisan — Handcrafted Goods Marketplace</h3>
-          <p>A curated marketplace interface crafted for regional artisans, featuring rich storytelling product cards, frictionless checkout, and micro-animations.</p>
-          <div class="project-tech">
-            <span>UI Design</span>
-            <span>Figma</span>
-            <span>Adobe Illustrator</span>
-            <span>Canva</span>
+          <h2>GoUni — Higher Education Portal</h2>
+          <p class="featured-hook">A cohesive student portal and token architecture simplifying international university admissions.</p>
+          <p class="featured-desc">A scalable design token and component library created in Figma for a modern university portal, addressing student onboarding, course management, and accessibility.</p>
+
+          <!-- Role & Tools Meta Block -->
+          <div class="project-meta-box">
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Lead UI/UX Designer · Design System Lead</span>
+            
+            <span class="meta-label">Scope</span>
+            <span class="meta-value">Higher Ed Discovery, Storyboard, Design System</span>
           </div>
-        </div>
-        <div class="project-links">
-          <!-- EDIT ME: Replace # with your Figma link -->
-          <a href="https://figma.com" target="_blank" rel="noopener" class="project-link-btn primary">
-            <span>Open Figma Prototype</span>
-            <span>↗</span>
-          </a>
-          <!-- EDIT ME: Replace # with your Behance case study -->
-          <a href="https://behance.net" target="_blank" rel="noopener" class="project-link-btn">
-            <span>Behance Case Study</span>
-            <span>↗</span>
-          </a>
+
+          <div class="project-tools-list">
+            <span class="project-tool-chip">Figma</span>
+            <span class="project-tool-chip">Design Tokens</span>
+            <span class="project-tool-chip">Component Library</span>
+            <span class="project-tool-chip">User Flows</span>
+            <span class="project-tool-chip">Prototyping</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="project-actions-row">
+            <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="case-study-cta" id="gouni-case-study">
+              <span>View Case Study →</span>
+            </a>
+            <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="project-sec-btn" id="gouni-figma-prototype">
+              <span>Open Figma Prototype ↗</span>
+            </a>
+            <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="project-sec-btn">
+              <span>View Figma Deck ↗</span>
+            </a>
+          </div>
         </div>
       </article>
     </div>
 
+    <!-- SECTION SUBHEAD FOR MORE PROJECTS -->
+    <div class="section-subhead-row">
+      <div>
+        <h3>More Selected Projects</h3>
+        <p>Mobile applications, healthcare experiences, and marketplace design systems</p>
+      </div>
+    </div>
+
+    <!-- MORE PROJECTS GRID -->
+    <div class="ux-projects-grid">
+      <!-- PROJECT 2: FINPULSE -->
+      <article class="ux-project-card" id="project-finpulse">
+        <div class="ux-card-media">
+          <img src="project_finpulse.svg" alt="FinPulse Micro-Investment Mobile App UX Wireframe and Interface" class="ux-card-img" loading="lazy">
+        </div>
+        <div class="ux-card-body">
+          <span class="ux-card-tag">Mobile App · Fintech</span>
+          <h3>FinPulse — Micro-Investment App</h3>
+          <p>An intuitive mobile application designed to simplify wealth tracking and micro-investing for first-time investors with conversational onboarding and clear data visualization.</p>
+          
+          <div class="ux-meta-strip">
+            <div class="ux-role-line">
+              <span class="meta-label">Role:</span>
+              <strong>Product Designer (UX/UI)</strong>
+            </div>
+            <div class="project-tools-list" style="margin-bottom: 0;">
+              <span class="project-tool-chip">Figma</span>
+              <span class="project-tool-chip">UX Research</span>
+              <span class="project-tool-chip">Wireframing</span>
+              <span class="project-tool-chip">Interaction Design</span>
+            </div>
+          </div>
+
+          <div class="project-actions-row">
+            <a href="https://behance.net" target="_blank" rel="noopener" class="case-study-cta">
+              <span>View Case Study →</span>
+            </a>
+            <a href="https://figma.com" target="_blank" rel="noopener" class="project-sec-btn">
+              <span>Open Figma Prototype ↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: HEALTHBRIDGE -->
+      <article class="ux-project-card" id="project-healthbridge">
+        <div class="ux-card-media">
+          <img src="project_healthbridge.svg" alt="HealthBridge Patient Booking Flow Telehealth Platform UX" class="ux-card-img" loading="lazy">
+        </div>
+        <div class="ux-card-body">
+          <span class="ux-card-tag">Healthcare · Mobile &amp; Web</span>
+          <h3>HealthBridge — Patient Booking Flow</h3>
+          <p>Redesigning the doctor discovery, appointment scheduling, and digital prescription flow to reduce drop-offs, streamline teleconsultations, and enhance patient trust.</p>
+          
+          <div class="ux-meta-strip">
+            <div class="ux-role-line">
+              <span class="meta-label">Role:</span>
+              <strong>UX Researcher &amp; Interaction Designer</strong>
+            </div>
+            <div class="project-tools-list" style="margin-bottom: 0;">
+              <span class="project-tool-chip">Figma</span>
+              <span class="project-tool-chip">Usability Testing</span>
+              <span class="project-tool-chip">User Flows</span>
+              <span class="project-tool-chip">WCAG</span>
+            </div>
+          </div>
+
+          <div class="project-actions-row">
+            <a href="https://behance.net" target="_blank" rel="noopener" class="case-study-cta">
+              <span>View Case Study →</span>
+            </a>
+            <a href="https://figma.com" target="_blank" rel="noopener" class="project-sec-btn">
+              <span>Open Figma Prototype ↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: ARTISAN -->
+      <article class="ux-project-card" id="project-artisan">
+        <div class="ux-card-media">
+          <img src="project_artisan.svg" alt="Artisan Handcrafted Goods Marketplace UX and UI Design" class="ux-card-img" loading="lazy">
+        </div>
+        <div class="ux-card-body">
+          <span class="ux-card-tag">E-Commerce · Interaction Design</span>
+          <h3>Artisan — Handcrafted Goods Marketplace</h3>
+          <p>A curated marketplace interface crafted for regional artisans, featuring rich storytelling product cards, frictionless checkout, and micro-animations.</p>
+          
+          <div class="ux-meta-strip">
+            <div class="ux-role-line">
+              <span class="meta-label">Role:</span>
+              <strong>UI Designer · Visual Interaction</strong>
+            </div>
+            <div class="project-tools-list" style="margin-bottom: 0;">
+              <span class="project-tool-chip">Figma</span>
+              <span class="project-tool-chip">UI Design</span>
+              <span class="project-tool-chip">Adobe Illustrator</span>
+              <span class="project-tool-chip">Canva</span>
+            </div>
+          </div>
+
+          <div class="project-actions-row">
+            <a href="https://behance.net" target="_blank" rel="noopener" class="case-study-cta">
+              <span>View Case Study →</span>
+            </a>
+            <a href="https://figma.com" target="_blank" rel="noopener" class="project-sec-btn">
+              <span>Open Figma Prototype ↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- BOTTOM ACTIONS -->
     <div class="page-actions" style="padding-left: 0; padding-right: 0;">
       <a href="skills.html" class="btn btn-primary">View my skills &amp; expertise →</a>
       <a href="contact.html" class="btn btn-ghost">Get in touch</a>

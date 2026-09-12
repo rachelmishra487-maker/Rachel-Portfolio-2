@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="hbBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1015"/>
+      <stop offset="50%" stop-color="#121824"/>
+      <stop offset="100%" stop-color="#080D12"/>
+    </linearGradient>
+    <linearGradient id="hbRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D5E"/>
+      <stop offset="100%" stop-color="#FF2A3A"/>
+    </linearGradient>
+    <linearGradient id="hbGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A3A" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="hbShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#hbBgGrad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="450" x2="1200" y2="450" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="820" cy="320" r="320" fill="url(#hbGlow)"/>
+
+  <!-- Left Context Column -->
+  <g transform="translate(80, 140)">
+    <!-- Pill Badge -->
+    <rect x="0" y="0" width="220" height="32" rx="16" fill="#18232C" stroke="#253745" stroke-width="1"/>
+    <circle cx="16" cy="16" r="4" fill="#FF2A3A"/>
+    <text x="28" y="20" fill="#FF808C" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1">HEALTHCARE · MOBILE &amp; WEB</text>
+
+    <!-- Project Identity Title -->
+    <text x="0" y="85" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="44" font-weight="700">HealthBridge</text>
+    <text x="0" y="125" fill="#9FB3C8" font-family="'Inter', -apple-system, sans-serif" font-size="18" font-weight="400">Patient Booking &amp; Telehealth Flow</text>
+
+    <!-- Key UX Pillars -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#111922" stroke="#1E2C3D" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Reduced Appointment Drop-offs</text>
+      <text x="20" y="48" fill="#6E849E" font-family="'Inter', sans-serif" font-size="12">Streamlined 3-step slot checkout</text>
+    </g>
+
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#111922" stroke="#1E2C3D" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">WCAG 2.1 AA Accessibility</text>
+      <text x="20" y="48" fill="#6E849E" font-family="'Inter', sans-serif" font-size="12">High-contrast, screen-reader friendly</text>
+    </g>
+
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="280" height="64" rx="12" fill="#111922" stroke="#1E2C3D" stroke-width="1"/>
+      <text x="20" y="28" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Teleconsultation UX</text>
+      <text x="20" y="48" fill="#6E849E" font-family="'Inter', sans-serif" font-size="12">Digital prescriptions &amp; pre-visit triage</text>
+    </g>
+  </g>
+
+  <!-- Right: Web / Tablet Dashboard Window Mockup -->
+  <g transform="translate(480, 80)" filter="url(#hbShadow)">
+    <!-- Window Frame Shell -->
+    <rect x="0" y="0" width="640" height="580" rx="18" fill="#0E151D" stroke="#223142" stroke-width="2"/>
+
+    <!-- Window Title Bar -->
+    <rect x="0" y="0" width="640" height="42" rx="18" fill="#151F2B"/>
+    <rect x="0" y="24" width="640" height="18" fill="#151F2B"/>
+    <circle cx="24" cy="21" r="5" fill="#FF5F56"/>
+    <circle cx="42" cy="21" r="5" fill="#FFBD2E"/>
+    <circle cx="60" cy="21" r="5" fill="#27C93F"/>
+    <text x="320" y="26" fill="#758EA7" font-family="'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle">healthbridge-portal.org/book/specialist</text>
+
+    <!-- Main Content Area -->
+    <g transform="translate(30, 65)">
+      <!-- Search & Doctor Card Header -->
+      <text x="0" y="20" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Select Date &amp; Consultation Slot</text>
+      <text x="0" y="42" fill="#7D95AF" font-family="'Inter', sans-serif" font-size="13">Verified Senior Consultant · Cardiology &amp; Internal Medicine</text>
+
+      <!-- Doctor Summary Card -->
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="580" height="95" rx="12" fill="#141E2A" stroke="#253549" stroke-width="1"/>
+        <!-- Doctor Avatar Placeholder -->
+        <circle cx="50" cy="48" r="28" fill="#202E40"/>
+        <circle cx="50" cy="42" r="12" fill="#38BDF8"/>
+        <path d="M 32 64 C 32 54, 68 54, 68 64 Z" fill="#38BDF8"/>
+        
+        <text x="95" y="38" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600">Dr. Sunita Deshmukh, MD</text>
+        <text x="95" y="58" fill="#7D95AF" font-family="'Inter', sans-serif" font-size="12">14 Years Exp · Apollo Heart Centre · 4.9 ★ (420+ Reviews)</text>
+        <rect x="95" y="68" width="120" height="18" rx="4" fill="#182F24"/>
+        <text x="102" y="81" fill="#34D399" font-family="'Inter', sans-serif" font-size="10" font-weight="600">✔ VERIFIED SPECIALIST</text>
+
+        <rect x="460" y="28" width="100" height="38" rx="8" fill="#1C2939" stroke="#2C3D52" stroke-width="1"/>
+        <text x="510" y="51" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" text-anchor="middle">₹1,200/visit</text>
+      </g>
+
+      <!-- Calendar Slot Selection Section -->
+      <g transform="translate(0, 180)">
+        <text x="0" y="0" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="600">Available Time Slots</text>
+
+        <!-- Morning Slots -->
+        <text x="0" y="30" fill="#7D95AF" font-family="'Inter', sans-serif" font-size="12" font-weight="500">Morning Session</text>
+        <g transform="translate(0, 42)">
+          <!-- Slot 1 (Selected) -->
+          <rect x="0" y="0" width="105" height="38" rx="8" fill="url(#hbRed)"/>
+          <text x="52" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">10:00 AM</text>
+
+          <!-- Slot 2 -->
+          <rect x="115" y="0" width="105" height="38" rx="8" fill="#16202C" stroke="#27384B" stroke-width="1"/>
+          <text x="167" y="24" fill="#B3C4D8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">10:45 AM</text>
+
+          <!-- Slot 3 -->
+          <rect x="230" y="0" width="105" height="38" rx="8" fill="#16202C" stroke="#27384B" stroke-width="1"/>
+          <text x="282" y="24" fill="#B3C4D8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">11:30 AM</text>
+        </g>
+
+        <!-- Evening Slots -->
+        <text x="0" y="110" fill="#7D95AF" font-family="'Inter', sans-serif" font-size="12" font-weight="500">Evening Video Teleconsultation</text>
+        <g transform="translate(0, 122)">
+          <!-- Slot 4 -->
+          <rect x="0" y="0" width="105" height="38" rx="8" fill="#16202C" stroke="#27384B" stroke-width="1"/>
+          <text x="52" y="24" fill="#B3C4D8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">04:30 PM</text>
+
+          <!-- Slot 5 -->
+          <rect x="115" y="0" width="105" height="38" rx="8" fill="#16202C" stroke="#27384B" stroke-width="1"/>
+          <text x="167" y="24" fill="#B3C4D8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">05:15 PM</text>
+
+          <!-- Slot 6 -->
+          <rect x="230" y="0" width="105" height="38" rx="8" fill="#16202C" stroke="#27384B" stroke-width="1"/>
+          <text x="282" y="24" fill="#B3C4D8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">06:00 PM</text>
+        </g>
+      </g>
+
+      <!-- Bottom Checkout Flow Bar -->
+      <g transform="translate(0, 375)">
+        <rect x="0" y="0" width="580" height="70" rx="12" fill="#141E2A" stroke="#253549" stroke-width="1"/>
+        <text x="24" y="32" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Selected: Tomorrow, 10:00 AM</text>
+        <text x="24" y="52" fill="#7D95AF" font-family="'Inter', sans-serif" font-size="12">Instant confirmation via SMS &amp; WhatsApp</text>
+        
+        <rect x="390" y="14" width="170" height="42" rx="8" fill="url(#hbRed)"/>
+        <text x="475" y="39" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Confirm &amp; Proceed →</text>
+      </g>
+    </g>
+  </g>
+</svg>
