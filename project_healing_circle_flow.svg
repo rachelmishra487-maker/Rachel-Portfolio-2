@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="flowBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1014"/>
+      <stop offset="100%" stop-color="#14171E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#flowBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 60)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#1E2812" stroke="#374820" stroke-width="1"/>
+    <text x="14" y="18" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1">END-TO-END JOURNEY</text>
+
+    <text x="0" y="65" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="800">5-Stage Touchpoint Flow Map</text>
+    <text x="0" y="92" fill="#8899AC" font-family="'Inter', sans-serif" font-size="15">Transforming high-stress surgical &amp; clinical events into reflection, human connection, and policy changes</text>
+  </g>
+
+  <!-- 5 Stage Process Flow Cards -->
+  <g transform="translate(80, 200)">
+    <!-- Stage 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="195" height="380" rx="16" fill="#141720" stroke="#222836" stroke-width="1.5"/>
+      <rect x="0" y="0" width="195" height="42" rx="16" fill="#1E2413"/>
+      <circle cx="24" cy="21" r="10" fill="#D4FF00"/>
+      <text x="24" y="25" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">1</text>
+      <text x="42" y="25" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">TRIGGER</text>
+
+      <text x="16" y="70" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Critical Event</text>
+      <text x="16" y="98" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Heavy ICU case</text>
+      <text x="16" y="122" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Multi-hour surgery</text>
+      <text x="16" y="146" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Distressed family</text>
+      <text x="16" y="170" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• 14h shift fatigue</text>
+
+      <rect x="14" y="270" width="167" height="90" rx="10" fill="#1A2016" stroke="#2F3E1A" stroke-width="1"/>
+      <text x="24" y="295" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">PSYCHOLOGICAL STATE</text>
+      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Empathy fatigue, elevated cortisol, emotional suppression.</text>
+    </g>
+
+    <!-- Arrow 1-2 -->
+    <text x="202" y="190" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">→</text>
+
+    <!-- Stage 2 -->
+    <g transform="translate(210, 0)">
+      <rect x="0" y="0" width="195" height="380" rx="16" fill="#141720" stroke="#222836" stroke-width="1.5"/>
+      <rect x="0" y="0" width="195" height="42" rx="16" fill="#13212E"/>
+      <circle cx="24" cy="21" r="10" fill="#38BDF8"/>
+      <text x="24" y="25" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">2</text>
+      <text x="42" y="25" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">PROMPT</text>
+
+      <text x="16" y="70" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Peer Nudge</text>
+      <text x="16" y="98" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Gentle nurse check-in</text>
+      <text x="16" y="122" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• QR sign near scrub sink</text>
+      <text x="16" y="146" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Smartwatch pulse</text>
+      <text x="16" y="170" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Roster buffer slot</text>
+
+      <rect x="14" y="270" width="167" height="90" rx="10" fill="#14212C" stroke="#1F3A4F" stroke-width="1"/>
+      <text x="24" y="295" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">TOUCHPOINT</text>
+      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Zero-pressure invitation to take 2-min pause before next patient.</text>
+    </g>
+
+    <!-- Arrow 2-3 -->
+    <text x="412" y="190" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">→</text>
+
+    <!-- Stage 3 -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="195" height="380" rx="16" fill="#141720" stroke="#222836" stroke-width="1.5"/>
+      <rect x="0" y="0" width="195" height="42" rx="16" fill="#241B33"/>
+      <circle cx="24" cy="21" r="10" fill="#C084FC"/>
+      <text x="24" y="25" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">3</text>
+      <text x="42" y="25" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">DEBRIEF</text>
+
+      <text x="16" y="70" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Micro-Ritual</text>
+      <text x="16" y="98" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Enter debrief room</text>
+      <text x="16" y="122" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• 1-min deep inhale</text>
+      <text x="16" y="146" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Hydration pause</text>
+      <text x="16" y="170" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• 10-min circle debrief</text>
+
+      <rect x="14" y="270" width="167" height="90" rx="10" fill="#21172E" stroke="#412461" stroke-width="1"/>
+      <text x="24" y="295" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SANCTUARY SPACE</text>
+      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Sensory restoration with soft light, plants, and peer comfort.</text>
+    </g>
+
+    <!-- Arrow 3-4 -->
+    <text x="622" y="190" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">→</text>
+
+    <!-- Stage 4 -->
+    <g transform="translate(630, 0)">
+      <rect x="0" y="0" width="195" height="380" rx="16" fill="#141720" stroke="#222836" stroke-width="1.5"/>
+      <rect x="0" y="0" width="195" height="42" rx="16" fill="#29181E"/>
+      <circle cx="24" cy="21" r="10" fill="#FB7185"/>
+      <text x="24" y="25" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">4</text>
+      <text x="42" y="25" fill="#FB7185" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">REFLECTION</text>
+
+      <text x="16" y="70" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Gratitude Wall</text>
+      <text x="16" y="98" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Anonymous gratitude</text>
+      <text x="16" y="122" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Voice prompt note</text>
+      <text x="16" y="146" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• QR mood check-in</text>
+      <text x="16" y="170" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Peer affirmation</text>
+
+      <rect x="14" y="270" width="167" height="90" rx="10" fill="#29151C" stroke="#4E1F2E" stroke-width="1"/>
+      <text x="24" y="295" fill="#FB7185" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SHARED RESILIENCE</text>
+      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Reframing traumatic stress into shared team empathy.</text>
+    </g>
+
+    <!-- Arrow 4-5 -->
+    <text x="832" y="190" fill="#FB7185" font-family="'Space Grotesk', sans-serif" font-size="18" text-anchor="middle">→</text>
+
+    <!-- Stage 5 -->
+    <g transform="translate(840, 0)">
+      <rect x="0" y="0" width="195" height="380" rx="16" fill="#141720" stroke="#222836" stroke-width="1.5"/>
+      <rect x="0" y="0" width="195" height="42" rx="16" fill="#1A2417"/>
+      <circle cx="24" cy="21" r="10" fill="#4ADE80"/>
+      <text x="24" y="25" fill="#000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">5</text>
+      <text x="42" y="25" fill="#4ADE80" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SYSTEMIC</text>
+
+      <text x="16" y="70" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Policy Shift</text>
+      <text x="16" y="98" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Anonymized reports</text>
+      <text x="16" y="122" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Weekly wellness pulse</text>
+      <text x="16" y="146" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Protected micro-breaks</text>
+      <text x="16" y="170" fill="#8C9EB5" font-family="'Inter', sans-serif" font-size="12.5">• Shift balance updates</text>
+
+      <rect x="14" y="270" width="167" height="90" rx="10" fill="#152417" stroke="#224527" stroke-width="1"/>
+      <text x="24" y="295" fill="#4ADE80" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">HOSPITAL IMPACT</text>
+      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Sustainable retention, reduced burnout, improved patient care.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="hcBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1115"/>
+      <stop offset="60%" stop-color="#161920"/>
+      <stop offset="100%" stop-color="#0A0C0E"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2FF38"/>
+      <stop offset="100%" stop-color="#B5E600"/>
+    </linearGradient>
+    <linearGradient id="limeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4FF00" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="hcShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#hcBgGrad)"/>
+
+  <!-- Subdued Grid -->
+  <g opacity="0.06">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="450" x2="1200" y2="450" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="840" cy="350" r="340" fill="url(#limeGlow)"/>
+
+  <!-- Left Context Column -->
+  <g transform="translate(80, 130)">
+    <!-- Academic Badge -->
+    <rect x="0" y="0" width="285" height="32" rx="16" fill="#1A2210" stroke="#2E3D1C" stroke-width="1"/>
+    <circle cx="16" cy="16" r="4" fill="#D4FF00"/>
+    <text x="28" y="20" fill="#D4FF00" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">HEALTHCARE UX · USDR SEM 5</text>
+
+    <!-- Title &amp; Tagline -->
+    <text x="0" y="82" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="42" font-weight="800" letter-spacing="-1">The Healing Circle</text>
+    <text x="0" y="116" fill="#D4FF00" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="20" font-weight="700">Digital Overload &amp; Tech Burnout</text>
+    <text x="0" y="146" fill="#94A3B8" font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="400">A human-centered recovery system for healthcare workers</text>
+
+    <!-- Key Insights Cards -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="320" height="68" rx="14" fill="#14171E" stroke="#232834" stroke-width="1"/>
+      <circle cx="32" cy="34" r="16" fill="#1E2514"/>
+      <text x="32" y="39" fill="#D4FF00" font-family="sans-serif" font-size="14" text-anchor="middle">⚕</text>
+      <text x="60" y="30" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Primary Doctor Interviews</text>
+      <text x="60" y="50" fill="#64748B" font-family="'Inter', sans-serif" font-size="12">Pediatrics, Gastroenterology &amp; Forensic</text>
+    </g>
+
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="320" height="68" rx="14" fill="#14171E" stroke="#232834" stroke-width="1"/>
+      <circle cx="32" cy="34" r="16" fill="#1E2514"/>
+      <text x="32" y="39" fill="#D4FF00" font-family="sans-serif" font-size="14" text-anchor="middle">◎</text>
+      <text x="60" y="30" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Concentric Recovery Model</text>
+      <text x="60" y="50" fill="#64748B" font-family="'Inter', sans-serif" font-size="12">Inner physical circle + outer soft digital layer</text>
+    </g>
+
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="320" height="68" rx="14" fill="#14171E" stroke="#232834" stroke-width="1"/>
+      <circle cx="32" cy="34" r="16" fill="#1E2514"/>
+      <text x="32" y="39" fill="#D4FF00" font-family="sans-serif" font-size="14" text-anchor="middle">✓</text>
+      <text x="60" y="30" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Validated Clinical Evidence</text>
+      <text x="60" y="50" fill="#64748B" font-family="'Inter', sans-serif" font-size="12">Lancet 2021 &amp; NIH 2022 clinical studies</text>
+    </g>
+  </g>
+
+  <!-- Right: Presentation Deck Window Mockup -->
+  <g transform="translate(480, 80)" filter="url(#hcShadow)">
+    <!-- Window Frame -->
+    <rect x="0" y="0" width="640" height="580" rx="18" fill="#12141A" stroke="#2A303F" stroke-width="2"/>
+
+    <!-- Title Bar -->
+    <rect x="0" y="0" width="640" height="42" rx="18" fill="#191C24"/>
+    <rect x="0" y="24" width="640" height="18" fill="#191C24"/>
+    <circle cx="24" cy="21" r="5" fill="#FF5F56"/>
+    <circle cx="42" cy="21" r="5" fill="#FFBD2E"/>
+    <circle cx="60" cy="21" r="5" fill="#27C93F"/>
+    <text x="320" y="26" fill="#8B9BB4" font-family="'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle">Rachel Mishra &amp; Vidhi Ambade · USDR Assignment 2.pdf</text>
+
+    <!-- Presentation Slide Canvas -->
+    <g transform="translate(25, 65)">
+      <!-- Slide Shell -->
+      <rect x="0" y="0" width="590" height="465" rx="14" fill="#121316" stroke="#1F232D" stroke-width="1"/>
+
+      <!-- Concentric Ecosystem Rings Graphic -->
+      <g transform="translate(295, 230)">
+        <!-- Outer Circle Ring -->
+        <circle cx="0" cy="0" r="165" fill="none" stroke="#2E381E" stroke-width="2" stroke-dasharray="6 6"/>
+        <circle cx="0" cy="0" r="140" fill="#181D14" stroke="#4D661F" stroke-width="1.5"/>
+        
+        <!-- Inner Circle Ring -->
+        <circle cx="0" cy="0" r="95" fill="#242D16" stroke="#8DB824" stroke-width="2"/>
+        
+        <!-- Core Center -->
+        <circle cx="0" cy="0" r="50" fill="url(#limeGrad)"/>
+        <text x="0" y="-4" fill="#0F1115" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" text-anchor="middle">THE</text>
+        <text x="0" y="12" fill="#0F1115" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" text-anchor="middle">HEALING</text>
+        <text x="0" y="26" fill="#0F1115" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="800" text-anchor="middle">CIRCLE</text>
+
+        <!-- Inner Circle Callouts -->
+        <rect x="-185" y="-75" width="120" height="30" rx="6" fill="#1B2215" stroke="#8DB824" stroke-width="1"/>
+        <text x="-125" y="-56" fill="#D4FF00" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Debrief Zones</text>
+
+        <rect x="65" y="-75" width="120" height="30" rx="6" fill="#1B2215" stroke="#8DB824" stroke-width="1"/>
+        <text x="125" y="-56" fill="#D4FF00" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Micro Rituals</text>
+
+        <rect x="-185" y="45" width="120" height="30" rx="6" fill="#1B2215" stroke="#8DB824" stroke-width="1"/>
+        <text x="-125" y="64" fill="#D4FF00" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Peer Circles</text>
+
+        <rect x="65" y="45" width="120" height="30" rx="6" fill="#1B2215" stroke="#8DB824" stroke-width="1"/>
+        <text x="125" y="64" fill="#D4FF00" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">Facilitators</text>
+
+        <!-- Outer Circle Callouts -->
+        <rect x="-130" y="145" width="125" height="28" rx="6" fill="#161A22" stroke="#3D485C" stroke-width="1"/>
+        <text x="-67" y="163" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="500" text-anchor="middle">Org Policy &amp; HR</text>
+
+        <rect x="10" y="145" width="125" height="28" rx="6" fill="#161A22" stroke="#3D485C" stroke-width="1"/>
+        <text x="72" y="163" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="500" text-anchor="middle">Soft Digital Layer</text>
+      </g>
+
+      <!-- Slide Header -->
+      <g transform="translate(25, 25)">
+        <text x="0" y="18" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">CONCEPT DIAGRAM · ECOSYSTEM</text>
+        <text x="0" y="38" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Inner Sanctuary &amp; Outer Organizational Support</text>
+      </g>
+    </g>
+  </g>
+</svg>

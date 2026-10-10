@@ -13,6 +13,8 @@
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 
 <!-- STICKY NAVBAR -->
 <header class="nav" id="navbar">
@@ -24,7 +26,7 @@
     <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="contact.html" class="nav-cta">Contact</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
@@ -79,13 +81,10 @@
             <!-- Clear Action Buttons -->
             <div class="project-actions-row">
               <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="case-study-cta-lg" id="viewFullCaseStudyBtn">
-                <span>View Full Case Study →</span>
+                <span>View Full Case Study Deck →</span>
               </a>
               <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="project-sec-btn-lg" id="gouniFigmaPrototypeBtn">
                 <span>Open Figma Prototype ↗</span>
-              </a>
-              <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="project-sec-btn-lg">
-                <span>View Figma Deck ↗</span>
               </a>
             </div>
           </div>
@@ -106,10 +105,10 @@
 
             <!-- Screen Switcher Tabs -->
             <div class="showcase-tabs">
-              <button class="screen-tab active" data-screen="storyboard" aria-label="Show Storyboard screen">
+              <button class="screen-tab active" data-screen="storyboard" type="button" aria-label="Show Storyboard screen">
                 <span>1. User Journey Storyboard</span>
               </button>
-              <button class="screen-tab" data-screen="components" aria-label="Show Figma components screen">
+              <button class="screen-tab" data-screen="components" type="button" aria-label="Show Figma components screen">
                 <span>2. Figma Design System &amp; Cards</span>
               </button>
             </div>
@@ -151,6 +150,137 @@
       </article>
     </div>
 
+    <!-- FLAGSHIP FEATURED CASE STUDY 2: THE HEALING CIRCLE -->
+    <div class="featured-project-section" style="margin-top: 56px;">
+      <article class="featured-project-card" id="project-healing-circle">
+        
+        <!-- Header Info Block -->
+        <div class="featured-header-block">
+          <div>
+            <div class="featured-badge-row">
+              <span class="featured-star-badge" style="background: rgba(212, 255, 0, 0.15); color: #D4FF00; border-color: rgba(212, 255, 0, 0.4);">★ Project 02 · Featured Research</span>
+              <span class="featured-category-badge">Healthcare UX · Systems Design</span>
+              <span class="featured-scope-badge">SID Nagpur · Sem 5 · USDR Assignment 2</span>
+            </div>
+
+            <h2 class="featured-hero-title">The Healing Circle — Healthcare Well-being System</h2>
+            <p class="featured-tagline">“Addressing doctor burnout and emotional overload through structured physical &amp; digital recovery rituals.”</p>
+            <p class="featured-desc">A comprehensive User Studies and Design Research (USDR) project investigating digital overload, empathy fatigue, and tech burnout among hospital physicians. Combines physical debrief zones, low-friction micro-rituals, peer support circles, and a soft digital layer to support doctors without adding tech complexity.</p>
+          </div>
+
+          <!-- Role & Tools Meta Block -->
+          <div>
+            <div class="project-meta-box">
+              <span class="meta-label">Role</span>
+              <span class="meta-value">Lead UX Researcher &amp; Systems Designer (Co-author: Vidhi Ambade)</span>
+              
+              <span class="meta-label">Scope</span>
+              <span class="meta-value">Clinical Doctor Interviews, Comparative Gap Mapping, Concentric Ecosystem Model</span>
+            </div>
+
+            <div class="project-tools-list">
+              <span class="project-tool-chip">User Studies</span>
+              <span class="project-tool-chip">Doctor Interviews</span>
+              <span class="project-tool-chip">Gap Analysis</span>
+              <span class="project-tool-chip">Systems Design</span>
+              <span class="project-tool-chip">Touchpoint Mapping</span>
+              <span class="project-tool-chip">Research Deck</span>
+            </div>
+
+            <!-- Clear Action Buttons -->
+            <div class="project-actions-row">
+              <a href="project_healing_circle.pdf" target="_blank" rel="noopener" class="case-study-cta-lg" id="viewHealingCirclePdfBtn" style="background: #D4FF00; color: #0E1115;">
+                <span>View Full Research Deck (PDF) →</span>
+              </a>
+              <a href="usdr_assignment_2.pdf" target="_blank" rel="noopener" class="project-sec-btn-lg" id="downloadHealingCirclePdfBtn">
+                <span>Open Presentation Deck ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LARGE VISUAL AREA FOR REAL HEALING CIRCLE SCREENS -->
+        <div class="featured-showcase-container">
+          <!-- Top Showcase Bar -->
+          <div class="showcase-topbar">
+            <div class="showcase-topbar-left">
+              <div class="browser-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="showcase-file-path">The Healing Circle / USDR Research Deck / Interactive Gallery</span>
+            </div>
+
+            <!-- Screen Switcher Tabs -->
+            <div class="showcase-tabs">
+              <button class="screen-tab hc-tab active" data-screen="concept" type="button" aria-label="Show Concept & Ecosystem screen">
+                <span>1. Concept &amp; Ecosystem</span>
+              </button>
+              <button class="screen-tab hc-tab" data-screen="interviews" type="button" aria-label="Show Doctor Interviews screen">
+                <span>2. Doctor Interviews &amp; Personas</span>
+              </button>
+              <button class="screen-tab hc-tab" data-screen="rituals" type="button" aria-label="Show Physical Debrief & Rituals screen">
+                <span>3. Debrief Sanctuary &amp; Rituals</span>
+              </button>
+              <button class="screen-tab hc-tab" data-screen="flow" type="button" aria-label="Show 5-Stage Touchpoint Flow Map">
+                <span>4. 5-Stage Journey Flow</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Screen Viewport -->
+          <div class="showcase-viewport">
+            <img src="project_healing_circle_concept.svg" alt="The Healing Circle Concept Diagram &amp; Ecosystem Architecture" class="showcase-main-img" id="hcMainScreen" loading="eager">
+          </div>
+
+          <!-- Caption & Artifact Provenance Bar -->
+          <div class="showcase-caption-bar">
+            <p class="showcase-caption-text" id="hcScreenCaption">
+              <strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer (HR policy, soft digital layer).
+            </p>
+            <span class="showcase-badge-pill" style="border-color: rgba(212, 255, 0, 0.4); color: #D4FF00; background: rgba(212, 255, 0, 0.08);">✔ Sem 5 USDR Assignment 2</span>
+          </div>
+
+          <!-- Interactive Screen Thumbnails -->
+          <div class="showcase-thumb-strip">
+            <button class="showcase-thumb-btn hc-thumb active" data-screen="concept" type="button">
+              <img src="project_healing_circle_concept.svg" alt="Concept Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 1: Concept Diagram</h4>
+                <p>Inner restorative sanctuary &amp; outer support</p>
+              </div>
+            </button>
+
+            <button class="showcase-thumb-btn hc-thumb" data-screen="interviews" type="button">
+              <img src="project_healing_circle_interviews.svg" alt="Interviews Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 2: Doctor Field Research</h4>
+                <p>Interviews with Pediatrics, Gastro &amp; Forensic specialists</p>
+              </div>
+            </button>
+
+            <button class="showcase-thumb-btn hc-thumb" data-screen="rituals" type="button">
+              <img src="project_healing_circle_rituals.svg" alt="Debrief Sanctuary Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 3: Debrief &amp; Micro-Rituals</h4>
+                <p>Nature-inspired sanctuary &amp; 4 reset moments</p>
+              </div>
+            </button>
+
+            <button class="showcase-thumb-btn hc-thumb" data-screen="flow" type="button">
+              <img src="project_healing_circle_flow.svg" alt="Flow Map Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 4: 5-Stage Journey Flow</h4>
+                <p>Trigger → Prompt → Debrief → Reflection → Policy</p>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </article>
+    </div>
+
     <!-- SECTION SUBHEAD FOR MORE PROJECTS -->
     <div class="section-subhead-row">
       <div>
@@ -176,7 +306,7 @@
               <span class="meta-label">Role:</span>
               <strong>Product Designer (UX/UI)</strong>
             </div>
-            <div class="project-tools-list" style="margin-bottom: 0;">
+            <div class="project-tools-list">
               <span class="project-tool-chip">Figma</span>
               <span class="project-tool-chip">UX Research</span>
               <span class="project-tool-chip">Wireframing</span>
@@ -210,7 +340,7 @@
               <span class="meta-label">Role:</span>
               <strong>UX Researcher &amp; Interaction Designer</strong>
             </div>
-            <div class="project-tools-list" style="margin-bottom: 0;">
+            <div class="project-tools-list">
               <span class="project-tool-chip">Figma</span>
               <span class="project-tool-chip">Usability Testing</span>
               <span class="project-tool-chip">User Flows</span>
@@ -244,7 +374,7 @@
               <span class="meta-label">Role:</span>
               <strong>UI Designer · Visual Interaction</strong>
             </div>
-            <div class="project-tools-list" style="margin-bottom: 0;">
+            <div class="project-tools-list">
               <span class="project-tool-chip">Figma</span>
               <span class="project-tool-chip">UI Design</span>
               <span class="project-tool-chip">Adobe Illustrator</span>
@@ -265,7 +395,7 @@
     </div>
 
     <!-- BOTTOM ACTIONS -->
-    <div class="page-actions" style="padding-left: 0; padding-right: 0;">
+    <div class="page-actions">
       <a href="skills.html" class="btn btn-primary">View my skills &amp; expertise →</a>
       <a href="contact.html" class="btn btn-ghost">Get in touch</a>
     </div>

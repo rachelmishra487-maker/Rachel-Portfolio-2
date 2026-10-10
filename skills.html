@@ -13,6 +13,8 @@
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 
 <!-- STICKY NAVBAR -->
 <header class="nav" id="navbar">
@@ -24,7 +26,7 @@
     <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="contact.html" class="nav-cta">Contact</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
@@ -42,24 +44,58 @@
     <p class="page-desc">My end-to-end UX/product design disciplines and industry software competencies, honed across academic case studies and real-world interface systems.</p>
   </header>
 
+  <div class="skills-ambient-glow" aria-hidden="true"></div>
+
   <div class="skills-container">
 
     <!-- 1. UX & PRODUCT DESIGN SKILLS (PRIORITIZED FIRST) -->
     <section class="skills-section-block">
       <div class="skills-section-header">
         <div>
-          <span class="skills-badge" style="margin-bottom: 0.5rem; display: inline-block;">CORE DISCIPLINES</span>
+          <span class="skills-badge">CORE DISCIPLINES</span>
           <h2>UX &amp; Product Design Skills</h2>
         </div>
         <p>From early problem definition and user inquiry to interactive systems, validation, and design-to-code scalability.</p>
       </div>
 
-      <div class="ux-skills-grid">
+      <!-- DISCIPLINE FILTER TABS -->
+      <div class="skills-filter-nav" role="tablist" aria-label="Filter UX skills by discipline">
+        <button type="button" class="skill-filter-btn active" data-filter="all">
+          <span>All Disciplines</span>
+          <span class="filter-count">8</span>
+        </button>
+        <button type="button" class="skill-filter-btn" data-filter="discovery">
+          <span>01 Discovery &amp; Research</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button type="button" class="skill-filter-btn" data-filter="structure">
+          <span>02 Architecture &amp; Flows</span>
+          <span class="filter-count">3</span>
+        </button>
+        <button type="button" class="skill-filter-btn" data-filter="interface">
+          <span>03 UI &amp; Prototyping</span>
+          <span class="filter-count">2</span>
+        </button>
+        <button type="button" class="skill-filter-btn" data-filter="systems">
+          <span>04 Systems &amp; Testing</span>
+          <span class="filter-count">2</span>
+        </button>
+      </div>
+
+      <div class="ux-skills-grid" id="uxSkillsGrid">
         <!-- 1. USER RESEARCH -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="discovery">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">01</span>
-            <span class="ux-skill-tag">Discovery</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">01</span>
+              <span class="ux-skill-tag">Discovery</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-radar" aria-hidden="true">
+              <span class="radar-circle radar-c1"></span>
+              <span class="radar-circle radar-c2"></span>
+              <span class="radar-dot"></span>
+            </div>
           </div>
           <h3>User Research</h3>
           <p>Uncovering real user pain points, behavioral motivations, and unmet needs through qualitative interviews, contextual inquiry, and persona modeling.</p>
@@ -72,10 +108,19 @@
         </article>
 
         <!-- 2. INFORMATION ARCHITECTURE -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="structure">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">02</span>
-            <span class="ux-skill-tag">Structure</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">02</span>
+              <span class="ux-skill-tag">Structure</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-tree" aria-hidden="true">
+              <span class="tree-node tree-root"></span>
+              <span class="tree-line"></span>
+              <span class="tree-node tree-leaf-1"></span>
+              <span class="tree-node tree-leaf-2"></span>
+            </div>
           </div>
           <h3>Information Architecture</h3>
           <p>Structuring complex product ecosystems and categorization logic into intuitive navigation hierarchies so users find what they need with zero cognitive strain.</p>
@@ -88,10 +133,19 @@
         </article>
 
         <!-- 3. USER FLOWS -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="structure">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">03</span>
-            <span class="ux-skill-tag">Logic</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">03</span>
+              <span class="ux-skill-tag">Logic</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-flow" aria-hidden="true">
+              <span class="flow-step step-1"></span>
+              <span class="flow-arrow-line"></span>
+              <span class="flow-step step-2"></span>
+              <span class="flow-packet"></span>
+            </div>
           </div>
           <h3>User Flows</h3>
           <p>Mapping out decision pathways, state progressions, and edge cases to ensure frictionless journeys from initial entry point to successful task completion.</p>
@@ -104,10 +158,20 @@
         </article>
 
         <!-- 4. WIREFRAMING -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="structure">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">04</span>
-            <span class="ux-skill-tag">Layout</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">04</span>
+              <span class="ux-skill-tag">Layout</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-wireframe" aria-hidden="true">
+              <span class="wf-box wf-header"></span>
+              <span class="wf-row">
+                <span class="wf-box wf-side"></span>
+                <span class="wf-box wf-main"></span>
+              </span>
+            </div>
           </div>
           <h3>Wireframing</h3>
           <p>Translating conceptual ideas into low-to-mid-fidelity wireframes to iterate rapidly on spatial composition, content prioritization, and screen layout.</p>
@@ -120,10 +184,19 @@
         </article>
 
         <!-- 5. PROTOTYPING -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="interface">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">05</span>
-            <span class="ux-skill-tag">Interaction</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">05</span>
+              <span class="ux-skill-tag">Interaction</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-proto" aria-hidden="true">
+              <span class="proto-switch-track">
+                <span class="proto-switch-thumb"></span>
+              </span>
+              <span class="proto-sparkle"></span>
+            </div>
           </div>
           <h3>Prototyping</h3>
           <p>Constructing realistic, clickable prototypes with fluid state transitions, dynamic variables, and micro-interactions that test and communicate product behavior.</p>
@@ -136,10 +209,18 @@
         </article>
 
         <!-- 6. UI DESIGN -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="interface">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">06</span>
-            <span class="ux-skill-tag">Visual Craft</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">06</span>
+              <span class="ux-skill-tag">Visual Craft</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-palette" aria-hidden="true">
+              <span class="swatch sw-red"></span>
+              <span class="swatch sw-cyan"></span>
+              <span class="swatch sw-violet"></span>
+            </div>
           </div>
           <h3>UI Design</h3>
           <p>Crafting modern, accessible, and aesthetically engaging user interfaces with balanced whitespace, deliberate typographic scale, and cohesive color systems.</p>
@@ -152,10 +233,19 @@
         </article>
 
         <!-- 7. USABILITY TESTING -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="systems">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">07</span>
-            <span class="ux-skill-tag">Validation</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">07</span>
+              <span class="ux-skill-tag">Validation</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-check" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="var(--red)" stroke-width="2" stroke-dasharray="56" stroke-dashoffset="12" class="gauge-ring"/>
+                <path d="M8 12.5L10.5 15L16 9.5" stroke="var(--white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-mark"/>
+              </svg>
+            </div>
           </div>
           <h3>Usability Testing</h3>
           <p>Validating design assumptions with target users through moderated walkthroughs and task analysis to identify bottlenecks and guide iterative refinement.</p>
@@ -168,10 +258,19 @@
         </article>
 
         <!-- 8. DESIGN SYSTEMS -->
-        <article class="ux-skill-card">
+        <article class="ux-skill-card reveal-on-scroll" data-discipline="systems">
+          <div class="card-border-beam"></div>
           <div class="ux-skill-top">
-            <span class="ux-skill-index">08</span>
-            <span class="ux-skill-tag">Scalability</span>
+            <div class="ux-skill-meta-left">
+              <span class="ux-skill-index">08</span>
+              <span class="ux-skill-tag">Scalability</span>
+            </div>
+            <div class="ux-skill-icon-badge badge-tokens" aria-hidden="true">
+              <span class="token-block tb-1"></span>
+              <span class="token-block tb-2"></span>
+              <span class="token-block tb-3"></span>
+              <span class="token-block tb-4"></span>
+            </div>
           </div>
           <h3>Design Systems</h3>
           <p>Architecting modular design tokens, reusable component libraries with auto-layout variants, and clear documentation that ensure product consistency at scale.</p>
@@ -189,7 +288,7 @@
     <section class="skills-section-block">
       <div class="skills-section-header">
         <div>
-          <span class="skills-badge" style="margin-bottom: 0.5rem; display: inline-block;">SOFTWARE TOOLKIT</span>
+          <span class="skills-badge">SOFTWARE TOOLKIT</span>
           <h2>Design Tools &amp; Software</h2>
         </div>
         <p>Industry-standard applications I use daily for UX exploration, visual design, motion studies, and asset production.</p>
@@ -197,85 +296,332 @@
 
       <div class="tools-grid">
         <!-- TOOL 1: FIGMA -->
-        <article class="tool-card">
+        <article class="tool-card tool-card-figma reveal-on-scroll">
+          <div class="tool-glow-aurora" aria-hidden="true"></div>
           <div class="tool-top">
-            <div class="tool-icon-box" style="background: rgba(255, 42, 58, 0.1); border: 1.5px solid rgba(255, 42, 58, 0.35);">
-              <svg width="24" height="24" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
-                <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
-                <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
-                <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
-                <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+            <div class="tool-icon-box tool-icon-figma">
+              <svg width="24" height="24" viewBox="0 0 38 57" fill="none" class="figma-svg-anim" xmlns="http://www.w3.org/2000/svg">
+                <path class="figma-p1" d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                <path class="figma-p2" d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                <path class="figma-p3" d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                <path class="figma-p4" d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                <path class="figma-p5" d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
               </svg>
             </div>
             <div class="tool-meta">
-              <h3>Figma</h3>
+              <div class="tool-title-row">
+                <h3>Figma</h3>
+                <span class="tool-flagship-pill"><span class="pill-dot"></span> Core</span>
+              </div>
               <span class="tool-category">Primary Product Tool</span>
             </div>
           </div>
           <p>My core environment for UI design, design token architecture, auto-layout components, interactive prototypes, and developer handoff.</p>
+          
+          <!-- ANIMATED PROFICIENCY GAUGE -->
+          <div class="tool-meter-box">
+            <div class="tool-meter-labels">
+              <span class="tool-meter-label">Mastery Level</span>
+              <span class="tool-meter-val" data-target="98">0%</span>
+            </div>
+            <div class="tool-meter-track">
+              <div class="tool-meter-fill" style="--target-width: 98%;">
+                <span class="meter-glint"></span>
+              </div>
+            </div>
+            <div class="tool-meter-caption">
+              <span class="meter-bullet"></span>
+              <span>Daily Driver · Tokens &amp; Variants</span>
+            </div>
+          </div>
+
+          <div class="tool-chips-wrap">
+            <span class="tool-chip">Auto-Layout 5</span>
+            <span class="tool-chip">Variables</span>
+            <span class="tool-chip">Prototypes</span>
+            <span class="tool-chip">Dev Specs</span>
+          </div>
         </article>
 
         <!-- TOOL 2: ADOBE ILLUSTRATOR -->
-        <article class="tool-card">
+        <article class="tool-card tool-card-ai reveal-on-scroll">
+          <div class="tool-glow-aurora" aria-hidden="true"></div>
           <div class="tool-top">
-            <div class="tool-icon-box" style="background: #331400; border: 1.5px solid #FF7C00;">
-              <span style="color: #FFAA44; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ai</span>
+            <div class="tool-icon-box tool-icon-ai">
+              <span class="tool-letter-ai">Ai</span>
+              <span class="vector-anchor anchor-tl"></span>
+              <span class="vector-anchor anchor-br"></span>
             </div>
             <div class="tool-meta">
-              <h3>Illustrator</h3>
+              <div class="tool-title-row">
+                <h3>Illustrator</h3>
+              </div>
               <span class="tool-category">Vector &amp; Identity</span>
             </div>
           </div>
           <p>Precision vector illustration, custom iconography systems, scalable identity assets, and brand design elements.</p>
+          
+          <!-- ANIMATED PROFICIENCY GAUGE -->
+          <div class="tool-meter-box">
+            <div class="tool-meter-labels">
+              <span class="tool-meter-label">Mastery Level</span>
+              <span class="tool-meter-val" data-target="90">0%</span>
+            </div>
+            <div class="tool-meter-track">
+              <div class="tool-meter-fill" style="--target-width: 90%;">
+                <span class="meter-glint"></span>
+              </div>
+            </div>
+            <div class="tool-meter-caption">
+              <span class="meter-bullet"></span>
+              <span>Custom Icons &amp; Vector Branding</span>
+            </div>
+          </div>
+
+          <div class="tool-chips-wrap">
+            <span class="tool-chip">Pen Tool</span>
+            <span class="tool-chip">Icon Sets</span>
+            <span class="tool-chip">Logomarks</span>
+            <span class="tool-chip">SVG Export</span>
+          </div>
         </article>
 
         <!-- TOOL 3: ADOBE PHOTOSHOP -->
-        <article class="tool-card">
+        <article class="tool-card tool-card-ps reveal-on-scroll">
+          <div class="tool-glow-aurora" aria-hidden="true"></div>
           <div class="tool-top">
-            <div class="tool-icon-box" style="background: #001E36; border: 1.5px solid #31A8FF;">
-              <span style="color: #31A8FF; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ps</span>
+            <div class="tool-icon-box tool-icon-ps">
+              <span class="tool-letter-ps">Ps</span>
+              <span class="ps-scanline" aria-hidden="true"></span>
             </div>
             <div class="tool-meta">
-              <h3>Photoshop</h3>
+              <div class="tool-title-row">
+                <h3>Photoshop</h3>
+              </div>
               <span class="tool-category">Image Editing</span>
             </div>
           </div>
           <p>High-resolution image editing, photo manipulation, background retouching, texture work, and composite asset creation.</p>
+          
+          <!-- ANIMATED PROFICIENCY GAUGE -->
+          <div class="tool-meter-box">
+            <div class="tool-meter-labels">
+              <span class="tool-meter-label">Mastery Level</span>
+              <span class="tool-meter-val" data-target="88">0%</span>
+            </div>
+            <div class="tool-meter-track">
+              <div class="tool-meter-fill" style="--target-width: 88%;">
+                <span class="meter-glint"></span>
+              </div>
+            </div>
+            <div class="tool-meter-caption">
+              <span class="meter-bullet"></span>
+              <span>Compositing &amp; Retouching</span>
+            </div>
+          </div>
+
+          <div class="tool-chips-wrap">
+            <span class="tool-chip">Compositing</span>
+            <span class="tool-chip">Retouching</span>
+            <span class="tool-chip">Masking</span>
+            <span class="tool-chip">Mockup Staging</span>
+          </div>
         </article>
 
         <!-- TOOL 4: ADOBE AFTER EFFECTS -->
-        <article class="tool-card">
+        <article class="tool-card tool-card-ae reveal-on-scroll">
+          <div class="tool-glow-aurora" aria-hidden="true"></div>
           <div class="tool-top">
-            <div class="tool-icon-box" style="background: #180036; border: 1.5px solid #9999FF;">
-              <span style="color: #D1D1FF; font-family: var(--ff-display); font-weight: 800; font-size: 1.15rem;">Ae</span>
+            <div class="tool-icon-box tool-icon-ae">
+              <span class="tool-letter-ae">Ae</span>
+              <div class="ae-keyframe-track" aria-hidden="true">
+                <span class="kf-diamond kf-1"></span>
+                <span class="kf-diamond kf-2"></span>
+              </div>
             </div>
             <div class="tool-meta">
-              <h3>After Effects</h3>
+              <div class="tool-title-row">
+                <h3>After Effects</h3>
+              </div>
               <span class="tool-category">Motion &amp; Animation</span>
             </div>
           </div>
           <p>UI motion studies, dynamic screen choreography, kinetic micro-interactions, and visual animation demonstrations.</p>
+          
+          <!-- ANIMATED PROFICIENCY GAUGE -->
+          <div class="tool-meter-box">
+            <div class="tool-meter-labels">
+              <span class="tool-meter-label">Mastery Level</span>
+              <span class="tool-meter-val" data-target="84">0%</span>
+            </div>
+            <div class="tool-meter-track">
+              <div class="tool-meter-fill" style="--target-width: 84%;">
+                <span class="meter-glint"></span>
+              </div>
+            </div>
+            <div class="tool-meter-caption">
+              <span class="meter-bullet"></span>
+              <span>Screen Choreography &amp; Easing</span>
+            </div>
+          </div>
+
+          <div class="tool-chips-wrap">
+            <span class="tool-chip">UI Motion</span>
+            <span class="tool-chip">Micro-actions</span>
+            <span class="tool-chip">Easing Curves</span>
+            <span class="tool-chip">Lottie Specs</span>
+          </div>
         </article>
 
         <!-- TOOL 5: CANVA -->
-        <article class="tool-card">
+        <article class="tool-card tool-card-canva reveal-on-scroll">
+          <div class="tool-glow-aurora" aria-hidden="true"></div>
           <div class="tool-top">
-            <div class="tool-icon-box" style="background: linear-gradient(135deg, #00C4CC 0%, #7D2AE8 100%); border: 1.5px solid #00C4CC;">
-              <span style="color: #FFFFFF; font-family: var(--ff-display); font-weight: 900; font-size: 1.25rem;">C</span>
+            <div class="tool-icon-box tool-icon-canva">
+              <span class="tool-letter-canva">C</span>
+              <span class="canva-sparkle" aria-hidden="true">✦</span>
             </div>
             <div class="tool-meta">
-              <h3>Canva</h3>
+              <div class="tool-title-row">
+                <h3>Canva</h3>
+              </div>
               <span class="tool-category">Visual Collateral</span>
             </div>
           </div>
           <p>Rapid presentation deck layouts, visual documentation, concept pitch slides, and social collateral design.</p>
+          
+          <!-- ANIMATED PROFICIENCY GAUGE -->
+          <div class="tool-meter-box">
+            <div class="tool-meter-labels">
+              <span class="tool-meter-label">Mastery Level</span>
+              <span class="tool-meter-val" data-target="92">0%</span>
+            </div>
+            <div class="tool-meter-track">
+              <div class="tool-meter-fill" style="--target-width: 92%;">
+                <span class="meter-glint"></span>
+              </div>
+            </div>
+            <div class="tool-meter-caption">
+              <span class="meter-bullet"></span>
+              <span>Pitch Decks &amp; Executive Slides</span>
+            </div>
+          </div>
+
+          <div class="tool-chips-wrap">
+            <span class="tool-chip">Pitch Decks</span>
+            <span class="tool-chip">Keynotes</span>
+            <span class="tool-chip">Social Kits</span>
+            <span class="tool-chip">Concept Decks</span>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- 3. INTERACTIVE FIGMA PROTOTYPE & TOKEN SANDBOX -->
+    <section class="skills-sandbox-section reveal-on-scroll">
+      <div class="sandbox-glass-card">
+        <div class="sandbox-header">
+          <div class="sandbox-title-wrap">
+            <span class="sandbox-badge">
+              <span class="live-indicator"></span>
+              LIVE INTERACTIVE PLAYGROUND
+            </span>
+            <h3>Figma Component &amp; Token Sandbox</h3>
+            <p>Interactive demonstration of design token architecture, auto-layout variables, and dynamic button state logic.</p>
+          </div>
+          <div class="sandbox-figma-badge">
+            <svg width="15" height="22" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+              <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+              <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+              <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+              <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+            </svg>
+            <span>Figma Token Engine</span>
+          </div>
+        </div>
+
+        <div class="sandbox-body" id="sandboxApp">
+          <!-- LEFT CONTROLS -->
+          <div class="sandbox-controls">
+            <!-- State Selector -->
+            <div class="control-group">
+              <label class="control-label">Component State</label>
+              <div class="sandbox-pill-group" id="statePills">
+                <button type="button" class="sandbox-pill active" data-state="default">Default</button>
+                <button type="button" class="sandbox-pill" data-state="hover">Hover</button>
+                <button type="button" class="sandbox-pill" data-state="active">Active</button>
+                <button type="button" class="sandbox-pill" data-state="loading">Loading</button>
+                <button type="button" class="sandbox-pill" data-state="disabled">Disabled</button>
+              </div>
+            </div>
+
+            <!-- Color Token Swatches -->
+            <div class="control-group">
+              <label class="control-label">Brand Token Variable</label>
+              <div class="token-swatches" id="colorSwatches">
+                <button type="button" class="swatch-btn active" data-token="crimson" data-color="#FF2A3A" data-rgb="255, 42, 58" style="--c: #FF2A3A;" title="Brand Crimson ($color-brand-primary)" aria-label="Brand Crimson"></button>
+                <button type="button" class="swatch-btn" data-token="cyan" data-color="#00F0FF" data-rgb="0, 240, 255" style="--c: #00F0FF;" title="Electric Cyan ($color-accent-cyan)" aria-label="Electric Cyan"></button>
+                <button type="button" class="swatch-btn" data-token="violet" data-color="#A259FF" data-rgb="162, 89, 255" style="--c: #A259FF;" title="Figma Violet ($color-accent-violet)" aria-label="Figma Violet"></button>
+                <button type="button" class="swatch-btn" data-token="emerald" data-color="#00E599" data-rgb="0, 229, 153" style="--c: #00E599;" title="Emerald Mint ($color-accent-emerald)" aria-label="Emerald Mint"></button>
+              </div>
+            </div>
+
+            <!-- Auto-Layout Padding -->
+            <div class="control-group">
+              <div class="control-header-row">
+                <label class="control-label">Auto-Layout Padding</label>
+                <span class="control-value-readout" id="paddingReadout">14px · 28px</span>
+              </div>
+              <div class="sandbox-pill-group" id="densityPills">
+                <button type="button" class="sandbox-pill" data-density="compact">Compact (8px)</button>
+                <button type="button" class="sandbox-pill active" data-density="default">Default (14px)</button>
+                <button type="button" class="sandbox-pill" data-density="spacious">Spacious (20px)</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER STAGE: LIVE COMPONENT PREVIEW -->
+          <div class="sandbox-stage">
+            <div class="stage-canvas-dots" aria-hidden="true"></div>
+            <div class="demo-card-preview" id="demoCard">
+              <div class="demo-chip-preview">
+                <span class="demo-dot"></span>
+                <span id="demoTokenName">$color-brand-primary</span>
+              </div>
+              <h4 class="demo-title">Interactive UI Prototype</h4>
+              <p class="demo-sub">Click any controls on the left to test state transitions, auto-layout variants, and token reactivity.</p>
+              <div class="demo-button-wrapper">
+                <button type="button" class="demo-action-btn" id="sandboxDemoBtn">
+                  <span class="demo-btn-text">Explore Prototype</span>
+                  <span class="demo-btn-icon">→</span>
+                  <span class="demo-spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: LIVE TOKEN / CSS SPEC INSPECTOR -->
+          <div class="sandbox-inspector">
+            <div class="inspector-header">
+              <span class="inspector-tab active">CSS / Token Spec</span>
+              <span class="inspector-lang">Design System</span>
+            </div>
+            <pre class="inspector-code"><code id="inspectorCode">/* Figma Token Output */
+.btn-primary {
+  --btn-bg: #FF2A3A;
+  padding: 14px 28px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(255, 42, 58, 0.35);
+  transition: all 0.25s ease;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- BOTTOM ACTIONS -->
-    <div class="page-actions" style="padding-left: 0; padding-right: 0;">
+    <div class="page-actions">
       <a href="projects.html" class="btn btn-primary">See my skills in action on GoUni →</a>
       <a href="contact.html" class="btn btn-ghost">Get in touch for internships</a>
     </div>

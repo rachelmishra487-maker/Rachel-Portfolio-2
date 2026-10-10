@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="intBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0F13"/>
+      <stop offset="100%" stop-color="#141820"/>
+    </linearGradient>
+    <filter id="intDrop" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#intBg)"/>
+
+  <!-- Top Title -->
+  <g transform="translate(80, 60)">
+    <rect x="0" y="0" width="230" height="28" rx="14" fill="#1E2812" stroke="#374820" stroke-width="1"/>
+    <text x="14" y="18" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1">PRIMARY USER RESEARCH</text>
+
+    <text x="0" y="65" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="800">Doctor Interviews &amp; Field Insights</text>
+    <text x="0" y="92" fill="#8899AC" font-family="'Inter', sans-serif" font-size="15">Qualitative interviews with practicing medical specialists uncovering emotional burnout triggers</text>
+  </g>
+
+  <!-- 3 Doctor Personas Columns -->
+  <g transform="translate(80, 185)">
+    <!-- Doctor 1: Dr. Bhushan -->
+    <g transform="translate(0, 0)" filter="url(#intDrop)">
+      <rect x="0" y="0" width="325" height="480" rx="16" fill="#13171F" stroke="#232936" stroke-width="1.5"/>
+      <rect x="0" y="0" width="325" height="6" rx="3" fill="#D4FF00"/>
+      
+      <circle cx="50" cy="50" r="26" fill="#1E2632"/>
+      <text x="50" y="56" fill="#D4FF00" font-family="sans-serif" font-size="20" text-anchor="middle">👨‍⚕️</text>
+      
+      <text x="90" y="44" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Dr. Bhushan, 36</text>
+      <text x="90" y="64" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Gastroenterologist</text>
+
+      <rect x="20" y="95" width="285" height="1" fill="#202633"/>
+
+      <text x="20" y="125" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CORE PAIN POINT</text>
+      <text x="20" y="148" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13" font-style="italic">"Current digital tools are too clinical and detached from emotional well-being."</text>
+
+      <text x="20" y="225" fill="#A0AEC0" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">KEY USER FINDINGS</text>
+      <text x="20" y="252" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Values peer discussions after heavy cases</text>
+      <text x="20" y="278" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Time rarely aligns during hectic shifts</text>
+      <text x="20" y="304" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Wants micro-community post-shift</text>
+      <text x="20" y="330" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Automatic recovery sessions post-surgery</text>
+
+      <rect x="20" y="380" width="285" height="75" rx="10" fill="#1A2016" stroke="#33421C" stroke-width="1"/>
+      <text x="35" y="405" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">CRITICAL DESIGN NEED</text>
+      <text x="35" y="426" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">"Doctors don't want to feel monitored; non-judgmental tone is essential."</text>
+    </g>
+
+    <!-- Doctor 2: Dr. Anushka -->
+    <g transform="translate(355, 0)" filter="url(#intDrop)">
+      <rect x="0" y="0" width="325" height="480" rx="16" fill="#13171F" stroke="#232936" stroke-width="1.5"/>
+      <rect x="0" y="0" width="325" height="6" rx="3" fill="#38BDF8"/>
+      
+      <circle cx="50" cy="50" r="26" fill="#1E2632"/>
+      <text x="50" y="56" fill="#38BDF8" font-family="sans-serif" font-size="20" text-anchor="middle">👩‍⚕️</text>
+      
+      <text x="90" y="44" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Dr. Anushka, 29</text>
+      <text x="90" y="64" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Pediatrician</text>
+
+      <rect x="20" y="95" width="285" height="1" fill="#202633"/>
+
+      <text x="20" y="125" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CORE PAIN POINT</text>
+      <text x="20" y="148" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13" font-style="italic">"Emotional fatigue comes from empathetic overload—distressed kids &amp; parents."</text>
+
+      <text x="20" y="225" fill="#A0AEC0" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">KEY USER FINDINGS</text>
+      <text x="20" y="252" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Wants short 'decompression check-ins'</text>
+      <text x="20" y="278" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Mood tracking synced with smartwatch</text>
+      <text x="20" y="304" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Shared community gratitude wall</text>
+      <text x="20" y="330" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• 'One good moment from the day' concept</text>
+
+      <rect x="20" y="380" width="285" height="75" rx="10" fill="#142129" stroke="#1D3E4F" stroke-width="1"/>
+      <text x="35" y="405" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">CRITICAL DESIGN NEED</text>
+      <text x="35" y="426" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">AI co-pilot summaries reflecting on emotional trends without cognitive friction.</text>
+    </g>
+
+    <!-- Doctor 3: Dr. Vipul -->
+    <g transform="translate(710, 0)" filter="url(#intDrop)">
+      <rect x="0" y="0" width="325" height="480" rx="16" fill="#13171F" stroke="#232936" stroke-width="1.5"/>
+      <rect x="0" y="0" width="325" height="6" rx="3" fill="#A855F7"/>
+      
+      <circle cx="50" cy="50" r="26" fill="#1E2632"/>
+      <text x="50" y="56" fill="#A855F7" font-family="sans-serif" font-size="20" text-anchor="middle">👨‍⚕️</text>
+      
+      <text x="90" y="44" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Dr. Vipul, 54</text>
+      <text x="90" y="64" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Forensic Medicine</text>
+
+      <rect x="20" y="95" width="285" height="1" fill="#202633"/>
+
+      <text x="20" y="125" fill="#A855F7" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">CORE PAIN POINT</text>
+      <text x="20" y="148" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="13" font-style="italic">"Stress is psychological rather than physical—trauma, crime, courtroom scrutiny."</text>
+
+      <text x="20" y="225" fill="#A0AEC0" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">KEY USER FINDINGS</text>
+      <text x="20" y="252" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Pattern recognition flags recurring stress</text>
+      <text x="20" y="278" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Sleep loss &amp; erratic duty hours</text>
+      <text x="20" y="304" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Dual-mode recovery architecture</text>
+      <text x="20" y="330" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12.5">• Open forum sharing with specialists</text>
+
+      <rect x="20" y="380" width="285" height="75" rx="10" fill="#20152B" stroke="#482363" stroke-width="1"/>
+      <text x="35" y="405" fill="#A855F7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">CRITICAL DESIGN NEED</text>
+      <text x="35" y="426" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12">End-to-end data encryption &amp; anonymity for sensitive medico-legal cases.</text>
+    </g>
+  </g>
+</svg>

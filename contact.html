@@ -13,9 +13,11 @@
 <body class="subpage">
 
 <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 
 <!-- NAV -->
-<header class="nav">
+<header class="nav" id="navbar">
   <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links" id="navLinks">
     <a href="about.html">About</a>
@@ -24,7 +26,7 @@
     <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="contact.html" class="nav-cta active">Contact</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
@@ -136,15 +138,15 @@
             <span>☎</span>
             <span>Phone Number</span>
           </span>
-          <div class="contact-tile-value">+91 98765 43210</div>
+          <div class="contact-tile-value">+91 75074 44004</div>
           <p class="contact-tile-desc">Available for phone screenings, voice interviews, and quick WhatsApp chats.</p>
         </div>
         <div class="contact-tile-actions">
-          <a href="tel:+919876543210" class="contact-action-btn">
+          <a href="tel:+917507444004" class="contact-action-btn">
             <span>Call Now</span>
             <span>↗</span>
           </a>
-          <button type="button" class="contact-action-btn secondary" onclick="copyToClipboard('+91 98765 43210', 'Phone number')">
+          <button type="button" class="contact-action-btn secondary" onclick="copyToClipboard('+91 75074 44004', 'Phone number')">
             <span>Copy</span>
           </button>
         </div>

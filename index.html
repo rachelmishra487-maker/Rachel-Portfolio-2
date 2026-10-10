@@ -7,15 +7,17 @@
 <meta name="description" content="UI/UX Designer portfolio of Rachel Mishra, final-year design student at Symbiosis Institute of Design (SID), Nagpur.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 
 <!-- NAV -->
-<header class="nav">
+<header class="nav" id="navbar">
   <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
   <nav class="nav-links" id="navLinks">
     <a href="about.html">About</a>
@@ -24,7 +26,7 @@
     <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="contact.html" class="nav-cta">Contact</a>
   </nav>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
@@ -73,60 +75,62 @@
 
 <!-- EXPLORE SECTIONS -->
 <section class="home-explore">
-  <div class="explore-heading">
-    <div>
-      <h2>Portfolio Overview</h2>
-      <p>Navigate through work, background, and capabilities</p>
+  <div class="home-explore-inner">
+    <div class="explore-heading">
+      <div>
+        <h2>Portfolio Overview</h2>
+        <p>Navigate through work, background, and capabilities</p>
+      </div>
     </div>
-  </div>
-  <div class="explore-grid">
-    <a href="about.html" class="explore-card">
-      <div>
-        <div class="explore-card-top">
-          <span class="explore-card-num">01 · About</span>
-          <span class="explore-card-arrow">→</span>
+    <div class="explore-grid">
+      <a href="about.html" class="explore-card">
+        <div>
+          <div class="explore-card-top">
+            <span class="explore-card-num">01 · About</span>
+            <span class="explore-card-arrow">→</span>
+          </div>
+          <h3>Design Philosophy &amp; Story</h3>
+          <p>Learn about my background at SID Nagpur, design approach, human-centered principles, and design system philosophy.</p>
         </div>
-        <h3>Design Philosophy &amp; Story</h3>
-        <p>Learn about my background at SID Nagpur, design approach, human-centered principles, and design system philosophy.</p>
-      </div>
-      <span class="explore-card-cta">Read my story →</span>
-    </a>
+        <span class="explore-card-cta">Read my story →</span>
+      </a>
 
-    <a href="projects.html" class="explore-card">
-      <div>
-        <div class="explore-card-top">
-          <span class="explore-card-num">02 · Projects</span>
-          <span class="explore-card-arrow">→</span>
+      <a href="projects.html" class="explore-card">
+        <div>
+          <div class="explore-card-top">
+            <span class="explore-card-num">02 · Projects</span>
+            <span class="explore-card-arrow">→</span>
+          </div>
+          <h3>Featured Projects: GoUni &amp; The Healing Circle</h3>
+          <p>Higher Education Portal (Figma System) &amp; Doctor Burnout System (USDR Sem 5). Explore interactive case studies and research decks.</p>
         </div>
-        <h3>Featured Project: GoUni</h3>
-        <p>Higher Education Portal &amp; Design System. Explore the live interactive Figma deck and case studies.</p>
-      </div>
-      <span class="explore-card-cta">View GoUni Figma Deck →</span>
-    </a>
+        <span class="explore-card-cta">View GoUni Figma Deck →</span>
+      </a>
 
-    <a href="skills.html" class="explore-card">
-      <div>
-        <div class="explore-card-top">
-          <span class="explore-card-num">03 · Skills &amp; Expertise</span>
-          <span class="explore-card-arrow">→</span>
+      <a href="skills.html" class="explore-card">
+        <div>
+          <div class="explore-card-top">
+            <span class="explore-card-num">03 · Skills &amp; Expertise</span>
+            <span class="explore-card-arrow">→</span>
+          </div>
+          <h3>Software &amp; Design Areas</h3>
+          <p>Proficiencies in Figma, Illustrator, Canva, After Effects, Photoshop, user research, wireframing, and design systems.</p>
         </div>
-        <h3>Software &amp; Design Areas</h3>
-        <p>Proficiencies in Figma, Illustrator, Canva, After Effects, Photoshop, user research, wireframing, and design systems.</p>
-      </div>
-      <span class="explore-card-cta">View full skill matrix →</span>
-    </a>
+        <span class="explore-card-cta">View full skill matrix →</span>
+      </a>
 
-    <a href="contact.html" class="explore-card">
-      <div>
-        <div class="explore-card-top">
-          <span class="explore-card-num">04 · Contact</span>
-          <span class="explore-card-arrow">→</span>
+      <a href="contact.html" class="explore-card">
+        <div>
+          <div class="explore-card-top">
+            <span class="explore-card-num">04 · Contact</span>
+            <span class="explore-card-arrow">→</span>
+          </div>
+          <h3>Direct Contact Info</h3>
+          <p>Reach out directly via phone or email for design collaborations, internships, and conversations.</p>
         </div>
-        <h3>Direct Contact Info</h3>
-        <p>Reach out directly via phone or email for design collaborations, internships, and conversations.</p>
-      </div>
-      <span class="explore-card-cta">Get contact details →</span>
-    </a>
+        <span class="explore-card-cta">Get contact details →</span>
+      </a>
+    </div>
   </div>
 </section>
 

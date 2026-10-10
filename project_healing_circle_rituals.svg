@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="ritBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1114"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="ritLimeCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#243015"/>
+      <stop offset="100%" stop-color="#182010"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#ritBg)"/>
+
+  <!-- Header -->
+  <g transform="translate(80, 55)">
+    <rect x="0" y="0" width="245" height="28" rx="14" fill="#1F2812" stroke="#3A4C22" stroke-width="1"/>
+    <text x="14" y="18" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1">PHYSICAL + DIGITAL ARTIFACTS</text>
+
+    <text x="0" y="62" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="800">Physical Debrief Zones &amp; Micro-Rituals</text>
+    <text x="0" y="88" fill="#8899AC" font-family="'Inter', sans-serif" font-size="15">Low-effort, evidence-based sanctuary spaces and restorative rituals embedded into clinical shifts</text>
+  </g>
+
+  <!-- Left: Physical Debrief Zone Anatomy -->
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="480" height="490" rx="18" fill="#13171F" stroke="#252D3D" stroke-width="1.5"/>
+    
+    <g transform="translate(30, 30)">
+      <text x="0" y="15" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="1">ZONE SPECIFICATIONS</text>
+      <text x="0" y="42" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">The Restorative Sanctuary</text>
+      <text x="0" y="68" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">Calm, sound-dampened spaces built adjacent to surgical &amp; ICU corridors</text>
+
+      <!-- Sensory Feature Pillars -->
+      <g transform="translate(0, 95)">
+        <rect x="0" y="0" width="420" height="60" rx="12" fill="#1A202A" stroke="#263140" stroke-width="1"/>
+        <text x="20" y="27" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">🌿 Biophilic &amp; Nature Visuals</text>
+        <text x="20" y="47" fill="#7E92A8" font-family="'Inter', sans-serif" font-size="12">Live plants and organic greenery lowering cortisol levels</text>
+      </g>
+
+      <g transform="translate(0, 168)">
+        <rect x="0" y="0" width="420" height="60" rx="12" fill="#1A202A" stroke="#263140" stroke-width="1"/>
+        <text x="20" y="27" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">🏮 Warm Ambient Lighting</text>
+        <text x="20" y="47" fill="#7E92A8" font-family="'Inter', sans-serif" font-size="12">2700K soft lamps replacing harsh fluorescent clinical bulbs</text>
+      </g>
+
+      <g transform="translate(0, 241)">
+        <rect x="0" y="0" width="420" height="60" rx="12" fill="#1A202A" stroke="#263140" stroke-width="1"/>
+        <text x="20" y="27" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">🛋️ Ergonomic Decompression Seating</text>
+        <text x="20" y="47" fill="#7E92A8" font-family="'Inter', sans-serif" font-size="12">Low organic tables, noise dampening, and hydration points</text>
+      </g>
+
+      <g transform="translate(0, 314)">
+        <rect x="0" y="0" width="420" height="60" rx="12" fill="#1A202A" stroke="#263140" stroke-width="1"/>
+        <text x="20" y="27" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">🔒 Zero Clinical Signage</text>
+        <text x="20" y="47" fill="#7E92A8" font-family="'Inter', sans-serif" font-size="12">Complete disconnection from monitors, pagers, and patient beds</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: 4 Micro-Rituals Grid -->
+  <g transform="translate(600, 180)">
+    <!-- Ritual 1: 1-Min Breathing -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="250" height="235" rx="16" fill="url(#ritLimeCard)" stroke="#4A6122" stroke-width="1.5"/>
+      <circle cx="36" cy="36" r="16" fill="#D4FF00"/>
+      <text x="36" y="42" fill="#0E1114" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+      <text x="64" y="41" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">60-SEC RITUAL</text>
+
+      <text x="20" y="85" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">1-Min Deep Breathing</text>
+      <text x="20" y="112" fill="#D2E0B5" font-family="'Inter', sans-serif" font-size="12.5" line-height="1.4">Guided breathing via ambient sound or smartwatch haptic pulse. Inhale-exhale sync restores autonomic balance.</text>
+      
+      <rect x="20" y="180" width="125" height="26" rx="6" fill="#17220C"/>
+      <text x="82" y="197" fill="#D4FF00" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">⚡ Vagus Nerve Reset</text>
+    </g>
+
+    <!-- Ritual 2: Gratitude Wall -->
+    <g transform="translate(270, 0)">
+      <rect x="0" y="0" width="250" height="235" rx="16" fill="#141822" stroke="#252F42" stroke-width="1.5"/>
+      <circle cx="36" cy="36" r="16" fill="#38BDF8"/>
+      <text x="36" y="42" fill="#0E1114" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+      <text x="64" y="41" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">3-MIN RITUAL</text>
+
+      <text x="20" y="85" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">The Gratitude Wall</text>
+      <text x="20" y="112" fill="#8CA4C2" font-family="'Inter', sans-serif" font-size="12.5">Anonymous peer notes acknowledging resilience: "Thanks for taking that emergency" or "Handled that code calmly."</text>
+      
+      <rect x="20" y="180" width="135" height="26" rx="6" fill="#132433"/>
+      <text x="87" y="197" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">🤝 Psychological Safety</text>
+    </g>
+
+    <!-- Ritual 3: Reflective Voice Notes -->
+    <g transform="translate(0, 255)">
+      <rect x="0" y="0" width="250" height="235" rx="16" fill="#141822" stroke="#252F42" stroke-width="1.5"/>
+      <circle cx="36" cy="36" r="16" fill="#F472B6"/>
+      <text x="36" y="42" fill="#0E1114" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+      <text x="64" y="41" fill="#F472B6" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">5-MIN RITUAL</text>
+
+      <text x="20" y="85" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">Healing Voice Notes</text>
+      <text x="20" y="112" fill="#8CA4C2" font-family="'Inter', sans-serif" font-size="12.5">QR-linked shared audio playlists and short reflective voice prompts from peers navigating tough shifts.</text>
+      
+      <rect x="20" y="180" width="125" height="26" rx="6" fill="#2E1724"/>
+      <text x="82" y="197" fill="#F472B6" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">🎧 Auditory Relief</text>
+    </g>
+
+    <!-- Ritual 4: Peer Circles -->
+    <g transform="translate(270, 255)">
+      <rect x="0" y="0" width="250" height="235" rx="16" fill="#141822" stroke="#252F42" stroke-width="1.5"/>
+      <circle cx="36" cy="36" r="16" fill="#FBBF24"/>
+      <text x="36" y="42" fill="#0E1114" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">4</text>
+      <text x="64" y="41" fill="#FBBF24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">10-MIN RITUAL</text>
+
+      <text x="20" y="85" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">Guided Peer Circle</text>
+      <text x="20" y="112" fill="#8CA4C2" font-family="'Inter', sans-serif" font-size="12.5">4–6 peer huddles using scripted questions to debrief traumatic cases and prevent vicarious traumatization.</text>
+      
+      <rect x="20" y="180" width="135" height="26" rx="6" fill="#2B220F"/>
+      <text x="87" y="197" fill="#FBBF24" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle">👥 Empathy Circles</text>
+    </g>
+  </g>
+</svg>
