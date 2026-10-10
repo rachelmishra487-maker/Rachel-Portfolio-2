@@ -35,7 +35,11 @@
 
       <rect x="14" y="270" width="167" height="90" rx="10" fill="#1A2016" stroke="#2F3E1A" stroke-width="1"/>
       <text x="24" y="295" fill="#D4FF00" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">PSYCHOLOGICAL STATE</text>
-      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Empathy fatigue, elevated cortisol, emotional suppression.</text>
+      <text x="24" y="316" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11">
+        <tspan x="24" dy="0">Empathy fatigue,</tspan>
+        <tspan x="24" dy="15">elevated cortisol, and</tspan>
+        <tspan x="24" dy="15">emotional suppression.</tspan>
+      </text>
     </g>
 
     <!-- Arrow 1-2 -->
@@ -57,7 +61,11 @@
 
       <rect x="14" y="270" width="167" height="90" rx="10" fill="#14212C" stroke="#1F3A4F" stroke-width="1"/>
       <text x="24" y="295" fill="#38BDF8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">TOUCHPOINT</text>
-      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Zero-pressure invitation to take 2-min pause before next patient.</text>
+      <text x="24" y="316" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11">
+        <tspan x="24" dy="0">Zero-pressure nudge</tspan>
+        <tspan x="24" dy="15">to take a 2-min pause</tspan>
+        <tspan x="24" dy="15">before next patient.</tspan>
+      </text>
     </g>
 
     <!-- Arrow 2-3 -->
@@ -79,7 +87,11 @@
 
       <rect x="14" y="270" width="167" height="90" rx="10" fill="#21172E" stroke="#412461" stroke-width="1"/>
       <text x="24" y="295" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SANCTUARY SPACE</text>
-      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Sensory restoration with soft light, plants, and peer comfort.</text>
+      <text x="24" y="316" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11">
+        <tspan x="24" dy="0">Sensory restoration</tspan>
+        <tspan x="24" dy="15">with soft ambient light,</tspan>
+        <tspan x="24" dy="15">plants, &amp; peer care.</tspan>
+      </text>
     </g>
 
     <!-- Arrow 3-4 -->
@@ -101,7 +113,11 @@
 
       <rect x="14" y="270" width="167" height="90" rx="10" fill="#29151C" stroke="#4E1F2E" stroke-width="1"/>
       <text x="24" y="295" fill="#FB7185" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SHARED RESILIENCE</text>
-      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Reframing traumatic stress into shared team empathy.</text>
+      <text x="24" y="316" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11">
+        <tspan x="24" dy="0">Reframing traumatic</tspan>
+        <tspan x="24" dy="15">shift stress into</tspan>
+        <tspan x="24" dy="15">shared team empathy.</tspan>
+      </text>
     </g>
 
     <!-- Arrow 4-5 -->
@@ -123,7 +139,11 @@
 
       <rect x="14" y="270" width="167" height="90" rx="10" fill="#152417" stroke="#224527" stroke-width="1"/>
       <text x="24" y="295" fill="#4ADE80" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">HOSPITAL IMPACT</text>
-      <text x="24" y="318" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5">Sustainable retention, reduced burnout, improved patient care.</text>
+      <text x="24" y="316" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11">
+        <tspan x="24" dy="0">Sustainable retention,</tspan>
+        <tspan x="24" dy="15">reduced burnout, and</tspan>
+        <tspan x="24" dy="15">better patient care.</tspan>
+      </text>
     </g>
   </g>
 </svg>
