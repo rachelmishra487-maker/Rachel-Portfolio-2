@@ -1015,7 +1015,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   margin: 0;
 }
 
-/* ---------- SKILLS & EXPERTISE PAGE (UX & PRODUCT DESIGN FIRST) ---------- */
+/* ---------- SKILLS & EXPERTISE PAGE (UI/UX DESIGN FIRST) ---------- */
 .skills-container {
   padding: 0 6vw 5rem;
   max-width: 1400px;
@@ -1064,7 +1064,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   max-width: 600px;
 }
 
-/* 8 UX & Product Design Skills Grid */
+/* 8 UI/UX Design Skills Grid */
 .ux-skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
