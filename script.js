@@ -307,7 +307,7 @@ function showToast(message) {
 }
 
 // GoUni Real Screen Switcher (Tabs & Thumbnails)
-const screenTabs = document.querySelectorAll('.screen-tab, .showcase-thumb-btn');
+const screenTabs = document.querySelectorAll('#project-gouni .screen-tab, #project-gouni .showcase-thumb-btn');
 const mainScreenImg = document.getElementById('gouniMainScreen');
 const screenCaption = document.getElementById('gouniScreenCaption');
 
@@ -331,7 +331,7 @@ if (screenTabs.length && mainScreenImg) {
       if (!gouniScreens[screenKey]) return;
 
       // Sync active state on both header tabs and thumbnail buttons
-      document.querySelectorAll('.screen-tab, .showcase-thumb-btn').forEach(btn => {
+      document.querySelectorAll('#project-gouni .screen-tab, #project-gouni .showcase-thumb-btn').forEach(btn => {
         if (btn.dataset.screen === screenKey) {
           btn.classList.add('active');
         } else {
@@ -610,6 +610,53 @@ if (hcTabs.length && hcMainScreenImg) {
         hcMainScreenImg.style.opacity = '1';
         if (hcScreenCaption) {
           hcScreenCaption.innerHTML = hcScreens[screenKey].caption;
+        }
+      }, 150);
+    });
+  });
+}
+
+// PawBridge Real Screen Switcher (Tabs & Thumbnails)
+const pbTabs = document.querySelectorAll('.pb-tab, .pb-thumb');
+const pbMainScreenImg = document.getElementById('pbMainScreen');
+const pbScreenCaption = document.getElementById('pbScreenCaption');
+
+if (pbTabs.length && pbMainScreenImg) {
+  const pbScreens = {
+    workspace: {
+      src: 'project_pawbridge.png',
+      alt: 'PawBridge Desktop Operations Workspace & Shelter Intake Dashboard',
+      caption: '<strong>Real Project Artifact:</strong> High-fidelity desktop operations workspace (1440×1024) featuring patient admission, live kennel capacity management, and medical case tracking.'
+    },
+    research: {
+      src: 'project_pawbridge_presentation.png',
+      alt: 'PawBridge Supporter Psychology & Field Research Presentation',
+      caption: '<strong>UX Research Artifact:</strong> In-depth field research analyzing supporter hesitation, donor trust barriers, and the psychological progression from discovery to verifiable support.'
+    }
+  };
+
+  pbTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const screenKey = tab.dataset.screen;
+      if (!pbScreens[screenKey]) return;
+
+      // Sync active state across header tabs and thumbnail buttons
+      document.querySelectorAll('.pb-tab, .pb-thumb').forEach(btn => {
+        if (btn.dataset.screen === screenKey) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Smooth crossfade transition
+      pbMainScreenImg.style.opacity = '0.2';
+      setTimeout(() => {
+        pbMainScreenImg.src = pbScreens[screenKey].src;
+        pbMainScreenImg.alt = pbScreens[screenKey].alt;
+        pbMainScreenImg.style.opacity = '1';
+        if (pbScreenCaption) {
+          pbScreenCaption.innerHTML = pbScreens[screenKey].caption;
         }
       }, 150);
     });
