@@ -1583,28 +1583,18 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
   position: relative;
 }
 
-/* 5-Column Panoramic Gallery on Large Screens */
-@media (min-width: 1100px) {
+/* 6-Card Grid: 3 columns on desktop, 2 on tablet, 1 on mobile */
+@media (min-width: 1040px) {
   .tools-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 }
 
-/* 3 + 2 Balanced Layout on Mid Screens */
-@media (min-width: 680px) and (max-width: 1099px) {
+@media (min-width: 680px) and (max-width: 1039px) {
   .tools-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
-  }
-  .tool-card:nth-child(1),
-  .tool-card:nth-child(2),
-  .tool-card:nth-child(3) {
-    grid-column: span 2;
-  }
-  .tool-card:nth-child(4),
-  .tool-card:nth-child(5) {
-    grid-column: span 3;
   }
 }
 
@@ -1776,6 +1766,21 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 .tool-card-canva:hover {
   border-color: rgba(0, 196, 204, 0.55);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 196, 204, 0.22);
+}
+
+.tool-card-antigravity .tool-glow-aurora {
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.45) 0%, rgba(162, 89, 255, 0.25) 60%, transparent 70%);
+}
+.tool-card-antigravity:hover {
+  border-color: rgba(0, 240, 255, 0.55);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 240, 255, 0.22);
+}
+
+.antigravity-svg-anim {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tool-card-antigravity:hover .antigravity-svg-anim {
+  transform: rotate(180deg) scale(1.1);
 }
 
 /* ---------- 4. TOOL ICON MICRO-ANIMATIONS ---------- */
@@ -1978,6 +1983,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 .tool-card-ps .tool-meter-fill { background: linear-gradient(90deg, #00C8FF, #31A8FF); }
 .tool-card-ae .tool-meter-fill { background: linear-gradient(90deg, #9999FF, #D180FF); }
 .tool-card-canva .tool-meter-fill { background: linear-gradient(90deg, #00C4CC, #7D2AE8); }
+.tool-card-antigravity .tool-meter-fill { background: linear-gradient(90deg, #00F0FF, #A259FF); }
 
 .meter-glint {
   position: absolute;
@@ -2011,6 +2017,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); margin: 0; }
 .tool-card-ps .meter-bullet { background: #31A8FF; }
 .tool-card-ae .meter-bullet { background: #9999FF; }
 .tool-card-canva .meter-bullet { background: #00C4CC; }
+.tool-card-antigravity .meter-bullet { background: #00F0FF; }
 
 /* Tool Capability Chips */
 .tool-chips-wrap {
