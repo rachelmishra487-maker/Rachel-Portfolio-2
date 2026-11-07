@@ -41,9 +41,9 @@
   <!-- Left Header / Editorial Context -->
   <g transform="translate(80, 70)">
     <!-- Scope Tag -->
-    <rect x="0" y="0" width="280" height="32" rx="16" fill="#2E2238" stroke="#523D63" stroke-width="1.2"/>
+    <rect x="0" y="0" width="310" height="32" rx="16" fill="#2E2238" stroke="#523D63" stroke-width="1.2"/>
     <circle cx="16" cy="16" r="4" fill="#D9C9E3"/>
-    <text x="28" y="21" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">LIVYANA FASHION &amp; ARTS · INTERNSHIP</text>
+    <text x="28" y="21" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1">LIVYANA FASHION &amp; ARTS · COMPLETED INTERNSHIP</text>
 
     <!-- Project Title -->
     <text x="0" y="85" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Miss Nation</text>
