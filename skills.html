@@ -124,89 +124,10 @@
 
     </div>
 
-    <!-- LIVE FIGMA TOKEN SANDBOX -->
-    <div style="padding-top: 3.5rem; border-top: 1.5px solid var(--line);">
-      <div class="section-header">
-        <p class="eyebrow">Interactive Systems Demo</p>
-        <h2>Figma Component &amp; Token Sandbox</h2>
-        <p>A live interactive demonstration of component variant thinking, design tokens, and CSS property reactivity.</p>
-      </div>
-
-      <div class="token-sandbox-wrapper">
-        <div class="sandbox-topbar">
-          <h3>Figma Design Token &amp; Micro-Interaction Engine</h3>
-          <p>Toggle component states, brand tokens, and auto-layout densities below to inspect live UI changes.</p>
-        </div>
-
-        <div class="sandbox-main-grid">
-          <!-- Controls -->
-          <div class="sandbox-controls">
-            <div>
-              <span class="sandbox-group-label">Component State</span>
-              <div class="sandbox-pills-row" id="statePills">
-                <button type="button" class="sandbox-btn-pill active" data-state="default">Default</button>
-                <button type="button" class="sandbox-btn-pill" data-state="hover">Hover</button>
-                <button type="button" class="sandbox-btn-pill" data-state="active">Active</button>
-                <button type="button" class="sandbox-btn-pill" data-state="loading">Loading</button>
-                <button type="button" class="sandbox-btn-pill" data-state="disabled">Disabled</button>
-              </div>
-            </div>
-
-            <div>
-              <span class="sandbox-group-label">Color Token Swatch</span>
-              <div class="swatch-group" id="colorSwatches">
-                <button type="button" class="swatch-circle active" data-token="plum" data-color="#392B45" style="--c: #392B45;" title="Primary Plum ($color-plum)" aria-label="Plum"></button>
-                <button type="button" class="swatch-circle" data-token="lavender" data-color="#A68BB8" style="--c: #A68BB8;" title="Dusty Lavender ($color-lavender)" aria-label="Dusty Lavender"></button>
-                <button type="button" class="swatch-circle" data-token="rose" data-color="#C7A5A0" style="--c: #C7A5A0;" title="Muted Rose ($color-rose)" aria-label="Muted Rose"></button>
-                <button type="button" class="swatch-circle" data-token="dark" data-color="#211A27" style="--c: #211A27;" title="Almost Black ($color-dark)" aria-label="Almost Black"></button>
-              </div>
-            </div>
-
-            <div>
-              <span class="sandbox-group-label">Auto-Layout Padding</span>
-              <div class="sandbox-pills-row" id="densityPills">
-                <button type="button" class="sandbox-btn-pill" data-density="compact">Compact (10px)</button>
-                <button type="button" class="sandbox-btn-pill active" data-density="default">Default (14px)</button>
-                <button type="button" class="sandbox-btn-pill" data-density="spacious">Spacious (18px)</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Stage Canvas -->
-          <div class="sandbox-stage">
-            <div class="sandbox-preview-card" id="demoCard">
-              <span class="sandbox-token-chip" id="demoTokenName">$color-plum-primary</span>
-              <h4 style="color: var(--lavender-white); font-size: 1.25rem; margin-bottom: 0.4rem;">Interactive Prototype</h4>
-              <p style="color: var(--soft-lilac); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.5rem;">Click any controls on the left to test interactive states and token reactivity.</p>
-              <button type="button" class="sandbox-demo-btn" id="sandboxDemoBtn">
-                <span>Explore Prototype</span>
-                <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Inspector -->
-          <div class="sandbox-inspector">
-            <div class="inspector-top">
-              <span class="inspector-title">CSS / Figma Token Spec</span>
-              <span style="font-size: 0.74rem; color: var(--text-light-muted);">Auto-generated</span>
-            </div>
-            <pre class="inspector-code-block"><code id="inspectorCode">/* Figma Token Output */
-.btn-primary {
-  --btn-bg: #392B45;
-  padding: 14px 28px;
-  border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(57, 43, 69, 0.3);
-  transition: all 0.25s ease;
-}</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PAGE ACTIONS -->
-    <div style="margin-top: 3.5rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="projects.html#gouni" class="btn btn-primary">See Skills Applied on GoUni (Study-Abroad Platform) &rarr;</a>
+    <!-- PAGE ACTIONS & PLAYGROUND LINK -->
+    <div style="margin-top: 4.5rem; padding-top: 3rem; border-top: 1.5px solid var(--line); text-align: center; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="projects.html" class="btn btn-primary">See Skills Applied on Case Studies &rarr;</a>
+      <a href="playground.html" class="btn btn-secondary">Explore Interactive Playground &rarr;</a>
       <a href="contact.html" class="btn btn-ghost">Get In Touch for Internships</a>
     </div>
 
