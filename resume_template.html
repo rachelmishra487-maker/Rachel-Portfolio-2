@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rachel Mishra — Resume</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #211A27;
+    background: #FFFFFF;
+    font-size: 9.2pt;
+    line-height: 1.42;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .header {
+    border-bottom: 2px solid #392B45;
+    padding-bottom: 8px;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header-left h1 {
+    font-size: 21pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #392B45;
+    line-height: 1.1;
+  }
+  .header-left .subtitle {
+    font-size: 9.8pt;
+    font-weight: 700;
+    color: #A68BB8;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .header-right {
+    text-align: right;
+    font-size: 8.4pt;
+    color: #524261;
+    line-height: 1.45;
+  }
+  .header-right a {
+    color: #392B45;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .section {
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-size: 9.8pt;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #392B45;
+    border-bottom: 1px solid #D9C9E3;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summary-text {
+    font-size: 8.8pt;
+    color: #43364F;
+    line-height: 1.4;
+  }
+  .item {
+    margin-bottom: 6px;
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .item-title {
+    font-size: 9.4pt;
+    font-weight: 700;
+    color: #211A27;
+  }
+  .item-org {
+    font-size: 8.8pt;
+    font-weight: 600;
+    color: #524261;
+  }
+  .item-date {
+    font-size: 8.2pt;
+    font-weight: 600;
+    color: #7E6C8E;
+  }
+  .bullets {
+    list-style: none;
+    padding-left: 11px;
+    margin-top: 2px;
+  }
+  .bullets li {
+    font-size: 8.5pt;
+    color: #43364F;
+    line-height: 1.36;
+    position: relative;
+    margin-bottom: 1.5px;
+  }
+  .bullets li::before {
+    content: "▪";
+    position: absolute;
+    left: -11px;
+    color: #A68BB8;
+    font-size: 8pt;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 14px;
+    font-size: 8.4pt;
+  }
+  .skill-group strong {
+    color: #392B45;
+    font-weight: 700;
+  }
+  .skill-group span {
+    color: #43364F;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>RACHEL MISHRA</h1>
+      <div class="subtitle">UI/UX Designer · Final-Year B.Des Student</div>
+    </div>
+    <div class="header-right">
+      <div>rachelmishra487@gmail.com · +91 75074 44004</div>
+      <div>Nagpur, Maharashtra, India</div>
+      <div>Portfolio: <a href="https://rachel-portfolio-final.vercel.app/">rachel-portfolio-final.vercel.app</a></div>
+    </div>
+  </div>
+
+  <!-- PROFILE SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">
+      Final-year UI/UX design student at Symbiosis Institute of Design, Nagpur, focusing on cognitive psychology, qualitative user research, and scalable design token architectures. Experienced in translating user friction into intuitive digital interfaces, verified desktop operational consoles, and cross-platform design systems. Actively seeking a <strong>UI/UX Design Internship starting January 2027</strong>.
+    </p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Bachelor of Design (B.Des) — UI/UX Design</span>
+        <span class="item-date">2022 – 2026 · Final Year</span>
+      </div>
+      <div class="item-org">Symbiosis Institute of Design (SID), Symbiosis International University (SIU), Nagpur</div>
+      <div class="bullets" style="margin-top: 1px;">
+        <li>Specialized in User Studies &amp; Design Research (USDR), Design Systems, HCI, Information Architecture, and Usability Testing.</li>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">UI/UX Design Intern</span>
+        <span class="item-date">June 2024 – July 2024 (2 Months)</span>
+      </div>
+      <div class="item-org">Livyana Fashion &amp; Arts · Nagpur, India</div>
+      <ul class="bullets">
+        <li>Designed end-to-end responsive web interfaces and interaction user flows for the <strong>Miss Nation</strong> digital platform.</li>
+        <li>Conducted user and competitive analysis to formulate wireframes, sitemaps, and interactive prototypes in Figma for stakeholder reviews.</li>
+        <li>Designed high-impact digital campaign creatives and promotional visual assets aligned with brand guidelines.</li>
+        <li>Collaborated with developers to ensure pixel-perfect layout execution, responsive fidelity, and smooth asset handoff.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS (ALIGNED: GOUNI, HEALING CIRCLE, PAWBRIDGE) -->
+  <div class="section">
+    <div class="section-title">Featured Projects</div>
+
+    <!-- 01 GOUNI -->
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">GoUni — Study-Abroad Student Support Platform &amp; Design System</span>
+        <span class="item-date">Lead UI/UX Designer</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed an end-to-end student support platform to help international applicants discover universities, compare programs, and track visa tasks.</li>
+        <li>Architected an integral, scalable Figma design system using design tokens, variables, and Auto-Layout 5.0 multi-state component variants.</li>
+        <li>Created a 6-stage UX storyboard and validated task completion through usability testing, achieving an 85% faster program comparison speed.</li>
+      </ul>
+    </div>
+
+    <!-- 02 THE HEALING CIRCLE -->
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">The Healing Circle — Healthcare Physician Well-being System</span>
+        <span class="item-date">Lead UX Researcher &amp; Systems Designer</span>
+      </div>
+      <ul class="bullets">
+        <li>Conducted in-depth qualitative field research investigating clinical empathy fatigue and digital burnout among hospital physicians.</li>
+        <li>Interviewed 3 specialist clinicians (Pediatrics, Gastroenterology, Forensic Medicine) to identify recovery needs and screen aversion triggers.</li>
+        <li>Designed a concentric ecosystem featuring sound-dampened physical debrief sanctuaries, 4 low-friction micro-rituals, and a 5-stage hospital journey.</li>
+      </ul>
+    </div>
+
+    <!-- 03 PAWBRIDGE -->
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">PawBridge — Animal Shelter Operations &amp; Public Trust Platform</span>
+        <span class="item-date">Lead UI/UX Designer &amp; Researcher</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed a dual-sided platform: a high-density desktop operations workspace (1440×1024) for shelter triage and a transparent donor portal.</li>
+        <li>Researched supporter hesitation psychology, tying public contributions directly to verified clinical recovery milestones for complete transparency.</li>
+        <li>Built an intake triage workflow reducing admission logging by 65%, validated through an interactive prototype and live Vercel deployment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS & TOOLKIT -->
+  <div class="section">
+    <div class="section-title">Skills &amp; Software Toolkit</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <strong>UX Research:</strong> <span>User Interviews, Personas, Journey Mapping, Usability Testing, Heuristic Audits.</span>
+      </div>
+      <div class="skill-group">
+        <strong>UI Design:</strong> <span>Visual Design, Typography, Layout &amp; Grids, Design Systems, Tokens, WCAG AA.</span>
+      </div>
+      <div class="skill-group">
+        <strong>Interaction Design:</strong> <span>Wireframing, Rapid Prototyping, Micro-interactions, User Flows, Smart Animate.</span>
+      </div>
+      <div class="skill-group">
+        <strong>Tools &amp; Emerging:</strong> <span>Figma, Illustrator, Photoshop, After Effects, Canva, Blender, Unity, Antigravity IDE.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEADERSHIP & EXTRA-CURRICULAR -->
+  <div class="section" style="margin-bottom: 0;">
+    <div class="section-title">Leadership &amp; Campus Involvement</div>
+    <ul class="bullets">
+      <li><strong>Head of Dog Fest (Symbiocare)</strong>: Spearheaded campus-wide animal welfare event planning, volunteer coordination, and logistics.</li>
+      <li><strong>Active Member</strong>: Movie Club, Campus Event Decoration Team, and Public Relations (PR) &amp; Communications Team at SIU Nagpur.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
