@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skills &amp; Toolkit — Rachel Mishra | UI/UX Designer</title>
-<meta name="description" content="Core UI/UX design disciplines, design systems, and software toolkit of Rachel Mishra: Figma, Antigravity IDE, Adobe Creative Suite, user research, wireframing, and interactive prototyping.">
+<meta name="description" content="Core UI/UX design disciplines and software toolkit of Rachel Mishra: UX Research, UI Design, Interaction Design, and Production Tools.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
@@ -16,577 +16,197 @@
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- STICKY NAVBAR -->
+<!-- STICKY EDITORIAL NAVIGATION -->
 <header class="nav" id="navbar">
-  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">
+    <span>RACHEL MISHRA</span>
+    <span class="mark-sub">UI/UX</span>
+  </a>
   <nav class="nav-links" id="navLinks">
-    <a href="about.html">About</a>
     <a href="projects.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="playground.html">Playground</a>
     <a href="skills.html" class="active">Skills</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume ↗</a>
   </nav>
-  <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
 
-<main class="subpage-main">
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="dot-matrix" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
+<main class="section-light" style="padding-top: 3.5rem;">
+  <div class="section-inner">
+
+    <!-- PAGE HEADER -->
+    <div class="section-header" style="margin-bottom: 3.5rem;">
+      <p class="eyebrow">Disciplines &amp; Toolkit</p>
+      <h2>Skills &amp; Expertise</h2>
+      <p>Organized into research inquiry, interface systems, interaction modeling, and industry software competencies.</p>
     </div>
-    <p class="eyebrow">03 · Capabilities &amp; Software Matrix</p>
-    <h1>Skills &amp; Toolkit</h1>
-    <p class="page-desc">My end-to-end UI/UX design disciplines, industry software competencies, and design system methodologies honed across academic case studies and real-world interfaces.</p>
-  </header>
 
-  <div class="skills-container">
+    <!-- SKILLS 4 CATEGORY GRID -->
+    <div class="skills-editorial-grid" style="margin-bottom: 4.5rem;">
 
-    <!-- ==========================================
-         CATEGORY 1: CORE UI/UX DISCIPLINES
-         ========================================== -->
-    <section class="skills-section-block">
-      <div class="skills-section-header">
-        <div>
-          <span class="skills-badge">Category 01 · Process &amp; Craft</span>
-          <h2>Core UI/UX Disciplines</h2>
+      <!-- 01 UX RESEARCH -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">01</span>
+          <span class="skills-cat-tag">Research</span>
         </div>
-        <p>From early problem framing and qualitative inquiry to spatial architecture, interactive systems, and usability validation.</p>
-      </div>
-
-      <!-- DISCIPLINE FILTER TABS -->
-      <div class="skills-filter-nav" role="tablist" aria-label="Filter UX skills by discipline">
-        <button type="button" class="skill-filter-btn active" data-filter="all">
-          <span>All Disciplines</span>
-          <span class="filter-count">8</span>
-        </button>
-        <button type="button" class="skill-filter-btn" data-filter="discovery">
-          <span>01 Discovery &amp; Research</span>
-          <span class="filter-count">2</span>
-        </button>
-        <button type="button" class="skill-filter-btn" data-filter="structure">
-          <span>02 Architecture &amp; Flows</span>
-          <span class="filter-count">3</span>
-        </button>
-        <button type="button" class="skill-filter-btn" data-filter="interface">
-          <span>03 UI &amp; Prototyping</span>
-          <span class="filter-count">2</span>
-        </button>
-        <button type="button" class="skill-filter-btn" data-filter="systems">
-          <span>04 Systems &amp; Testing</span>
-          <span class="filter-count">2</span>
-        </button>
-      </div>
-
-      <div class="ux-skills-grid" id="uxSkillsGrid">
-        <!-- 1. USER RESEARCH -->
-        <article class="ux-skill-card" data-discipline="discovery">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">01</span>
-              <span class="ux-skill-tag">Discovery</span>
-            </div>
-          </div>
-          <h3>User Research</h3>
-          <p>Uncovering real user friction, mental models, and unarticulated needs through semi-structured interviews, contextual inquiries, and persona modeling.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">User Interviews</span>
-              <span class="ux-deliverable-chip">Persona Archetypes</span>
-              <span class="ux-deliverable-chip">Empathy Maps</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2. INFORMATION ARCHITECTURE -->
-        <article class="ux-skill-card" data-discipline="structure">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">02</span>
-              <span class="ux-skill-tag">Architecture</span>
-            </div>
-          </div>
-          <h3>Information Architecture</h3>
-          <p>Organizing complex datasets, navigation hierarchies, and content relationships into clear, scannable structures that reduce cognitive load.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Sitemaps</span>
-              <span class="ux-deliverable-chip">Taxonomy Trees</span>
-              <span class="ux-deliverable-chip">Card Sorting</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 3. USER FLOWS & JOURNEYS -->
-        <article class="ux-skill-card" data-discipline="structure">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">03</span>
-              <span class="ux-skill-tag">Interaction</span>
-            </div>
-          </div>
-          <h3>User Flows &amp; Storyboards</h3>
-          <p>Mapping end-to-end task flows, branch logic, and error recovery states to ensure frictionless transitions from discovery to completion.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">6-Stage Storyboards</span>
-              <span class="ux-deliverable-chip">Decision Trees</span>
-              <span class="ux-deliverable-chip">Touchpoint Maps</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4. WIREFRAMING -->
-        <article class="ux-skill-card" data-discipline="structure">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">04</span>
-              <span class="ux-skill-tag">Layout</span>
-            </div>
-          </div>
-          <h3>Wireframing &amp; Schematics</h3>
-          <p>Rapidly visualizing layout hierarchies, content density, and structural relationships through low-fidelity sketches and mid-fidelity Figma wireframes.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Low-Fi Wireframes</span>
-              <span class="ux-deliverable-chip">Mid-Fi Prototypes</span>
-              <span class="ux-deliverable-chip">Layout Schematics</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 5. HIGH-FIDELITY UI DESIGN -->
-        <article class="ux-skill-card" data-discipline="interface">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">05</span>
-              <span class="ux-skill-tag">Visual Craft</span>
-            </div>
-          </div>
-          <h3>High-Fidelity UI Design</h3>
-          <p>Crafting refined visual hierarchies, editorial typography, spatial rhythms, and accessible contrast palettes that elevate product perceived quality.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Pixel-Perfect UI</span>
-              <span class="ux-deliverable-chip">Typographic Scales</span>
-              <span class="ux-deliverable-chip">WCAG AA Contrast</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 6. INTERACTIVE PROTOTYPING -->
-        <article class="ux-skill-card" data-discipline="interface">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">06</span>
-              <span class="ux-skill-tag">Motion</span>
-            </div>
-          </div>
-          <h3>Interactive Prototyping</h3>
-          <p>Building high-fidelity interactive Figma flows with smart animations, realistic component states, and micro-interactions for authentic usability testing.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Smart Animate</span>
-              <span class="ux-deliverable-chip">Interactive Variants</span>
-              <span class="ux-deliverable-chip">Component States</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 7. USABILITY TESTING -->
-        <article class="ux-skill-card" data-discipline="systems">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">07</span>
-              <span class="ux-skill-tag">Validation</span>
-            </div>
-          </div>
-          <h3>Usability Testing &amp; Audits</h3>
-          <p>Validating interface efficacy through think-aloud testing protocols, Nielsen Norman heuristic audits, task completion rates, and qualitative debriefs.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Heuristic Audits</span>
-              <span class="ux-deliverable-chip">Task Success Metrics</span>
-              <span class="ux-deliverable-chip">Iterative Redesigns</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 8. DESIGN SYSTEMS -->
-        <article class="ux-skill-card" data-discipline="systems">
-          <div class="ux-skill-top">
-            <div class="ux-skill-meta-left">
-              <span class="ux-skill-index">08</span>
-              <span class="ux-skill-tag">Scalability</span>
-            </div>
-          </div>
-          <h3>Design Systems &amp; Tokens</h3>
-          <p>Creating modular, multi-tier component libraries in Figma using design tokens, nested component properties, and Auto-Layout 5.0 for engineering handoff.</p>
-          <div class="ux-skill-deliverables">
-            <span class="ux-deliverables-label">Key Deliverables</span>
-            <div class="ux-deliverables-chips">
-              <span class="ux-deliverable-chip">Figma Variables</span>
-              <span class="ux-deliverable-chip">Atomic Components</span>
-              <span class="ux-deliverable-chip">Handoff Specs</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         CATEGORY 2: DESIGN SOFTWARE TOOLKIT
-         ========================================== -->
-    <section class="skills-section-block">
-      <div class="skills-section-header">
-        <div>
-          <span class="skills-badge">Category 02 · Industry Software</span>
-          <h2>Design Software Toolkit</h2>
+        <h3>UX Research</h3>
+        <p>Uncovering real user friction, mental models, and behavioral motivations through qualitative and quantitative inquiry.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">User Interviews</span>
+          <span class="skill-pill">Personas</span>
+          <span class="skill-pill">Journey Mapping</span>
+          <span class="skill-pill">Usability Testing</span>
+          <span class="skill-pill">Contextual Inquiry</span>
+          <span class="skill-pill">Heuristic Audits</span>
         </div>
-        <p>Production tools I utilize daily to research, design, prototype, and produce design artifacts.</p>
-      </div>
+      </article>
 
-      <div class="tools-grid">
-        <!-- 1. FIGMA -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">Fg</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Figma</h3>
-              <span class="tool-tag">Primary Design &amp; Systems Tool</span>
-            </div>
-          </div>
-          <p class="tool-desc">Daily driver for end-to-end interface design, atomic design token libraries, interactive component variants, and interactive prototyping.</p>
-          <ul class="tool-capabilities">
-            <li>Advanced Auto-Layout 5.0</li>
-            <li>Component Variants &amp; Properties</li>
-            <li>Figma Variables &amp; Design Tokens</li>
-            <li>Interactive Smart Animate Prototyping</li>
-          </ul>
-        </article>
-
-        <!-- 2. ADOBE ILLUSTRATOR -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">Ai</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Adobe Illustrator</h3>
-              <span class="tool-tag">Vector &amp; Identity Design</span>
-            </div>
-          </div>
-          <p class="tool-desc">Used for precision vector illustration, custom iconography sets, typographic marks, and scalable branding assets.</p>
-          <ul class="tool-capabilities">
-            <li>Custom Vector Icon Sets</li>
-            <li>SVG Optimization for Web</li>
-            <li>Brand Identity &amp; Logomarks</li>
-            <li>Editorial Illustrations</li>
-          </ul>
-        </article>
-
-        <!-- 3. ADOBE PHOTOSHOP -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">Ps</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Adobe Photoshop</h3>
-              <span class="tool-tag">Image &amp; Asset Composition</span>
-            </div>
-          </div>
-          <p class="tool-desc">Utilized for high-fidelity photo editing, texture blending, digital asset composition, and marketing imagery retouching.</p>
-          <ul class="tool-capabilities">
-            <li>Color Grading &amp; Retouching</li>
-            <li>Complex Masking &amp; Compositing</li>
-            <li>Product Mockup Rendering</li>
-            <li>Export Optimization</li>
-          </ul>
-        </article>
-
-        <!-- 4. ADOBE AFTER EFFECTS -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">Ae</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Adobe After Effects</h3>
-              <span class="tool-tag">Motion Design &amp; Micro-Interactions</span>
-            </div>
-          </div>
-          <p class="tool-desc">Exploring interface motion choreography, transition curves, easing functions, and animated presentation decks.</p>
-          <ul class="tool-capabilities">
-            <li>UI Micro-interaction Timing</li>
-            <li>Motion Curves &amp; Easing Studies</li>
-            <li>Lottie Animation Handoff</li>
-            <li>Video Case Study Walkthroughs</li>
-          </ul>
-        </article>
-
-        <!-- 5. CANVA -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">Cv</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Canva</h3>
-              <span class="tool-tag">Rapid Marketing &amp; Social Collateral</span>
-            </div>
-          </div>
-          <p class="tool-desc">Rapid visual production for social media campaign graphics, marketing flyers, and fast stakeholder presentations.</p>
-          <ul class="tool-capabilities">
-            <li>Rapid Social Creatives</li>
-            <li>Event Promotional Banners</li>
-            <li>Fast Presentation Layouts</li>
-            <li>Multi-channel Campaign Assets</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         CATEGORY 3: EMERGING & PROTOTYPING TOOLS
-         ========================================== -->
-    <section class="skills-section-block">
-      <div class="skills-section-header">
-        <div>
-          <span class="skills-badge">Category 03 · Emerging &amp; 3D</span>
-          <h2>Emerging &amp; Prototyping Tools</h2>
+      <!-- 02 UI DESIGN -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">02</span>
+          <span class="skills-cat-tag">Visual Craft</span>
         </div>
-        <p>Exploring next-generation interface workflows, AI-assisted development environments, and spatial visualization.</p>
-      </div>
-
-      <div class="tools-grid">
-        <!-- 1. ANTIGRAVITY IDE -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">AG</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Antigravity IDE</h3>
-              <span class="tool-tag">Generative UI &amp; Rapid Prototyping</span>
-            </div>
-          </div>
-          <p class="tool-desc">Advanced agentic coding environment used to turn design specifications into live web prototypes, test token reactivity, and collaborate seamlessly across design and code.</p>
-          <ul class="tool-capabilities">
-            <li>Generative UI Prototyping</li>
-            <li>CSS / Token Sandbox Integration</li>
-            <li>Design-to-Code Translation</li>
-            <li>Rapid Web Validation</li>
-          </ul>
-        </article>
-
-        <!-- 2. BLENDER & UNITY -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">3D</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Blender &amp; Unity</h3>
-              <span class="tool-tag">Spatial &amp; 3D Visualization</span>
-            </div>
-          </div>
-          <p class="tool-desc">Foundational exploration in 3D modeling, lighting, and spatial interface visualization as part of academic coursework at SIU Nagpur.</p>
-          <ul class="tool-capabilities">
-            <li>3D Asset Prototyping</li>
-            <li>Spatial Interface Ergonomics</li>
-            <li>Lighting &amp; Material Testing</li>
-            <li>VR Experience Modeling</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         CATEGORY 4: DESIGN METHODOLOGIES
-         ========================================== -->
-    <section class="skills-section-block">
-      <div class="skills-section-header">
-        <div>
-          <span class="skills-badge">Category 04 · Standards &amp; Methods</span>
-          <h2>Design Methodologies &amp; Standards</h2>
+        <h3>UI Design</h3>
+        <p>Crafting refined visual hierarchies, editorial typography, spatial layouts, and scalable design token systems.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Visual Design</span>
+          <span class="skill-pill">Typography</span>
+          <span class="skill-pill">Layout &amp; Grid</span>
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">Design Tokens</span>
+          <span class="skill-pill">WCAG AA Contrast</span>
         </div>
-        <p>Structured frameworks that guide my design reasoning from problem discovery to final implementation.</p>
-      </div>
+      </article>
 
-      <div class="tools-grid">
-        <!-- METHOD 1: USER-CENTERED DESIGN -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">UCD</span>
-            </div>
-            <div class="tool-meta">
-              <h3>User-Centered Design</h3>
-              <span class="tool-tag">Iterative Problem Solving</span>
-            </div>
-          </div>
-          <p class="tool-desc">Grounded in the Double Diamond process: discovering user needs, defining problem statements, developing solutions, and delivering tested interfaces.</p>
-          <ul class="tool-capabilities">
-            <li>Double Diamond Methodology</li>
-            <li>Problem Framing &amp; HMW Statements</li>
-            <li>Affinity Mapping &amp; Synthesis</li>
-          </ul>
-        </article>
-
-        <!-- METHOD 2: ACCESSIBILITY & WCAG -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">A11y</span>
-            </div>
-            <div class="tool-meta">
-              <h3>WCAG 2.1 AA Accessibility</h3>
-              <span class="tool-tag">Inclusive Design</span>
-            </div>
-          </div>
-          <p class="tool-desc">Ensuring digital experiences are usable by everyone by prioritizing contrast ratios, focus states, legible type scales, and assistive navigation.</p>
-          <ul class="tool-capabilities">
-            <li>Color Contrast Ratios (4.5:1+)</li>
-            <li>Keyboard Navigation &amp; Focus Visible</li>
-            <li>Semantic Heading Hierarchy</li>
-          </ul>
-        </article>
-
-        <!-- METHOD 3: HEURISTIC EVALUATION -->
-        <article class="tool-card">
-          <div class="tool-card-top">
-            <div class="tool-icon-box">
-              <span class="tool-glyph">NN/g</span>
-            </div>
-            <div class="tool-meta">
-              <h3>Heuristic Evaluation</h3>
-              <span class="tool-tag">Nielsen Norman Framework</span>
-            </div>
-          </div>
-          <p class="tool-desc">Systematically auditing interfaces against Jakob Nielsen’s 10 usability heuristics to uncover hidden friction before launching user studies.</p>
-          <ul class="tool-capabilities">
-            <li>Visibility of System Status</li>
-            <li>Error Prevention &amp; Recovery</li>
-            <li>Consistency &amp; Platform Standards</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         LIVE FIGMA TOKEN & COMPONENT SANDBOX
-         ========================================== -->
-    <section class="skills-section-block">
-      <div class="skills-section-header">
-        <div>
-          <span class="skills-badge">Interactive Systems Demo</span>
-          <h2>Figma Component &amp; Token Sandbox</h2>
+      <!-- 03 INTERACTION DESIGN -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">03</span>
+          <span class="skills-cat-tag">Interaction</span>
         </div>
+        <h3>Interaction Design</h3>
+        <p>Translating user needs into functional wireframes, multi-state interactive flows, and realistic micro-interactions.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Wireframing</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">Micro-interactions</span>
+          <span class="skill-pill">User Flows</span>
+          <span class="skill-pill">Smart Animate</span>
+          <span class="skill-pill">Component States</span>
+        </div>
+      </article>
+
+      <!-- 04 TOOLS -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">04</span>
+          <span class="skills-cat-tag">Software</span>
+        </div>
+        <h3>Tools</h3>
+        <p>Industry production software and emerging agentic development environments I use daily to build and test design artifacts.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Illustrator</span>
+          <span class="skill-pill">Photoshop</span>
+          <span class="skill-pill">After Effects</span>
+          <span class="skill-pill">Canva</span>
+          <span class="skill-pill">Blender</span>
+          <span class="skill-pill">Unity</span>
+          <span class="skill-pill">Antigravity IDE</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- LIVE FIGMA TOKEN SANDBOX -->
+    <div style="padding-top: 3.5rem; border-top: 1.5px solid var(--line);">
+      <div class="section-header">
+        <p class="eyebrow">Interactive Systems Demo</p>
+        <h2>Figma Component &amp; Token Sandbox</h2>
         <p>A live interactive demonstration of my component variant thinking, design tokens, and CSS property reactivity.</p>
       </div>
 
-      <div class="token-sandbox">
-        <div class="sandbox-header">
-          <h3>Interactive Design Token Engine</h3>
+      <div class="token-sandbox-wrapper">
+        <div class="sandbox-topbar">
+          <h3>Figma Design Token &amp; Variant Engine</h3>
           <p>Toggle component states, brand tokens, and auto-layout densities below to inspect live UI changes.</p>
         </div>
 
-        <div class="sandbox-layout">
-          <!-- LEFT CONTROLS -->
+        <div class="sandbox-main-grid">
+          <!-- Controls -->
           <div class="sandbox-controls">
-            <!-- State Selector -->
-            <div class="control-group">
-              <label class="control-label">Component State</label>
-              <div class="sandbox-pill-group" id="statePills">
-                <button type="button" class="sandbox-pill active" data-state="default">Default</button>
-                <button type="button" class="sandbox-pill" data-state="hover">Hover</button>
-                <button type="button" class="sandbox-pill" data-state="active">Active</button>
-                <button type="button" class="sandbox-pill" data-state="loading">Loading</button>
-                <button type="button" class="sandbox-pill" data-state="disabled">Disabled</button>
+            <div>
+              <span class="sandbox-group-label">Component State</span>
+              <div class="sandbox-pills-row" id="statePills">
+                <button type="button" class="sandbox-btn-pill active" data-state="default">Default</button>
+                <button type="button" class="sandbox-btn-pill" data-state="hover">Hover</button>
+                <button type="button" class="sandbox-btn-pill" data-state="active">Active</button>
+                <button type="button" class="sandbox-btn-pill" data-state="loading">Loading</button>
+                <button type="button" class="sandbox-btn-pill" data-state="disabled">Disabled</button>
               </div>
             </div>
 
-            <!-- Color Swatches -->
-            <div class="control-group">
-              <label class="control-label">Brand Token Variable</label>
-              <div class="token-swatches" id="colorSwatches">
-                <button type="button" class="swatch-btn active" data-token="forest" data-color="#1A3320" data-rgb="26, 51, 32" style="--c: #1A3320;" title="Forest Green ($color-forest-primary)" aria-label="Forest Green"></button>
-                <button type="button" class="swatch-btn" data-token="olive" data-color="#53684E" data-rgb="83, 104, 78" style="--c: #53684E;" title="Muted Olive ($color-olive-secondary)" aria-label="Muted Olive"></button>
-                <button type="button" class="swatch-btn" data-token="terracotta" data-color="#8F5D48" data-rgb="143, 93, 72" style="--c: #8F5D48;" title="Warm Terracotta ($color-accent-warm)" aria-label="Warm Terracotta"></button>
-                <button type="button" class="swatch-btn" data-token="slate" data-color="#4A584C" data-rgb="74, 88, 76" style="--c: #4A584C;" title="Slate Green ($color-neutral-deep)" aria-label="Slate Green"></button>
+            <div>
+              <span class="sandbox-group-label">Color Token Swatch</span>
+              <div class="swatch-group" id="colorSwatches">
+                <button type="button" class="swatch-circle active" data-token="plum" data-color="#392B45" style="--c: #392B45;" title="Primary Plum ($color-plum)" aria-label="Plum"></button>
+                <button type="button" class="swatch-circle" data-token="lavender" data-color="#A68BB8" style="--c: #A68BB8;" title="Dusty Lavender ($color-lavender)" aria-label="Dusty Lavender"></button>
+                <button type="button" class="swatch-circle" data-token="rose" data-color="#C7A5A0" style="--c: #C7A5A0;" title="Muted Rose ($color-rose)" aria-label="Muted Rose"></button>
+                <button type="button" class="swatch-circle" data-token="dark" data-color="#211A27" style="--c: #211A27;" title="Almost Black ($color-dark)" aria-label="Almost Black"></button>
               </div>
             </div>
 
-            <!-- Auto-Layout Padding -->
-            <div class="control-group">
-              <div class="control-header-row">
-                <label class="control-label">Auto-Layout Padding</label>
-              </div>
-              <div class="sandbox-pill-group" id="densityPills">
-                <button type="button" class="sandbox-pill" data-density="compact">Compact (10px)</button>
-                <button type="button" class="sandbox-pill active" data-density="default">Default (14px)</button>
-                <button type="button" class="sandbox-pill" data-density="spacious">Spacious (20px)</button>
+            <div>
+              <span class="sandbox-group-label">Auto-Layout Padding</span>
+              <div class="sandbox-pills-row" id="densityPills">
+                <button type="button" class="sandbox-btn-pill" data-density="compact">Compact (10px)</button>
+                <button type="button" class="sandbox-btn-pill active" data-density="default">Default (14px)</button>
+                <button type="button" class="sandbox-btn-pill" data-density="spacious">Spacious (18px)</button>
               </div>
             </div>
           </div>
 
-          <!-- CENTER STAGE: PREVIEW -->
+          <!-- Stage Canvas -->
           <div class="sandbox-stage">
-            <div class="demo-card-preview" id="demoCard">
-              <div class="demo-chip-preview">
-                <span class="demo-dot"></span>
-                <span id="demoTokenName">$color-forest-primary</span>
-              </div>
-              <h4 class="demo-title">Interactive UI Prototype</h4>
-              <p class="demo-sub">Click any controls on the left to test interactive states, token reactivity, and auto-layout spacing.</p>
-              <div class="demo-button-wrapper">
-                <button type="button" class="demo-action-btn" id="sandboxDemoBtn">
-                  <span class="demo-btn-text">Explore Prototype</span>
-                  <span class="demo-btn-icon">&rarr;</span>
-                </button>
-              </div>
+            <div class="sandbox-preview-card" id="demoCard">
+              <span class="sandbox-token-chip" id="demoTokenName">$color-plum-primary</span>
+              <h4 style="color: var(--lavender-white); font-size: 1.25rem; margin-bottom: 0.4rem;">Interactive Prototype</h4>
+              <p style="color: var(--soft-lilac); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.5rem;">Click any controls on the left to test interactive states and token reactivity.</p>
+              <button type="button" class="sandbox-demo-btn" id="sandboxDemoBtn">
+                <span>Explore Prototype</span>
+                <span>&rarr;</span>
+              </button>
             </div>
           </div>
 
-          <!-- RIGHT: LIVE CSS / SPEC INSPECTOR -->
+          <!-- Inspector -->
           <div class="sandbox-inspector">
-            <div class="inspector-header">
-              <span class="inspector-tab active">CSS / Token Spec</span>
-              <span class="inspector-lang">Design System</span>
+            <div class="inspector-top">
+              <span class="inspector-title">CSS / Figma Token Spec</span>
+              <span style="font-size: 0.74rem; color: var(--text-light-muted);">Auto-generated</span>
             </div>
-            <pre class="inspector-code"><code id="inspectorCode">/* Figma Token Output */
+            <pre class="inspector-code-block"><code id="inspectorCode">/* Figma Token Output */
 .btn-primary {
-  --btn-bg: #1A3320;
+  --btn-bg: #392B45;
   padding: 14px 28px;
   border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(26, 51, 32, 0.20);
+  box-shadow: 0 4px 16px rgba(57, 43, 69, 0.3);
   transition: all 0.25s ease;
 }</code></pre>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- BOTTOM ACTIONS -->
-    <div class="page-actions">
-      <a href="projects.html" class="btn btn-primary">
-        <span>See My Skills in Action on GoUni</span>
-        <span>&rarr;</span>
-      </a>
+    <!-- PAGE ACTIONS -->
+    <div style="margin-top: 3.5rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="projects.html" class="btn btn-primary">See Skills in Action on GoUni &rarr;</a>
       <a href="contact.html" class="btn btn-ghost">Get In Touch for Internships</a>
     </div>
 
@@ -594,8 +214,8 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <span>© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
+<footer class="footer-editorial">
+  <span class="footer-mark">© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 

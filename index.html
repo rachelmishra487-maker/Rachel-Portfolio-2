@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rachel Mishra — UI/UX Designer</title>
-<meta name="description" content="Portfolio of Rachel Mishra, UI/UX Designer and student at Symbiosis Institute of Design, Nagpur. Crafting intuitive, human-centered digital experiences and scalable design systems.">
+<meta name="description" content="Portfolio of Rachel Mishra, UI/UX Designer. Bold, experimental, and human-centered digital experiences, design systems, and cognitive research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,15 +16,19 @@
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- STICKY NAVBAR -->
+<!-- STICKY EDITORIAL NAVIGATION -->
 <header class="nav" id="navbar">
-  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">
+    <span>RACHEL MISHRA</span>
+    <span class="mark-sub">UI/UX</span>
+  </a>
   <nav class="nav-links" id="navLinks">
-    <a href="about.html">About</a>
     <a href="projects.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="playground.html">Playground</a>
     <a href="skills.html">Skills</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume ↗</a>
   </nav>
   <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -32,119 +36,883 @@
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero" id="top">
-  <div class="hero-shape shape-1"></div>
-  <div class="hero-shape shape-2"></div>
-  
-  <div class="hero-content-grid">
-    <div class="hero-inner">
-      <div class="hero-status-pill">
-        <span class="status-pulse-dot"></span>
-        <span>Looking for UI/UX Design Internships · Available January 2027</span>
+<section class="hero" id="hero">
+  <div class="hero-abstract-shape shape-plum"></div>
+  <div class="hero-abstract-shape shape-lilac"></div>
+
+  <div class="hero-grid">
+    <!-- LEFT: EDITORIAL HEADLINE & INTRODUCTION -->
+    <div class="hero-content">
+      <div class="hero-meta-strip">
+        <div class="status-pill">
+          <span class="status-pulse"></span>
+          <span>Open to Internships · January 2027</span>
+        </div>
+        <span class="annotation-badge">SID NAGPUR</span>
+        <span class="annotation-badge">B.DES UI/UX</span>
       </div>
 
-      <p class="eyebrow">Rachel Mishra · UI/UX Designer · SID Nagpur</p>
-
-      <h1 class="hero-name">
-        <span class="line">Rachel</span>
-        <span class="line accent-outline">Mishra</span>
+      <h1 class="hero-title">
+        <span class="title-block">HELLO, I'M <span class="hero-name-accent">RACHEL.</span></span>
+        <span class="title-block">I DESIGN DIGITAL EXPERIENCES THAT MAKE PEOPLE <em class="serif-italic">think</em>, <em class="serif-italic">feel</em> &amp; <em class="serif-italic">interact</em>.</span>
       </h1>
 
       <p class="hero-sub">
-        I design human-centered interfaces that make complex systems feel intuitive, calm, and effortless to navigate. Currently in my final year of UI/UX Design at Symbiosis Institute of Design, Nagpur, focusing on user research, cognitive psychology, and scalable design systems.
+        I'm a UI/UX designer interested in understanding people, exploring problems and creating thoughtful digital experiences.
       </p>
 
       <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary">
-          <span>View Selected Work</span>
-          <span>&rarr;</span>
+        <a href="#featured-work" class="btn btn-primary">
+          <span>Explore My Work</span>
+          <span>↓</span>
         </a>
-        <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume ↗</a>
+        <a href="about.html" class="btn btn-secondary">About My Journey</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↗</a>
       </div>
 
-      <div class="hero-highlights">
-        <span class="highlight-chip">UX Research &amp; User Flows</span>
-        <span class="highlight-chip">Design Systems (Figma)</span>
-        <span class="highlight-chip">Information Architecture</span>
-        <span class="highlight-chip">Interactive Prototyping</span>
-        <span class="highlight-chip">Antigravity IDE</span>
+      <div class="hero-chips-row">
+        <span class="hero-chip">Figma Systems</span>
+        <span class="hero-chip">Cognitive Research</span>
+        <span class="hero-chip">Interaction Design</span>
+        <span class="hero-chip">Antigravity IDE</span>
+      </div>
+
+      <div class="scroll-indicator-bar">
+        <span>↓</span>
+        <span>Scroll down to explore featured work &amp; experiments</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: UNCONVENTIONAL PORTRAIT FRAME TREATMENT -->
+    <div class="hero-visual">
+      <div class="portrait-frame-wrapper">
+        <!-- Floating Stamp 1 -->
+        <div class="floating-stamp stamp-top-right">
+          <span class="stamp-icon">★</span>
+          <span>Emerging UI/UX Designer</span>
+        </div>
+
+        <!-- Asymmetric Layered Editorial Frame -->
+        <div class="portrait-editorial-card">
+          <img src="rachel.jpg" alt="Rachel Mishra — UI/UX Designer" class="portrait-img" width="607" height="1024" loading="eager">
+        </div>
+
+        <!-- Floating Stamp 2 -->
+        <div class="floating-stamp stamp-bottom-left">
+          <span>[SYSTEMS &amp; EMPATHY]</span>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="scroll-hint">Scroll down to explore</div>
 </section>
 
-<!-- PORTFOLIO OVERVIEW EXPLORE CARDS -->
-<section class="home-explore">
-  <div class="home-explore-inner">
-    <div class="explore-heading">
+<!-- MOVING TYPOGRAPHY MARQUEE -->
+<div class="marquee-wrapper" aria-hidden="true">
+  <div class="marquee-content">
+    <div class="marquee-item">
+      <span>HUMAN-CENTERED INTERFACES</span>
+      <span>FIGMA DESIGN SYSTEMS</span>
+      <span>QUALITATIVE USER RESEARCH</span>
+      <span>COGNITIVE PSYCHOLOGY</span>
+      <span>INTERACTIVE PROTOTYPING</span>
+      <span>ANTIGRAVITY IDE</span>
+      <span>AVAILABLE JAN 2027</span>
+    </div>
+    <div class="marquee-item">
+      <span>HUMAN-CENTERED INTERFACES</span>
+      <span>FIGMA DESIGN SYSTEMS</span>
+      <span>QUALITATIVE USER RESEARCH</span>
+      <span>COGNITIVE PSYCHOLOGY</span>
+      <span>INTERACTIVE PROTOTYPING</span>
+      <span>ANTIGRAVITY IDE</span>
+      <span>AVAILABLE JAN 2027</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================
+     SECTION: FEATURED PROJECTS
+     ========================================== -->
+<section class="section-light" id="featured-work">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Selected Case Studies</p>
+      <h2>Featured Projects</h2>
+      <p>Three core systems spanning higher education onboarding, healthcare doctor burnout, and high-density shelter triage operations.</p>
+    </div>
+
+    <div class="projects-editorial-list">
+
+      <!-- PROJECT 01: GOUNI -->
+      <article class="project-editorial-card" id="project-gouni">
+        <div class="project-card-top">
+          <div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">01 / FEATURED</span>
+              <span class="project-category-tag">Higher Education · Design System &amp; Web</span>
+              <span class="project-scope-tag">SID Nagpur · Assignment 2</span>
+            </div>
+            <h3 class="project-title">GoUni — Study Abroad &amp; Higher Education Portal</h3>
+            <p class="project-tagline">“Making studying abroad less overwhelming through cognitive simplicity.”</p>
+            <p class="project-description">
+              A comprehensive discovery web application and multi-tier component library built in Figma, resolving student anxiety, hidden fees, and application confusion across international university programs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Role & Scope -->
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UI/UX Designer &amp; Design System Architect</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Contribution</span>
+            <span class="role-val">User Journey Storyboarding, Figma Tokens, Multi-state Variants, Interactive Flows</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Key Outcome</span>
+            <span class="role-val">85% Faster comparison time &amp; unified responsive token kit</span>
+          </div>
+        </div>
+
+        <div class="project-tools-row">
+          <span class="project-tool-pill">Figma</span>
+          <span class="project-tool-pill">Design Tokens</span>
+          <span class="project-tool-pill">Component Variants</span>
+          <span class="project-tool-pill">Auto-Layout 5.0</span>
+          <span class="project-tool-pill">UX Storyboarding</span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="project-actions">
+          <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>View Case Study Deck</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="btn btn-ghost">
+            <span>Open Figma Prototype ↗</span>
+          </a>
+          <a href="projects.html#project-gouni" class="btn btn-secondary">
+            <span>Deep Dive Specifications</span>
+          </a>
+        </div>
+
+        <!-- Large Real Showcase Container -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+              </div>
+              <span class="showcase-path">GoUni / Real Design Artifacts / Interactive Gallery</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="screen-tab active" data-screen="storyboard" type="button">1. UX Journey Storyboard</button>
+              <button class="screen-tab" data-screen="components" type="button">2. Figma Component System</button>
+            </div>
+          </div>
+
+          <div class="showcase-viewport">
+            <img src="project_gouni.jpg" alt="GoUni UX Storyboard - Study abroad journey" class="showcase-main-img" id="gouniMainScreen" loading="lazy">
+          </div>
+
+          <div class="showcase-caption">
+            <p class="showcase-caption-text" id="gouniScreenCaption">
+              <strong>Real Project Artifact:</strong> 6-stage UX Storyboard mapping student pain points, platform discovery, personalized application support, and international enrollment.
+            </p>
+            <span class="provenance-pill">✔ Authentic Figma Work</span>
+          </div>
+
+          <div class="showcase-thumbs">
+            <button class="showcase-thumb-btn active" data-screen="storyboard" type="button">
+              <img src="project_gouni.jpg" alt="Storyboard Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 1: UX Storyboard</h4>
+                <p>6-step study abroad narrative</p>
+              </div>
+            </button>
+            <button class="showcase-thumb-btn" data-screen="components" type="button">
+              <img src="project_gouni_components.png" alt="Components Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 2: Component System</h4>
+                <p>Auto-layout multi-state variants</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 02: THE HEALING CIRCLE -->
+      <article class="project-editorial-card" id="project-healing-circle">
+        <div class="project-card-top">
+          <div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">02 / RESEARCH</span>
+              <span class="project-category-tag">Healthcare UX · Systems &amp; Well-being</span>
+              <span class="project-scope-tag">SID Nagpur · Sem 5 · USDR</span>
+            </div>
+            <h3 class="project-title">The Healing Circle — Hospital Well-being System</h3>
+            <p class="project-tagline">“Addressing physician burnout and emotional overload through structured physical &amp; digital recovery rituals.”</p>
+            <p class="project-description">
+              A comprehensive User Studies and Design Research (USDR) project investigating digital overload, empathy fatigue, and tech burnout among hospital physicians. Combines physical debrief sanctuaries, low-friction micro-rituals, peer support circles, and a soft digital layer.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UX Researcher &amp; Systems Designer (Co-author: Vidhi Ambade)</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Contribution</span>
+            <span class="role-val">Specialist Doctor Interviews, Concentric Ecosystem Model, 5-Stage Journey Mapping</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Key Outcome</span>
+            <span class="role-val">Non-digital sanctuary blueprint adopted for hospital debrief environments</span>
+          </div>
+        </div>
+
+        <div class="project-tools-row">
+          <span class="project-tool-pill">User Studies</span>
+          <span class="project-tool-pill">Qualitative Interviews</span>
+          <span class="project-tool-pill">Gap Analysis</span>
+          <span class="project-tool-pill">Systems Design</span>
+          <span class="project-tool-pill">Touchpoint Mapping</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="project_healing_circle.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>View Full Research Deck (PDF)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="projects.html#project-healing-circle" class="btn btn-secondary">
+            <span>Deep Dive Specifications</span>
+          </a>
+        </div>
+
+        <!-- Real Showcase Container -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+              </div>
+              <span class="showcase-path">The Healing Circle / USDR Research Deck / Interactive Gallery</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="screen-tab hc-tab active" data-screen="concept" type="button">1. Concept &amp; Ecosystem</button>
+              <button class="screen-tab hc-tab" data-screen="interviews" type="button">2. Doctor Field Research</button>
+              <button class="screen-tab hc-tab" data-screen="rituals" type="button">3. Debrief Sanctuary &amp; Rituals</button>
+              <button class="screen-tab hc-tab" data-screen="flow" type="button">4. 5-Stage Journey Flow</button>
+            </div>
+          </div>
+
+          <div class="showcase-viewport">
+            <img src="project_healing_circle_concept.svg" alt="The Healing Circle Concept Architecture" class="showcase-main-img" id="hcMainScreen" loading="lazy">
+          </div>
+
+          <div class="showcase-caption">
+            <p class="showcase-caption-text" id="hcScreenCaption">
+              <strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer.
+            </p>
+            <span class="provenance-pill">✔ Sem 5 USDR Assignment</span>
+          </div>
+
+          <div class="showcase-thumbs">
+            <button class="showcase-thumb-btn hc-thumb active" data-screen="concept" type="button">
+              <img src="project_healing_circle_concept.svg" alt="Concept Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 1: Concept Diagram</h4>
+                <p>Inner restorative sanctuary</p>
+              </div>
+            </button>
+            <button class="showcase-thumb-btn hc-thumb" data-screen="interviews" type="button">
+              <img src="project_healing_circle_interviews.svg" alt="Interviews Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 2: Doctor Interviews</h4>
+                <p>Pediatrics, Gastro, Forensic</p>
+              </div>
+            </button>
+            <button class="showcase-thumb-btn hc-thumb" data-screen="rituals" type="button">
+              <img src="project_healing_circle_rituals.svg" alt="Rituals Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 3: Debrief &amp; Rituals</h4>
+                <p>4 reset moments for trauma</p>
+              </div>
+            </button>
+            <button class="showcase-thumb-btn hc-thumb" data-screen="flow" type="button">
+              <img src="project_healing_circle_flow.svg" alt="Flow Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 4: 5-Stage Journey</h4>
+                <p>Trauma to shift recalibration</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 03: PAWBRIDGE -->
+      <article class="project-editorial-card" id="project-pawbridge">
+        <div class="project-card-top">
+          <div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">03 / FINAL UEDP</span>
+              <span class="project-category-tag">Animal Welfare · Desktop Operations &amp; NGO Platform</span>
+              <span class="project-scope-tag">SID Nagpur · Sem 5 · Final UEDP-5</span>
+            </div>
+            <h3 class="project-title">PawBridge — Animal Shelter Operations &amp; Trust Platform</h3>
+            <p class="project-tagline">“Bridging generous public intent with verifiable rescue impact.”</p>
+            <p class="project-description">
+              A dual-sided digital system consisting of a high-density desktop operations workspace (1440×1024) for shelter administrators and a transparent public portal that dismantles donor skepticism through verifiable medical milestones.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UI/UX Designer &amp; User Researcher</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Contribution</span>
+            <span class="role-val">Desktop Operations (1440×1024), Supporter Psychology, Animal Intake Triage, Live Vercel Deployment</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Key Outcome</span>
+            <span class="role-val">65% reduction in intake logging friction &amp; verified live web prototype</span>
+          </div>
+        </div>
+
+        <div class="project-tools-row">
+          <span class="project-tool-pill">Figma</span>
+          <span class="project-tool-pill">Desktop Operations</span>
+          <span class="project-tool-pill">Supporter Psychology</span>
+          <span class="project-tool-pill">Live Vercel Platform</span>
+          <span class="project-tool-pill">Design Systems</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://pawbridge-five.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>Open Live Platform (Vercel)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.figma.com/design/GfirLWG1m1tEfSMGP8Isjg/Final-Uedp-5?node-id=62-4193&amp;t=kTxWoEpFhU5qcXCT-1" target="_blank" rel="noopener" class="btn btn-ghost">
+            <span>Open Figma Prototype ↗</span>
+          </a>
+          <a href="projects.html#project-pawbridge" class="btn btn-secondary">
+            <span>Deep Dive Specifications</span>
+          </a>
+        </div>
+
+        <!-- Real Showcase Container -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
+              </div>
+              <span class="showcase-path">PawBridge / Final UEDP-5 / Desktop Platform &amp; Research</span>
+            </div>
+            <div class="showcase-tabs">
+              <button class="screen-tab pb-tab active" data-screen="workspace" type="button">1. Desktop Operations Workspace</button>
+              <button class="screen-tab pb-tab" data-screen="research" type="button">2. Supporter Psychology &amp; Research</button>
+            </div>
+          </div>
+
+          <div class="showcase-viewport">
+            <img src="project_pawbridge.png" alt="PawBridge Desktop Shelter Operations Dashboard" class="showcase-main-img" id="pbMainScreen" loading="lazy">
+          </div>
+
+          <div class="showcase-caption">
+            <p class="showcase-caption-text" id="pbScreenCaption">
+              <strong>Real Project Artifact:</strong> High-fidelity desktop operations workspace (1440×1024) featuring patient admission, live kennel capacity management, and medical case tracking.
+            </p>
+            <span class="provenance-pill">✔ Final UEDP-5 System</span>
+          </div>
+
+          <div class="showcase-thumbs">
+            <button class="showcase-thumb-btn pb-thumb active" data-screen="workspace" type="button">
+              <img src="project_pawbridge.png" alt="Workspace Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 1: Operations Workspace</h4>
+                <p>1440×1024 triage &amp; live capacity</p>
+              </div>
+            </button>
+            <button class="showcase-thumb-btn pb-thumb" data-screen="research" type="button">
+              <img src="project_pawbridge_presentation.png" alt="Research Thumbnail" class="showcase-thumb-img">
+              <div class="showcase-thumb-info">
+                <h4>Screen 2: Supporter Psychology</h4>
+                <p>Donor hesitation &amp; trust research</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SECTION: ABOUT & THE THREE D'S
+     ========================================== -->
+<section class="section-dark" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-photo-wrapper">
+        <div class="about-photo-card">
+          <img src="rachel.jpg" alt="Rachel Mishra Portrait" width="607" height="1024" loading="lazy">
+        </div>
+        <div class="about-status-card">
+          <span style="font-family: var(--ff-display); font-size: 0.85rem; font-weight: 700; color: var(--plum);">Available for Internships</span>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Starting January 2027 · Remote or On-site</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="eyebrow">Design Philosophy &amp; Story</p>
+        <h2 class="about-title">Hi, I'm Rachel Mishra.</h2>
+        <p class="about-role-sub">Fourth-Year UI/UX Designer · SID Nagpur</p>
+
+        <div class="about-narrative">
+          <p>
+            I believe that exceptional interfaces should feel second nature—calm, transparent, and built with genuine empathy for how real people think, feel, and make decisions under cognitive load.
+          </p>
+          <p>
+            As a final-year UI/UX design student at <strong>Symbiosis Institute of Design (SID), Nagpur</strong>, my work bridges qualitative human research with rigorous interface craft. I enjoy immersing myself in ambiguous problem spaces—whether untangling doctor burnout in hospital wards or simplifying complex cross-border university applications—and translating raw user friction into structured user journeys, accessible design systems, and tactile, high-fidelity prototypes.
+          </p>
+          <p>
+            Recently, during my UI/UX Design internship at <strong>Livyana Fashion &amp; Arts</strong>, I helped design and prototype responsive web platforms and digital campaigns, balancing user empathy with brand storytelling and front-end feasibility.
+          </p>
+        </div>
+
+        <!-- The Three D's -->
+        <div class="passions-grid">
+          <article class="passion-card">
+            <div class="passion-top">
+              <div class="passion-icon-box">💃</div>
+              <span class="passion-num">01 · RHYTHM</span>
+            </div>
+            <h3>Dance</h3>
+            <p class="passion-sub">Expression &amp; Kinetic Flow</p>
+            <p class="passion-desc">
+              Dance has trained my instinct for rhythm, spatial awareness, and non-verbal expression—disciplines that directly shape how I approach motion choreography and micro-interaction pacing in digital interfaces.
+            </p>
+          </article>
+
+          <article class="passion-card">
+            <div class="passion-top">
+              <div class="passion-icon-box">✦</div>
+              <span class="passion-num">02 · CRAFT</span>
+            </div>
+            <h3>Design</h3>
+            <p class="passion-sub">Curiosity &amp; Everyday Systems</p>
+            <p class="passion-desc">
+              Design is how I perceive the world around me. From critiquing transit signage to organizing atomic design token architectures in Figma, I love turning confusing clutter into clear, human-centered systems.
+            </p>
+          </article>
+
+          <article class="passion-card">
+            <div class="passion-top">
+              <div class="passion-icon-box">🚗</div>
+              <span class="passion-num">03 · CLARITY</span>
+            </div>
+            <h3>Driving</h3>
+            <p class="passion-sub">Focus &amp; Open Highways</p>
+            <p class="passion-desc">
+              Cruising down open highways demands continuous anticipation and acute situational awareness—giving me the mental clarity to step back and return to complex design problems with fresh perspective.
+            </p>
+          </article>
+        </div>
+
+        <div style="margin-top: 2.2rem; display: flex; gap: 0.9rem; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-secondary">Read Full Journey &amp; Experience &rarr;</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SECTION: EXPERIENCE & LIVYANA INTERNSHIP
+     ========================================== -->
+<section class="section-light" id="experience">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Work History &amp; Education</p>
+      <h2>Experience Timeline</h2>
+      <p>Real-world design internship contribution, academic foundation at Symbiosis, and student leadership.</p>
+    </div>
+
+    <div class="timeline-container">
+      <!-- 1. LIVYANA INTERNSHIP -->
+      <article class="timeline-card">
+        <div class="timeline-card-header">
+          <div>
+            <h3 class="timeline-role-title">UI/UX Design Intern</h3>
+            <p class="timeline-company">Livyana Fashion &amp; Arts</p>
+          </div>
+          <div style="text-align: right;">
+            <span class="timeline-badge">INTERNSHIP</span>
+            <span class="timeline-date">June 2024 – July 2024 · 2 Mos</span>
+          </div>
+        </div>
+        <p style="color: var(--text-secondary); line-height: 1.65;">
+          Contributed to end-to-end digital experiences, responsive website interfaces, and brand campaigns for fashion and arts initiatives.
+        </p>
+        <ul class="timeline-bullets">
+          <li>Designed responsive web interfaces and interaction flows for the <strong>Miss Nation</strong> platform.</li>
+          <li>Conducted user and competitive analysis to inform wireframing and user experience decisions.</li>
+          <li>Built high-fidelity interactive prototypes in Figma for stakeholder walkthroughs and review.</li>
+          <li>Designed cohesive digital marketing creatives and social assets aligned with brand guidelines.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Figma</span>
+          <span class="timeline-tag">Responsive UI</span>
+          <span class="timeline-tag">User Flows</span>
+          <span class="timeline-tag">Marketing Creatives</span>
+          <span class="timeline-tag">Prototyping</span>
+        </div>
+      </article>
+
+      <!-- 2. EDUCATION -->
+      <article class="timeline-card">
+        <div class="timeline-card-header">
+          <div>
+            <h3 class="timeline-role-title">Bachelor of Design (B.Des) — UI/UX Design</h3>
+            <p class="timeline-company">Symbiosis Institute of Design · SIU Nagpur</p>
+          </div>
+          <div style="text-align: right;">
+            <span class="timeline-badge">EDUCATION</span>
+            <span class="timeline-date">2022 – 2026 · Final Year</span>
+          </div>
+        </div>
+        <p style="color: var(--text-secondary); line-height: 1.65;">
+          Comprehensive four-year design curriculum focusing on human-computer interaction, cognitive psychology, and digital product strategy.
+        </p>
+        <ul class="timeline-bullets">
+          <li>Specialized in User Studies &amp; Design Research (USDR) and User Experience Design Projects (UEDP).</li>
+          <li>Trained in Design Systems, Information Architecture, Heuristic Evaluation, and Usability Testing.</li>
+          <li>Hands-on exploration in emerging spatial interfaces, VR prototyping, and generative design tools.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">UI/UX Design</span>
+          <span class="timeline-tag">Design Systems</span>
+          <span class="timeline-tag">Cognitive Ergonomics</span>
+          <span class="timeline-tag">HCI</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SECTION: SKILLS (EXACT 4 CATEGORIES)
+     ========================================== -->
+<section class="section-light" id="skills" style="background: var(--soft-lilac-subtle);">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow">Capabilities Matrix</p>
+      <h2>Skills &amp; Toolkit</h2>
+      <p>Organized into research, visual craft, interaction design, and industry production software.</p>
+    </div>
+
+    <div class="skills-editorial-grid">
+      <!-- 01 UX RESEARCH -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">01</span>
+          <span class="skills-cat-tag">Research</span>
+        </div>
+        <h3>UX Research</h3>
+        <p>Uncovering real user friction, mental models, and behavioral motivations through qualitative and quantitative inquiry.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">User Interviews</span>
+          <span class="skill-pill">Personas</span>
+          <span class="skill-pill">Journey Mapping</span>
+          <span class="skill-pill">Usability Testing</span>
+          <span class="skill-pill">Heuristic Audits</span>
+        </div>
+      </article>
+
+      <!-- 02 UI DESIGN -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">02</span>
+          <span class="skills-cat-tag">Visual Craft</span>
+        </div>
+        <h3>UI Design</h3>
+        <p>Crafting refined visual hierarchies, editorial typography, spatial layouts, and scalable design token systems.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Visual Design</span>
+          <span class="skill-pill">Typography</span>
+          <span class="skill-pill">Layout &amp; Grid</span>
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">WCAG AA Contrast</span>
+        </div>
+      </article>
+
+      <!-- 03 INTERACTION DESIGN -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">03</span>
+          <span class="skills-cat-tag">Interaction</span>
+        </div>
+        <h3>Interaction Design</h3>
+        <p>Translating user needs into functional wireframes, multi-state interactive flows, and realistic micro-interactions.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Wireframing</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">Micro-interactions</span>
+          <span class="skill-pill">User Flows</span>
+          <span class="skill-pill">Smart Animate</span>
+        </div>
+      </article>
+
+      <!-- 04 TOOLS -->
+      <article class="skills-category-card">
+        <div class="skills-category-top">
+          <span class="skills-cat-num">04</span>
+          <span class="skills-cat-tag">Software</span>
+        </div>
+        <h3>Tools</h3>
+        <p>Industry software and emerging agentic development environments I use daily to build and test design artifacts.</p>
+        <div class="skills-pills-list">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Illustrator</span>
+          <span class="skill-pill">Photoshop</span>
+          <span class="skill-pill">After Effects</span>
+          <span class="skill-pill">Canva</span>
+          <span class="skill-pill">Blender</span>
+          <span class="skill-pill">Unity</span>
+          <span class="skill-pill">Antigravity IDE</span>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top: 2.5rem; text-align: center;">
+      <a href="skills.html" class="btn btn-primary">Open Full Skills &amp; Interactive Sandbox &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SECTION: PLAYGROUND (CREATIVE EXPERIMENTS)
+     ========================================== -->
+<section class="section-light" id="playground">
+  <div class="section-inner">
+    <div class="playground-intro-bar">
       <div>
-        <h2>Portfolio Overview</h2>
-        <p>Explore selected case studies, background, capabilities, and contact information</p>
+        <p class="eyebrow">Creative Studio &amp; Labs</p>
+        <h2 style="font-size: clamp(2.2rem, 4vw, 3.2rem); color: var(--plum);">Playground</h2>
+        <p>A designer’s space for smaller interaction studies, design token experiments, and visual explorations.</p>
+      </div>
+      <a href="playground.html" class="btn btn-secondary">Explore Dedicated Playground &rarr;</a>
+    </div>
+
+    <!-- Live Interactive Figma Token Sandbox -->
+    <div class="token-sandbox-wrapper">
+      <div class="sandbox-topbar">
+        <h3>Figma Design Token &amp; Variant Engine</h3>
+        <p>Test component states, brand tokens, and auto-layout densities live below.</p>
+      </div>
+
+      <div class="sandbox-main-grid">
+        <!-- Controls -->
+        <div class="sandbox-controls">
+          <div>
+            <span class="sandbox-group-label">Component State</span>
+            <div class="sandbox-pills-row" id="statePills">
+              <button type="button" class="sandbox-btn-pill active" data-state="default">Default</button>
+              <button type="button" class="sandbox-btn-pill" data-state="hover">Hover</button>
+              <button type="button" class="sandbox-btn-pill" data-state="active">Active</button>
+              <button type="button" class="sandbox-btn-pill" data-state="loading">Loading</button>
+              <button type="button" class="sandbox-btn-pill" data-state="disabled">Disabled</button>
+            </div>
+          </div>
+
+          <div>
+            <span class="sandbox-group-label">Color Token Swatch</span>
+            <div class="swatch-group" id="colorSwatches">
+              <button type="button" class="swatch-circle active" data-token="plum" data-color="#392B45" style="--c: #392B45;" title="Primary Plum ($color-plum)" aria-label="Plum"></button>
+              <button type="button" class="swatch-circle" data-token="lavender" data-color="#A68BB8" style="--c: #A68BB8;" title="Dusty Lavender ($color-lavender)" aria-label="Dusty Lavender"></button>
+              <button type="button" class="swatch-circle" data-token="rose" data-color="#C7A5A0" style="--c: #C7A5A0;" title="Muted Rose ($color-rose)" aria-label="Muted Rose"></button>
+              <button type="button" class="swatch-circle" data-token="dark" data-color="#211A27" style="--c: #211A27;" title="Almost Black ($color-dark)" aria-label="Almost Black"></button>
+            </div>
+          </div>
+
+          <div>
+            <span class="sandbox-group-label">Auto-Layout Padding</span>
+            <div class="sandbox-pills-row" id="densityPills">
+              <button type="button" class="sandbox-btn-pill" data-density="compact">Compact (10px)</button>
+              <button type="button" class="sandbox-btn-pill active" data-density="default">Default (14px)</button>
+              <button type="button" class="sandbox-btn-pill" data-density="spacious">Spacious (18px)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage Canvas -->
+        <div class="sandbox-stage">
+          <div class="sandbox-preview-card" id="demoCard">
+            <span class="sandbox-token-chip" id="demoTokenName">$color-plum-primary</span>
+            <h4 style="color: var(--lavender-white); font-size: 1.25rem; margin-bottom: 0.4rem;">Interactive Prototype</h4>
+            <p style="color: var(--soft-lilac); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.5rem;">Click any controls on the left to test interactive states and token reactivity.</p>
+            <button type="button" class="sandbox-demo-btn" id="sandboxDemoBtn">
+              <span>Explore Prototype</span>
+              <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Inspector -->
+        <div class="sandbox-inspector">
+          <div class="inspector-top">
+            <span class="inspector-title">CSS / Figma Token Spec</span>
+            <span style="font-size: 0.74rem; color: var(--text-light-muted);">Auto-generated</span>
+          </div>
+          <pre class="inspector-code-block"><code id="inspectorCode">/* Figma Token Output */
+.btn-primary {
+  --btn-bg: #392B45;
+  padding: 14px 28px;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px rgba(57, 43, 69, 0.3);
+  transition: all 0.25s ease;
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SECTION: BOLD DEEP-PLUM CONTACT
+     ========================================== -->
+<section class="section-contact-deep" id="contact">
+  <div class="contact-abstract-shape"></div>
+
+  <div class="section-inner" style="position: relative; z-index: 1;">
+    <p class="eyebrow" style="color: var(--muted-rose);">Let's Connect</p>
+    
+    <h2 class="contact-headline">
+      HAVE AN IDEA?<br>
+      LET'S MAKE SOMETHING <em class="serif-italic">meaningful</em>.
+    </h2>
+
+    <p class="contact-sub">
+      I’m currently seeking <strong>UI/UX Design internship opportunities</strong> starting <strong>January 2027</strong>. Whether you’re a recruiter hiring for your product team, a design lead with an open role, or a fellow creative wanting to collaborate on thoughtful interfaces—my inbox is always open.
+    </p>
+
+    <!-- Recruiter Actions -->
+    <div class="contact-actions-row">
+      <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="btn-contact-main" id="emailMeBtn">
+        <span>Email Rachel</span>
+        <span>&rarr;</span>
+      </a>
+      <a href="tel:+917507444004" class="btn-contact-ghost">
+        <span>Call: +91 75074 44004</span>
+        <span>↗</span>
+      </a>
+      <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="btn-contact-ghost">
+        <span>WhatsApp Chat</span>
+        <span>↗</span>
+      </a>
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn-contact-ghost">
+        <span>Download Resume (PDF)</span>
+        <span>↗</span>
+      </a>
+    </div>
+
+    <!-- Recruiter Quick Facts Card -->
+    <div class="recruiter-fast-facts-card">
+      <div class="facts-header">
+        <span style="font-size: 1.5rem;">⚡</span>
+        <div>
+          <h3>Recruiter Quick Facts</h3>
+          <p>Key information for design hiring managers, recruiters, and talent partners</p>
+        </div>
+      </div>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <span class="fact-label">Seeking Roles</span>
+          <span class="fact-val">UI/UX Design Intern</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Internship Availability</span>
+          <span class="fact-val">January 2027</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Location Flexibility</span>
+          <span class="fact-val">Remote (Worldwide) or On-site</span>
+        </div>
+        <div class="fact-item">
+          <span class="fact-label">Core Competencies</span>
+          <span class="fact-val">Figma, UX Research, Design Systems</span>
+        </div>
       </div>
     </div>
 
-    <div class="explore-grid">
-      <!-- 01 ABOUT -->
-      <a href="about.html" class="explore-card">
+    <!-- Direct Contact Tiles -->
+    <div class="contact-tiles-grid">
+      <!-- EMAIL -->
+      <article class="contact-plum-tile">
         <div>
-          <div class="explore-card-top">
-            <span class="explore-card-num">01 · About</span>
-            <span class="explore-card-arrow">&rarr;</span>
-          </div>
-          <h3>Design Journey &amp; Story</h3>
-          <p>My background at Symbiosis Institute of Design, UI/UX internship at Livyana Fashion &amp; Arts, human-centered philosophy, and personal passions (Dance, Design, Driving).</p>
+          <span class="contact-tile-type">
+            <span>✉</span>
+            <span>Direct Email</span>
+          </span>
+          <div class="contact-tile-big">rachelmishra487@gmail.com</div>
+          <p class="contact-tile-sub">Best for internship inquiries, project briefs, design reviews, and team outreach.</p>
         </div>
-        <span class="explore-card-cta">Read my story &rarr;</span>
-      </a>
+        <div class="contact-tile-actions">
+          <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="btn-tile-primary">Compose Email &rarr;</a>
+          <button type="button" class="btn-tile-secondary" onclick="copyToClipboard('rachelmishra487@gmail.com', 'Email')">Copy</button>
+        </div>
+      </article>
 
-      <!-- 02 PROJECTS -->
-      <a href="projects.html" class="explore-card">
+      <!-- PHONE / WHATSAPP -->
+      <article class="contact-plum-tile">
         <div>
-          <div class="explore-card-top">
-            <span class="explore-card-num">02 · Projects</span>
-            <span class="explore-card-arrow">&rarr;</span>
-          </div>
-          <h3>Featured Case Studies</h3>
-          <p>In-depth breakdowns of GoUni (Higher Ed Design System), The Healing Circle (Healthcare Burnout Research), and PawBridge (Animal Welfare Operations Workspace).</p>
+          <span class="contact-tile-type">
+            <span>☎</span>
+            <span>Phone &amp; WhatsApp</span>
+          </span>
+          <div class="contact-tile-big">+91 75074 44004</div>
+          <p class="contact-tile-sub">Available for phone screenings, voice interviews, and quick WhatsApp chats.</p>
         </div>
-        <span class="explore-card-cta">Explore case studies &rarr;</span>
-      </a>
+        <div class="contact-tile-actions">
+          <a href="tel:+917507444004" class="btn-tile-primary">Call Now ↗</a>
+          <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="btn-tile-secondary">WhatsApp ↗</a>
+          <button type="button" class="btn-tile-secondary" onclick="copyToClipboard('+91 75074 44004', 'Phone number')">Copy</button>
+        </div>
+      </article>
+    </div>
 
-      <!-- 03 SKILLS -->
-      <a href="skills.html" class="explore-card">
-        <div>
-          <div class="explore-card-top">
-            <span class="explore-card-num">03 · Skills &amp; Toolkit</span>
-            <span class="explore-card-arrow">&rarr;</span>
-          </div>
-          <h3>Capabilities &amp; Software Matrix</h3>
-          <p>Core UI/UX disciplines, design systems, Figma component tokens, Adobe Creative Suite, and emerging generative tools like Antigravity IDE.</p>
-        </div>
-        <span class="explore-card-cta">View skill matrix &rarr;</span>
-      </a>
-
-      <!-- 04 CONTACT -->
-      <a href="contact.html" class="explore-card">
-        <div>
-          <div class="explore-card-top">
-            <span class="explore-card-num">04 · Contact</span>
-            <span class="explore-card-arrow">&rarr;</span>
-          </div>
-          <h3>Let’s Connect</h3>
-          <p>Reach out directly via email, phone, or WhatsApp for UI/UX internship opportunities, portfolio reviews, and collaborative design work.</p>
-        </div>
-        <span class="explore-card-cta">Get contact details &rarr;</span>
+    <!-- Social Profile Strip -->
+    <div class="contact-social-row">
+      <span style="font-family: var(--ff-display); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft-lilac);">
+        Creative Presence
+      </span>
+      <a href="https://www.instagram.com/rachelmishraa/" target="_blank" rel="noopener" class="social-pill-link">
+        <span>Instagram (@rachelmishraa)</span>
+        <span>↗</span>
       </a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <span>© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
+<footer class="footer-editorial">
+  <span class="footer-mark">© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 

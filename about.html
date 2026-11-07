@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me — Rachel Mishra | UI/UX Designer</title>
-<meta name="description" content="About Rachel Mishra, final-year UI/UX design student at Symbiosis Institute of Design (SID), Nagpur. Design philosophy, internship experience at Livyana Fashion & Arts, and personal interests.">
+<meta name="description" content="About Rachel Mishra, final-year UI/UX designer at Symbiosis Institute of Design, Nagpur. Design philosophy, Livyana Fashion & Arts internship, and personal interests.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
@@ -16,242 +16,245 @@
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- STICKY NAVBAR -->
+<!-- STICKY EDITORIAL NAVIGATION -->
 <header class="nav" id="navbar">
-  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">
+    <span>RACHEL MISHRA</span>
+    <span class="mark-sub">UI/UX</span>
+  </a>
   <nav class="nav-links" id="navLinks">
-    <a href="about.html" class="active">About</a>
     <a href="projects.html">Work</a>
+    <a href="about.html" class="active">About</a>
+    <a href="playground.html">Playground</a>
     <a href="skills.html">Skills</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume ↗</a>
   </nav>
   <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
 
-<main class="subpage-main">
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="dot-matrix" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-    <p class="eyebrow">01 · Background &amp; Story</p>
-    <h1>About Me</h1>
-    <p class="page-desc">Designing digital experiences grounded in human cognitive empathy, systems thinking, and clear interface craft.</p>
-  </header>
+<!-- MAIN CONTENT -->
+<main class="section-light" style="padding-top: 3.5rem;">
+  <div class="section-inner">
 
-  <!-- ABOUT HERO SECTION (PHOTO + NARRATIVE) -->
-  <section class="about-hero-grid">
-    <!-- LEFT: RACHEL'S PHOTO & STATUS -->
-    <div class="about-photo-wrapper">
-      <div class="about-photo-card">
-        <img src="rachel.jpg" alt="Rachel Mishra — UI/UX Designer" width="607" height="1024" loading="eager">
-      </div>
-      
-      <div class="about-photo-meta">
-        <div class="about-status-row">
-          <span class="status-dot-green"></span>
-          <span>Open to UI/UX Internships · January 2027</span>
+    <!-- PAGE HEADER -->
+    <div class="section-header" style="margin-bottom: 3.5rem;">
+      <p class="eyebrow">Background &amp; Philosophy</p>
+      <h2>About Me</h2>
+      <p>Designing digital experiences grounded in human cognitive empathy, systems thinking, and clear interface craft.</p>
+    </div>
+
+    <!-- ABOUT HERO GRID (PORTRAIT + NARRATIVE) -->
+    <div class="about-grid" style="margin-bottom: 5rem;">
+      <!-- LEFT: PORTRAIT IN UNCONVENTIONAL FRAME -->
+      <div class="about-photo-wrapper">
+        <div class="portrait-editorial-card">
+          <img src="rachel.jpg" alt="Rachel Mishra — UI/UX Designer" class="portrait-img" width="607" height="1024" loading="eager">
         </div>
-        <div class="about-location-row">
-          <span>📍 Symbiosis Institute of Design · Nagpur, India</span>
+        <div class="about-status-card">
+          <span style="font-family: var(--ff-display); font-size: 0.88rem; font-weight: 700; color: var(--plum);">Available for Internships</span>
+          <span style="font-size: 0.82rem; color: var(--text-muted);">Starting January 2027 · Remote or On-site</span>
         </div>
       </div>
-    </div>
 
-    <!-- RIGHT: PERSONAL NARRATIVE & PHILOSOPHY -->
-    <div class="about-journey-content">
-      <p class="eyebrow">Personal Journey &amp; Approach</p>
-      <h2 class="about-journey-title">Hi, I'm Rachel Mishra.</h2>
-      <p class="about-subtitle-role">Fourth-Year UI/UX Designer · SID Nagpur</p>
+      <!-- RIGHT: NARRATIVE -->
+      <div class="about-content">
+        <p class="eyebrow">Personal Journey &amp; Approach</p>
+        <h2 class="about-title">Hi, I'm Rachel Mishra.</h2>
+        <p class="about-role-sub">Fourth-Year UI/UX Designer · SID Nagpur</p>
 
-      <div class="about-narrative">
-        <p>
-          I believe that exceptional interfaces should feel invisible—calm, transparent, and built with genuine empathy for how real people think, feel, and make decisions under cognitive load.
-        </p>
+        <div class="about-narrative">
+          <p>
+            I believe that exceptional interfaces should feel second nature—calm, transparent, and built with genuine empathy for how real people think, feel, and make decisions under cognitive load.
+          </p>
 
-        <p>
-          As a final-year UI/UX design student at <strong>Symbiosis Institute of Design (SID), Nagpur</strong>, my work bridges qualitative human research with rigorous interface craft. I enjoy immersing myself in ambiguous problem spaces—whether that involves untangling doctor burnout in hospital wards or simplifying complex cross-border university applications—and translating raw user friction into structured user journeys, accessible design systems, and tactile, high-fidelity prototypes.
-        </p>
+          <p>
+            As a final-year UI/UX design student at <strong>Symbiosis Institute of Design (SID), Nagpur</strong>, my work bridges qualitative human research with rigorous interface craft. I enjoy immersing myself in ambiguous problem spaces—whether that involves untangling doctor burnout in hospital wards or simplifying complex cross-border university applications—and translating raw user friction into structured user journeys, accessible design systems, and tactile, high-fidelity prototypes.
+          </p>
 
-        <p>
-          Recently, during my UI/UX Design internship at <strong>Livyana Fashion &amp; Arts</strong>, I helped design and prototype responsive web platforms and digital campaigns. The experience strengthened my ability to balance user empathy with brand objectives and front-end feasibility.
-        </p>
+          <p>
+            Recently, during my UI/UX Design internship at <strong>Livyana Fashion &amp; Arts</strong>, I helped design and prototype responsive web platforms and digital campaigns. The experience strengthened my ability to balance user empathy with brand storytelling and front-end feasibility.
+          </p>
 
-        <p>
-          As I prepare to graduate, I am actively seeking <strong>UI/UX Design internship opportunities starting January 2027</strong> where I can collaborate with thoughtful product teams, learn from seasoned design mentors, and contribute to products that make a tangible difference.
-        </p>
-      </div>
+          <p>
+            As I prepare to graduate, I am actively seeking <strong>UI/UX Design internship opportunities starting January 2027</strong> where I can collaborate with thoughtful product teams, learn from seasoned design mentors, and contribute to products that make a tangible difference.
+          </p>
+        </div>
 
-      <!-- CORE CAPABILITIES CHIPS -->
-      <ul class="about-tags" aria-label="Core Design Competencies">
-        <li>User Research</li>
-        <li>Information Architecture</li>
-        <li>User Flows</li>
-        <li>Wireframing</li>
-        <li>UI Design</li>
-        <li>Interactive Prototyping</li>
-        <li>Design Systems (Figma)</li>
-        <li>Usability Testing</li>
-        <li>Antigravity IDE</li>
-        <li>WCAG Accessibility</li>
-      </ul>
+        <div class="hero-chips-row" style="margin-bottom: 2.2rem;">
+          <span class="hero-chip">User Research</span>
+          <span class="hero-chip">Information Architecture</span>
+          <span class="hero-chip">User Flows</span>
+          <span class="hero-chip">Wireframing</span>
+          <span class="hero-chip">UI Design</span>
+          <span class="hero-chip">Interactive Prototyping</span>
+          <span class="hero-chip">Design Systems (Figma)</span>
+          <span class="hero-chip">Usability Testing</span>
+          <span class="hero-chip">Antigravity IDE</span>
+        </div>
 
-      <!-- CTA ACTIONS -->
-      <div class="about-actions">
-        <a href="projects.html" class="btn btn-primary">
-          <span>View Featured Projects</span>
-          <span>&rarr;</span>
-        </a>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download Resume ↗</a>
-        <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
+        <div style="display: flex; gap: 0.9rem; flex-wrap: wrap;">
+          <a href="projects.html" class="btn btn-primary">
+            <span>View Featured Projects</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Download Resume ↗</a>
+          <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- HIGHLIGHTED INTERNSHIP, EDUCATION & EXTRA-CURRICULAR SECTION -->
-  <section class="about-credentials-section">
-    <div class="credentials-header">
-      <p class="eyebrow">02 · Experience &amp; Education</p>
-      <h2>Where I've Learned &amp; Built</h2>
-      <p>Real-world internship experience, academic foundation at Symbiosis, and campus leadership.</p>
-    </div>
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <div style="margin-bottom: 5rem; padding-top: 3.5rem; border-top: 1.5px solid var(--line);">
+      <div class="section-header">
+        <p class="eyebrow">Professional History &amp; Education</p>
+        <h2>Experience &amp; Milestones</h2>
+        <p>Real-world design internship contribution, academic foundation at Symbiosis, and student leadership.</p>
+      </div>
 
-    <div class="credentials-grid">
-      <!-- 1. LIVYANA INTERNSHIP CARD -->
-      <article class="credential-card">
-        <div>
-          <div class="credential-top">
-            <span class="credential-badge">Internship</span>
-            <span class="credential-duration">June 2024 – July 2024 · 2 Mos</span>
+      <div class="timeline-container">
+        <!-- LIVYANA INTERNSHIP -->
+        <article class="timeline-card">
+          <div class="timeline-card-header">
+            <div>
+              <h3 class="timeline-role-title">UI/UX Design Intern</h3>
+              <p class="timeline-company">Livyana Fashion &amp; Arts</p>
+            </div>
+            <div style="text-align: right;">
+              <span class="timeline-badge">INTERNSHIP</span>
+              <span class="timeline-date">June 2024 – July 2024 · 2 Mos</span>
+            </div>
           </div>
-          <h3>UI/UX Design Intern</h3>
-          <p class="credential-org">Livyana Fashion &amp; Arts</p>
-          <p class="credential-desc">Contributed to end-to-end digital experiences, website interfaces, and brand campaigns for fashion and arts initiatives.</p>
-          <ul class="credential-bullets">
+          <p style="color: var(--text-secondary); line-height: 1.65;">
+            Contributed to end-to-end digital experiences, website interfaces, and brand campaigns for fashion and arts initiatives.
+          </p>
+          <ul class="timeline-bullets">
             <li>Designed responsive web interfaces and interaction flows for the <strong>Miss Nation</strong> platform.</li>
             <li>Conducted user and competitive analysis to inform wireframing and user experience decisions.</li>
             <li>Built high-fidelity interactive prototypes in Figma for stakeholder walkthroughs and review.</li>
             <li>Designed cohesive digital marketing creatives and social assets aligned with brand guidelines.</li>
           </ul>
-        </div>
-        <ul class="credential-tags">
-          <li>Figma</li>
-          <li>Responsive UI</li>
-          <li>Prototyping</li>
-          <li>Brand Creatives</li>
-        </ul>
-      </article>
-
-      <!-- 2. EDUCATION CARD -->
-      <article class="credential-card">
-        <div>
-          <div class="credential-top">
-            <span class="credential-badge">Education</span>
-            <span class="credential-duration">2022 – 2026 · Final Year</span>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Figma</span>
+            <span class="timeline-tag">Responsive UI</span>
+            <span class="timeline-tag">User Flows</span>
+            <span class="timeline-tag">Marketing Creatives</span>
           </div>
-          <h3>Bachelor of Design (B.Des) — UI/UX Design</h3>
-          <p class="credential-org">Symbiosis Institute of Design · SIU Nagpur</p>
-          <p class="credential-desc">Comprehensive four-year design curriculum focusing on human-computer interaction, cognitive psychology, and digital product strategy.</p>
-          <ul class="credential-bullets">
+        </article>
+
+        <!-- EDUCATION -->
+        <article class="timeline-card">
+          <div class="timeline-card-header">
+            <div>
+              <h3 class="timeline-role-title">Bachelor of Design (B.Des) — UI/UX Design</h3>
+              <p class="timeline-company">Symbiosis Institute of Design · SIU Nagpur</p>
+            </div>
+            <div style="text-align: right;">
+              <span class="timeline-badge">EDUCATION</span>
+              <span class="timeline-date">2022 – 2026 · Final Year</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65;">
+            Comprehensive four-year design curriculum focusing on human-computer interaction, cognitive psychology, and digital product strategy.
+          </p>
+          <ul class="timeline-bullets">
             <li>Specialized in User Studies &amp; Design Research (USDR) and User Experience Design Projects (UEDP).</li>
             <li>Trained in Design Systems, Information Architecture, Heuristic Evaluation, and Usability Testing.</li>
             <li>Hands-on exploration in emerging spatial interfaces, VR prototyping, and generative design tools.</li>
           </ul>
-        </div>
-        <ul class="credential-tags">
-          <li>UI/UX Design</li>
-          <li>Design Systems</li>
-          <li>HCI</li>
-          <li>Cognitive Psychology</li>
-        </ul>
-      </article>
-
-      <!-- 3. EXTRA-CURRICULAR & LEADERSHIP CARD -->
-      <article class="credential-card">
-        <div>
-          <div class="credential-top">
-            <span class="credential-badge">Leadership &amp; Community</span>
-            <span class="credential-duration">SIU Nagpur</span>
+          <div class="timeline-tags">
+            <span class="timeline-tag">UI/UX Design</span>
+            <span class="timeline-tag">Design Systems</span>
+            <span class="timeline-tag">Cognitive Ergonomics</span>
+            <span class="timeline-tag">HCI</span>
           </div>
-          <h3>Campus Leadership &amp; Initiatives</h3>
-          <p class="credential-org">Symbiosis International University</p>
-          <p class="credential-desc">Active contributor to university student life, creative event design, and community welfare initiatives.</p>
-          <ul class="credential-bullets">
+        </article>
+
+        <!-- EXTRA-CURRICULAR -->
+        <article class="timeline-card">
+          <div class="timeline-card-header">
+            <div>
+              <h3 class="timeline-role-title">Campus Leadership &amp; Community</h3>
+              <p class="timeline-company">Symbiosis International University</p>
+            </div>
+            <div style="text-align: right;">
+              <span class="timeline-badge">LEADERSHIP</span>
+              <span class="timeline-date">SIU Nagpur</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65;">
+            Active contributor to university student life, creative event design, and community welfare initiatives.
+          </p>
+          <ul class="timeline-bullets">
             <li><strong>Head of Dog Fest (Symbiocare)</strong>: Spearheaded campus-wide animal welfare event coordination and volunteer management.</li>
             <li><strong>Movie Club Member</strong>: Co-organized campus screenings, discussions, and visual storytelling workshops.</li>
             <li><strong>Decoration &amp; Spatial Team</strong>: Designed spatial installations and decorative atmospheres for major institutional events.</li>
             <li><strong>PR &amp; Communications Team</strong>: Created promotional visual collateral and managed attendee communications.</li>
           </ul>
-        </div>
-        <ul class="credential-tags">
-          <li>Leadership</li>
-          <li>Community Welfare</li>
-          <li>Event Design</li>
-          <li>Team Collaboration</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- BEYOND THE SCREEN SECTION (Dance, Design, Driving) -->
-  <section class="about-passions-section">
-    <div class="passions-header">
-      <p class="eyebrow">03 · Beyond the Screen</p>
-      <h2>The Three D’s</h2>
-      <p>Three personal passions that keep my perspective grounded, curious, and energized outside of design tools.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Leadership</span>
+            <span class="timeline-tag">Animal Welfare</span>
+            <span class="timeline-tag">Event Design</span>
+          </div>
+        </article>
+      </div>
     </div>
 
-    <div class="passions-grid">
-      <!-- PASSION 1: DANCE -->
-      <article class="passion-card">
-        <div class="passion-top">
-          <div class="passion-icon-box" aria-hidden="true">💃</div>
-          <span class="passion-num">01 · Rhythm</span>
-        </div>
-        <h3>Dance</h3>
-        <p class="passion-tagline">Expression, Energy &amp; Kinetic Flow</p>
-        <p class="passion-desc">
-          Dance is my creative release. It has trained my instinct for rhythm, spatial awareness, and non-verbal expression—disciplines that directly shape how I approach motion choreography, micro-interaction pacing, and visual tempo in digital interfaces.
-        </p>
-      </article>
+    <!-- THE THREE D'S -->
+    <div style="padding-top: 3.5rem; border-top: 1.5px solid var(--line);">
+      <div class="section-header">
+        <p class="eyebrow">Beyond the Screen</p>
+        <h2>The Three D’s</h2>
+        <p>Three personal passions that keep my perspective grounded, curious, and energized outside of design tools.</p>
+      </div>
 
-      <!-- PASSION 2: DESIGN -->
-      <article class="passion-card">
-        <div class="passion-top">
-          <div class="passion-icon-box" aria-hidden="true">✦</div>
-          <span class="passion-num">02 · Craft</span>
-        </div>
-        <h3>Design</h3>
-        <p class="passion-tagline">Curiosity, Systems &amp; Everyday Observation</p>
-        <p class="passion-desc">
-          Design is more than a career path; it's how I perceive the world around me. From critiquing transit signage to organizing atomic design token architectures in Figma, I find genuine joy in turning confusing clutter into clear, intuitive systems.
-        </p>
-      </article>
+      <div class="passions-grid">
+        <article class="passion-card">
+          <div class="passion-top">
+            <div class="passion-icon-box">💃</div>
+            <span class="passion-num">01 · RHYTHM</span>
+          </div>
+          <h3>Dance</h3>
+          <p class="passion-sub">Expression, Energy &amp; Kinetic Flow</p>
+          <p class="passion-desc">
+            Dance is my creative release. It has trained my instinct for rhythm, spatial awareness, and non-verbal expression—disciplines that directly shape how I approach motion choreography, micro-interaction pacing, and visual tempo in digital interfaces.
+          </p>
+        </article>
 
-      <!-- PASSION 3: DRIVING -->
-      <article class="passion-card">
-        <div class="passion-top">
-          <div class="passion-icon-box" aria-hidden="true">🚗</div>
-          <span class="passion-num">03 · Clarity</span>
-        </div>
-        <h3>Driving</h3>
-        <p class="passion-tagline">Focus, Playlists &amp; Open Highways</p>
-        <p class="passion-desc">
-          There’s nothing quite like cruising down open roads with a great playlist. Driving demands continuous anticipation, acute situational awareness, and total presence—giving me the mental clarity to step back and return to complex problems with fresh eyes.
-        </p>
-      </article>
+        <article class="passion-card">
+          <div class="passion-top">
+            <div class="passion-icon-box">✦</div>
+            <span class="passion-num">02 · CRAFT</span>
+          </div>
+          <h3>Design</h3>
+          <p class="passion-sub">Curiosity, Systems &amp; Everyday Observation</p>
+          <p class="passion-desc">
+            Design is more than a career path; it's how I perceive the world around me. From critiquing transit signage to organizing atomic design token architectures in Figma, I find genuine joy in turning confusing clutter into clear, intuitive systems.
+          </p>
+        </article>
+
+        <article class="passion-card">
+          <div class="passion-top">
+            <div class="passion-icon-box">🚗</div>
+            <span class="passion-num">03 · CLARITY</span>
+          </div>
+          <h3>Driving</h3>
+          <p class="passion-sub">Focus, Playlists &amp; Open Highways</p>
+          <p class="passion-desc">
+            There’s nothing quite like cruising down open roads with a great playlist. Driving demands continuous anticipation, acute situational awareness, and total presence—giving me the mental clarity to step back and return to complex problems with fresh eyes.
+          </p>
+        </article>
+      </div>
     </div>
-  </section>
+
+  </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <span>© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
+<footer class="footer-editorial">
+  <span class="footer-mark">© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 

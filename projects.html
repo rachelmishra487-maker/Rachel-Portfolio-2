@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selected Projects &amp; Case Studies — Rachel Mishra</title>
+<title>Selected Work &amp; Case Studies — Rachel Mishra</title>
 <meta name="description" content="Featured UI/UX design case studies by Rachel Mishra: GoUni (Higher Ed Design System), The Healing Circle (Healthcare Restorative System), and PawBridge (Animal Welfare Operations Platform).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="subpage">
@@ -16,699 +16,511 @@
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- STICKY NAVBAR -->
+<!-- STICKY EDITORIAL NAVIGATION -->
 <header class="nav" id="navbar">
-  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">
+    <span>RACHEL MISHRA</span>
+    <span class="mark-sub">UI/UX</span>
+  </a>
   <nav class="nav-links" id="navLinks">
-    <a href="about.html">About</a>
     <a href="projects.html" class="active">Work</a>
+    <a href="about.html">About</a>
+    <a href="playground.html">Playground</a>
     <a href="skills.html">Skills</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume ↗</a>
   </nav>
   <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
 
-<main class="subpage-main">
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="dot-matrix" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
+<main class="section-light" style="padding-top: 3.5rem;">
+  <div class="section-inner">
+
+    <!-- PAGE HEADER -->
+    <div class="section-header" style="margin-bottom: 4rem;">
+      <p class="eyebrow">Case Studies &amp; Systems</p>
+      <h2>Selected Work</h2>
+      <p>Three flagship projects showcasing end-to-end design thinking: qualitative human research, structural flows, modular design systems, and verified interactive prototypes.</p>
     </div>
-    <p class="eyebrow">02 · Selected Work</p>
-    <h1>Projects &amp; Case Studies</h1>
-    <p class="page-desc">Three comprehensive case studies showcasing end-to-end design thinking: qualitative research, structural user flows, scalable design systems, and interactive prototypes.</p>
-  </header>
 
-  <!-- PROJECTS CONTAINER -->
-  <section class="projects-container">
+    <!-- PROJECTS LIST -->
+    <div class="projects-editorial-list">
 
-    <!-- ==========================================
-         CASE STUDY 01: GOUNI
-         ========================================== -->
-    <div class="featured-project-section">
-      <article class="featured-project-card" id="project-gouni">
-        
-        <!-- Header Info Block -->
-        <div class="featured-header-block">
+      <!-- ==========================================
+           01. GOUNI
+           ========================================== -->
+      <article class="project-editorial-card" id="project-gouni">
+        <div class="project-card-top">
           <div>
-            <div class="featured-badge-row">
-              <span class="featured-star-badge">★ Case Study 01</span>
-              <span class="featured-category-badge">Higher Education Discovery · Design System</span>
-              <span class="featured-scope-badge">SID Nagpur · Assignment 2</span>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">01 / CASE STUDY</span>
+              <span class="project-category-tag">Higher Education · Design System &amp; Web</span>
+              <span class="project-scope-tag">SID Nagpur · Assignment 2</span>
             </div>
-
-            <h2 class="featured-hero-title">GoUni — Study Abroad &amp; Higher Education Portal</h2>
-            <p class="featured-tagline">“Making studying abroad less overwhelming through cognitive simplicity.”</p>
-            <p class="featured-desc">
-              A comprehensive web discovery platform and multi-tier design system built to untangle the daunting international university search, comparison, and application process for prospective students.
+            <h3 class="project-title">GoUni — Study Abroad &amp; Higher Education Portal</h3>
+            <p class="project-tagline">“Making studying abroad less overwhelming through cognitive simplicity.”</p>
+            <p class="project-description">
+              A comprehensive discovery web application and multi-tier component library built in Figma, resolving student anxiety, hidden fees, and application confusion across international university programs.
             </p>
-          </div>
-
-          <!-- Role & Tools Meta Block -->
-          <div>
-            <div class="project-meta-box">
-              <span class="meta-label">Role</span>
-              <span class="meta-value">Lead UI/UX Designer &amp; Design System Architect</span>
-              
-              <span class="meta-label">Scope</span>
-              <span class="meta-value">UX Research, 6-Stage Storyboard, Figma Token Architecture, Component Variants</span>
-            </div>
-
-            <div class="project-tools-list">
-              <span class="project-tool-chip">Figma</span>
-              <span class="project-tool-chip">Design Tokens</span>
-              <span class="project-tool-chip">Component Variants</span>
-              <span class="project-tool-chip">Auto-Layout 5.0</span>
-              <span class="project-tool-chip">User Flows</span>
-              <span class="project-tool-chip">Interactive Prototyping</span>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="project-actions-row">
-              <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="case-study-cta-lg" id="viewFullCaseStudyBtn">
-                <span>View Full Case Study Deck</span>
-                <span>&rarr;</span>
-              </a>
-              <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="project-sec-btn-lg" id="gouniFigmaPrototypeBtn">
-                <span>Open Figma Prototype ↗</span>
-              </a>
-            </div>
           </div>
         </div>
 
-        <!-- STRUCTURED NARRATIVE GRID: PROBLEM, RESEARCH, PROCESS, DESIGN, TESTING, REFLECTION -->
-        <div class="case-study-narrative-grid">
-          <!-- 1. PROBLEM -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">01 Problem</span>
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UI/UX Designer &amp; Design System Architect</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Scope</span>
+            <span class="role-val">UX Research, 6-Stage Storyboard, Figma Token Architecture, Component Variants</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Validation</span>
+            <span class="role-val">85% Faster comparison time &amp; unified responsive token kit</span>
+          </div>
+        </div>
+
+        <div class="project-tools-row">
+          <span class="project-tool-pill">Figma</span>
+          <span class="project-tool-pill">Design Tokens</span>
+          <span class="project-tool-pill">Component Variants</span>
+          <span class="project-tool-pill">Auto-Layout 5.0</span>
+          <span class="project-tool-pill">User Flows</span>
+          <span class="project-tool-pill">Interactive Prototyping</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>View Full Case Study Deck</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="btn btn-ghost">
+            <span>Open Figma Prototype ↗</span>
+          </a>
+        </div>
+
+        <!-- Structured Narrative Grid -->
+        <div class="project-process-grid">
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">01 Problem</span>
             </div>
             <h4>Information Overload &amp; Friction</h4>
-            <p>
-              Applying to international universities is plagued by fragmented requirements, confusing grade-conversion charts, and opaque tuition breakdowns. Students reported acute anxiety and decision fatigue when attempting to compare programs across different continents.
-            </p>
+            <p>Applying to international universities is plagued by fragmented requirements, confusing grade-conversion charts, and opaque tuition breakdowns. Students reported acute anxiety and decision fatigue when attempting to compare programs.</p>
           </div>
 
-          <!-- 2. RESEARCH -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">02 Research</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">02 Research</span>
             </div>
             <h4>Student Journey Mapping</h4>
-            <p>
-              Conducted user interviews with prospective study-abroad applicants to uncover critical friction points: eligibility uncertainty, hidden costs, and lack of step-by-step guidance. Synthesized findings into a 6-stage experiential journey map.
-            </p>
+            <p>Conducted user interviews with prospective applicants to uncover critical friction points: eligibility uncertainty, hidden costs, and lack of step-by-step guidance. Synthesized findings into a 6-stage experiential journey map.</p>
           </div>
 
-          <!-- 3. PROCESS & IA -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">03 Process &amp; IA</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">03 Process &amp; IA</span>
             </div>
             <h4>Progressive Onboarding Architecture</h4>
-            <p>
-              Restructured the portal into a 3-tier progressive discovery model: high-level program discovery, comparative side-by-side spec sheets, and an interactive milestone checklist tracking visa and document requirements.
-            </p>
+            <p>Restructured the portal into a 3-tier progressive discovery model: high-level program discovery, comparative side-by-side spec sheets, and an interactive milestone checklist tracking visa and document requirements.</p>
           </div>
 
-          <!-- 4. DESIGN SYSTEM -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">04 Design System</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">04 Design System</span>
             </div>
             <h4>Scalable Figma Token Library</h4>
-            <p>
-              Built an atomic design system with semantic color tokens, typographic hierarchies, and multi-state component variants (Default, Hover, Active, Disabled) utilizing Figma's Auto-Layout 5.0 for responsive consistency.
-            </p>
+            <p>Built an atomic design system with semantic color tokens, typographic hierarchies, and multi-state component variants (Default, Hover, Active, Disabled) utilizing Figma's Auto-Layout 5.0 for responsive consistency.</p>
           </div>
 
-          <!-- 5. PROTOTYPE & TESTING -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">05 Testing</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">05 Testing</span>
             </div>
             <h4>Task Completion Validation</h4>
-            <p>
-              Conducted usability testing sessions on high-fidelity prototypes. Users navigated university filtering and application milestone tracking with 85% faster time-to-decision and significantly reduced perceived stress.
-            </p>
+            <p>Conducted usability testing sessions on high-fidelity prototypes. Users navigated university filtering and application milestone tracking with 85% faster time-to-decision and significantly reduced perceived stress.</p>
           </div>
 
-          <!-- 6. REFLECTION -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">06 Reflection</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">06 Reflection</span>
             </div>
             <h4>Key Takeaways</h4>
-            <p>
-              Designing GoUni reinforced the value of modular component architectures. Establishing clear tokens early prevented design debt, while empathetic micro-copy dramatically improved user reassurance during high-stakes decisions.
-            </p>
+            <p>Designing GoUni reinforced the value of modular component architectures. Establishing clear tokens early prevented design debt, while empathetic micro-copy dramatically improved user reassurance during high-stakes decisions.</p>
           </div>
         </div>
 
-        <!-- LARGE VISUAL SHOWCASE (REAL WORK ARTIFACTS) -->
-        <div class="featured-showcase-container">
-          <div class="showcase-topbar">
-            <div class="showcase-topbar-left">
-              <div class="browser-dots">
-                <span class="dot-red"></span>
-                <span class="dot-yellow"></span>
-                <span class="dot-green"></span>
+        <!-- Real Artifact Showcase -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
               </div>
-              <span class="showcase-file-path">GoUni / Real Design Artifacts / Interactive Gallery</span>
+              <span class="showcase-path">GoUni / Real Design Artifacts / Interactive Gallery</span>
             </div>
-
-            <!-- Screen Switcher Tabs -->
             <div class="showcase-tabs">
-              <button class="screen-tab active" data-screen="storyboard" type="button" aria-label="Show Storyboard screen">
-                <span>1. User Journey Storyboard</span>
-              </button>
-              <button class="screen-tab" data-screen="components" type="button" aria-label="Show Figma components screen">
-                <span>2. Figma Design System &amp; Cards</span>
-              </button>
+              <button class="screen-tab active" data-screen="storyboard" type="button">1. UX Journey Storyboard</button>
+              <button class="screen-tab" data-screen="components" type="button">2. Figma Component System</button>
             </div>
           </div>
 
-          <!-- Main Viewport -->
           <div class="showcase-viewport">
-            <img src="project_gouni.jpg" alt="GoUni UX Storyboard - Making studying abroad less overwhelming" class="showcase-main-img" id="gouniMainScreen" loading="eager">
+            <img src="project_gouni.jpg" alt="GoUni UX Storyboard" class="showcase-main-img" id="gouniMainScreen" loading="lazy">
           </div>
 
-          <!-- Caption & Provenance Bar -->
-          <div class="showcase-caption-bar">
+          <div class="showcase-caption">
             <p class="showcase-caption-text" id="gouniScreenCaption">
               <strong>Real Project Artifact:</strong> 6-stage UX Storyboard mapping student pain points, platform discovery, personalized application support, and international enrollment.
             </p>
-            <span class="showcase-badge-pill">✔ Authentic Figma Assignment Screen</span>
+            <span class="provenance-pill">✔ Authentic Figma Work</span>
           </div>
 
-          <!-- Interactive Screen Thumbnails -->
-          <div class="showcase-thumb-strip">
+          <div class="showcase-thumbs">
             <button class="showcase-thumb-btn active" data-screen="storyboard" type="button">
               <img src="project_gouni.jpg" alt="Storyboard Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
-                <h4>Screen 1: UX Journey Storyboard</h4>
-                <p>User research &amp; 6-step study abroad narrative</p>
+                <h4>Screen 1: UX Storyboard</h4>
+                <p>6-step study abroad narrative</p>
               </div>
             </button>
-
             <button class="showcase-thumb-btn" data-screen="components" type="button">
               <img src="project_gouni_components.png" alt="Components Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
-                <h4>Screen 2: Figma Component System</h4>
-                <p>Interactive card variants (Default, Hover, Active) &amp; university tiles</p>
+                <h4>Screen 2: Component System</h4>
+                <p>Auto-layout multi-state variants</p>
               </div>
             </button>
           </div>
         </div>
-
       </article>
-    </div>
 
-    <!-- ==========================================
-         CASE STUDY 02: THE HEALING CIRCLE
-         ========================================== -->
-    <div class="featured-project-section">
-      <article class="featured-project-card" id="project-healing-circle">
-        
-        <!-- Header Info Block -->
-        <div class="featured-header-block">
+      <!-- ==========================================
+           02. THE HEALING CIRCLE
+           ========================================== -->
+      <article class="project-editorial-card" id="project-healing-circle">
+        <div class="project-card-top">
           <div>
-            <div class="featured-badge-row">
-              <span class="featured-star-badge">★ Case Study 02</span>
-              <span class="featured-category-badge">Healthcare UX · Systems &amp; Well-being</span>
-              <span class="featured-scope-badge">SID Nagpur · Sem 5 · USDR Assignment 2</span>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">02 / RESEARCH</span>
+              <span class="project-category-tag">Healthcare UX · Systems &amp; Well-being</span>
+              <span class="project-scope-tag">SID Nagpur · Sem 5 · USDR Assignment 2</span>
             </div>
-
-            <h2 class="featured-hero-title">The Healing Circle — Healthcare Well-being System</h2>
-            <p class="featured-tagline">“Addressing physician burnout and emotional overload through structured physical &amp; digital recovery rituals.”</p>
-            <p class="featured-desc">
+            <h3 class="project-title">The Healing Circle — Healthcare Well-being System</h3>
+            <p class="project-tagline">“Addressing physician burnout and emotional overload through structured physical &amp; digital recovery rituals.”</p>
+            <p class="project-description">
               A comprehensive User Studies and Design Research (USDR) project investigating digital overload, empathy fatigue, and tech burnout among hospital physicians. Combines physical debrief sanctuaries, low-friction micro-rituals, peer support circles, and a soft digital layer to support doctors without adding screen complexity.
             </p>
           </div>
+        </div>
 
-          <!-- Role & Tools Meta Block -->
-          <div>
-            <div class="project-meta-box">
-              <span class="meta-label">Role</span>
-              <span class="meta-value">Lead UX Researcher &amp; Systems Designer (Co-author: Vidhi Ambade)</span>
-              
-              <span class="meta-label">Scope</span>
-              <span class="meta-value">Field Doctor Interviews, Comparative Gap Mapping, Concentric Ecosystem Model</span>
-            </div>
-
-            <div class="project-tools-list">
-              <span class="project-tool-chip">User Studies</span>
-              <span class="project-tool-chip">Qualitative Interviews</span>
-              <span class="project-tool-chip">Gap Analysis</span>
-              <span class="project-tool-chip">Systems Design</span>
-              <span class="project-tool-chip">Touchpoint Mapping</span>
-              <span class="project-tool-chip">Research Deck</span>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="project-actions-row">
-              <a href="project_healing_circle.pdf" target="_blank" rel="noopener" class="case-study-cta-lg" id="viewHealingCirclePdfBtn">
-                <span>View Full Research Deck (PDF)</span>
-                <span>&rarr;</span>
-              </a>
-            </div>
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UX Researcher &amp; Systems Designer (Co-author: Vidhi Ambade)</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Scope</span>
+            <span class="role-val">Field Doctor Interviews, Comparative Gap Mapping, Concentric Ecosystem Model</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Artifact</span>
+            <span class="role-val">Full Research Deck &amp; Architectural Decompression Blueprint</span>
           </div>
         </div>
 
-        <!-- STRUCTURED NARRATIVE GRID -->
-        <div class="case-study-narrative-grid">
-          <!-- 1. PROBLEM -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">01 Problem</span>
+        <div class="project-tools-row">
+          <span class="project-tool-pill">User Studies</span>
+          <span class="project-tool-pill">Qualitative Interviews</span>
+          <span class="project-tool-pill">Gap Analysis</span>
+          <span class="project-tool-pill">Systems Design</span>
+          <span class="project-tool-pill">Touchpoint Mapping</span>
+          <span class="project-tool-pill">Research Deck</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="project_healing_circle.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>View Full Research Deck (PDF)</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Structured Narrative Grid -->
+        <div class="project-process-grid">
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">01 Problem</span>
             </div>
             <h4>Physician Burnout &amp; Empathy Fatigue</h4>
-            <p>
-              Hospital doctors face relentless emotional trauma, sleep deprivation, and relentless administrative screen fatigue. Existing wellness solutions consist of generic mindfulness apps that physicians reject due to screen aversion and severe time constraints.
-            </p>
+            <p>Hospital doctors face relentless emotional trauma, sleep deprivation, and relentless administrative screen fatigue. Existing wellness solutions consist of generic mindfulness apps that physicians reject due to screen aversion and severe time constraints.</p>
           </div>
 
-          <!-- 2. RESEARCH -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">02 Research</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">02 Research</span>
             </div>
             <h4>In-Depth Field Interviews</h4>
-            <p>
-              Conducted contextual qualitative field research with specialist clinicians: Dr. Bhushan (Gastroenterology), Dr. Anushka (Pediatrics), and Dr. Vipul (Forensic Medicine). Identified clinical coping mechanisms and the need for non-judgmental decompression zones.
-            </p>
+            <p>Conducted contextual qualitative field research with specialist clinicians: Dr. Bhushan (Gastroenterology), Dr. Anushka (Pediatrics), and Dr. Vipul (Forensic Medicine). Identified clinical coping mechanisms and the need for non-judgmental decompression zones.</p>
           </div>
 
-          <!-- 3. PROCESS & ECOSYSTEM -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">03 Process</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">03 Process &amp; System</span>
             </div>
             <h4>Concentric Ecosystem Architecture</h4>
-            <p>
-              Formulated a multi-layered ecosystem: an inner sanctuary of physical debrief rooms and tactile micro-rituals, enveloped by an institutional layer ensuring confidential HR scheduling support and non-intrusive soft digital prompts.
-            </p>
+            <p>Formulated a multi-layered ecosystem: an inner sanctuary of physical debrief rooms and tactile micro-rituals, enveloped by an institutional layer ensuring confidential HR scheduling support and non-intrusive soft digital prompts.</p>
           </div>
 
-          <!-- 4. DESIGN INTERVENTION -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">04 Design</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">04 Design</span>
             </div>
             <h4>Restorative Sanctuary &amp; 4 Micro-Rituals</h4>
-            <p>
-              Architected physical sound-dampened decompression suites featuring 2700K warm biophilic lighting, acoustic isolation, a 1-minute vagus nerve breathing reset, tactile stress-release stones, and anonymous gratitude reflection stations.
-            </p>
+            <p>Architected physical sound-dampened decompression suites featuring 2700K warm biophilic lighting, acoustic isolation, a 1-minute vagus nerve breathing reset, tactile stress-release stones, and anonymous gratitude reflection stations.</p>
           </div>
 
-          <!-- 5. JOURNEY & TESTING -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">05 Journey</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">05 Journey</span>
             </div>
             <h4>5-Stage Touchpoint Flow</h4>
-            <p>
-              Mapped the physician journey from critical trauma trigger to automated peer prompt, physical sanctuary retreat, reflective decompression, and longitudinal shift workload recalibration.
-            </p>
+            <p>Mapped the physician journey from critical trauma trigger to automated peer prompt, physical sanctuary retreat, reflective decompression, and longitudinal shift workload recalibration.</p>
           </div>
 
-          <!-- 6. REFLECTION -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">06 Reflection</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">06 Reflection</span>
             </div>
             <h4>Designing Beyond Screens</h4>
-            <p>
-              This project challenged conventional UI dogma by proving that sometimes the best UX intervention is reducing digital friction rather than adding another screen. Physical space, sensory ergonomics, and organizational policy are integral parts of the design solution.
-            </p>
+            <p>This project challenged conventional UI dogma by proving that sometimes the best UX intervention is reducing digital friction rather than adding another screen. Physical space, sensory ergonomics, and organizational policy are integral parts of the design solution.</p>
           </div>
         </div>
 
-        <!-- LARGE VISUAL SHOWCASE (REAL ARTIFACTS) -->
-        <div class="featured-showcase-container">
-          <div class="showcase-topbar">
-            <div class="showcase-topbar-left">
-              <div class="browser-dots">
-                <span class="dot-red"></span>
-                <span class="dot-yellow"></span>
-                <span class="dot-green"></span>
+        <!-- Real Artifact Showcase -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
               </div>
-              <span class="showcase-file-path">The Healing Circle / USDR Research Deck / Interactive Gallery</span>
+              <span class="showcase-path">The Healing Circle / USDR Research Deck / Interactive Gallery</span>
             </div>
-
-            <!-- Screen Switcher Tabs -->
             <div class="showcase-tabs">
-              <button class="screen-tab hc-tab active" data-screen="concept" type="button" aria-label="Show Concept &amp; Ecosystem screen">
-                <span>1. Concept &amp; Ecosystem</span>
-              </button>
-              <button class="screen-tab hc-tab" data-screen="interviews" type="button" aria-label="Show Doctor Interviews screen">
-                <span>2. Doctor Field Research</span>
-              </button>
-              <button class="screen-tab hc-tab" data-screen="rituals" type="button" aria-label="Show Sanctuary &amp; Rituals screen">
-                <span>3. Debrief Sanctuary &amp; Rituals</span>
-              </button>
-              <button class="screen-tab hc-tab" data-screen="flow" type="button" aria-label="Show 5-Stage Journey Flow Map">
-                <span>4. 5-Stage Journey Flow</span>
-              </button>
+              <button class="screen-tab hc-tab active" data-screen="concept" type="button">1. Concept &amp; Ecosystem</button>
+              <button class="screen-tab hc-tab" data-screen="interviews" type="button">2. Doctor Field Research</button>
+              <button class="screen-tab hc-tab" data-screen="rituals" type="button">3. Debrief Sanctuary &amp; Rituals</button>
+              <button class="screen-tab hc-tab" data-screen="flow" type="button">4. 5-Stage Journey Flow</button>
             </div>
           </div>
 
-          <!-- Main Viewport -->
           <div class="showcase-viewport">
-            <img src="project_healing_circle_concept.svg" alt="The Healing Circle Concept Diagram &amp; Ecosystem Architecture" class="showcase-main-img" id="hcMainScreen" loading="eager">
+            <img src="project_healing_circle_concept.svg" alt="The Healing Circle Concept Diagram" class="showcase-main-img" id="hcMainScreen" loading="lazy">
           </div>
 
-          <!-- Caption & Provenance Bar -->
-          <div class="showcase-caption-bar">
+          <div class="showcase-caption">
             <p class="showcase-caption-text" id="hcScreenCaption">
-              <strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer (HR policy, soft digital layer).
+              <strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer.
             </p>
-            <span class="showcase-badge-pill">✔ Sem 5 USDR Assignment 2</span>
+            <span class="provenance-pill">✔ Sem 5 USDR Assignment 2</span>
           </div>
 
-          <!-- Interactive Screen Thumbnails -->
-          <div class="showcase-thumb-strip">
+          <div class="showcase-thumbs">
             <button class="showcase-thumb-btn hc-thumb active" data-screen="concept" type="button">
               <img src="project_healing_circle_concept.svg" alt="Concept Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
                 <h4>Screen 1: Concept Diagram</h4>
-                <p>Inner restorative sanctuary &amp; outer support</p>
+                <p>Inner restorative sanctuary</p>
               </div>
             </button>
-
             <button class="showcase-thumb-btn hc-thumb" data-screen="interviews" type="button">
               <img src="project_healing_circle_interviews.svg" alt="Interviews Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
                 <h4>Screen 2: Doctor Field Research</h4>
-                <p>Interviews with Pediatrics, Gastro &amp; Forensic specialists</p>
+                <p>Pediatrics, Gastro, Forensic</p>
               </div>
             </button>
-
             <button class="showcase-thumb-btn hc-thumb" data-screen="rituals" type="button">
-              <img src="project_healing_circle_rituals.svg" alt="Debrief Sanctuary Thumbnail" class="showcase-thumb-img">
+              <img src="project_healing_circle_rituals.svg" alt="Rituals Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
-                <h4>Screen 3: Debrief &amp; Micro-Rituals</h4>
-                <p>Nature-inspired sanctuary &amp; 4 reset moments</p>
+                <h4>Screen 3: Sanctuary &amp; Rituals</h4>
+                <p>4 reset moments for trauma</p>
               </div>
             </button>
-
             <button class="showcase-thumb-btn hc-thumb" data-screen="flow" type="button">
               <img src="project_healing_circle_flow.svg" alt="Flow Map Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
-                <h4>Screen 4: 5-Stage Journey Flow</h4>
-                <p>Trigger &rarr; Prompt &rarr; Debrief &rarr; Reflection &rarr; Policy</p>
+                <h4>Screen 4: 5-Stage Journey</h4>
+                <p>Trauma to shift recalibration</p>
               </div>
             </button>
           </div>
         </div>
-
       </article>
-    </div>
 
-    <!-- ==========================================
-         CASE STUDY 03: PAWBRIDGE
-         ========================================== -->
-    <div class="featured-project-section">
-      <article class="featured-project-card" id="project-pawbridge">
-        
-        <!-- Header Info Block -->
-        <div class="featured-header-block">
+      <!-- ==========================================
+           03. PAWBRIDGE
+           ========================================== -->
+      <article class="project-editorial-card" id="project-pawbridge">
+        <div class="project-card-top">
           <div>
-            <div class="featured-badge-row">
-              <span class="featured-star-badge">★ Case Study 03</span>
-              <span class="featured-category-badge">Animal Welfare · Desktop Operations &amp; NGO Platform</span>
-              <span class="featured-scope-badge">SID Nagpur · Sem 5 · Final UEDP-5</span>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+              <span class="project-num-badge">03 / FINAL UEDP</span>
+              <span class="project-category-tag">Animal Welfare · Desktop Operations &amp; NGO Platform</span>
+              <span class="project-scope-tag">SID Nagpur · Sem 5 · Final UEDP-5</span>
             </div>
-
-            <h2 class="featured-hero-title">PawBridge — Animal Shelter Operations &amp; Trust Platform</h2>
-            <p class="featured-tagline">“Bridging generous public intent with verifiable rescue impact.”</p>
-            <p class="featured-desc">
-              A dual-sided digital system consisting of a high-density desktop operations workspace (1440×1024) for shelter administrators, and a radical-transparency public portal that dismantles donor skepticism through verifiable clinical milestones.
+            <h3 class="project-title">PawBridge — Animal Shelter Operations &amp; Trust Platform</h3>
+            <p class="project-tagline">“Bridging generous public intent with verifiable rescue impact.”</p>
+            <p class="project-description">
+              A dual-sided digital system consisting of a high-density desktop operations workspace (1440×1024) for shelter administrators and a transparent public portal that dismantles donor skepticism through verifiable clinical milestones.
             </p>
-          </div>
-
-          <!-- Role & Tools Meta Block -->
-          <div>
-            <div class="project-meta-box">
-              <span class="meta-label">Role</span>
-              <span class="meta-value">Lead UI/UX Designer &amp; User Researcher</span>
-              
-              <span class="meta-label">Scope</span>
-              <span class="meta-value">Desktop Workspace (1440×1024), Supporter Psychology, Animal Intake Workflow, Live Vercel Deployment</span>
-            </div>
-
-            <div class="project-tools-list">
-              <span class="project-tool-chip">Figma</span>
-              <span class="project-tool-chip">User Research</span>
-              <span class="project-tool-chip">Information Architecture</span>
-              <span class="project-tool-chip">Desktop Operations</span>
-              <span class="project-tool-chip">Design Systems</span>
-              <span class="project-tool-chip">Prototyping</span>
-              <span class="project-tool-chip">Live Vercel App</span>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="project-actions-row">
-              <a href="https://pawbridge-five.vercel.app/" target="_blank" rel="noopener" class="case-study-cta-lg" id="viewPawbridgeLiveBtn">
-                <span>Open Live Platform (Vercel)</span>
-                <span>&rarr;</span>
-              </a>
-              <a href="https://www.figma.com/design/GfirLWG1m1tEfSMGP8Isjg/Final-Uedp-5?node-id=62-4193&amp;t=kTxWoEpFhU5qcXCT-1" target="_blank" rel="noopener" class="project-sec-btn-lg" id="pawbridgeFigmaPrototypeBtn">
-                <span>Open Figma Prototype ↗</span>
-              </a>
-            </div>
           </div>
         </div>
 
-        <!-- STRUCTURED NARRATIVE GRID -->
-        <div class="case-study-narrative-grid">
-          <!-- 1. PROBLEM -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">01 Problem</span>
+        <div class="project-role-bar">
+          <div class="role-item">
+            <span class="role-label">My Role</span>
+            <span class="role-val">Lead UI/UX Designer &amp; User Researcher</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Scope</span>
+            <span class="role-val">Desktop Operations (1440×1024), Supporter Psychology, Animal Intake Workflow, Live Vercel Deployment</span>
+          </div>
+          <div class="role-item">
+            <span class="role-label">Validation</span>
+            <span class="role-val">65% reduction in intake logging friction &amp; verified live web prototype</span>
+          </div>
+        </div>
+
+        <div class="project-tools-row">
+          <span class="project-tool-pill">Figma</span>
+          <span class="project-tool-pill">Desktop Operations</span>
+          <span class="project-tool-pill">Supporter Psychology</span>
+          <span class="project-tool-pill">Live Vercel Platform</span>
+          <span class="project-tool-pill">Design Systems</span>
+          <span class="project-tool-pill">Prototyping</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://pawbridge-five.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>Open Live Platform (Vercel)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.figma.com/design/GfirLWG1m1tEfSMGP8Isjg/Final-Uedp-5?node-id=62-4193&amp;t=kTxWoEpFhU5qcXCT-1" target="_blank" rel="noopener" class="btn btn-ghost">
+            <span>Open Figma Prototype ↗</span>
+          </a>
+        </div>
+
+        <!-- Structured Narrative Grid -->
+        <div class="project-process-grid">
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">01 Problem</span>
             </div>
             <h4>Donor Skepticism &amp; Intake Chaos</h4>
-            <p>
-              Animal shelters operate in constant survival triage: messy paper logs, unorganized volunteer rosters, and overcrowded kennels. Simultaneously, potential donors hesitate because traditional charities lack transparent proof of medical fund allocation.
-            </p>
+            <p>Animal shelters operate in constant survival triage: messy paper logs, unorganized volunteer rosters, and overcrowded kennels. Simultaneously, potential donors hesitate because traditional charities lack transparent proof of medical fund allocation.</p>
           </div>
 
-          <!-- 2. RESEARCH -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">02 Research</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">02 Research</span>
             </div>
             <h4>Supporter Psychology &amp; Hesitation Analysis</h4>
-            <p>
-              Researched donor mental models and hesitation triggers. Supporters are eager to help but feel disconnected when donations disappear into general funds. Trust spikes when contributions are tied directly to an individual animal's verified medical recovery milestones.
-            </p>
+            <p>Researched donor mental models and hesitation triggers. Supporters are eager to help but feel disconnected when donations disappear into general funds. Trust spikes when contributions are tied directly to an individual animal's verified medical recovery milestones.</p>
           </div>
 
-          <!-- 3. PROCESS & IA -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">03 Process</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">03 Process &amp; IA</span>
             </div>
             <h4>Structured Intake &amp; Triage Workflow</h4>
-            <p>
-              Engineered an operational desktop workflow allowing shelter staff to admit injured rescues in under 90 seconds: photo capture, initial vitals triage, kennel allocation, and automated verification badge generation.
-            </p>
+            <p>Engineered an operational desktop workflow allowing shelter staff to admit injured rescues in under 90 seconds: photo capture, initial vitals triage, kennel allocation, and automated verification badge generation.</p>
           </div>
 
-          <!-- 4. INTERFACE CRAFT -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">04 Interface</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">04 Interface</span>
             </div>
             <h4>High-Density Desktop Workspace</h4>
-            <p>
-              Designed a 1440×1024 operations console optimized for high-information density: multi-column kennel occupancy monitors, critical patient status flags, and live medical cost ledgers that update in real time.
-            </p>
+            <p>Designed a 1440×1024 operations console optimized for high-information density: multi-column kennel occupancy monitors, critical patient status flags, and live medical cost ledgers that update in real time.</p>
           </div>
 
-          <!-- 5. VALIDATION -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">05 Testing</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">05 Testing</span>
             </div>
             <h4>Live Deployment &amp; Usability</h4>
-            <p>
-              Tested both the Figma interactive prototype and the live deployed web application (hosted on Vercel). Shelter volunteers confirmed a 65% reduction in intake logging friction and improved confidence in medical record handoffs.
-            </p>
+            <p>Tested both the Figma interactive prototype and the live deployed web application (hosted on Vercel). Shelter volunteers confirmed a 65% reduction in intake logging friction and improved confidence in medical record handoffs.</p>
           </div>
 
-          <!-- 6. REFLECTION -->
-          <div class="cs-block">
-            <div class="cs-block-header">
-              <span class="cs-block-tag">06 Reflection</span>
+          <div class="process-card">
+            <div class="process-card-header">
+              <span class="process-tag">06 Reflection</span>
             </div>
             <h4>Systems Empathy</h4>
-            <p>
-              PawBridge taught me how to design for two diametrically opposed user groups: frantic shelter staff who need lightning-fast keyboard-first inputs, and emotional donors who need transparent visual storytelling and reassuring evidence.
-            </p>
+            <p>PawBridge taught me how to design for two diametrically opposed user groups: frantic shelter staff who need lightning-fast keyboard-first inputs, and emotional donors who need transparent visual storytelling and reassuring evidence.</p>
           </div>
         </div>
 
-        <!-- LARGE VISUAL SHOWCASE (REAL ARTIFACTS) -->
-        <div class="featured-showcase-container">
-          <div class="showcase-topbar">
-            <div class="showcase-topbar-left">
-              <div class="browser-dots">
-                <span class="dot-red"></span>
-                <span class="dot-yellow"></span>
-                <span class="dot-green"></span>
+        <!-- Real Artifact Showcase -->
+        <div class="project-showcase-box">
+          <div class="showcase-header">
+            <div class="showcase-header-left">
+              <div class="window-dots">
+                <span class="dot-1"></span>
+                <span class="dot-2"></span>
+                <span class="dot-3"></span>
               </div>
-              <span class="showcase-file-path">PawBridge / Final UEDP-5 / Desktop Platform &amp; Research</span>
+              <span class="showcase-path">PawBridge / Final UEDP-5 / Desktop Platform &amp; Research</span>
             </div>
-
-            <!-- Screen Switcher Tabs -->
             <div class="showcase-tabs">
-              <button class="screen-tab pb-tab active" data-screen="workspace" type="button" aria-label="Show Desktop Operations Workspace">
-                <span>1. Desktop Operations Workspace</span>
-              </button>
-              <button class="screen-tab pb-tab" data-screen="research" type="button" aria-label="Show Supporter Psychology &amp; Research Deck">
-                <span>2. Supporter Psychology &amp; Research</span>
-              </button>
+              <button class="screen-tab pb-tab active" data-screen="workspace" type="button">1. Desktop Operations Workspace</button>
+              <button class="screen-tab pb-tab" data-screen="research" type="button">2. Supporter Psychology &amp; Research</button>
             </div>
           </div>
 
-          <!-- Main Viewport -->
           <div class="showcase-viewport">
-            <img src="project_pawbridge.png" alt="PawBridge Desktop Operations Workspace &amp; Shelter Intake Dashboard" class="showcase-main-img" id="pbMainScreen" loading="eager">
+            <img src="project_pawbridge.png" alt="PawBridge Desktop Workspace" class="showcase-main-img" id="pbMainScreen" loading="lazy">
           </div>
 
-          <!-- Caption & Provenance Bar -->
-          <div class="showcase-caption-bar">
+          <div class="showcase-caption">
             <p class="showcase-caption-text" id="pbScreenCaption">
               <strong>Real Project Artifact:</strong> High-fidelity desktop operations workspace (1440×1024) featuring patient admission, live kennel capacity management, and medical case tracking.
             </p>
-            <span class="showcase-badge-pill">✔ Sem 5 Final UEDP-5 Desktop System</span>
+            <span class="provenance-pill">✔ Final UEDP-5 System</span>
           </div>
 
-          <!-- Interactive Screen Thumbnails -->
-          <div class="showcase-thumb-strip">
+          <div class="showcase-thumbs">
             <button class="showcase-thumb-btn pb-thumb active" data-screen="workspace" type="button">
               <img src="project_pawbridge.png" alt="Workspace Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
                 <h4>Screen 1: Operations Workspace</h4>
-                <p>1440×1024 shelter management, triage &amp; live capacity</p>
+                <p>1440×1024 triage &amp; live capacity</p>
               </div>
             </button>
-
             <button class="showcase-thumb-btn pb-thumb" data-screen="research" type="button">
               <img src="project_pawbridge_presentation.png" alt="Research Thumbnail" class="showcase-thumb-img">
               <div class="showcase-thumb-info">
                 <h4>Screen 2: Supporter Psychology</h4>
-                <p>User research, donor trust barriers &amp; design implications</p>
+                <p>User research &amp; donor hesitation</p>
               </div>
             </button>
           </div>
         </div>
-
       </article>
+
     </div>
-
-    <!-- THREE PROJECTS AT A GLANCE (SUMMARY COMPARISON) -->
-    <div class="section-subhead-row">
-      <div>
-        <h3>Three Featured Projects at a Glance</h3>
-        <p>Comparative summary of problem spaces, research methodologies, and interactive outcomes across all three systems</p>
-      </div>
-    </div>
-
-    <div class="ux-projects-grid">
-      <!-- SUMMARY 1: GOUNI -->
-      <article class="ux-project-card" id="card-summary-gouni">
-        <div class="ux-card-media">
-          <img src="project_gouni.jpg" alt="GoUni Higher Education Portal" class="ux-card-img" loading="lazy">
-          <span class="ux-card-tag">Design System · Web</span>
-        </div>
-        <div class="ux-card-body">
-          <h3>GoUni — Higher Education Portal</h3>
-          <p class="ux-card-tagline">Figma Design System &amp; Student Onboarding</p>
-          <p>Multi-tier design token and component library created in Figma for a university discovery platform, removing application friction for international students.</p>
-          <div class="ux-card-metrics">
-            <div class="metric-item">
-              <span class="metric-num">6-Stage</span>
-              <span class="metric-label">UX Storyboard</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-num">Auto-Layout 5</span>
-              <span class="metric-label">Figma Tokens</span>
-            </div>
-          </div>
-          <div class="ux-card-actions">
-            <a href="https://www.figma.com/deck/ome9CfsCEyI4YlYU2N2C3i" target="_blank" rel="noopener" class="btn-card-action">Case Study Deck &rarr;</a>
-            <a href="https://www.figma.com/design/x6lQjwNQntAK7WZxXv1dTh/uedp-4-assignment-2?node-id=33-2&amp;t=BZAtMI4IXmXT7Qzf-1" target="_blank" rel="noopener" class="btn-card-action secondary">Figma Prototype ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- SUMMARY 2: THE HEALING CIRCLE -->
-      <article class="ux-project-card" id="card-summary-healing-circle">
-        <div class="ux-card-media">
-          <img src="project_healing_circle_concept.svg" alt="The Healing Circle Healthcare System" class="ux-card-img" loading="lazy">
-          <span class="ux-card-tag">Healthcare UX · USDR</span>
-        </div>
-        <div class="ux-card-body">
-          <h3>The Healing Circle — Hospital Well-being</h3>
-          <p class="ux-card-tagline">Clinical Empathy Fatigue &amp; Burnout Recovery</p>
-          <p>Concentric systems design combining physical decompression sanctuaries, 4 micro-rituals, and organizational support policies for hospital physicians.</p>
-          <div class="ux-card-metrics">
-            <div class="metric-item">
-              <span class="metric-num">3 Clinical</span>
-              <span class="metric-label">Doctor Interviews</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-num">4 Micro-Rituals</span>
-              <span class="metric-label">Non-digital Decompression</span>
-            </div>
-          </div>
-          <div class="ux-card-actions">
-            <a href="project_healing_circle.pdf" target="_blank" rel="noopener" class="btn-card-action">Full Research Deck (PDF) &rarr;</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- SUMMARY 3: PAWBRIDGE -->
-      <article class="ux-project-card" id="card-summary-pawbridge">
-        <div class="ux-card-media">
-          <img src="project_pawbridge.png" alt="PawBridge Animal Shelter Operations" class="ux-card-img" loading="lazy">
-          <span class="ux-card-tag">Animal Welfare · Desktop</span>
-        </div>
-        <div class="ux-card-body">
-          <h3>PawBridge — Shelter Operations &amp; Trust</h3>
-          <p class="ux-card-tagline">1440×1024 Operations Console &amp; Public Transparency</p>
-          <p>Dual-sided desktop operations workspace and public donation platform connecting shelter triage with verifiable medical recovery milestones.</p>
-          <div class="ux-card-metrics">
-            <div class="metric-item">
-              <span class="metric-num">1440×1024</span>
-              <span class="metric-label">Desktop Workspace</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-num">Live App</span>
-              <span class="metric-label">Deployed on Vercel</span>
-            </div>
-          </div>
-          <div class="ux-card-actions">
-            <a href="https://pawbridge-five.vercel.app/" target="_blank" rel="noopener" class="btn-card-action">Open Live App &rarr;</a>
-            <a href="https://www.figma.com/design/GfirLWG1m1tEfSMGP8Isjg/Final-Uedp-5?node-id=62-4193&amp;t=kTxWoEpFhU5qcXCT-1" target="_blank" rel="noopener" class="btn-card-action secondary">Figma Prototype ↗</a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-  </section>
+  </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <span>© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
+<footer class="footer-editorial">
+  <span class="footer-mark">© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 

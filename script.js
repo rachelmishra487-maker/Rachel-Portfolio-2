@@ -1,7 +1,7 @@
 // ==========================================================================
-// RACHEL MISHRA — PORTFOLIO JAVASCRIPT
+// RACHEL MISHRA — PORTFOLIO SCRIPT
 // Features: Dynamic Year, Sticky Nav, Mobile Menu, Dual Fluid Cursor,
-// Interactive Gallery Switchers, Skill Filtering, Figma Token Sandbox,
+// Interactive Gallery Switchers, Figma Token Sandbox, Scroll Reveals,
 // and Accessible Clipboard Utility.
 // ==========================================================================
 
@@ -153,7 +153,7 @@ if (isFinePointer) {
   requestAnimationFrame(renderCursor);
 
   // Hover expansion on interactive elements
-  const interactiveSelectors = 'a, button, input, textarea, select, .explore-card, .ux-project-card, .ux-skill-card, .tool-card, .credential-card, .passion-card, .screen-tab, .showcase-thumb-btn, .btn, .nav-mark';
+  const interactiveSelectors = 'a, button, input, textarea, select, .project-editorial-card, .skills-category-card, .timeline-card, .passion-card, .playground-card, .screen-tab, .showcase-thumb-btn, .btn, .nav-mark';
   document.addEventListener('mouseover', (e) => {
     if (e.target.closest(interactiveSelectors)) {
       document.body.classList.add('cursor-active');
@@ -190,17 +190,18 @@ const showToast = (message) => {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #1A3320;
-      color: #FFFFFF;
-      padding: 12px 20px;
+      background: #392B45;
+      color: #F5F0F8;
+      border: 1.5px solid #A68BB8;
+      padding: 12px 22px;
       border-radius: 999px;
       font-family: 'Space Grotesk', sans-serif;
       font-size: 0.88rem;
-      font-weight: 600;
-      box-shadow: 0 8px 24px rgba(26, 51, 32, 0.25);
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(33, 26, 39, 0.35);
       z-index: 10000;
       opacity: 0;
-      transform: translateY(12px);
+      transform: translateY(14px);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     `;
@@ -211,7 +212,7 @@ const showToast = (message) => {
   toast.style.transform = 'translateY(0)';
   setTimeout(() => {
     toast.style.opacity = '0';
-    toast.style.transform = 'translateY(12px)';
+    toast.style.transform = 'translateY(14px)';
   }, 2400);
 };
 
@@ -224,7 +225,7 @@ if (gouniTabs.length && gouniMainImg) {
   const gouniScreens = {
     storyboard: {
       src: 'project_gouni.jpg',
-      alt: 'GoUni UX Storyboard - Making studying abroad less overwhelming',
+      alt: 'GoUni UX Storyboard - Study abroad journey',
       caption: '<strong>Real Project Artifact:</strong> 6-stage UX Storyboard mapping student pain points, platform discovery, personalized application support, and international enrollment.'
     },
     components: {
@@ -270,7 +271,7 @@ if (hcTabs.length && hcMainImg) {
     concept: {
       src: 'project_healing_circle_concept.svg',
       alt: 'The Healing Circle Concept Diagram & Ecosystem Architecture',
-      caption: '<strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer (HR policy, soft digital layer).'
+      caption: '<strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer.'
     },
     interviews: {
       src: 'project_healing_circle_interviews.svg',
@@ -360,35 +361,11 @@ if (pbTabs.length && pbMainImg) {
   });
 }
 
-// 10. Discipline Filter in Skills Page
-const skillFilterBtns = document.querySelectorAll('.skill-filter-btn');
-const uxSkillCards = document.querySelectorAll('.ux-skill-card');
-
-if (skillFilterBtns.length && uxSkillCards.length) {
-  skillFilterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
-      skillFilterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      uxSkillCards.forEach(card => {
-        if (filter === 'all' || card.dataset.discipline === filter) {
-          card.style.display = 'flex';
-          card.style.opacity = '1';
-        } else {
-          card.style.display = 'none';
-          card.style.opacity = '0';
-        }
-      });
-    });
-  });
-}
-
-// 11. Interactive Figma Token & Component Sandbox
+// 10. Interactive Figma Token & Component Sandbox (Both Homepage & Playground)
 const initTokenSandbox = () => {
-  const statePills = document.querySelectorAll('#statePills .sandbox-pill');
-  const colorSwatches = document.querySelectorAll('#colorSwatches .swatch-btn');
-  const densityPills = document.querySelectorAll('#densityPills .sandbox-pill');
+  const statePills = document.querySelectorAll('#statePills .sandbox-btn-pill');
+  const colorSwatches = document.querySelectorAll('#colorSwatches .swatch-circle');
+  const densityPills = document.querySelectorAll('#densityPills .sandbox-btn-pill');
   const demoCard = document.getElementById('demoCard');
   const demoBtn = document.getElementById('sandboxDemoBtn');
   const demoTokenName = document.getElementById('demoTokenName');
@@ -397,36 +374,35 @@ const initTokenSandbox = () => {
   if (!demoCard || !demoBtn) return;
 
   let currentState = 'default';
-  let currentColor = '#1A3320';
-  let currentTokenName = '$color-forest-primary';
+  let currentColor = '#392B45';
+  let currentTokenName = '$color-plum-primary';
   let currentPadding = '14px 28px';
 
   const updateSandbox = () => {
-    // Update button styling
     demoBtn.style.background = currentColor;
     demoBtn.style.padding = currentPadding;
 
     if (currentState === 'hover') {
       demoBtn.style.opacity = '0.9';
       demoBtn.style.transform = 'translateY(-2px)';
-      demoBtn.style.boxShadow = `0 8px 24px ${currentColor}44`;
+      demoBtn.style.boxShadow = `0 8px 24px ${currentColor}55`;
     } else if (currentState === 'active') {
       demoBtn.style.opacity = '1';
       demoBtn.style.transform = 'scale(0.97)';
-      demoBtn.style.boxShadow = `0 2px 8px ${currentColor}33`;
+      demoBtn.style.boxShadow = `0 2px 8px ${currentColor}44`;
     } else if (currentState === 'loading') {
-      demoBtn.style.opacity = '0.8';
+      demoBtn.style.opacity = '0.75';
       demoBtn.style.transform = 'none';
       demoBtn.style.boxShadow = 'none';
     } else if (currentState === 'disabled') {
-      demoBtn.style.opacity = '0.45';
+      demoBtn.style.opacity = '0.4';
       demoBtn.style.transform = 'none';
       demoBtn.style.boxShadow = 'none';
       demoBtn.style.cursor = 'not-allowed';
     } else {
       demoBtn.style.opacity = '1';
       demoBtn.style.transform = 'none';
-      demoBtn.style.boxShadow = `0 4px 16px ${currentColor}33`;
+      demoBtn.style.boxShadow = `0 4px 16px ${currentColor}44`;
       demoBtn.style.cursor = 'pointer';
     }
 
@@ -441,7 +417,7 @@ const initTokenSandbox = () => {
   --btn-token: ${currentTokenName};
   padding: ${currentPadding};
   border-radius: 999px;
-  box-shadow: 0 4px 16px ${currentColor}33;
+  box-shadow: 0 4px 16px ${currentColor}44;
   transition: all 0.25s ease;
   /* State: ${currentState} */
 }`;
@@ -486,4 +462,22 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initTokenSandbox);
 } else {
   initTokenSandbox();
+}
+
+// 11. Subtle Scroll Reveal Animations
+const revealElements = document.querySelectorAll('.project-editorial-card, .skills-category-card, .timeline-card, .passion-card, .playground-card');
+if ('IntersectionObserver' in window && revealElements.length) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  revealElements.forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+  });
 }

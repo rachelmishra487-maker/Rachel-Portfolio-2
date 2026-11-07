@@ -7,180 +7,153 @@
 <meta name="description" content="Get in touch with Rachel Mishra. Actively seeking UI/UX Design internship opportunities starting January 2027. Reach out via email, phone, or WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="subpage">
+<body class="subpage" style="background: var(--plum);">
 
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="nav-backdrop" id="navBackdrop"></div>
 
-<!-- STICKY NAVBAR -->
-<header class="nav" id="navbar">
-  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home">RM</a>
+<!-- STICKY EDITORIAL NAVIGATION -->
+<header class="nav" id="navbar" style="background: rgba(33, 26, 39, 0.95); border-bottom-color: rgba(217, 201, 227, 0.15);">
+  <a href="index.html" class="nav-mark" aria-label="Rachel Mishra Home" style="color: var(--lavender-white);">
+    <span>RACHEL MISHRA</span>
+    <span class="mark-sub" style="background: rgba(166, 139, 184, 0.25); color: var(--soft-lilac);">UI/UX</span>
+  </a>
   <nav class="nav-links" id="navLinks">
-    <a href="about.html">About</a>
-    <a href="projects.html">Work</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="contact.html" class="nav-cta active">Contact</a>
+    <a href="projects.html" style="color: var(--soft-lilac);">Work</a>
+    <a href="about.html" style="color: var(--soft-lilac);">About</a>
+    <a href="playground.html" style="color: var(--soft-lilac);">Playground</a>
+    <a href="skills.html" style="color: var(--soft-lilac);">Skills</a>
+    <a href="contact.html" class="active" style="color: var(--lavender-white);">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="nav-cta" style="background: var(--dusty-lavender) !important; color: var(--almost-black) !important;">Resume ↗</a>
   </nav>
-  <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-    <span></span><span></span><span></span>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" style="background: var(--almost-black); border-color: rgba(217, 201, 227, 0.25);">
+    <span style="background: var(--lavender-white);"></span>
+    <span style="background: var(--lavender-white);"></span>
+    <span style="background: var(--lavender-white);"></span>
   </button>
 </header>
 
-<main class="subpage-main">
-  <!-- PAGE HEADER -->
-  <header class="page-header contact-page-header">
-    <div class="dot-matrix" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-    
-    <div class="recruiter-badge">
-      <span class="pulse-dot"></span>
-      <span>Open to Opportunities · UI/UX Design Internships · January 2027</span>
-    </div>
+<!-- MAIN CONTENT (BOLD DEEP-PLUM SECTION) -->
+<main class="section-contact-deep" style="min-height: calc(100vh - 76px); padding-top: 4rem;">
+  <div class="contact-abstract-shape"></div>
 
-    <h1>Let’s talk design.</h1>
+  <div class="section-inner" style="position: relative; z-index: 1;">
+    <p class="eyebrow" style="color: var(--muted-rose);">Let's Connect</p>
     
-    <p class="page-desc contact-intro-text">
-      I’m currently seeking <strong>UI/UX Design internship opportunities</strong> starting <strong>January 2027</strong>. Whether you’re a hiring manager building an innovative design team, a design lead with an open internship role, or a fellow creative wanting to collaborate on thoughtful interfaces—my inbox is always open.
+    <h1 class="contact-headline">
+      HAVE AN IDEA?<br>
+      LET'S MAKE SOMETHING <em class="serif-italic">meaningful</em>.
+    </h1>
+
+    <p class="contact-sub">
+      I’m currently seeking <strong>UI/UX Design internship opportunities</strong> starting <strong>January 2027</strong>. Whether you’re a recruiter hiring for your product team, a design lead with an open internship role, or a fellow creative wanting to collaborate on thoughtful interfaces—my inbox is always open.
     </p>
 
-    <!-- RECRUITER QUICK-ACTION BUTTONS -->
-    <div class="recruiter-actions-row">
-      <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="btn-recruiter-primary" id="emailMeBtn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        <span>Email Me</span>
+    <!-- Recruiter Actions -->
+    <div class="contact-actions-row">
+      <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="btn-contact-main" id="emailMeBtn">
+        <span>Email Rachel</span>
         <span>&rarr;</span>
       </a>
-
-      <a href="tel:+917507444004" class="btn-recruiter-secondary" id="callMeBtn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-        </svg>
-        <span>Call Phone</span>
+      <a href="tel:+917507444004" class="btn-contact-ghost">
+        <span>Call: +91 75074 44004</span>
         <span>↗</span>
       </a>
-
-      <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="btn-recruiter-secondary" id="whatsappBtn">
+      <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="btn-contact-ghost">
         <span>WhatsApp Chat</span>
         <span>↗</span>
       </a>
-      
-      <a href="resume.pdf" target="_blank" rel="noopener" class="btn-recruiter-tertiary">
-        <span>View Resume (PDF)</span>
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn-contact-ghost">
+        <span>Download Resume (PDF)</span>
         <span>↗</span>
       </a>
     </div>
-  </header>
 
-  <!-- CONTACT CONTAINER -->
-  <section class="contact-container">
-    <!-- RECRUITER FAST FACTS SNAPSHOT CARD -->
-    <div class="recruiter-snapshot-card">
-      <div class="snapshot-header">
-        <span class="snapshot-icon" aria-hidden="true">⚡</span>
+    <!-- Recruiter Fast Facts Card -->
+    <div class="recruiter-fast-facts-card">
+      <div class="facts-header">
+        <span style="font-size: 1.5rem;">⚡</span>
         <div>
           <h3>Recruiter Quick Facts</h3>
           <p>Key information for design hiring managers, recruiters, and talent partners</p>
         </div>
       </div>
-      <div class="snapshot-grid">
-        <div class="snapshot-item">
-          <span class="snapshot-label">Target Role</span>
-          <span class="snapshot-val highlight">UI/UX Design Intern</span>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <span class="fact-label">Seeking Roles</span>
+          <span class="fact-val">UI/UX Design Intern</span>
         </div>
-        <div class="snapshot-item">
-          <span class="snapshot-label">Internship Availability</span>
-          <span class="snapshot-val">January 2027</span>
+        <div class="fact-item">
+          <span class="fact-label">Internship Availability</span>
+          <span class="fact-val">January 2027</span>
         </div>
-        <div class="snapshot-item">
-          <span class="snapshot-label">Location Flexibility</span>
-          <span class="snapshot-val">Remote (Worldwide) or On-site</span>
+        <div class="fact-item">
+          <span class="fact-label">Location Flexibility</span>
+          <span class="fact-val">Remote (Worldwide) or On-site</span>
         </div>
-        <div class="snapshot-item">
-          <span class="snapshot-label">Core Competencies</span>
-          <span class="snapshot-val">Figma, UX Research, Design Systems</span>
+        <div class="fact-item">
+          <span class="fact-label">Core Competencies</span>
+          <span class="fact-val">Figma, UX Research, Design Systems</span>
         </div>
       </div>
     </div>
 
-    <!-- DIRECT CONTACT TILES -->
-    <div class="contact-cards-grid">
-      <!-- EMAIL TILE -->
-      <article class="contact-tile">
+    <!-- Direct Contact Tiles -->
+    <div class="contact-tiles-grid">
+      <!-- EMAIL -->
+      <article class="contact-plum-tile">
         <div>
-          <span class="contact-tile-label">
+          <span class="contact-tile-type">
             <span>✉</span>
             <span>Direct Email</span>
           </span>
-          <div class="contact-tile-value">rachelmishra487@gmail.com</div>
-          <p class="contact-tile-desc">Best for internship inquiries, design team outreach, portfolio reviews, and project briefs.</p>
+          <div class="contact-tile-big">rachelmishra487@gmail.com</div>
+          <p class="contact-tile-sub">Best for internship inquiries, project briefs, design reviews, and team outreach.</p>
         </div>
         <div class="contact-tile-actions">
-          <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="contact-action-btn">
-            <span>Compose Email</span>
-            <span>&rarr;</span>
-          </a>
-          <button type="button" class="contact-action-btn secondary" onclick="copyToClipboard('rachelmishra487@gmail.com', 'Email')">
-            <span>Copy</span>
-          </button>
+          <a href="mailto:rachelmishra487@gmail.com?subject=UI%2FUX%20Design%20Internship%20Opportunity" class="btn-tile-primary">Compose Email &rarr;</a>
+          <button type="button" class="btn-tile-secondary" onclick="copyToClipboard('rachelmishra487@gmail.com', 'Email')">Copy</button>
         </div>
       </article>
 
-      <!-- PHONE / WHATSAPP TILE -->
-      <article class="contact-tile">
+      <!-- PHONE / WHATSAPP -->
+      <article class="contact-plum-tile">
         <div>
-          <span class="contact-tile-label">
+          <span class="contact-tile-type">
             <span>☎</span>
             <span>Phone &amp; WhatsApp</span>
           </span>
-          <div class="contact-tile-value">+91 75074 44004</div>
-          <p class="contact-tile-desc">Available for voice screenings, quick phone discussions, and WhatsApp conversations.</p>
+          <div class="contact-tile-big">+91 75074 44004</div>
+          <p class="contact-tile-sub">Available for phone screenings, voice interviews, and quick WhatsApp chats.</p>
         </div>
         <div class="contact-tile-actions">
-          <a href="tel:+917507444004" class="contact-action-btn">
-            <span>Call Now</span>
-            <span>↗</span>
-          </a>
-          <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="contact-action-btn secondary">
-            <span>WhatsApp</span>
-            <span>↗</span>
-          </a>
-          <button type="button" class="contact-action-btn secondary" onclick="copyToClipboard('+91 75074 44004', 'Phone number')">
-            <span>Copy</span>
-          </button>
+          <a href="tel:+917507444004" class="btn-tile-primary">Call Now ↗</a>
+          <a href="https://wa.me/917507444004" target="_blank" rel="noopener" class="btn-tile-secondary">WhatsApp ↗</a>
+          <button type="button" class="btn-tile-secondary" onclick="copyToClipboard('+91 75074 44004', 'Phone number')">Copy</button>
         </div>
       </article>
     </div>
 
-    <!-- SOCIAL PROFILES -->
-    <div class="socials-section">
-      <div class="socials-title">Creative Presence</div>
-      <div class="socials-grid">
-        <a href="https://www.instagram.com/rachelmishraa/" target="_blank" rel="noopener" class="social-card">
-          <div class="social-card-info">
-            <span class="social-name">Instagram</span>
-            <span class="social-sub">@rachelmishraa · Creative life, design observations &amp; snapshots</span>
-          </div>
-          <span class="social-arrow">↗</span>
-        </a>
-      </div>
+    <!-- Social Profile Strip -->
+    <div class="contact-social-row">
+      <span style="font-family: var(--ff-display); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft-lilac);">
+        Creative Presence
+      </span>
+      <a href="https://www.instagram.com/rachelmishraa/" target="_blank" rel="noopener" class="social-pill-link">
+        <span>Instagram (@rachelmishraa)</span>
+        <span>↗</span>
+      </a>
     </div>
-  </section>
+  </div>
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <span>© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
+<footer class="footer-editorial" style="background: var(--almost-black);">
+  <span class="footer-mark">© <span id="year"></span> Rachel Mishra · UI/UX Designer</span>
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 
