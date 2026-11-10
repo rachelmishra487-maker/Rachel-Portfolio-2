@@ -741,21 +741,45 @@
           </div>
 
           <div>
-            <span class="sandbox-group-label">Color Token Swatch</span>
-            <div class="swatch-group" id="colorSwatches">
-              <button type="button" class="swatch-circle active" data-token="plum" data-color="#392B45" style="--c: #392B45;" title="Primary Plum ($color-plum)" aria-label="Plum"></button>
-              <button type="button" class="swatch-circle" data-token="lavender" data-color="#A68BB8" style="--c: #A68BB8;" title="Dusty Lavender ($color-lavender)" aria-label="Dusty Lavender"></button>
-              <button type="button" class="swatch-circle" data-token="rose" data-color="#C7A5A0" style="--c: #C7A5A0;" title="Muted Rose ($color-rose)" aria-label="Muted Rose"></button>
-              <button type="button" class="swatch-circle" data-token="dark" data-color="#211A27" style="--c: #211A27;" title="Almost Black ($color-dark)" aria-label="Almost Black"></button>
+            <span class="sandbox-group-label">Color Token Swatches (Live HEX)</span>
+            <div class="swatch-group-editorial" id="colorSwatches">
+              <button type="button" class="swatch-item-btn active" data-token="plum" data-color="#392B45" data-name="Primary Plum">
+                <div class="swatch-left-col">
+                  <span class="swatch-circle-chip" style="--c: #392B45;"></span>
+                  <span class="swatch-token-label">Primary Plum</span>
+                </div>
+                <span class="swatch-hex-val">#392B45</span>
+              </button>
+              <button type="button" class="swatch-item-btn" data-token="lavender" data-color="#A68BB8" data-name="Dusty Lavender">
+                <div class="swatch-left-col">
+                  <span class="swatch-circle-chip" style="--c: #A68BB8;"></span>
+                  <span class="swatch-token-label">Dusty Lavender</span>
+                </div>
+                <span class="swatch-hex-val">#A68BB8</span>
+              </button>
+              <button type="button" class="swatch-item-btn" data-token="rose" data-color="#C7A5A0" data-name="Muted Rose">
+                <div class="swatch-left-col">
+                  <span class="swatch-circle-chip" style="--c: #C7A5A0;"></span>
+                  <span class="swatch-token-label">Muted Rose</span>
+                </div>
+                <span class="swatch-hex-val">#C7A5A0</span>
+              </button>
+              <button type="button" class="swatch-item-btn" data-token="dark" data-color="#211A27" data-name="Almost Black">
+                <div class="swatch-left-col">
+                  <span class="swatch-circle-chip" style="--c: #211A27;"></span>
+                  <span class="swatch-token-label">Almost Black</span>
+                </div>
+                <span class="swatch-hex-val">#211A27</span>
+              </button>
             </div>
           </div>
 
           <div>
             <span class="sandbox-group-label">Auto-Layout Padding</span>
             <div class="sandbox-pills-row" id="densityPills">
-              <button type="button" class="sandbox-btn-pill" data-density="compact">Compact (10px)</button>
-              <button type="button" class="sandbox-btn-pill active" data-density="default">Default (14px)</button>
-              <button type="button" class="sandbox-btn-pill" data-density="spacious">Spacious (18px)</button>
+              <button type="button" class="sandbox-btn-pill" data-density="compact">Compact (10px 20px)</button>
+              <button type="button" class="sandbox-btn-pill active" data-density="default">Default (14px 28px)</button>
+              <button type="button" class="sandbox-btn-pill" data-density="spacious">Spacious (18px 36px)</button>
             </div>
           </div>
         </div>
@@ -763,12 +787,17 @@
         <!-- Stage Canvas -->
         <div class="sandbox-stage">
           <div class="sandbox-preview-card" id="demoCard">
-            <span class="sandbox-token-chip" id="demoTokenName">$color-plum-primary</span>
-            <h4 style="color: var(--lavender-white); font-size: 1.25rem; margin-bottom: 0.4rem;">Interactive Prototype</h4>
-            <p style="color: var(--soft-lilac); font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.5rem;">Click any controls on the left to test interactive states and token reactivity.</p>
+            <div class="sandbox-stage-pills-row">
+              <span class="sandbox-state-badge" id="demoStateBadge">STATE: DEFAULT</span>
+              <span class="sandbox-hex-chip" id="demoHexBadge">HEX: #392B45</span>
+            </div>
+            <span class="sandbox-token-chip" id="demoTokenName" style="margin-bottom: 0.8rem;">$color-plum-primary</span>
+            <h4 style="color: var(--lavender-white); font-size: 1.25rem; margin-bottom: 0.4rem; font-family: var(--ff-display);">Interactive Prototype</h4>
+            <p style="color: var(--soft-lilac); font-size: 0.86rem; line-height: 1.5; margin-bottom: 1.6rem;">Hover, click, or test states using the controls or directly on the component below.</p>
             <button type="button" class="sandbox-demo-btn" id="sandboxDemoBtn">
-              <span>Explore Prototype</span>
-              <span>&rarr;</span>
+              <span id="demoBtnIcon">★</span>
+              <span id="demoBtnLabel">Explore Prototype</span>
+              <span id="demoBtnArrow">&rarr;</span>
             </button>
           </div>
         </div>
@@ -777,15 +806,20 @@
         <div class="sandbox-inspector">
           <div class="inspector-top">
             <span class="inspector-title">CSS / Figma Token Spec</span>
-            <span style="font-size: 0.74rem; color: var(--text-light-muted);">Auto-generated</span>
+            <button type="button" class="btn-copy-css" id="copyCssBtn" title="Copy CSS to clipboard">
+              <span id="copyIcon">📋</span>
+              <span id="copyText">Copy CSS</span>
+            </button>
           </div>
           <pre class="inspector-code-block"><code id="inspectorCode">/* Figma Token Output */
 .btn-primary {
   --btn-bg: #392B45;
+  --btn-token: $color-plum-primary;
   padding: 14px 28px;
   border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(57, 43, 69, 0.3);
+  box-shadow: 0 4px 16px rgba(57, 43, 69, 0.4);
   transition: all 0.25s ease;
+  /* State: default */
 }</code></pre>
         </div>
       </div>

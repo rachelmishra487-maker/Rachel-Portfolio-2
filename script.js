@@ -364,12 +364,18 @@ if (pbTabs.length && pbMainImg) {
 // 10. Interactive Figma Token & Component Sandbox (Both Homepage & Playground)
 const initTokenSandbox = () => {
   const statePills = document.querySelectorAll('#statePills .sandbox-btn-pill');
-  const colorSwatches = document.querySelectorAll('#colorSwatches .swatch-circle');
+  const colorSwatches = document.querySelectorAll('#colorSwatches .swatch-item-btn, #colorSwatches .swatch-circle');
   const densityPills = document.querySelectorAll('#densityPills .sandbox-btn-pill');
   const demoCard = document.getElementById('demoCard');
   const demoBtn = document.getElementById('sandboxDemoBtn');
   const demoTokenName = document.getElementById('demoTokenName');
+  const demoStateBadge = document.getElementById('demoStateBadge');
+  const demoHexBadge = document.getElementById('demoHexBadge');
+  const demoBtnIcon = document.getElementById('demoBtnIcon');
+  const demoBtnLabel = document.getElementById('demoBtnLabel');
+  const demoBtnArrow = document.getElementById('demoBtnArrow');
   const inspectorCode = document.getElementById('inspectorCode');
+  const copyCssBtn = document.getElementById('copyCssBtn');
 
   if (!demoCard || !demoBtn) return;
 
@@ -383,53 +389,94 @@ const initTokenSandbox = () => {
     demoBtn.style.padding = currentPadding;
 
     if (currentState === 'hover') {
-      demoBtn.style.opacity = '0.9';
-      demoBtn.style.transform = 'translateY(-2px)';
-      demoBtn.style.boxShadow = `0 8px 24px ${currentColor}55`;
+      demoBtn.style.opacity = '0.92';
+      demoBtn.style.transform = 'translateY(-3px)';
+      demoBtn.style.boxShadow = `0 10px 28px ${currentColor}77`;
+      demoBtn.style.cursor = 'pointer';
+      if (demoStateBadge) demoStateBadge.textContent = 'STATE: HOVER';
+      if (demoBtnLabel) demoBtnLabel.textContent = 'Explore Prototype';
+      if (demoBtnIcon) demoBtnIcon.textContent = '↗';
+      if (demoBtnArrow) demoBtnArrow.textContent = '→';
     } else if (currentState === 'active') {
       demoBtn.style.opacity = '1';
-      demoBtn.style.transform = 'scale(0.97)';
-      demoBtn.style.boxShadow = `0 2px 8px ${currentColor}44`;
+      demoBtn.style.transform = 'scale(0.96) translateY(1px)';
+      demoBtn.style.boxShadow = `0 2px 6px ${currentColor}44`;
+      demoBtn.style.cursor = 'pointer';
+      if (demoStateBadge) demoStateBadge.textContent = 'STATE: ACTIVE';
+      if (demoBtnLabel) demoBtnLabel.textContent = 'Pressed (Active)';
+      if (demoBtnIcon) demoBtnIcon.textContent = '✦';
+      if (demoBtnArrow) demoBtnArrow.textContent = '✓';
     } else if (currentState === 'loading') {
-      demoBtn.style.opacity = '0.75';
+      demoBtn.style.opacity = '0.78';
       demoBtn.style.transform = 'none';
       demoBtn.style.boxShadow = 'none';
+      demoBtn.style.cursor = 'wait';
+      if (demoStateBadge) demoStateBadge.textContent = 'STATE: LOADING';
+      if (demoBtnLabel) demoBtnLabel.textContent = 'Syncing Tokens...';
+      if (demoBtnIcon) demoBtnIcon.textContent = '⟳';
+      if (demoBtnArrow) demoBtnArrow.textContent = '...';
     } else if (currentState === 'disabled') {
-      demoBtn.style.opacity = '0.4';
+      demoBtn.style.opacity = '0.40';
       demoBtn.style.transform = 'none';
       demoBtn.style.boxShadow = 'none';
       demoBtn.style.cursor = 'not-allowed';
+      if (demoStateBadge) demoStateBadge.textContent = 'STATE: DISABLED';
+      if (demoBtnLabel) demoBtnLabel.textContent = 'Action Disabled';
+      if (demoBtnIcon) demoBtnIcon.textContent = '⊘';
+      if (demoBtnArrow) demoBtnArrow.textContent = '—';
     } else {
       demoBtn.style.opacity = '1';
       demoBtn.style.transform = 'none';
-      demoBtn.style.boxShadow = `0 4px 16px ${currentColor}44`;
+      demoBtn.style.boxShadow = `0 4px 16px ${currentColor}55`;
       demoBtn.style.cursor = 'pointer';
+      if (demoStateBadge) demoStateBadge.textContent = 'STATE: DEFAULT';
+      if (demoBtnLabel) demoBtnLabel.textContent = 'Explore Prototype';
+      if (demoBtnIcon) demoBtnIcon.textContent = '★';
+      if (demoBtnArrow) demoBtnArrow.textContent = '→';
     }
 
     if (demoTokenName) {
       demoTokenName.textContent = currentTokenName;
     }
 
+    if (demoHexBadge) {
+      demoHexBadge.textContent = `HEX: ${currentColor.toUpperCase()}`;
+    }
+
     if (inspectorCode) {
-      inspectorCode.textContent = `/* Figma Token Output */
+      inspectorCode.textContent = `/* Figma Design Token Spec */
 .btn-primary {
   --btn-bg: ${currentColor};
   --btn-token: ${currentTokenName};
   padding: ${currentPadding};
   border-radius: 999px;
-  box-shadow: 0 4px 16px ${currentColor}44;
-  transition: all 0.25s ease;
-  /* State: ${currentState} */
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px ${currentColor}55;
+  /* Active Variant State: ${currentState} */
+}
+
+/* State Pseudo-class */
+.btn-primary:${currentState === 'hover' ? 'hover' : currentState === 'active' ? 'active' : currentState === 'disabled' ? 'disabled' : 'focus'} {
+  transform: ${currentState === 'hover' ? 'translateY(-3px)' : currentState === 'active' ? 'scale(0.96)' : 'none'};
+  opacity: ${currentState === 'disabled' ? '0.40' : currentState === 'loading' ? '0.78' : '1'};
 }`;
     }
   };
 
+  const setState = (st) => {
+    currentState = st;
+    statePills.forEach(p => {
+      if (p.dataset.state === st) p.classList.add('active');
+      else p.classList.remove('active');
+    });
+    updateSandbox();
+  };
+
   statePills.forEach(pill => {
     pill.addEventListener('click', () => {
-      statePills.forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-      currentState = pill.dataset.state;
-      updateSandbox();
+      setState(pill.dataset.state);
     });
   });
 
@@ -454,6 +501,54 @@ const initTokenSandbox = () => {
       updateSandbox();
     });
   });
+
+  // Direct Two-Way Component Interactions on Stage Button
+  demoBtn.addEventListener('mouseenter', () => {
+    if (currentState === 'default') {
+      setState('hover');
+    }
+  });
+
+  demoBtn.addEventListener('mouseleave', () => {
+    if (currentState === 'hover') {
+      setState('default');
+    }
+  });
+
+  demoBtn.addEventListener('mousedown', () => {
+    if (currentState !== 'disabled' && currentState !== 'loading') {
+      setState('active');
+    }
+  });
+
+  demoBtn.addEventListener('mouseup', () => {
+    if (currentState === 'active') {
+      setState('hover');
+    }
+  });
+
+  // Copy CSS Action
+  if (copyCssBtn && inspectorCode) {
+    copyCssBtn.addEventListener('click', () => {
+      const codeText = inspectorCode.textContent;
+      navigator.clipboard.writeText(codeText).then(() => {
+        copyCssBtn.classList.add('copied');
+        const originalHtml = copyCssBtn.innerHTML;
+        copyCssBtn.innerHTML = '<span>✓ Copied!</span>';
+        if (typeof showToast === 'function') {
+          showToast('CSS Token Spec copied to clipboard!');
+        }
+        setTimeout(() => {
+          copyCssBtn.classList.remove('copied');
+          copyCssBtn.innerHTML = originalHtml;
+        }, 2200);
+      }).catch(() => {
+        if (typeof showToast === 'function') {
+          showToast('Code copied to clipboard!');
+        }
+      });
+    });
+  }
 
   updateSandbox();
 };
