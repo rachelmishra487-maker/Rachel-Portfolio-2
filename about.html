@@ -53,6 +53,18 @@
         <div class="portrait-editorial-card">
           <img src="rachel.jpg" alt="Rachel Mishra — UI/UX Designer" class="portrait-img" width="607" height="1024" loading="eager">
         </div>
+        <!-- Rotating Circular Text Element (Editorial Seal) -->
+        <div class="rotating-badge-stamp" style="bottom: 40px; right: -20px;" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="rotating-stamp-svg">
+            <path id="aboutBadgeTextPath" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+            <text class="stamp-text">
+              <textPath href="#aboutBadgeTextPath" startOffset="0%">
+                ✦ RACHEL MISHRA ✦ UI/UX DESIGN ✦ SID NAGPUR ✦
+              </textPath>
+            </text>
+          </svg>
+          <div class="badge-center-sparkle">★</div>
+        </div>
         <div class="about-status-card">
           <span style="font-family: var(--ff-display); font-size: 0.88rem; font-weight: 700; color: var(--plum);">Available for Internships</span>
           <span style="font-size: 0.82rem; color: var(--text-muted);">Starting January 2027 · Remote or On-site</span>
@@ -62,7 +74,7 @@
       <!-- RIGHT: NARRATIVE -->
       <div class="about-content">
         <p class="eyebrow">Personal Journey &amp; Approach</p>
-        <h2 class="about-title">Hi, I'm Rachel Mishra.</h2>
+        <h2 class="about-title">Hi, I'm Rachel Mishra. <span class="vibrant-sparkle" style="font-size: 1.4rem;" aria-hidden="true">✦</span></h2>
         <p class="about-role-sub">Fourth-Year UI/UX Designer · SID Nagpur</p>
 
         <div class="about-narrative">

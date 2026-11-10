@@ -559,8 +559,74 @@ if (document.readyState === 'loading') {
   initTokenSandbox();
 }
 
-// 11. Subtle Scroll Reveal Animations
-const revealElements = document.querySelectorAll('.project-editorial-card, .skills-category-card, .timeline-card, .passion-card, .playground-card');
+// 11. Page Entrance Transition
+const markPageLoaded = () => {
+  document.body.classList.add('page-loaded');
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', markPageLoaded);
+} else {
+  markPageLoaded();
+}
+
+// 12. Hero Portrait Interactive Parallax & 3D Tilt
+const heroSection = document.getElementById('hero');
+const portraitCard = document.querySelector('.portrait-editorial-card');
+if (heroSection && portraitCard && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  let heroTargetX = 0, heroTargetY = 0;
+  let heroCurrentX = 0, heroCurrentY = 0;
+  let isHoveringHero = false;
+
+  heroSection.addEventListener('mousemove', (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    const normX = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+    const normY = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+    heroTargetX = normX * 14;
+    heroTargetY = normY * 12;
+    isHoveringHero = true;
+  });
+
+  heroSection.addEventListener('mouseleave', () => {
+    heroTargetX = 0;
+    heroTargetY = 0;
+    isHoveringHero = false;
+  });
+
+  const updateHeroParallax = () => {
+    heroCurrentX += (heroTargetX - heroCurrentX) * 0.1;
+    heroCurrentY += (heroTargetY - heroCurrentY) * 0.1;
+    if (Math.abs(heroCurrentX) > 0.05 || Math.abs(heroCurrentY) > 0.05 || isHoveringHero) {
+      portraitCard.style.transform = `perspective(1000px) rotateY(${heroCurrentX * 0.45}deg) rotateX(${-heroCurrentY * 0.45}deg) translate3d(${heroCurrentX * 0.4}px, ${heroCurrentY * 0.4}px, 0)`;
+    } else {
+      portraitCard.style.transform = '';
+    }
+    requestAnimationFrame(updateHeroParallax);
+  };
+  requestAnimationFrame(updateHeroParallax);
+}
+
+// 13. Playground Lab Image Interactive Cursor Response
+const playgroundCards = document.querySelectorAll('.playground-card');
+if (playgroundCards.length && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  playgroundCards.forEach(card => {
+    const previewImg = card.querySelector('.playground-preview-frame img');
+    if (!previewImg) return;
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const normX = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+      const normY = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+      previewImg.style.transform = `scale(1.06) translate3d(${normX * 6}px, ${normY * 6}px, 0)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      previewImg.style.transform = '';
+    });
+  });
+}
+
+// 14. Staggered Scroll Reveal Animations
+const revealElements = document.querySelectorAll('.project-editorial-card, .skills-category-card, .timeline-card, .passion-card, .playground-card, .section-header');
 if ('IntersectionObserver' in window && revealElements.length) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -569,10 +635,50 @@ if ('IntersectionObserver' in window && revealElements.length) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-  revealElements.forEach(el => {
+  revealElements.forEach((el, index) => {
     el.classList.add('reveal-on-scroll');
+    el.style.setProperty('--stagger', (index % 4).toString());
     observer.observe(el);
   });
 }
+
+// 15. Playful Click Sparkle Particle Burst
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  document.addEventListener('click', (e) => {
+    const colors = ['#A68BB8', '#D9C9E3', '#FF4F64', '#FF9F38'];
+    for (let i = 0; i < 4; i++) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'cursor-sparkle';
+      const angle = (Math.PI * 2 / 4) * i + (Math.random() * 0.4);
+      const dist = 18 + Math.random() * 16;
+      sparkle.style.left = `${e.clientX}px`;
+      sparkle.style.top = `${e.clientY}px`;
+      sparkle.style.setProperty('--dx', `${Math.cos(angle) * dist}px`);
+      sparkle.style.setProperty('--dy', `${Math.sin(angle) * dist}px`);
+      sparkle.style.background = colors[i % colors.length];
+      document.body.appendChild(sparkle);
+      setTimeout(() => {
+        if (sparkle.parentNode) sparkle.parentNode.removeChild(sparkle);
+      }, 550);
+    }
+  });
+}
+
+// 16. Smooth Offset Scroll for On-Page Anchor Links
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      e.preventDefault();
+      const navHeight = 80;
+      const targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({
+        top: targetPos,
+        behavior: 'smooth'
+      });
+    }
+  });
+});

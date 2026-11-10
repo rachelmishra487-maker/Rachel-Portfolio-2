@@ -40,6 +40,11 @@
   <div class="hero-abstract-shape shape-plum"></div>
   <div class="hero-abstract-shape shape-lilac"></div>
 
+  <!-- Decorative Floating Sparkles & Doodles -->
+  <span class="hero-decor-item decor-sparkle-1" aria-hidden="true">✦</span>
+  <span class="hero-decor-item decor-sparkle-2" aria-hidden="true">★</span>
+  <span class="hero-decor-item decor-flower" aria-hidden="true">🌸</span>
+
   <div class="hero-grid">
     <!-- LEFT: EDITORIAL HEADLINE & INTRODUCTION -->
     <div class="hero-content">
@@ -50,11 +55,38 @@
         </div>
         <span class="annotation-badge">SID NAGPUR</span>
         <span class="annotation-badge">B.DES UI/UX</span>
+        <span class="vibrant-sparkle" aria-hidden="true">✦</span>
       </div>
 
       <h1 class="hero-title">
-        <span class="title-block">HELLO, I'M <span class="hero-name-accent">RACHEL.</span></span>
-        <span class="title-block">I DESIGN DIGITAL EXPERIENCES THAT MAKE PEOPLE <em class="serif-italic">think</em>, <em class="serif-italic">feel</em> &amp; <em class="serif-italic">interact</em>.</span>
+        <span class="title-block">
+          <span class="word-reveal" style="--i:1">HELLO,</span>
+          <span class="word-reveal" style="--i:2">I'M</span>
+          <span class="word-reveal hero-name-accent-wrap" style="--i:3">
+            <span class="hero-name-accent">RACHEL.</span>
+            <svg class="sketch-underline-name" viewBox="0 0 200 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 13C45 4 115 3 196 10C150 7 75 8 20 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </span>
+        <span class="title-block">
+          <span class="word-reveal" style="--i:4">I</span>
+          <span class="word-reveal" style="--i:5">DESIGN</span>
+          <span class="word-reveal" style="--i:6">DIGITAL</span>
+          <span class="word-reveal" style="--i:7">EXPERIENCES</span>
+          <span class="word-reveal" style="--i:8">THAT</span>
+          <span class="word-reveal" style="--i:9">MAKE</span>
+          <span class="word-reveal" style="--i:10">PEOPLE</span>
+          <span class="word-reveal serif-italic" style="--i:11">think</span><span class="word-reveal" style="--i:12">,</span>
+          <span class="word-reveal serif-italic" style="--i:13">feel</span>
+          <span class="word-reveal" style="--i:14">&amp;</span>
+          <span class="word-reveal serif-italic-wrap" style="--i:15">
+            <em class="serif-italic">interact</em>.
+            <svg class="sketch-underline-interact" viewBox="0 0 160 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 10C40 3 100 2 157 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </span>
       </h1>
 
       <p class="hero-sub">
@@ -64,10 +96,16 @@
       <div class="hero-actions">
         <a href="#featured-work" class="btn btn-primary">
           <span>Explore My Work</span>
-          <span>↓</span>
+          <span class="btn-arrow">↓</span>
         </a>
-        <a href="about.html" class="btn btn-secondary">About My Journey</a>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↗</a>
+        <a href="about.html" class="btn btn-secondary">
+          <span>About My Journey</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+          <span>Resume</span>
+          <span class="btn-arrow">↗</span>
+        </a>
       </div>
 
       <div class="hero-chips-row">
@@ -77,10 +115,10 @@
         <span class="hero-chip">Desktop Operations</span>
       </div>
 
-      <div class="scroll-indicator-bar">
-        <span>↓</span>
+      <a href="#featured-work" class="scroll-indicator-bar" style="text-decoration: none;">
+        <span class="scroll-arrow-badge">↓</span>
         <span>Scroll down to explore featured work &amp; experiments</span>
-      </div>
+      </a>
     </div>
 
     <!-- RIGHT: UNCONVENTIONAL PORTRAIT FRAME TREATMENT -->
@@ -93,6 +131,19 @@
 
         <div class="portrait-editorial-card">
           <img src="rachel.jpg" alt="Rachel Mishra — UI/UX Designer" class="portrait-img" width="607" height="1024" loading="eager">
+        </div>
+
+        <!-- Rotating Circular Text Element (Editorial Seal) -->
+        <div class="rotating-badge-stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="rotating-stamp-svg">
+            <path id="badgeTextPath" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+            <text class="stamp-text">
+              <textPath href="#badgeTextPath" startOffset="0%">
+                ✦ RACHEL MISHRA ✦ UI/UX DESIGN ✦ SID NAGPUR ✦
+              </textPath>
+            </text>
+          </svg>
+          <div class="badge-center-sparkle">★</div>
         </div>
 
         <div class="floating-stamp stamp-bottom-left">
