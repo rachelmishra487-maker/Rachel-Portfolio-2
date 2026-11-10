@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="spBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191320"/>
+      <stop offset="50%" stop-color="#241B2C"/>
+      <stop offset="100%" stop-color="#140E19"/>
+    </linearGradient>
+    <linearGradient id="spPlaneGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D2D4A"/>
+      <stop offset="100%" stop-color="#2A1E34"/>
+    </linearGradient>
+    <linearGradient id="spPlaneGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#553F67"/>
+      <stop offset="100%" stop-color="#3A2A47"/>
+    </linearGradient>
+    <linearGradient id="spAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9C9E3"/>
+      <stop offset="100%" stop-color="#A68BB8"/>
+    </linearGradient>
+    <filter id="spDepthShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#spBg)"/>
+
+  <!-- Subtle Perspective Grid -->
+  <g opacity="0.08">
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="850" cy="350" r="340" fill="#A68BB8" opacity="0.12"/>
+
+  <!-- Left Editorial Context -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="280" height="32" rx="16" fill="#2E2137" stroke="#4C365B" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="4" fill="#A68BB8"/>
+    <text x="28" y="21" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">SID NAGPUR · 3D / SPATIAL LAB</text>
+
+    <text x="0" y="85" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="800">Spatial &amp; 3D Ergonomics</text>
+    <text x="0" y="122" fill="#D9C9E3" font-family="'Playfair Display', Georgia, serif" font-size="22" font-style="italic">Depth Perception &amp; Tactile Lighting Studies</text>
+    <text x="0" y="156" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="14">Investigating spatial depth cues, z-axis shadow casting, and 3D ergonomics in Blender &amp; Unity</text>
+  </g>
+
+  <!-- Right: 3D Layered Isometric UI Planes -->
+  <g transform="translate(680, 160)">
+    <!-- Base Layer 1: Plane Depth Z=0 -->
+    <g transform="matrix(0.866, -0.5, 0.866, 0.5, -120, 120)" filter="url(#spDepthShadow)">
+      <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#spPlaneGrad1)" stroke="#503A60" stroke-width="1.5"/>
+      <g transform="translate(25, 25)">
+        <rect x="0" y="0" width="120" height="12" rx="6" fill="#A68BB8" opacity="0.6"/>
+        <rect x="0" y="24" width="220" height="8" rx="4" fill="#D9C9E3" opacity="0.3"/>
+        <rect x="0" y="40" width="180" height="8" rx="4" fill="#D9C9E3" opacity="0.3"/>
+        <g transform="translate(0, 70)">
+          <rect x="0" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
+          <rect x="95" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
+          <rect x="190" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Elevated Layer 2: Plane Depth Z=40 -->
+    <g transform="matrix(0.866, -0.5, 0.866, 0.5, -80, 20)" filter="url(#spDepthShadow)">
+      <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#spPlaneGrad2)" stroke="#74548C" stroke-width="1.8"/>
+      <g transform="translate(25, 25)">
+        <!-- Top Header inside 3D card -->
+        <rect x="0" y="0" width="160" height="14" rx="7" fill="#F5F0F8"/>
+        <rect x="0" y="26" width="240" height="8" rx="4" fill="#D9C9E3" opacity="0.5"/>
+        
+        <!-- Interactive 3D Sphere & Geometry -->
+        <g transform="translate(30, 60)">
+          <circle cx="50" cy="50" r="38" fill="url(#spAccent)"/>
+          <ellipse cx="42" cy="38" rx="14" ry="8" fill="#FFFFFF" opacity="0.4"/>
+          <text x="120" y="45" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Tactile Shadow</text>
+          <text x="120" y="65" fill="#D9C9E3" font-family="'DM Sans', sans-serif" font-size="12">Z-Elevation 40px</text>
+        </g>
+
+        <!-- Dynamic Action Button inside 3D Layer -->
+        <g transform="translate(0, 160)">
+          <rect x="0" y="0" width="140" height="34" rx="17" fill="#A68BB8"/>
+          <text x="70" y="22" fill="#211A27" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" text-anchor="middle">MANIPULATE</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Spatial Dimension Callouts -->
+    <g transform="translate(180, 340)">
+      <circle cx="0" cy="0" r="6" fill="#D9C9E3"/>
+      <line x1="0" y1="0" x2="60" y2="-40" stroke="#D9C9E3" stroke-width="1.5" stroke-dasharray="3,3"/>
+      <rect x="65" y="-55" width="135" height="26" rx="13" fill="#2B1F34" stroke="#523B64" stroke-width="1"/>
+      <text x="132" y="-38" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Z-AXIS ERGONOMICS</text>
+    </g>
+  </g>
+
+  <!-- Left Bottom Feature Specs -->
+  <g transform="translate(80, 310)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
+      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">3D Depth &amp; Layer Occlusion</text>
+      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Testing whether elevation reduces cognitive clutter compared to flat cards</text>
+    </g>
+
+    <g transform="translate(0, 100)">
+      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
+      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Blender Material &amp; Light Renders</text>
+      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Natural light falloff mimicking real-world object affordances</text>
+    </g>
+
+    <g transform="translate(0, 200)">
+      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
+      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Unity Spatial Interaction Simulation</text>
+      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Validating field-of-view comfort and interaction reach envelopes</text>
+    </g>
+  </g>
+</svg>
