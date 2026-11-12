@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow_details" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim_details" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass_details" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip_details">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow_details)">
+    <!-- Outer Titanium Chassis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim_details)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip_details)">
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+      <!-- University Campus Header Image / Banner -->
+      <g transform="translate(14, 14)">
+        <rect width="390" height="220" fill="#2D1537"/>
+        <linearGradient id="torontoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3D1D4A"/>
+          <stop offset="50%" stop-color="#6B2875"/>
+          <stop offset="100%" stop-color="#FF6B35"/>
+        </linearGradient>
+        <rect width="390" height="220" fill="url(#torontoGrad)" opacity="0.85"/>
+        
+        <!-- Campus Architecture Silhouette Motif -->
+        <path d="M 40,220 L 40,140 L 70,110 L 100,140 L 100,220 Z M 120,220 L 120,90 L 160,50 L 200,90 L 200,220 Z M 220,220 L 220,130 L 250,100 L 280,130 L 280,220 Z M 300,220 L 300,160 L 330,130 L 360,160 L 360,220 Z" fill="#FFFFFF" opacity="0.15"/>
+
+        <!-- Top Nav Icons -->
+        <g transform="translate(24, 46)">
+          <circle cx="18" cy="18" r="18" fill="rgba(0,0,0,0.35)"/>
+          <path d="M22 12 l-6 6 l6 6" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+          <circle cx="320" cy="18" r="18" fill="rgba(0,0,0,0.35)"/>
+          <path d="M314 18 h12 M320 12 v12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Ranking Pill -->
+        <g transform="translate(24, 160)">
+          <rect width="130" height="26" rx="13" fill="#FFFFFF"/>
+          <text x="65" y="17" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#2D1537" text-anchor="middle">QS WORLD #21 · CA</text>
+        </g>
+      </g>
+
+      <!-- University Details Body Content -->
+      <g transform="translate(38, 252)">
+        <text x="0" y="24" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800" fill="#1E1915">University of Toronto</text>
+        <text x="0" y="44" font-family="'DM Sans', sans-serif" font-size="13" font-weight="500" fill="#6E6762">St. George Campus · Toronto, Ontario, Canada</text>
+
+        <!-- Key Metrics Strip (Tuition, Acceptance, Deadline) -->
+        <g transform="translate(0, 60)">
+          <!-- Metric 1: Tuition -->
+          <rect x="0" y="0" width="105" height="66" rx="12" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1"/>
+          <text x="12" y="22" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#8F8883">EST. TUITION</text>
+          <text x="12" y="44" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#1E1915">CAD $54.8k</text>
+          <text x="12" y="58" font-family="'DM Sans', sans-serif" font-size="9" fill="#22C55E">Per academic yr</text>
+
+          <!-- Metric 2: Acceptance Rate -->
+          <rect x="115" y="0" width="105" height="66" rx="12" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1"/>
+          <text x="127" y="22" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#8F8883">ACCEPTANCE</text>
+          <text x="127" y="44" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#FF6B35">43% Rate</text>
+          <text x="127" y="58" font-family="'DM Sans', sans-serif" font-size="9" fill="#6E6762">Competitive</text>
+
+          <!-- Metric 3: Deadline -->
+          <rect x="230" y="0" width="112" height="66" rx="12" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1"/>
+          <text x="242" y="22" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#8F8883">FALL DEADLINE</text>
+          <text x="242" y="44" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#1E1915">Jan 15, 2027</text>
+          <text x="242" y="58" font-family="'DM Sans', sans-serif" font-size="9" fill="#EF4444">64 days left</text>
+        </g>
+
+        <!-- Program Highlights Accordion -->
+        <g transform="translate(0, 142)">
+          <text x="0" y="16" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Minimum Academic Thresholds</text>
+
+          <!-- Requirement 1 -->
+          <g transform="translate(0, 28)">
+            <rect width="342" height="48" rx="10" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1"/>
+            <circle cx="24" cy="24" r="10" fill="#10B981" fill-opacity="0.15"/>
+            <text x="24" y="28" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">✓</text>
+            <text x="46" y="22" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915">Undergraduate GPA Requirement</text>
+            <text x="46" y="38" font-family="'DM Sans', sans-serif" font-size="11" fill="#6E6762">Minimum 3.3 / 4.0 (Mid-B equivalent)</text>
+            <text x="310" y="30" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="end">Eligible</text>
+          </g>
+
+          <!-- Requirement 2 -->
+          <g transform="translate(0, 84)">
+            <rect width="342" height="48" rx="10" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1"/>
+            <circle cx="24" cy="24" r="10" fill="#10B981" fill-opacity="0.15"/>
+            <text x="24" y="28" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">✓</text>
+            <text x="46" y="22" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915">Language Proficiency</text>
+            <text x="46" y="38" font-family="'DM Sans', sans-serif" font-size="11" fill="#6E6762">IELTS 7.0 (no band &lt; 6.5) or TOEFL 100</text>
+            <text x="310" y="30" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="end">Passed</text>
+          </g>
+        </g>
+
+        <!-- Living Cost Breakdown Card -->
+        <g transform="translate(0, 290)">
+          <rect width="342" height="90" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+          <text x="16" y="24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#9A3412">Estimated Living Costs in Toronto</text>
+          <text x="16" y="44" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#7C2D12">Monthly Rent (Downtown): CAD $1,450 · Utilities &amp; Food: CAD $600</text>
+          
+          <rect x="16" y="56" width="130" height="22" rx="11" fill="#FFEDD5"/>
+          <text x="81" y="71" font-family="'DM Sans', sans-serif" font-size="10.5" font-weight="700" fill="#C2410C" text-anchor="middle">GoUni Housing Verified</text>
+        </g>
+
+        <!-- Bottom Action CTA Buttons -->
+        <g transform="translate(0, 400)">
+          <rect width="342" height="50" rx="25" fill="#FF6B35"/>
+          <text x="171" y="30" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Add to Application Checklist &rarr;</text>
+        </g>
+      </g>
+
+      <!-- Dynamic Island & Status Bar -->
+      <g transform="translate(14, 14)">
+        <rect x="135" y="10" width="120" height="30" rx="15" fill="#000000"/>
+        <text x="40" y="28" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">9:41</text>
+        <circle cx="340" cy="24" r="4" fill="#FFFFFF"/>
+        <rect x="350" y="18" width="18" height="10" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+        <rect x="352" y="20" width="12" height="6" rx="1" fill="#FFFFFF"/>
+      </g>
+    </g>
+  </g>
+</g></svg>

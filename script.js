@@ -216,69 +216,198 @@ const showToast = (message) => {
   }, 2400);
 };
 
-// 7. GoUni Real Screen Switcher (Tabs & Thumbnails)
-const gouniTabs = document.querySelectorAll('.screen-tab:not(.hc-tab):not(.pb-tab), .showcase-thumb-btn:not(.hc-thumb):not(.pb-thumb)');
-const gouniMainImg = document.getElementById('gouniMainScreen');
-const gouniCaption = document.getElementById('gouniScreenCaption');
+// 7. GoUni Flagship Interactive Showcase & Lightbox Inspector
+const gouniScreensData = {
+  onboarding: {
+    src: 'project_gouni_screen_onboarding.svg',
+    badge: 'SCREEN 01 · ONBOARDING',
+    title: 'Welcome & Threshold Verification',
+    desc: 'Welcomes prospective international applicants with verified threshold requirements, global coverage (12,000+ programs across 24 countries), and a clear friction-free enrollment funnel.',
+    patterns: 'Visual branding banner, value proposition checklist, dual primary/ghost CTA buttons',
+    tokens: 'Brand Orange (#FF6B35), Primary Green (#10B981), Neutral Background (#FAF9F6)'
+  },
+  discovery: {
+    src: 'project_gouni_screen_discovery.svg',
+    badge: 'SCREEN 02 · DISCOVERY',
+    title: 'University & Course Discovery',
+    desc: 'Structured multi-country filtering, live search autocomplete, QS World Rankings, and estimated tuition fees to eliminate multi-tab comparison fatigue.',
+    patterns: 'Horizontal filter pills, university cards, comparative badges, fee calculator',
+    tokens: 'Active Orange (#FF6B35), Neutral Border (#EAE5DF), Surface Elevated (#FFFFFF)'
+  },
+  details: {
+    src: 'project_gouni_screen_details.svg',
+    badge: 'SCREEN 03 · UNIVERSITY DETAILS',
+    title: 'Academic Thresholds & Living Costs',
+    desc: 'Comprehensive university specifications for University of Toronto: GPA & IELTS requirements with eligibility checks, living cost breakdown, and single-click checklist enrollment.',
+    patterns: 'Key metrics strip, accordion criteria cards, living cost breakdown, sticky application CTA',
+    tokens: 'Purple Accent (#2D1537), Success Green (#10B981), Orange Primary (#FF6B35)'
+  },
+  dashboard: {
+    src: 'project_gouni_screen_dashboard.svg',
+    badge: 'SCREEN 04 · ROADMAP & DASHBOARD',
+    title: 'Student Dashboard & Departure Roadmap',
+    desc: 'Centralized student command center featuring departure readiness progress (52%), multi-university application tracker (Imperial, TU Munich), and urgent milestone notifications.',
+    patterns: 'Progress ring/bar, multi-state status badges, actionable deadline cards, bottom tab-bar',
+    tokens: 'Brand Orange (#FF6B35), Success Green (#10B981), Dark Plum Text (#1E1915)'
+  },
+  documents: {
+    src: 'project_gouni_screen_documents.svg',
+    badge: 'SCREEN 05 · DOCUMENT VAULT',
+    title: 'Document Upload & Verification Hub',
+    desc: 'Secure academic credential vault with automatic verification tracking, passport validity checks, SOP review statuses, and banking solvency compliance alerts.',
+    patterns: 'Progress indicators, verification badges, secure upload dropzones, file preview modals',
+    tokens: 'Verified Green (#10B981), Pending Amber (#F59E0B), Border Default (#EAE5DF)'
+  },
+  visa: {
+    src: 'project_gouni_screen_visa.svg',
+    badge: 'SCREEN 06 · VISA GUIDANCE',
+    title: 'Visa Guidance & Compliance Hub',
+    desc: 'Demystifying UK Student Route & Canadian SDS visa requirements: CAS code tracking, biometric appointment scheduling, and maintenance fund calculators ($1,334/mo).',
+    patterns: 'Step-by-step compliance checklist, currency conversion helper, biometric appointment booking',
+    tokens: 'Warning Amber (#F59E0B), Brand Orange (#FF6B35), Neutral Surface (#FFFFFF)'
+  },
+  accommodation: {
+    src: 'project_gouni_screen_accommodation.svg',
+    badge: 'SCREEN 07 · ACCOMMODATION',
+    title: 'Student Housing & Dormitory Finder',
+    desc: 'Curated on-campus university halls and vetted private student apartments sorted by commute distance to faculties, weekly budget, and verified roommate compatibility.',
+    patterns: 'Filter pills (Ensuite, Budget), distance-to-faculty badges, escrow verification badge',
+    tokens: 'Brand Orange (#FF6B35), Success Pill (#10B981), Surface Card (#FFFFFF)'
+  },
+  community: {
+    src: 'project_gouni_screen_community.svg',
+    badge: 'SCREEN 08 · COHORT COMMUNITY',
+    title: 'Student Community & Peer Network',
+    desc: 'Connecting incoming international students with city cohort discussion channels, flatmate matching, flight sharing, and verified senior student alumni mentors.',
+    patterns: 'Cohort discussion feed, verified student badge, direct peer messaging, event countdown',
+    tokens: 'Community Purple (#76518E), Brand Orange (#FF6B35), Surface Light (#FAF9F6)'
+  }
+};
 
-if (gouniTabs.length && gouniMainImg) {
-    const gouniScreens = {
-    suite: {
-      src: 'project_gouni_showcase.svg',
-      alt: 'GoUni Figma Mobile UI Suite — Multi-Device Editorial Composition',
-      caption: '<strong>Real Figma Mobile Suite:</strong> High-fidelity smartphone interface architecture spanning student onboarding, academic departure tracking, university matching, visa filing, and peer community interaction.'
-    },
-    dashboard: {
-      src: 'project_gouni_screen_dashboard.svg',
-      alt: 'GoUni Home & Study Plan Dashboard Interface',
-      caption: '<strong>Home & Study Plan Dashboard:</strong> Personalized milestone tracking (Stage 4/7), departure progress bar, actionable transcript upload alerts, and curated university recommendations.'
-    },
-    discovery: {
-      src: 'project_gouni_screen_discovery.svg',
-      alt: 'GoUni University & Course Discovery Interface',
-      caption: '<strong>University & Course Discovery:</strong> Filtered search with country pills (Canada, UK, USA, DE), QS ranking badges, tuition comparisons, and popular discipline highlights.'
-    },
-    visa: {
-      src: 'project_gouni_screen_visa.svg',
-      alt: 'GoUni Pre-Departure & Student Visa Hub',
-      caption: '<strong>Pre-Departure Hub & Canadian Visa:</strong> Post-acceptance celebration flow, SDS study permit tracking, verified student housing, and 1-on-1 visa counselor bookings.'
-    },
-    community: {
-      src: 'project_gouni_screen_community.svg',
-      alt: 'GoUni Student Community & Peer Discussion Network',
-      caption: '<strong>Student Community & Peer Network:</strong> Cohort-specific discussion feeds, upcoming campus cultural events (Diwali in Toronto), and peer housing Q&amp;A.'
-    },
-    components: {
-      src: 'project_gouni_components.png',
-      alt: 'GoUni Figma Component System & Interactive Card States',
-      caption: '<strong>Figma Design System:</strong> Reusable university card component set featuring multi-state variants (Default, Hover, Active, Disabled) built with Auto-Layout 5.0.'
+const gouniScreenKeys = Object.keys(gouniScreensData);
+let currentGouniScreenIndex = 0;
+
+function openGouniLightbox(screenId) {
+  const lightbox = document.getElementById('gouniLightbox');
+  if (!lightbox) return;
+  const index = gouniScreenKeys.indexOf(screenId);
+  if (index !== -1) {
+    currentGouniScreenIndex = index;
+  }
+  updateGouniLightboxContent();
+  lightbox.classList.add('active');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeGouniLightbox() {
+  const lightbox = document.getElementById('gouniLightbox');
+  if (!lightbox) return;
+  lightbox.classList.remove('active');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function updateGouniLightboxContent() {
+  const key = gouniScreenKeys[currentGouniScreenIndex];
+  const data = gouniScreensData[key];
+  if (!data) return;
+
+  const img = document.getElementById('gouniLightboxImg');
+  const badge = document.getElementById('gouniLightboxBadge');
+  const title = document.getElementById('gouniLightboxTitle');
+  const desc = document.getElementById('gouniLightboxDesc');
+  const patterns = document.getElementById('gouniLightboxPatterns');
+  const tokens = document.getElementById('gouniLightboxTokens');
+
+  if (img) {
+    img.src = data.src;
+    img.alt = data.title;
+  }
+  if (badge) badge.textContent = data.badge;
+  if (title) title.textContent = data.title;
+  if (desc) desc.textContent = data.desc;
+  if (patterns) patterns.textContent = data.patterns;
+  if (tokens) tokens.textContent = data.tokens;
+}
+
+// Attach click and keyboard listeners to phone mockups and gallery cards
+document.querySelectorAll('.gouni-phone-mockup, .inside-screen-card').forEach(item => {
+  item.addEventListener('click', () => {
+    const screenId = item.dataset.screenId;
+    if (screenId) {
+      openGouniLightbox(screenId);
     }
-  };
-
-  gouniTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const screenKey = tab.dataset.screen;
-      if (!gouniScreens[screenKey]) return;
-
-      document.querySelectorAll('.screen-tab:not(.hc-tab):not(.pb-tab), .showcase-thumb-btn:not(.hc-thumb):not(.pb-thumb)').forEach(btn => {
-        if (btn.dataset.screen === screenKey) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-      });
-
-      gouniMainImg.style.opacity = '0.2';
-      setTimeout(() => {
-        gouniMainImg.src = gouniScreens[screenKey].src;
-        gouniMainImg.alt = gouniScreens[screenKey].alt;
-        gouniMainImg.style.opacity = '1';
-        if (gouniCaption) {
-          gouniCaption.innerHTML = gouniScreens[screenKey].caption;
-        }
-      }, 150);
-    });
   });
+  item.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const screenId = item.dataset.screenId;
+      if (screenId) {
+        openGouniLightbox(screenId);
+      }
+    }
+  });
+});
+
+// Lightbox Controls
+const gouniCloseBtn = document.getElementById('gouniLightboxClose');
+const gouniBackdrop = document.getElementById('gouniLightboxBackdrop');
+const gouniPrevBtn = document.getElementById('gouniLightboxPrev');
+const gouniNextBtn = document.getElementById('gouniLightboxNext');
+
+if (gouniCloseBtn) gouniCloseBtn.addEventListener('click', closeGouniLightbox);
+if (gouniBackdrop) gouniBackdrop.addEventListener('click', closeGouniLightbox);
+
+if (gouniPrevBtn) {
+  gouniPrevBtn.addEventListener('click', () => {
+    currentGouniScreenIndex = (currentGouniScreenIndex - 1 + gouniScreenKeys.length) % gouniScreenKeys.length;
+    updateGouniLightboxContent();
+  });
+}
+if (gouniNextBtn) {
+  gouniNextBtn.addEventListener('click', () => {
+    currentGouniScreenIndex = (currentGouniScreenIndex + 1) % gouniScreenKeys.length;
+    updateGouniLightboxContent();
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  const lightbox = document.getElementById('gouniLightbox');
+  if (lightbox && lightbox.classList.contains('active')) {
+    if (e.key === 'Escape') {
+      closeGouniLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      currentGouniScreenIndex = (currentGouniScreenIndex - 1 + gouniScreenKeys.length) % gouniScreenKeys.length;
+      updateGouniLightboxContent();
+    } else if (e.key === 'ArrowRight') {
+      currentGouniScreenIndex = (currentGouniScreenIndex + 1) % gouniScreenKeys.length;
+      updateGouniLightboxContent();
+    }
+  }
+});
+
+// Gentle scroll entrance for GoUni overlapping phone mockups
+const gouniPhonesStage = document.getElementById('gouniPhonesStage');
+if (gouniPhonesStage && 'IntersectionObserver' in window) {
+  const phoneMockups = gouniPhonesStage.querySelectorAll('.gouni-phone-mockup');
+  phoneMockups.forEach((phone, idx) => {
+    phone.style.opacity = '0';
+    phone.style.transition = `transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 0.08}s, opacity 0.5s ease ${idx * 0.08}s, filter 0.4s ease`;
+  });
+
+  const phonesObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        phoneMockups.forEach(phone => {
+          phone.style.opacity = '1';
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  phonesObserver.observe(gouniPhonesStage);
 }
 
 // 8. The Healing Circle Real Screen Switcher
