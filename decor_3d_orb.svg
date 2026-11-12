@@ -1,49 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <!-- 3D Volumetric Sphere Radial Gradient -->
-    <radialGradient id="orbVolumetric" cx="35%" cy="32%" r="65%">
+    <!-- Deep Volumetric Saturated 3D Sphere Radial Gradient -->
+    <radialGradient id="orbVolumetric" cx="35%" cy="30%" r="68%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="15%" stop-color="#FF9EBE"/>
-      <stop offset="40%" stop-color="#DF4A7A"/>
-      <stop offset="70%" stop-color="#76518E"/>
-      <stop offset="90%" stop-color="#381B45"/>
-      <stop offset="100%" stop-color="#1B0724"/>
+      <stop offset="14%" stop-color="#FF6BA6"/>
+      <stop offset="38%" stop-color="#DF1265"/>
+      <stop offset="68%" stop-color="#721E88"/>
+      <stop offset="88%" stop-color="#340645"/>
+      <stop offset="100%" stop-color="#14001E"/>
     </radialGradient>
 
-    <!-- Warm Golden Orange Bounce / Rim Light -->
+    <!-- Warm Glowing Sunset Orange Underside Rim Bounce Light -->
     <linearGradient id="orbRimBounce" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="85%" stop-color="#FF7A3D" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#FFA86B" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="82%" stop-color="#FF5500" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#FFA84A" stop-opacity="0.98"/>
     </linearGradient>
 
-    <!-- Specular Arc Glint -->
+    <!-- Specular Arc Glint Gradient -->
     <linearGradient id="orbSpecularGlint" x1="0%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Tactile Drop Shadow Filter -->
+    <!-- Deep Ambient Royal Purple Drop Shadow Filter -->
     <filter id="orbShadowFilter" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#270A33" flood-opacity="0.45"/>
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#270A33" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#1F0328" flood-opacity="0.65"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1F0328" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <g filter="url(#orbShadowFilter)">
-    <!-- Base 3D Sphere -->
-    <circle cx="60" cy="60" r="48" fill="url(#orbVolumetric)"/>
+    <!-- Base 3D Sphere with Defined Perimeter Rim Stroke -->
+    <circle cx="60" cy="60" r="48" fill="url(#orbVolumetric)" stroke="#2B0438" stroke-width="1.6"/>
 
-    <!-- Warm Rim Bounce on underside -->
+    <!-- Warm Glowing Orange Bounce on Underside -->
     <circle cx="60" cy="60" r="48" fill="url(#orbRimBounce)" mix-blend-mode="screen"/>
 
-    <!-- High-Gloss Specular Sheen (Off-center top-left) -->
-    <ellipse cx="43" cy="43" rx="19" ry="12" transform="rotate(-30, 43, 43)" fill="url(#orbSpecularGlint)"/>
-    <circle cx="41" cy="41" r="4.5" fill="#FFFFFF" opacity="0.95"/>
+    <!-- High-Gloss Specular Sheen (Curved 3D Lens Reflection) -->
+    <ellipse cx="43" cy="42" rx="20" ry="13" transform="rotate(-30, 43, 42)" fill="url(#orbSpecularGlint)"/>
+    <circle cx="41" cy="40" r="5" fill="#FFFFFF" opacity="0.98"/>
+    <circle cx="40" cy="39" r="2.2" fill="#FFFFFF"/>
 
-    <!-- Secondary Edge Sheen -->
-    <path d="M 32,80 A 42,42 0 0,0 80,82" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.25"/>
+    <!-- Secondary Rim Glint on Lower-Right Edge -->
+    <path d="M 32,84 A 42,42 0 0,0 84,84" stroke="#FFA84A" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85"/>
   </g>
 </svg>
-

@@ -1,88 +1,89 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <!-- Volumetric Petal Shading Gradients -->
-    <radialGradient id="flwPetalLit" cx="40%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#FFEBF2"/>
-      <stop offset="25%" stop-color="#FF75A0"/>
-      <stop offset="70%" stop-color="#DF4A7A"/>
-      <stop offset="100%" stop-color="#8B1D4C"/>
+    <!-- Deep Volumetric Petal Shading Gradients (High-Saturation Pink-Plum) -->
+    <radialGradient id="flwPetalLit" cx="42%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#FFA8CB"/>
+      <stop offset="22%" stop-color="#FF2E7E"/>
+      <stop offset="65%" stop-color="#CF0A5B"/>
+      <stop offset="100%" stop-color="#6E0035"/>
     </radialGradient>
-    <radialGradient id="flwPetalMid" cx="45%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#FF9EBE"/>
-      <stop offset="35%" stop-color="#DF4A7A"/>
-      <stop offset="75%" stop-color="#9E2259"/>
-      <stop offset="100%" stop-color="#5E0F34"/>
+    <radialGradient id="flwPetalMid" cx="46%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#FF5296"/>
+      <stop offset="35%" stop-color="#DF1265"/>
+      <stop offset="72%" stop-color="#8F0443"/>
+      <stop offset="100%" stop-color="#480024"/>
     </radialGradient>
-    <radialGradient id="flwPetalShadow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#DF4A7A"/>
-      <stop offset="45%" stop-color="#A82860"/>
-      <stop offset="80%" stop-color="#67113A"/>
-      <stop offset="100%" stop-color="#3D0521"/>
-    </radialGradient>
-
-    <!-- 3D Center Pistil Sphere Gradient -->
-    <radialGradient id="flwPistil3D" cx="35%" cy="32%" r="65%">
-      <stop offset="0%" stop-color="#FFFDF0"/>
-      <stop offset="25%" stop-color="#FFC857"/>
-      <stop offset="65%" stop-color="#FF7A3D"/>
-      <stop offset="90%" stop-color="#C2410C"/>
-      <stop offset="100%" stop-color="#6B1D04"/>
+    <radialGradient id="flwPetalShadow" cx="50%" cy="36%" r="65%">
+      <stop offset="0%" stop-color="#C70054"/>
+      <stop offset="45%" stop-color="#8A003E"/>
+      <stop offset="80%" stop-color="#550028"/>
+      <stop offset="100%" stop-color="#2E0015"/>
     </radialGradient>
 
-    <!-- Gloss Specular Highlight Gradient -->
+    <!-- Warm Radiant Amber-Orange 3D Pistil Sphere -->
+    <radialGradient id="flwPistil3D" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFAD0"/>
+      <stop offset="20%" stop-color="#FFC837"/>
+      <stop offset="55%" stop-color="#FF631E"/>
+      <stop offset="85%" stop-color="#B82800"/>
+      <stop offset="100%" stop-color="#5E1000"/>
+    </radialGradient>
+
+    <!-- High-Gloss Specular Highlight Gradient -->
     <linearGradient id="flwPetalGlint" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Drop Shadow Filter -->
+    <!-- Deep Ambient Purple Drop Shadow Filter -->
     <filter id="flwShadowFilter" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#380E24" flood-opacity="0.45"/>
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#380E24" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#24052E" flood-opacity="0.65"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#24052E" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <g filter="url(#flwShadowFilter)">
-    <!-- 5 Sculpted 3D Petals rotated around (60, 60) -->
+    <!-- 5 Sculpted 3D Petals rotated around center (60, 60) with defined rim strokes -->
     
     <!-- Petal 1: Top (0 deg) -->
     <g transform="rotate(0, 60, 60)">
-      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalLit)"/>
-      <ellipse cx="60" cy="24" rx="8" ry="12" fill="url(#flwPetalGlint)" opacity="0.75"/>
+      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalLit)" stroke="#6E0035" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="23" rx="8" ry="12" fill="url(#flwPetalGlint)" opacity="0.85"/>
     </g>
 
     <!-- Petal 2: Top-Right (72 deg) -->
     <g transform="rotate(72, 60, 60)">
-      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalMid)"/>
-      <ellipse cx="60" cy="24" rx="7" ry="11" fill="url(#flwPetalGlint)" opacity="0.65"/>
+      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalMid)" stroke="#550028" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="23" rx="7" ry="11" fill="url(#flwPetalGlint)" opacity="0.75"/>
     </g>
 
     <!-- Petal 3: Bottom-Right (144 deg) -->
     <g transform="rotate(144, 60, 60)">
-      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalShadow)"/>
-      <ellipse cx="60" cy="24" rx="6" ry="10" fill="url(#flwPetalGlint)" opacity="0.45"/>
+      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalShadow)" stroke="#3E001D" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="23" rx="6" ry="10" fill="url(#flwPetalGlint)" opacity="0.55"/>
     </g>
 
     <!-- Petal 4: Bottom-Left (216 deg) -->
     <g transform="rotate(216, 60, 60)">
-      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalMid)"/>
-      <ellipse cx="60" cy="24" rx="7" ry="11" fill="url(#flwPetalGlint)" opacity="0.6"/>
+      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalMid)" stroke="#550028" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="23" rx="7" ry="11" fill="url(#flwPetalGlint)" opacity="0.7"/>
     </g>
 
     <!-- Petal 5: Top-Left (288 deg) -->
     <g transform="rotate(288, 60, 60)">
-      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalLit)"/>
-      <ellipse cx="60" cy="24" rx="8" ry="12" fill="url(#flwPetalGlint)" opacity="0.8"/>
+      <path d="M 60,60 C 42,42 36,18 60,10 C 84,18 78,42 60,60 Z" fill="url(#flwPetalLit)" stroke="#6E0035" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="23" rx="8" ry="12" fill="url(#flwPetalGlint)" opacity="0.9"/>
     </g>
 
-    <!-- Center Crease Ring Occlusion -->
-    <circle cx="60" cy="60" r="19" fill="#450824" opacity="0.75"/>
+    <!-- Center Crease Ring Occlusion for Dimensional Depth -->
+    <circle cx="60" cy="60" r="19" fill="#2E0015" opacity="0.85"/>
 
     <!-- 3D Protruding Pistil Hemisphere Center -->
-    <circle cx="60" cy="60" r="16" fill="url(#flwPistil3D)"/>
+    <circle cx="60" cy="60" r="16" fill="url(#flwPistil3D)" stroke="#5E1000" stroke-width="1"/>
+    
     <!-- Specular Glint on Pistil -->
-    <ellipse cx="55" cy="54" rx="5" ry="3" transform="rotate(-30, 55, 54)" fill="#FFFFFF" opacity="0.95"/>
-    <circle cx="53" cy="52" r="2" fill="#FFFFFF"/>
+    <ellipse cx="55" cy="54" rx="5.5" ry="3.5" transform="rotate(-30, 55, 54)" fill="#FFFFFF" opacity="0.98"/>
+    <circle cx="53" cy="52" r="2.2" fill="#FFFFFF"/>
   </g>
 </svg>
-

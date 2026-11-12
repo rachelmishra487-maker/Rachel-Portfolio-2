@@ -1,38 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <!-- Facet Gradients for 3D Warm Volumetric Star -->
+    <!-- High-Contrast Volumetric Star Facet Gradients -->
     <linearGradient id="starLitHigh" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFF5EA"/>
-      <stop offset="25%" stop-color="#FFB37A"/>
-      <stop offset="100%" stop-color="#FF6B35"/>
+      <stop offset="0%" stop-color="#FFF5D6"/>
+      <stop offset="25%" stop-color="#FFB338"/>
+      <stop offset="70%" stop-color="#FF5500"/>
+      <stop offset="100%" stop-color="#C22000"/>
     </linearGradient>
     <linearGradient id="starLitMid" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF8C42"/>
-      <stop offset="100%" stop-color="#E97845"/>
+      <stop offset="0%" stop-color="#FF7A29"/>
+      <stop offset="50%" stop-color="#E8245D"/>
+      <stop offset="100%" stop-color="#9E0B3C"/>
     </linearGradient>
     <linearGradient id="starMidRose" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E97845"/>
-      <stop offset="60%" stop-color="#DF4A7A"/>
-      <stop offset="100%" stop-color="#9E2A54"/>
+      <stop offset="0%" stop-color="#FF387A"/>
+      <stop offset="45%" stop-color="#BF0D50"/>
+      <stop offset="85%" stop-color="#69042E"/>
+      <stop offset="100%" stop-color="#3D001C"/>
     </linearGradient>
     <linearGradient id="starShadow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#B43818"/>
-      <stop offset="60%" stop-color="#6E1D3B"/>
-      <stop offset="100%" stop-color="#3A1028"/>
+      <stop offset="0%" stop-color="#8F1500"/>
+      <stop offset="50%" stop-color="#550A28"/>
+      <stop offset="100%" stop-color="#250215"/>
     </linearGradient>
     <linearGradient id="starShadowDeep" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#882218"/>
-      <stop offset="100%" stop-color="#26081B"/>
+      <stop offset="0%" stop-color="#690A1D"/>
+      <stop offset="60%" stop-color="#300318"/>
+      <stop offset="100%" stop-color="#14000B"/>
     </linearGradient>
 
-    <!-- Tactile Drop Shadow Filter -->
+    <!-- Deep Ambient Royal Purple Drop Shadow Filter -->
     <filter id="starShadowFilter" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3A1520" flood-opacity="0.42"/>
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#3A1520" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#22042C" flood-opacity="0.65"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#22042C" flood-opacity="0.45"/>
     </filter>
   </defs>
 
   <g filter="url(#starShadowFilter)">
+    <!-- Perimeter Outer Silhouette Contour for Grounded Silhouette -->
+    <polygon points="60,6 74.1,40.6 111.4,43.3 82.8,67.4 91.7,103.7 60,84 28.3,103.7 37.2,67.4 8.6,43.3 45.9,40.6" fill="none" stroke="#3A0218" stroke-width="1.8" stroke-linejoin="round"/>
+
     <!-- 10 Dimensional Beveled Facets meeting at center apex (60, 60) -->
     <!-- Arm 0: Top Tip (60, 6) -->
     <polygon points="60,60 45.9,40.6 60,6" fill="url(#starLitHigh)"/>
@@ -54,16 +61,16 @@
     <polygon points="60,60 37.2,67.4 8.6,43.3" fill="url(#starLitMid)"/>
     <polygon points="60,60 8.6,43.3 45.9,40.6" fill="url(#starLitHigh)"/>
 
-    <!-- Beveled Ridge Line Highlights -->
-    <line x1="60" y1="60" x2="60" y2="6" stroke="#FFFFFF" stroke-width="1.8" opacity="0.85"/>
-    <line x1="60" y1="60" x2="8.6" y2="43.3" stroke="#FFFFFF" stroke-width="1.8" opacity="0.85"/>
-    <line x1="60" y1="60" x2="111.4" y2="43.3" stroke="#FFA76B" stroke-width="1.4" opacity="0.7"/>
-    <line x1="60" y1="60" x2="28.3" y2="103.7" stroke="#FFA76B" stroke-width="1.2" opacity="0.6"/>
-    <line x1="60" y1="60" x2="91.7" y2="103.7" stroke="#DF4A7A" stroke-width="1.2" opacity="0.5"/>
+    <!-- Beveled Ridge Line Highlights for Tactile 3D Sharpness -->
+    <line x1="60" y1="60" x2="60" y2="6" stroke="#FFFFFF" stroke-width="2" opacity="0.95"/>
+    <line x1="60" y1="60" x2="8.6" y2="43.3" stroke="#FFFFFF" stroke-width="2" opacity="0.95"/>
+    <line x1="60" y1="60" x2="111.4" y2="43.3" stroke="#FFB338" stroke-width="1.8" opacity="0.85"/>
+    <line x1="60" y1="60" x2="28.3" y2="103.7" stroke="#FF8533" stroke-width="1.5" opacity="0.75"/>
+    <line x1="60" y1="60" x2="91.7" y2="103.7" stroke="#FF4785" stroke-width="1.5" opacity="0.65"/>
 
     <!-- Central Specular Highlight Apex -->
-    <circle cx="60" cy="60" r="5" fill="#FFFFFF"/>
-    <circle cx="60" cy="60" r="9" fill="#FFB37A" opacity="0.6"/>
+    <circle cx="60" cy="60" r="10" fill="#FFB338" opacity="0.55"/>
+    <circle cx="60" cy="60" r="5.5" fill="#FFFFFF"/>
+    <circle cx="60" cy="60" r="2" fill="#FFF8EB"/>
   </g>
 </svg>
-
