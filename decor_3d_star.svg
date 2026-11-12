@@ -29,10 +29,10 @@
       <stop offset="100%" stop-color="#14000B"/>
     </linearGradient>
 
-    <!-- Deep Ambient Royal Purple Drop Shadow Filter -->
+    <!-- Deep Ambient Warm Espresso Drop Shadow Filter -->
     <filter id="starShadowFilter" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#22042C" flood-opacity="0.65"/>
-      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#22042C" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#3D1D12" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#3D1D12" flood-opacity="0.30"/>
     </filter>
   </defs>
 

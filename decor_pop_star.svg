@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <radialGradient id="starPinkGrad" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFA8BA"/>
+      <stop offset="60%" stop-color="#FA7E96"/>
+      <stop offset="100%" stop-color="#E2456C"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 8-Pointed Star Shape -->
+  <path d="M 60 10 
+           C 60 42, 60 42, 78 42 
+           C 68 50, 68 50, 96 24 
+           C 74 52, 74 52, 82 60 
+           C 74 68, 74 68, 96 96 
+           C 68 70, 68 70, 78 78 
+           C 60 78, 60 78, 60 110 
+           C 60 78, 60 78, 42 78 
+           C 52 70, 52 70, 24 96 
+           C 46 68, 46 68, 38 60 
+           C 46 52, 46 52, 24 24 
+           C 52 50, 52 50, 42 42 
+           C 60 42, 60 42, 60 10 Z" 
+        fill="url(#starPinkGrad)"/>
+
+  <!-- Specular Center Sparkle -->
+  <circle cx="60" cy="60" r="4.5" fill="#FFFFFF" opacity="0.9"/>
+</svg>
