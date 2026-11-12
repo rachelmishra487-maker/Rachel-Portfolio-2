@@ -222,11 +222,31 @@ const gouniMainImg = document.getElementById('gouniMainScreen');
 const gouniCaption = document.getElementById('gouniScreenCaption');
 
 if (gouniTabs.length && gouniMainImg) {
-  const gouniScreens = {
-    storyboard: {
-      src: 'project_gouni.jpg',
-      alt: 'GoUni UX Storyboard - Study abroad journey',
-      caption: '<strong>Real Project Artifact:</strong> 6-stage UX Storyboard mapping student pain points, platform discovery, personalized application support, and international enrollment.'
+    const gouniScreens = {
+    suite: {
+      src: 'project_gouni_showcase.svg',
+      alt: 'GoUni Figma Mobile UI Suite — Multi-Device Editorial Composition',
+      caption: '<strong>Real Figma Mobile Suite:</strong> High-fidelity smartphone interface architecture spanning student onboarding, academic departure tracking, university matching, visa filing, and peer community interaction.'
+    },
+    dashboard: {
+      src: 'project_gouni_screen_dashboard.svg',
+      alt: 'GoUni Home & Study Plan Dashboard Interface',
+      caption: '<strong>Home & Study Plan Dashboard:</strong> Personalized milestone tracking (Stage 4/7), departure progress bar, actionable transcript upload alerts, and curated university recommendations.'
+    },
+    discovery: {
+      src: 'project_gouni_screen_discovery.svg',
+      alt: 'GoUni University & Course Discovery Interface',
+      caption: '<strong>University & Course Discovery:</strong> Filtered search with country pills (Canada, UK, USA, DE), QS ranking badges, tuition comparisons, and popular discipline highlights.'
+    },
+    visa: {
+      src: 'project_gouni_screen_visa.svg',
+      alt: 'GoUni Pre-Departure & Student Visa Hub',
+      caption: '<strong>Pre-Departure Hub & Canadian Visa:</strong> Post-acceptance celebration flow, SDS study permit tracking, verified student housing, and 1-on-1 visa counselor bookings.'
+    },
+    community: {
+      src: 'project_gouni_screen_community.svg',
+      alt: 'GoUni Student Community & Peer Discussion Network',
+      caption: '<strong>Student Community & Peer Network:</strong> Cohort-specific discussion feeds, upcoming campus cultural events (Diwali in Toronto), and peer housing Q&amp;A.'
     },
     components: {
       src: 'project_gouni_components.png',

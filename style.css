@@ -572,7 +572,7 @@ body.cursor-hover .cursor-ring {
   position: relative;
   min-height: calc(100vh - 74px);
   padding: clamp(3.5rem, 6vw, 6.5rem) clamp(1.4rem, 5vw, 4.5rem);
-  background: var(--warm-ivory);
+  background: linear-gradient(135deg, #FDECF0 0%, #F5ECF8 45%, #FDF1E7 100%);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -2643,4 +2643,125 @@ body.cursor-hover .cursor-ring {
   .skills-category-card {
     padding: 1.6rem;
   }
+}
+
+
+/* ---------- COLORFUL SECTION THEMES & PASTEL BLOCKS ---------- */
+#featured-work {
+  background: linear-gradient(180deg, #FDEFE8 0%, #FDF3EC 50%, #FAF0EE 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#featured-work::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(circle, rgba(245, 172, 138, 0.28) 0%, transparent 70%);
+  filter: blur(85px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#about {
+  background: linear-gradient(145deg, #321B38 0%, #291530 50%, #3D1C3B 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, rgba(223, 74, 122, 0.28) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#about::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(168, 134, 195, 0.24) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#experience {
+  background: linear-gradient(180deg, #F6EEF9 0%, #EFE5F6 50%, #F7EEF8 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#experience::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: -80px;
+  width: 540px;
+  height: 540px;
+  background: radial-gradient(circle, rgba(168, 134, 195, 0.25) 0%, transparent 70%);
+  filter: blur(85px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#skills {
+  background: linear-gradient(180deg, #FDECEF 0%, #FCE7ED 50%, #FAF0F4 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#skills::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(223, 74, 122, 0.22) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#playground {
+  background: linear-gradient(135deg, #FDF1EA 0%, #FDECF2 50%, #F4EBF8 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#playground::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 172, 138, 0.24) 0%, transparent 70%);
+  filter: blur(85px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#contact {
+  background: linear-gradient(155deg, #241328 0%, #341938 50%, #1D0D20 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subpage Canvas Backgrounds */
+body.subpage main.section-light {
+  background: linear-gradient(180deg, #FCEDE6 0%, #FAF0F4 45%, #F5ECF8 100%) !important;
 }

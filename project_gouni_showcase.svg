@@ -1,0 +1,504 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" width="100%" height="100%">
+  <defs>
+    <!-- Background Pastel & Studio Lighting -->
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF3EE"/>
+      <stop offset="45%" stop-color="#FAF1F6"/>
+      <stop offset="100%" stop-color="#F4EDF8"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#DF4A7A" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FAF1F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Studio Stage Background -->
+  <rect width="1280" height="820" fill="url(#studioBg)"/>
+  <rect width="1280" height="820" fill="url(#centerGlow)"/>
+
+  <!-- Subtle Studio Grid Lines -->
+  <line x1="80" y1="0" x2="80" y2="820" stroke="rgba(223, 74, 122, 0.08)" stroke-dasharray="4 4"/>
+  <line x1="1200" y1="0" x2="1200" y2="820" stroke="rgba(223, 74, 122, 0.08)" stroke-dasharray="4 4"/>
+
+  <!-- Editorial Top Label -->
+  <g transform="translate(80, 52)">
+    <rect width="180" height="26" rx="13" fill="#FFFFFF" stroke="rgba(223, 74, 122, 0.25)"/>
+    <text x="90" y="17" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#DF4A7A" letter-spacing="1" text-anchor="middle">FIGMA MOBILE SUITE</text>
+    <text x="195" y="18" font-family="'DM Sans', sans-serif" font-size="13" font-weight="500" fill="#58415E">Actual Student Support Interface Flows · Assignment 2</text>
+  </g>
+
+  <!-- LEFT PHONE: University & Course Discovery (Slightly Scaled, Left Offset) -->
+  <g transform="translate(40, 90) scale(0.76)">
+    
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow)">
+    <!-- Outer Titanium Chasis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Header -->
+    <g transform="translate(32, 64)">
+      <circle cx="18" cy="18" r="18" fill="#F0EDE8"/>
+      <path d="M22 12 l-6 6 l6 6" stroke="#1E1915" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="24" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#1E1915">Select University</text>
+    </g>
+
+    <!-- Search Bar -->
+    <g transform="translate(32, 116)">
+      <rect width="354" height="48" rx="24" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <circle cx="28" cy="24" r="7" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+      <path d="M33 29 l4 4" stroke="#756F6B" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="48" y="29" font-family="'DM Sans', sans-serif" font-size="14" fill="#8F8883">Search country, city, or discipline...</text>
+    </g>
+
+    <!-- Country Filter Pills -->
+    <g transform="translate(32, 178)">
+      <!-- All Countries (Active) -->
+      <rect x="0" y="0" width="70" height="34" rx="17" fill="#FF6B35"/>
+      <text x="35" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">All (42)</text>
+      
+      <!-- Canada -->
+      <rect x="78" y="0" width="76" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="116" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">🇨🇦 Canada</text>
+      
+      <!-- UK -->
+      <rect x="162" y="0" width="60" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="192" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">🇬🇧 UK</text>
+      
+      <!-- USA -->
+      <rect x="230" y="0" width="65" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="262" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">🇺🇸 USA</text>
+
+      <!-- Germany -->
+      <rect x="303" y="0" width="51" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="328" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">🇩🇪 DE</text>
+    </g>
+
+    <!-- Result Card 1: University of Toronto -->
+    <g transform="translate(32, 232)">
+      <rect width="354" height="236" rx="20" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.8"/>
+      <rect x="12" y="12" width="330" height="100" rx="14" fill="#202A44"/>
+      <text x="28" y="44" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FF6B35" letter-spacing="1">#21 GLOBAL QS RANKING</text>
+      <text x="28" y="72" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">University of Toronto</text>
+      <text x="28" y="94" font-family="'DM Sans', sans-serif" font-size="13" fill="#D0D6E2">Ontario, Canada · Leading Research Institution</text>
+      
+      <rect x="250" y="24" width="78" height="24" rx="12" fill="#10B981"/>
+      <text x="289" y="40" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">TOP MATCH</text>
+
+      <!-- Course Highlights -->
+      <g transform="translate(16, 126)">
+        <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Popular Disciplines:</text>
+        <rect x="0" y="28" width="102" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="51" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Computer Sci</text>
+
+        <rect x="108" y="28" width="100" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="158" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Data Analytics</text>
+
+        <rect x="214" y="28" width="108" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Business MBA</text>
+
+        <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#FF6B35">Tuition: $40,000 CAD/yr</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+      </g>
+    </g>
+
+    <!-- Result Card 2: University of Oxford -->
+    <g transform="translate(32, 484)">
+      <rect width="354" height="236" rx="20" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <rect x="12" y="12" width="330" height="100" rx="14" fill="#18233C"/>
+      <text x="28" y="44" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" letter-spacing="1">#1 GLOBAL QS RANKING</text>
+      <text x="28" y="72" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">University of Oxford</text>
+      <text x="28" y="94" font-family="'DM Sans', sans-serif" font-size="13" fill="#D0D6E2">Oxford, United Kingdom</text>
+
+      <!-- Course Highlights -->
+      <g transform="translate(16, 126)">
+        <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Popular Disciplines:</text>
+        <rect x="0" y="28" width="102" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="51" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">AI &amp; Robotics</text>
+
+        <rect x="108" y="28" width="100" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="158" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Biomedical</text>
+
+        <rect x="214" y="28" width="108" height="26" rx="8" fill="#F4F2EF"/>
+        <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Law &amp; Ethics</text>
+
+        <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Tuition: £38,500 GBP/yr</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+      </g>
+    </g>
+
+    <!-- Sticky Bottom CTA -->
+    <g transform="translate(32, 736)">
+      <rect width="354" height="52" rx="26" fill="#FF6B35"/>
+      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Compare Selected Programs (2)</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <!-- Camera Lens Reflection -->
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons (Signal, Wifi, Battery) -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection Sheen -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+    </g>
+  </g>
+  </g>
+
+  <!-- CENTER PHONE: Home & Study Plan Dashboard (Foreground, Dominant Elevation) -->
+  <g transform="translate(425, 40) scale(0.88)">
+    
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow)">
+    <!-- Outer Titanium Chasis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(14, 60)">
+      <circle cx="36" cy="24" r="20" fill="#FFECE5"/>
+      <circle cx="36" cy="20" r="8" fill="#FF6B35"/>
+      <path d="M22 36 a14 14 0 0 1 28 0" fill="#FF6B35"/>
+      
+      <text x="68" y="20" font-family="'DM Sans', -apple-system, sans-serif" font-size="13" font-weight="500" fill="#756F6B">Good morning</text>
+      <text x="68" y="38" font-family="'DM Sans', -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1E1915">Hello, Rachel! 👋</text>
+      
+      <circle cx="350" cy="24" r="18" fill="#F0EDE8"/>
+      <path d="M344 24 h12 M344 20 h12 M344 28 h8" stroke="#1E1915" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Study Plan & Departure Progress Card -->
+    <g transform="translate(32, 134)">
+      <rect width="354" height="178" rx="22" fill="#FF6B35"/>
+      <circle cx="320" cy="30" r="70" fill="#FFFFFF" opacity="0.08"/>
+      <circle cx="40" cy="150" r="50" fill="#000000" opacity="0.05"/>
+      
+      <rect x="20" y="18" width="110" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.25"/>
+      <text x="32" y="34" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">STUDY PLAN 2026</text>
+      
+      <text x="20" y="70" font-family="'DM Sans', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Progress to Departure</text>
+      <text x="20" y="92" font-family="'DM Sans', sans-serif" font-size="13" fill="#FFE8E0">Top 15% of active international applicants</text>
+      
+      <!-- Progress Bar -->
+      <rect x="20" y="112" width="314" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.3"/>
+      <rect x="20" y="112" width="180" height="10" rx="5" fill="#FFFFFF"/>
+      
+      <text x="20" y="142" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Stage 4 of 7</text>
+      <text x="250" y="142" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#FFE8E0">Visa Guidance ↗</text>
+    </g>
+
+    <!-- Current Tasks Section -->
+    <g transform="translate(32, 332)">
+      <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="17" font-weight="700" fill="#1E1915">Next Milestones</text>
+      <text x="300" y="18" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#FF6B35">View all</text>
+      
+      <!-- Task 1 -->
+      <g transform="translate(0, 32)">
+        <rect width="354" height="66" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="13" width="40" height="40" rx="12" fill="#FFF2EC"/>
+        <text x="26" y="38" font-family="'DM Sans', sans-serif" font-size="18" fill="#FF6B35">🏛</text>
+        <text x="66" y="28" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Shortlist Final 3 Universities</text>
+        <text x="66" y="46" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">Toronto, Oxford &amp; Stanford selected</text>
+        <circle cx="330" cy="33" r="10" fill="#10B981"/>
+        <path d="M326 33 l3 3 l6 -6" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Task 2 -->
+      <g transform="translate(0, 108)">
+        <rect width="354" height="66" rx="16" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.5"/>
+        <rect x="14" y="13" width="40" height="40" rx="12" fill="#FFF2EC"/>
+        <text x="26" y="38" font-family="'DM Sans', sans-serif" font-size="18" fill="#FF6B35">📄</text>
+        <text x="66" y="28" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Upload Official Transcripts</text>
+        <text x="66" y="46" font-family="'DM Sans', sans-serif" font-size="12" fill="#FF6B35">Due in 3 days · Action Required</text>
+        <circle cx="330" cy="33" r="10" fill="#FF6B35"/>
+        <path d="M327 33 h6 M330 30 v6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Quick Exploration Horizontal Grid -->
+    <g transform="translate(32, 532)">
+      <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="17" font-weight="700" fill="#1E1915">Top University Picks</text>
+      
+      <!-- Uni Card 1 -->
+      <g transform="translate(0, 32)">
+        <rect width="170" height="175" rx="18" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="12" y="12" width="146" height="85" rx="12" fill="#2D283E"/>
+        <text x="85" y="58" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Uni of Toronto</text>
+        <rect x="20" y="20" width="55" height="18" rx="9" fill="#FF6B35"/>
+        <text x="47" y="33" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">#21 GLOBAL</text>
+        <text x="14" y="120" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Computer Science</text>
+        <text x="14" y="138" font-family="'DM Sans', sans-serif" font-size="11" fill="#756F6B">Toronto, Canada · $40k/yr</text>
+        <text x="14" y="158" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981">✓ 88% Match</text>
+      </g>
+      
+      <!-- Uni Card 2 -->
+      <g transform="translate(184, 32)">
+        <rect width="170" height="175" rx="18" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="12" y="12" width="146" height="85" rx="12" fill="#1B2A4A"/>
+        <text x="85" y="58" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Univ of Oxford</text>
+        <rect x="20" y="20" width="55" height="18" rx="9" fill="#10B981"/>
+        <text x="47" y="33" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">#1 GLOBAL</text>
+        <text x="14" y="120" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Software Systems</text>
+        <text x="14" y="138" font-family="'DM Sans', sans-serif" font-size="11" fill="#756F6B">Oxford, UK · £38k/yr</text>
+        <text x="14" y="158" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FF6B35">High Competition</text>
+      </g>
+    </g>
+
+    <!-- Bottom App Navigation Bar -->
+    <g transform="translate(14, 756)">
+      <rect width="390" height="88" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <!-- Nav Item 1: Home (Active) -->
+      <g transform="translate(42, 16)">
+        <circle cx="14" cy="14" r="16" fill="#FFF2EC"/>
+        <path d="M7 15 l7 -7 l7 7 v7 h-5 v-5 h-4 v5 h-5 z" fill="#FF6B35"/>
+        <text x="14" y="36" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#FF6B35" text-anchor="middle">Home</text>
+      </g>
+      <!-- Nav Item 2: Explore -->
+      <g transform="translate(118, 16)">
+        <circle cx="14" cy="14" r="8" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+        <path d="M20 20 l4 4" stroke="#756F6B" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="14" y="36" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#756F6B" text-anchor="middle">Explore</text>
+      </g>
+      <!-- Nav Item 3: Documents -->
+      <g transform="translate(194, 16)">
+        <path d="M8 8 h10 l4 4 v10 h-14 z" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+        <text x="14" y="36" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#756F6B" text-anchor="middle">Track</text>
+      </g>
+      <!-- Nav Item 4: Community -->
+      <g transform="translate(270, 16)">
+        <circle cx="14" cy="11" r="5" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+        <path d="M6 24 a8 8 0 0 1 16 0" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+        <text x="14" y="36" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#756F6B" text-anchor="middle">Community</text>
+      </g>
+      <!-- Nav Item 5: Profile -->
+      <g transform="translate(344, 16)">
+        <circle cx="14" cy="14" r="10" fill="none" stroke="#756F6B" stroke-width="1.8"/>
+        <text x="14" y="36" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#756F6B" text-anchor="middle">Profile</text>
+      </g>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <!-- Camera Lens Reflection -->
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons (Signal, Wifi, Battery) -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection Sheen -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+    </g>
+  </g>
+  </g>
+
+  <!-- RIGHT PHONE: Visa & Pre-Departure Hub (Slightly Scaled, Right Offset) -->
+  <g transform="translate(890, 90) scale(0.76)">
+    
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow)">
+    <!-- Outer Titanium Chasis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(32, 64)">
+      <circle cx="18" cy="18" r="18" fill="#F0EDE8"/>
+      <path d="M22 12 l-6 6 l6 6" stroke="#1E1915" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="24" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#1E1915">Pre-Departure Hub</text>
+    </g>
+
+    <!-- Celebration Hero Card -->
+    <g transform="translate(32, 114)">
+      <rect width="354" height="210" rx="22" fill="#1E1928"/>
+      <!-- Glowing celebration accents -->
+      <circle cx="300" cy="50" r="80" fill="#FF6B35" opacity="0.18"/>
+      <circle cx="50" cy="160" r="60" fill="#10B981" opacity="0.12"/>
+      
+      <rect x="22" y="22" width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2"/>
+      <text x="87" y="38" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">OFFER ACCEPTED 🎉</text>
+
+      <text x="22" y="78" font-family="'DM Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">You're going to Canada!</text>
+      <text x="22" y="104" font-family="'DM Sans', sans-serif" font-size="13" fill="#D3CCE3" width="310">
+        Congratulations Rachel! Your admission to the University of Toronto is verified. Let's get your visa &amp; stay ready.
+      </text>
+
+      <rect x="22" y="142" width="150" height="42" rx="21" fill="#FF6B35"/>
+      <text x="97" y="168" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Start Visa Filing ✈️</text>
+
+      <rect x="182" y="142" width="150" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.2"/>
+      <text x="257" y="168" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Find Housing</text>
+    </g>
+
+    <!-- Pre-departure Action Checklist -->
+    <g transform="translate(32, 344)">
+      <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="17" font-weight="700" fill="#1E1915">Essential Next Steps</text>
+      
+      <!-- Item 1: Canadian Student Visa (Study Permit) -->
+      <g transform="translate(0, 32)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.5"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#FFF2EC"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🛂</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Canadian Study Permit (SDS)</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">GIC Account &amp; Biometrics verification</text>
+        <rect x="264" y="27" width="76" height="24" rx="12" fill="#FF6B35"/>
+        <text x="302" y="43" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">In Progress</text>
+      </g>
+
+      <!-- Item 2: Verified Student Housing -->
+      <g transform="translate(0, 122)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#F4F1ED"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🏡</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Downtown Student Residence</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">0.5 miles from St. George Campus</text>
+        <text x="310" y="46" font-family="'DM Sans', sans-serif" font-size="14" fill="#756F6B">&rarr;</text>
+      </g>
+
+      <!-- Item 3: Peer Network & Roommates -->
+      <g transform="translate(0, 212)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#E8F8F2"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">💬</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Toronto Fall '26 Cohort</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">240+ students connecting now</text>
+        <rect x="270" y="27" width="70" height="24" rx="12" fill="#10B981"/>
+        <text x="305" y="43" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Join Chat</text>
+      </g>
+    </g>
+
+    <!-- Bottom Guidance Banner -->
+    <g transform="translate(32, 668)">
+      <rect width="354" height="74" rx="18" fill="#FFF2EC" stroke="#FF6B35" stroke-dasharray="4 4" stroke-width="1.2"/>
+      <text x="20" y="32" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Need 1-on-1 Visa Counselor Review?</text>
+      <text x="20" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">Free document verification with alumni mentors</text>
+      <text x="300" y="42" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Book &rarr;</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <!-- Camera Lens Reflection -->
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons (Signal, Wifi, Battery) -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection Sheen -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+    </g>
+  </g>
+  </g>
+</svg>

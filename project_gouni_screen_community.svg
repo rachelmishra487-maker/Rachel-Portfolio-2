@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow)">
+    <!-- Outer Titanium Chasis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(32, 64)">
+      <text x="0" y="24" font-family="'DM Sans', sans-serif" font-size="24" font-weight="800" fill="#1E1915">Community Hub</text>
+      <circle cx="340" cy="18" r="18" fill="#F0EDE8"/>
+      <text x="340" y="23" font-family="'DM Sans', sans-serif" font-size="15" text-anchor="middle">🔔</text>
+    </g>
+
+    <!-- Cohort Filter Tabs -->
+    <g transform="translate(32, 108)">
+      <rect x="0" y="0" width="134" height="34" rx="17" fill="#FF6B35"/>
+      <text x="67" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Toronto Cohort</text>
+
+      <rect x="142" y="0" width="94" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="189" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">Housing</text>
+
+      <rect x="244" y="0" width="110" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="299" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">Visa Q&amp;A</text>
+    </g>
+
+    <!-- Featured Community Event Card -->
+    <g transform="translate(32, 160)">
+      <rect width="354" height="150" rx="20" fill="#202A44"/>
+      <rect x="18" y="18" width="90" height="22" rx="11" fill="#FF6B35"/>
+      <text x="63" y="33" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">UPCOMING EVENT</text>
+
+      <text x="18" y="68" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Diwali &amp; Welcome in Toronto</text>
+      <text x="18" y="90" font-family="'DM Sans', sans-serif" font-size="12" fill="#D0D6E2">Celebrate the festival of lights with 180+ incoming international students!</text>
+
+      <text x="18" y="124" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#10B981">📍 Queens Park · Oct 28</text>
+      <rect x="244" y="104" width="92" height="32" rx="16" fill="#FFFFFF"/>
+      <text x="290" y="124" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#202A44" text-anchor="middle">RSVP &rarr;</text>
+    </g>
+
+    <!-- Discussion Feed -->
+    <g transform="translate(32, 330)">
+      <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="17" font-weight="700" fill="#1E1915">Active Discussions</text>
+
+      <!-- Post 1 -->
+      <g transform="translate(0, 32)">
+        <rect width="354" height="115" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <circle cx="28" cy="28" r="14" fill="#FFD5C7"/>
+        <text x="28" y="33" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FF6B35" text-anchor="middle">PS</text>
+        <text x="50" y="24" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Priya S.</text>
+        <text x="50" y="38" font-family="'DM Sans', sans-serif" font-size="11" fill="#8F8883">University of Toronto · 2h ago</text>
+        <text x="16" y="68" font-family="'DM Sans', sans-serif" font-size="13" font-weight="500" fill="#1E1915">"Anyone else headed to the St. George campus looking for 2BHK shared lease near Spadina?"</text>
+        <text x="16" y="96" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">💬 14 replies · 28 interested</text>
+      </g>
+
+      <!-- Post 2 -->
+      <g transform="translate(0, 160)">
+        <rect width="354" height="115" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <circle cx="28" cy="28" r="14" fill="#D3F5E7"/>
+        <text x="28" y="33" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="middle">RK</text>
+        <text x="50" y="24" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#1E1915">Rahul K.</text>
+        <text x="50" y="38" font-family="'DM Sans', sans-serif" font-size="11" fill="#8F8883">York University · 5h ago</text>
+        <text x="16" y="68" font-family="'DM Sans', sans-serif" font-size="13" font-weight="500" fill="#1E1915">"Best way to set up CIBC student GIC account before arriving? Walkthrough guide shared below!"</text>
+        <text x="16" y="96" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">💬 32 replies · 65 saved</text>
+      </g>
+    </g>
+
+    <!-- Create Post Floating Bar -->
+    <g transform="translate(32, 645)">
+      <rect width="354" height="52" rx="26" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.5"/>
+      <text x="44" y="31" font-family="'DM Sans', sans-serif" font-size="13" fill="#8F8883">Ask question or share with cohort...</text>
+      <circle cx="328" cy="26" r="18" fill="#FF6B35"/>
+      <text x="328" y="31" font-family="'DM Sans', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">+</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <!-- Camera Lens Reflection -->
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons (Signal, Wifi, Battery) -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection Sheen -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+    </g>
+  </g></g></svg>

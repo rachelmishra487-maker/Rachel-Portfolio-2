@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <!-- iPhone 16 Pro Mockup Frame -->
+  <defs>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8"/>
+      <stop offset="50%" stop-color="#B8AF9F"/>
+      <stop offset="100%" stop-color="#8A8275"/>
+    </linearGradient>
+    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow)">
+    <!-- Outer Titanium Chasis -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(32, 64)">
+      <circle cx="18" cy="18" r="18" fill="#F0EDE8"/>
+      <path d="M22 12 l-6 6 l6 6" stroke="#1E1915" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="24" font-family="'DM Sans', sans-serif" font-size="20" font-weight="700" fill="#1E1915">Pre-Departure Hub</text>
+    </g>
+
+    <!-- Celebration Hero Card -->
+    <g transform="translate(32, 114)">
+      <rect width="354" height="210" rx="22" fill="#1E1928"/>
+      <!-- Glowing celebration accents -->
+      <circle cx="300" cy="50" r="80" fill="#FF6B35" opacity="0.18"/>
+      <circle cx="50" cy="160" r="60" fill="#10B981" opacity="0.12"/>
+      
+      <rect x="22" y="22" width="130" height="24" rx="12" fill="#10B981" fill-opacity="0.2"/>
+      <text x="87" y="38" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">OFFER ACCEPTED 🎉</text>
+
+      <text x="22" y="78" font-family="'DM Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">You're going to Canada!</text>
+      <text x="22" y="104" font-family="'DM Sans', sans-serif" font-size="13" fill="#D3CCE3" width="310">
+        Congratulations Rachel! Your admission to the University of Toronto is verified. Let's get your visa &amp; stay ready.
+      </text>
+
+      <rect x="22" y="142" width="150" height="42" rx="21" fill="#FF6B35"/>
+      <text x="97" y="168" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Start Visa Filing ✈️</text>
+
+      <rect x="182" y="142" width="150" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.2"/>
+      <text x="257" y="168" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Find Housing</text>
+    </g>
+
+    <!-- Pre-departure Action Checklist -->
+    <g transform="translate(32, 344)">
+      <text x="0" y="18" font-family="'DM Sans', sans-serif" font-size="17" font-weight="700" fill="#1E1915">Essential Next Steps</text>
+      
+      <!-- Item 1: Canadian Student Visa (Study Permit) -->
+      <g transform="translate(0, 32)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.5"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#FFF2EC"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🛂</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Canadian Study Permit (SDS)</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">GIC Account &amp; Biometrics verification</text>
+        <rect x="264" y="27" width="76" height="24" rx="12" fill="#FF6B35"/>
+        <text x="302" y="43" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">In Progress</text>
+      </g>
+
+      <!-- Item 2: Verified Student Housing -->
+      <g transform="translate(0, 122)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#F4F1ED"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🏡</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Downtown Student Residence</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">0.5 miles from St. George Campus</text>
+        <text x="310" y="46" font-family="'DM Sans', sans-serif" font-size="14" fill="#756F6B">&rarr;</text>
+      </g>
+
+      <!-- Item 3: Peer Network & Roommates -->
+      <g transform="translate(0, 212)">
+        <rect width="354" height="78" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="15" width="48" height="48" rx="12" fill="#E8F8F2"/>
+        <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">💬</text>
+        <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Toronto Fall '26 Cohort</text>
+        <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">240+ students connecting now</text>
+        <rect x="270" y="27" width="70" height="24" rx="12" fill="#10B981"/>
+        <text x="305" y="43" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Join Chat</text>
+      </g>
+    </g>
+
+    <!-- Bottom Guidance Banner -->
+    <g transform="translate(32, 668)">
+      <rect width="354" height="74" rx="18" fill="#FFF2EC" stroke="#FF6B35" stroke-dasharray="4 4" stroke-width="1.2"/>
+      <text x="20" y="32" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Need 1-on-1 Visa Counselor Review?</text>
+      <text x="20" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">Free document verification with alumni mentors</text>
+      <text x="300" y="42" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Book &rarr;</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <!-- Camera Lens Reflection -->
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons (Signal, Wifi, Battery) -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection Sheen -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+    </g>
+  </g></g></svg>
