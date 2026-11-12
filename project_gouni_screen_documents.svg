@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <defs>
+    <filter id="phoneShadow_doc_iso" x="-20%" y="-15%" width="140%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#1F0D24" flood-opacity="0.28"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2D1136" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="titaniumRim_doc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EDE4"/>
+      <stop offset="40%" stop-color="#C2B7A7"/>
+      <stop offset="70%" stop-color="#8F8576"/>
+      <stop offset="100%" stop-color="#D9D2C5"/>
+    </linearGradient>
+    <linearGradient id="screenGlass_doc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip_doc_iso">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow_doc_iso)">
+    <!-- Titanium Chassis Outer -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim_doc_iso)" stroke="#42392F" stroke-width="2.5"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#141210"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip_doc_iso)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(32, 64)">
+      <circle cx="18" cy="18" r="18" fill="#F0EDE8"/>
+      <path d="M22 12 l-6 6 l6 6" stroke="#1E1915" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="24" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#1E1915">Complete Your Path</text>
+    </g>
+
+    <!-- 4-Step Stepper -->
+    <g transform="translate(32, 116)">
+      <!-- Step 1: Info (Done) -->
+      <circle cx="20" cy="14" r="14" fill="#10B981"/>
+      <path d="M15 14 l3 3 l6 -6" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="20" y="38" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600" fill="#10B981" text-anchor="middle">Personal</text>
+
+      <line x1="42" y1="14" x2="108" y2="14" stroke="#10B981" stroke-width="2"/>
+
+      <!-- Step 2: Docs (Active) -->
+      <circle cx="130" cy="14" r="14" fill="#FF6B35"/>
+      <text x="130" y="19" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+      <text x="130" y="38" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#FF6B35" text-anchor="middle">Docs</text>
+
+      <line x1="152" y1="14" x2="218" y2="14" stroke="#EAE5DF" stroke-width="2"/>
+
+      <!-- Step 3: Review -->
+      <circle cx="240" cy="14" r="14" fill="#F0EDE8"/>
+      <text x="240" y="19" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#8E8782" text-anchor="middle">3</text>
+      <text x="240" y="38" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#8E8782" text-anchor="middle">Review</text>
+
+      <line x1="262" y1="14" x2="328" y2="14" stroke="#EAE5DF" stroke-width="2"/>
+
+      <!-- Step 4: Submit -->
+      <circle cx="340" cy="14" r="14" fill="#F0EDE8"/>
+      <text x="340" y="19" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#8E8782" text-anchor="middle">4</text>
+      <text x="340" y="38" font-family="'DM Sans', sans-serif" font-size="10" font-weight="500" fill="#8E8782" text-anchor="middle">Submit</text>
+    </g>
+
+    <!-- Instructions -->
+    <g transform="translate(32, 184)">
+      <text x="0" y="24" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800" fill="#1E1915">Upload Credentials</text>
+      <text x="0" y="48" font-family="'DM Sans', sans-serif" font-size="13" fill="#6E6762">
+        Please provide high-quality scans of required documents to proceed with your Toronto application.
+      </text>
+    </g>
+
+    <!-- Document Items -->
+    <g transform="translate(32, 260)">
+      <!-- Doc 1: Passport (Uploaded) -->
+      <g transform="translate(0, 0)">
+        <rect width="354" height="74" rx="16" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5"/>
+        <rect x="14" y="14" width="46" height="46" rx="12" fill="#E8F8F2"/>
+        <text x="37" y="42" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🛂</text>
+        <text x="72" y="32" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">International Passport</text>
+        <text x="72" y="50" font-family="'DM Sans', sans-serif" font-size="12" fill="#10B981">Passport_rachel_verified.pdf (2.1 MB)</text>
+        <rect x="270" y="25" width="70" height="24" rx="12" fill="#10B981"/>
+        <text x="305" y="41" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ Verified</text>
+      </g>
+
+      <!-- Doc 2: Transcripts (Upload Needed) -->
+      <g transform="translate(0, 90)">
+        <rect width="354" height="74" rx="16" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.8"/>
+        <rect x="14" y="14" width="46" height="46" rx="12" fill="#FFF2EC"/>
+        <text x="37" y="42" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">📜</text>
+        <text x="72" y="32" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Official Academic Records</text>
+        <text x="72" y="50" font-family="'DM Sans', sans-serif" font-size="12" fill="#FF6B35">Action Required · PDF under 5MB</text>
+        <rect x="256" y="25" width="84" height="26" rx="13" fill="#FF6B35"/>
+        <text x="298" y="42" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">+ Upload</text>
+      </g>
+
+      <!-- Doc 3: Statement of Purpose -->
+      <g transform="translate(0, 180)">
+        <rect width="354" height="74" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="14" width="46" height="46" rx="12" fill="#F4F1ED"/>
+        <text x="37" y="42" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">📝</text>
+        <text x="72" y="32" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Statement of Purpose (SOP)</text>
+        <text x="72" y="50" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">Draft ready · Ready to attach</text>
+        <rect x="256" y="25" width="84" height="26" rx="13" fill="#FFFFFF" stroke="#FF6B35"/>
+        <text x="298" y="42" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FF6B35" text-anchor="middle">+ Attach</text>
+      </g>
+
+      <!-- Doc 4: Letters of Recommendation -->
+      <g transform="translate(0, 270)">
+        <rect width="354" height="74" rx="16" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+        <rect x="14" y="14" width="46" height="46" rx="12" fill="#F4F1ED"/>
+        <text x="37" y="42" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">✉️</text>
+        <text x="72" y="32" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Letters of Recommendation</text>
+        <text x="72" y="50" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">2 Faculty referees invited</text>
+        <rect x="264" y="25" width="76" height="24" rx="12" fill="#F4F1ED"/>
+        <text x="302" y="41" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#756F6B" text-anchor="middle">Pending</text>
+      </g>
+    </g>
+
+    <!-- Pro Tip Notice Banner -->
+    <g transform="translate(32, 630)">
+      <rect width="354" height="66" rx="16" fill="#FFF8EB" stroke="#F59E0B" stroke-width="1.2"/>
+      <text x="18" y="28" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#D97706">💡 PRO TIP</text>
+      <text x="18" y="48" font-family="'DM Sans', sans-serif" font-size="12" fill="#78350F">Ensure all documents are high-contrast 300 DPI PDF files for immediate automated AI verification.</text>
+    </g>
+
+    <!-- Bottom Actions -->
+    <g transform="translate(32, 730)">
+      <rect width="354" height="52" rx="26" fill="#FF6B35"/>
+      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Proceed to Review &rarr;</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass_doc_iso)" pointer-events="none"/>
+    </g>
+  </g></g></svg>

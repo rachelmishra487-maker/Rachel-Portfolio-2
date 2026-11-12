@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <defs>
+    <filter id="phoneShadow_onb_iso" x="-20%" y="-15%" width="140%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#1F0D24" flood-opacity="0.28"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2D1136" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="titaniumRim_onb_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EDE4"/>
+      <stop offset="40%" stop-color="#C2B7A7"/>
+      <stop offset="70%" stop-color="#8F8576"/>
+      <stop offset="100%" stop-color="#D9D2C5"/>
+    </linearGradient>
+    <linearGradient id="screenGlass_onb_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip_onb_iso">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow_onb_iso)">
+    <!-- Titanium Chassis Outer -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim_onb_iso)" stroke="#42392F" stroke-width="2.5"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#141210"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip_onb_iso)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Decorative Header with Brand Orange -->
+    <g transform="translate(14, 14)">
+      <rect width="390" height="280" fill="#FF6B35"/>
+      <circle cx="340" cy="40" r="90" fill="#FFFFFF" opacity="0.08"/>
+      <circle cx="50" cy="240" r="70" fill="#000000" opacity="0.06"/>
+      
+      <!-- GoUni Logo -->
+      <g transform="translate(32, 60)">
+        <circle cx="22" cy="22" r="22" fill="#FFFFFF"/>
+        <path d="M12 24 l10 -6 l10 6 l-10 6 z" fill="#FF6B35"/>
+        <path d="M16 26.5 v5 a6 4 0 0 0 12 0 v-5" fill="none" stroke="#FF6B35" stroke-width="1.8"/>
+        <text x="54" y="29" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">GoUni</text>
+      </g>
+      
+      <!-- Illustration Card Mockup inside Header -->
+      <g transform="translate(32, 126)">
+        <rect width="326" height="136" rx="16" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-opacity="0.3"/>
+        <circle cx="163" cy="50" r="32" fill="#FFFFFF" fill-opacity="0.25"/>
+        <text x="163" y="58" font-family="'DM Sans', sans-serif" font-size="28" text-anchor="middle">🎓🌍</text>
+        <text x="163" y="102" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Your Global Education Gateway</text>
+        <text x="163" y="120" font-family="'DM Sans', sans-serif" font-size="11" fill="#FFEFEA" text-anchor="middle">12,000+ programs across 24 countries</text>
+      </g>
+    </g>
+
+    <!-- Main Body Content -->
+    <g transform="translate(46, 324)">
+      <rect width="110" height="24" rx="12" fill="#FFF2EC"/>
+      <text x="55" y="16" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FF6B35" text-anchor="middle">WELCOME TO GOUNI</text>
+
+      <text x="0" y="62" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="800" fill="#1E1915" letter-spacing="-0.5">Start Your Journey Today.</text>
+      <text x="0" y="92" font-family="'DM Sans', sans-serif" font-size="14" line-height="22" fill="#6E6762">
+        Here you can discover excellent study plans, track all deadlines, and keep an eye on your admission performance in real time.
+      </text>
+
+      <!-- Value Prop Highlights -->
+      <g transform="translate(0, 134)">
+        <circle cx="12" cy="12" r="10" fill="#10B981" fill-opacity="0.15"/>
+        <text x="12" y="16" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">✓</text>
+        <text x="32" y="16" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915">Verified University Requirements</text>
+
+        <circle cx="12" cy="42" r="10" fill="#10B981" fill-opacity="0.15"/>
+        <text x="12" y="46" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle">✓</text>
+        <text x="32" y="46" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915">Direct Visa &amp; Housing Milestones</text>
+      </g>
+
+      <!-- Primary Action Buttons -->
+      <g transform="translate(0, 226)">
+        <!-- Sign Up Button -->
+        <rect width="326" height="52" rx="26" fill="#FF6B35"/>
+        <text x="163" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Sign Up with Email</text>
+
+        <!-- Login Button -->
+        <rect y="64" width="326" height="52" rx="26" fill="#FFFFFF" stroke="#E5DFD9" stroke-width="1.5"/>
+        <text x="163" y="96" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915" text-anchor="middle">I Already Have an Account</text>
+      </g>
+
+      <!-- Social Login Strip -->
+      <g transform="translate(0, 412)">
+        <line x1="0" y1="0" x2="110" y2="0" stroke="#E5DFD9"/>
+        <text x="163" y="4" font-family="'DM Sans', sans-serif" font-size="11" fill="#8E8782" text-anchor="middle">Or continue with</text>
+        <line x1="216" y1="0" x2="326" y2="0" stroke="#E5DFD9"/>
+
+        <rect y="18" width="156" height="42" rx="21" fill="#FFFFFF" stroke="#E5DFD9"/>
+        <text x="78" y="44" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915" text-anchor="middle">G  Google</text>
+
+        <rect x="170" y="18" width="156" height="42" rx="21" fill="#FFFFFF" stroke="#E5DFD9"/>
+        <text x="248" y="44" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" fill="#1E1915" text-anchor="middle">  Apple</text>
+      </g>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass_onb_iso)" pointer-events="none"/>
+    </g>
+  </g></g></svg>

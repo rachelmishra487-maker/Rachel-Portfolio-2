@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+  <defs>
+    <filter id="phoneShadow_acc_iso" x="-20%" y="-15%" width="140%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#1F0D24" flood-opacity="0.28"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2D1136" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="titaniumRim_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EDE4"/>
+      <stop offset="40%" stop-color="#C2B7A7"/>
+      <stop offset="70%" stop-color="#8F8576"/>
+      <stop offset="100%" stop-color="#D9D2C5"/>
+    </linearGradient>
+    <linearGradient id="screenGlass_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip_acc_iso">
+      <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#phoneShadow_acc_iso)">
+    <!-- Titanium Chassis Outer -->
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim_acc_iso)" stroke="#42392F" stroke-width="2.5"/>
+    <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#141210"/>
+    
+    <!-- Screen Surface (Clipped) -->
+    <g clip-path="url(#screenClip_acc_iso)">
+      <!-- Background of App Screen -->
+      <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
+      
+    <!-- Top Nav Header -->
+    <g transform="translate(32, 64)">
+      <circle cx="18" cy="18" r="18" fill="#F0EDE8"/>
+      <path d="M22 12 l-6 6 l6 6" stroke="#1E1915" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="52" y="24" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#1E1915">Find Your Home</text>
+    </g>
+
+    <!-- Search Location Input -->
+    <g transform="translate(32, 116)">
+      <rect width="354" height="48" rx="24" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="24" y="29" font-family="'DM Sans', sans-serif" font-size="14" font-weight="600" fill="#1E1915">📍 Toronto, St. George Campus</text>
+      <circle cx="328" cy="24" r="14" fill="#FFF2EC"/>
+      <path d="M324 21 h8 M322 24 h12 M326 27 h4" stroke="#FF6B35" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Room Type Pills -->
+    <g transform="translate(32, 178)">
+      <rect x="0" y="0" width="76" height="34" rx="17" fill="#FF6B35"/>
+      <text x="38" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Studio</text>
+
+      <rect x="84" y="0" width="102" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="135" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">Shared Room</text>
+
+      <rect x="194" y="0" width="86" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="237" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">En Suite</text>
+
+      <rect x="288" y="0" width="66" height="34" rx="17" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <text x="321" y="21" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915" text-anchor="middle">Hostel</text>
+    </g>
+
+    <!-- Featured Residence Card 1 -->
+    <g transform="translate(32, 232)">
+      <rect width="354" height="270" rx="20" fill="#FFFFFF" stroke="#FF6B35" stroke-width="1.8"/>
+      <rect x="12" y="12" width="330" height="135" rx="14" fill="#2D2336"/>
+      <!-- Window Illustration/Graphic -->
+      <rect x="24" y="24" width="70" height="24" rx="12" fill="#10B981"/>
+      <text x="59" y="40" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">VERIFIED 🛡️</text>
+      <text x="24" y="95" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Downtown Student Residence</text>
+      <text x="24" y="118" font-family="'DM Sans', sans-serif" font-size="12" fill="#E2DDE8">0.5 miles to campus · Spadina &amp; Bloor</text>
+
+      <!-- Details -->
+      <g transform="translate(16, 160)">
+        <text x="0" y="22" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="800" fill="#FF6B35">$950 <tspan font-size="12" font-weight="500" fill="#756F6B">CAD / month</tspan></text>
+        <text x="210" y="22" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#10B981">★ 4.8 (124 reviews)</text>
+
+        <rect x="0" y="38" width="80" height="24" rx="6" fill="#F4F1ED"/>
+        <text x="40" y="54" font-family="'DM Sans', sans-serif" font-size="11" fill="#1E1915" text-anchor="middle">High-Speed Wifi</text>
+
+        <rect x="88" y="38" width="94" height="24" rx="6" fill="#F4F1ED"/>
+        <text x="135" y="54" font-family="'DM Sans', sans-serif" font-size="11" fill="#1E1915" text-anchor="middle">All Bills Included</text>
+
+        <rect x="190" y="38" width="70" height="24" rx="6" fill="#F4F1ED"/>
+        <text x="225" y="54" font-family="'DM Sans', sans-serif" font-size="11" fill="#1E1915" text-anchor="middle">Gym &amp; Study</text>
+
+        <text x="0" y="92" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">Book Tour or Reserve Spot &rarr;</text>
+      </g>
+    </g>
+
+    <!-- Hand-picked proximity card -->
+    <g transform="translate(32, 524)">
+      <rect width="354" height="180" rx="20" fill="#FFFFFF" stroke="#EAE5DF" stroke-width="1.2"/>
+      <rect x="14" y="14" width="326" height="74" rx="14" fill="#1C283F"/>
+      <text x="28" y="44" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">Parkview College Quad</text>
+      <text x="28" y="66" font-family="'DM Sans', sans-serif" font-size="12" fill="#CBD5E1">Walk to library in 4 mins · Meal plan optional</text>
+      <text x="18" y="120" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700" fill="#1E1915">$820 CAD/mo</text>
+      <rect x="236" y="102" width="104" height="34" rx="17" fill="#FF6B35"/>
+      <text x="288" y="124" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Details</text>
+    </g>
+  
+      
+      <!-- Top Status Bar & Dynamic Island -->
+      <g>
+        <text x="46" y="42" font-family="-apple-system, 'SF Pro Text', sans-serif" font-size="14" font-weight="600" fill="#1C1B1F">9:41</text>
+        <!-- Dynamic Island -->
+        <rect x="149" y="24" width="120" height="32" rx="16" ry="16" fill="#000000"/>
+        <circle cx="229" cy="40" r="5" fill="#141416"/>
+        <circle cx="230" cy="39" r="1.5" fill="#3D4B66"/>
+        
+        <!-- Status Icons -->
+        <path d="M312 34 h2 v8 h-2 z M316 32 h2 v10 h-2 z M320 30 h2 v12 h-2 z M324 28 h2 v14 h-2 z" fill="#1C1B1F"/>
+        <path d="M334 31 a7 7 0 0 1 10 0 M336 34 a4 4 0 0 1 6 0 M338 37 a1 1 0 0 1 2 0" fill="none" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="352" y="31" width="22" height="11" rx="3.5" ry="3.5" fill="none" stroke="#1C1B1F" stroke-width="1.6"/>
+        <rect x="354" y="33" width="15" height="7" rx="2" ry="2" fill="#1C1B1F"/>
+        <path d="M375 34.5 v4" stroke="#1C1B1F" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Bottom Home Indicator Bar -->
+      <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
+      
+      <!-- Screen Glass Reflection -->
+      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass_acc_iso)" pointer-events="none"/>
+    </g>
+  </g></g></svg>

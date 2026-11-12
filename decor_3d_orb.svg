@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- 3D Volumetric Sphere Radial Gradient -->
+    <radialGradient id="orbVolumetric" cx="35%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="15%" stop-color="#FF9EBE"/>
+      <stop offset="40%" stop-color="#DF4A7A"/>
+      <stop offset="70%" stop-color="#76518E"/>
+      <stop offset="90%" stop-color="#381B45"/>
+      <stop offset="100%" stop-color="#1B0724"/>
+    </radialGradient>
+
+    <!-- Warm Golden Orange Bounce / Rim Light -->
+    <linearGradient id="orbRimBounce" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#FF7A3D" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFA86B" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Specular Arc Glint -->
+    <linearGradient id="orbSpecularGlint" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Tactile Drop Shadow Filter -->
+    <filter id="orbShadowFilter" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#270A33" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#270A33" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#orbShadowFilter)">
+    <!-- Base 3D Sphere -->
+    <circle cx="60" cy="60" r="48" fill="url(#orbVolumetric)"/>
+
+    <!-- Warm Rim Bounce on underside -->
+    <circle cx="60" cy="60" r="48" fill="url(#orbRimBounce)" mix-blend-mode="screen"/>
+
+    <!-- High-Gloss Specular Sheen (Off-center top-left) -->
+    <ellipse cx="43" cy="43" rx="19" ry="12" transform="rotate(-30, 43, 43)" fill="url(#orbSpecularGlint)"/>
+    <circle cx="41" cy="41" r="4.5" fill="#FFFFFF" opacity="0.95"/>
+
+    <!-- Secondary Edge Sheen -->
+    <path d="M 32,80 A 42,42 0 0,0 80,82" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.25"/>
+  </g>
+</svg>

@@ -1,127 +1,347 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
   <defs>
-    <linearGradient id="spBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#191320"/>
-      <stop offset="50%" stop-color="#241B2C"/>
-      <stop offset="100%" stop-color="#140E19"/>
+    <!-- Background Gradient: Deep Luxury Plum / Violet Canvas -->
+    <linearGradient id="spCanvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180A22"/>
+      <stop offset="45%" stop-color="#280F38"/>
+      <stop offset="85%" stop-color="#1E0A2B"/>
+      <stop offset="100%" stop-color="#12051A"/>
     </linearGradient>
-    <linearGradient id="spPlaneGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3D2D4A"/>
-      <stop offset="100%" stop-color="#2A1E34"/>
+
+    <!-- Ambient Studio Lights -->
+    <radialGradient id="spGlowMagenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DF4A7A" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#9333EA" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#180A22" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spGlowOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7A3D" stop-opacity="0.38"/>
+      <stop offset="50%" stop-color="#E97845" stop-opacity="0.18"/>
+      <stop offset="90%" stop-color="#180A22" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 3D Glossy Sphere Volumetric Gradient -->
+    <radialGradient id="spSphere3D" cx="35%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="12%" stop-color="#FF82B0"/>
+      <stop offset="35%" stop-color="#DF4A7A"/>
+      <stop offset="65%" stop-color="#9A2266"/>
+      <stop offset="85%" stop-color="#4C0F3A"/>
+      <stop offset="100%" stop-color="#250520"/>
+    </radialGradient>
+
+    <!-- Rim Light Gradient on Sphere (Warm Orange Ground Reflection) -->
+    <linearGradient id="spSphereRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#FF7A3D" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FFA86B" stop-opacity="0.95"/>
     </linearGradient>
-    <linearGradient id="spPlaneGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#553F67"/>
-      <stop offset="100%" stop-color="#3A2A47"/>
+
+    <!-- Specular Arc Highlight for Sphere -->
+    <linearGradient id="spSpecularGlint" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="spAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D9C9E3"/>
-      <stop offset="100%" stop-color="#A68BB8"/>
+
+    <!-- 3D Glossy Torus Gradients -->
+    <linearGradient id="spTorusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA86B"/>
+      <stop offset="25%" stop-color="#FF6B35"/>
+      <stop offset="60%" stop-color="#BA3E18"/>
+      <stop offset="90%" stop-color="#5A1525"/>
+      <stop offset="100%" stop-color="#2E0B16"/>
     </linearGradient>
-    <filter id="spDepthShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.65"/>
+
+    <!-- Isometric Plane Gradients -->
+    <linearGradient id="spPlaneBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#361748"/>
+      <stop offset="100%" stop-color="#210C2E"/>
+    </linearGradient>
+    <linearGradient id="spPlaneElevated" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F1E65"/>
+      <stop offset="50%" stop-color="#3C1450"/>
+      <stop offset="100%" stop-color="#280C36"/>
+    </linearGradient>
+
+    <!-- Glass Rim Bevel Highlight Strokes -->
+    <linearGradient id="spRimElevated" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8EB4"/>
+      <stop offset="35%" stop-color="#DF4A7A"/>
+      <stop offset="70%" stop-color="#76518E"/>
+      <stop offset="100%" stop-color="#FF7A3D"/>
+    </linearGradient>
+    <linearGradient id="spRimBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#76518E" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#432158" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#DF4A7A" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Realistic Heavy Ambient Drop Shadows -->
+    <filter id="spDropShadowBase" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="32" stdDeviation="28" flood-color="#08020D" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#08020D" flood-opacity="0.6"/>
     </filter>
+    <filter id="spDropShadowElevated" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="38" stdDeviation="32" flood-color="#0B0312" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0B0312" flood-opacity="0.7"/>
+    </filter>
+    <filter id="spSphereShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+      <feOffset dx="10" dy="45" result="offsetblur"/>
+      <feFlood flood-color="#0D0314" flood-opacity="0.95"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 3D Gemstone Facet Gradients -->
+    <linearGradient id="spGemFacetTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="60%" stop-color="#FF6598"/>
+    </linearGradient>
+    <linearGradient id="spGemFacetRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DF4A7A"/>
+      <stop offset="100%" stop-color="#76518E"/>
+    </linearGradient>
+    <linearGradient id="spGemFacetBottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#541C5C"/>
+      <stop offset="100%" stop-color="#24072C"/>
+    </linearGradient>
+    <linearGradient id="spGemFacetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA86B"/>
+      <stop offset="100%" stop-color="#DF4A7A"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="750" fill="url(#spBg)"/>
+  <!-- ================= CANVAS BACKGROUND ================= -->
+  <rect width="1200" height="750" fill="url(#spCanvasGrad)"/>
 
-  <!-- Subtle Perspective Grid -->
-  <g opacity="0.08">
-    <line x1="0" y1="120" x2="1200" y2="120" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="0" y1="240" x2="1200" y2="240" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="0" y1="360" x2="1200" y2="360" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="0" y1="480" x2="1200" y2="480" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="0" y1="600" x2="1200" y2="600" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="200" y1="0" x2="200" y2="750" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="400" y1="0" x2="400" y2="750" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="600" y1="0" x2="600" y2="750" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="800" y1="0" x2="800" y2="750" stroke="#D9C9E3" stroke-width="1"/>
-    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#D9C9E3" stroke-width="1"/>
+  <!-- Dramatic Studio Light Blooms -->
+  <circle cx="860" cy="360" r="420" fill="url(#spGlowMagenta)"/>
+  <circle cx="720" cy="460" r="320" fill="url(#spGlowOrange)"/>
+  <circle cx="200" cy="180" r="280" fill="url(#spGlowMagenta)" opacity="0.3"/>
+
+  <!-- Tactile 3D Perspective Grid with Horizon Depth -->
+  <g opacity="0.22">
+    <!-- Perspective lines receding to focal center -->
+    <line x1="600" y1="180" x2="300" y2="750" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="600" y1="180" x2="480" y2="750" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="600" y1="180" x2="660" y2="750" stroke="#DF4A7A" stroke-width="1.5"/>
+    <line x1="600" y1="180" x2="840" y2="750" stroke="#DF4A7A" stroke-width="1.5"/>
+    <line x1="600" y1="180" x2="1020" y2="750" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="600" y1="180" x2="1200" y2="750" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="600" y1="180" x2="1200" y2="520" stroke="#DF4A7A" stroke-width="1"/>
+
+    <!-- Horizontal Floor Grids -->
+    <line x1="360" y1="680" x2="1200" y2="680" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="420" y1="600" x2="1200" y2="600" stroke="#DF4A7A" stroke-width="1.2"/>
+    <line x1="480" y1="520" x2="1200" y2="520" stroke="#DF4A7A" stroke-width="1"/>
+    <line x1="520" y1="440" x2="1200" y2="440" stroke="#C084FC" stroke-width="0.8"/>
+    <line x1="560" y1="360" x2="1150" y2="360" stroke="#C084FC" stroke-width="0.6"/>
+
+    <!-- Coordinate Crosshairs -->
+    <circle cx="660" cy="520" r="3" fill="#FF7A3D"/>
+    <circle cx="840" cy="520" r="3" fill="#FF7A3D"/>
+    <circle cx="1020" cy="520" r="3" fill="#FF7A3D"/>
+    <circle cx="660" cy="600" r="3" fill="#FF8EB4"/>
+    <circle cx="840" cy="600" r="3" fill="#FF8EB4"/>
+    <circle cx="1020" cy="600" r="3" fill="#FF8EB4"/>
   </g>
 
-  <!-- Ambient Glow -->
-  <circle cx="850" cy="350" r="340" fill="#A68BB8" opacity="0.12"/>
-
-  <!-- Left Editorial Context -->
-  <g transform="translate(80, 80)">
-    <rect x="0" y="0" width="280" height="32" rx="16" fill="#2E2137" stroke="#4C365B" stroke-width="1.2"/>
-    <circle cx="16" cy="16" r="4" fill="#A68BB8"/>
-    <text x="28" y="21" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">SID NAGPUR · 3D / SPATIAL LAB</text>
-
-    <text x="0" y="85" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="800">Spatial &amp; 3D Ergonomics</text>
-    <text x="0" y="122" fill="#D9C9E3" font-family="'Playfair Display', Georgia, serif" font-size="22" font-style="italic">Depth Perception &amp; Tactile Lighting Studies</text>
-    <text x="0" y="156" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="14">Investigating spatial depth cues, z-axis shadow casting, and 3D ergonomics in Blender &amp; Unity</text>
-  </g>
-
-  <!-- Right: 3D Layered Isometric UI Planes -->
-  <g transform="translate(680, 160)">
-    <!-- Base Layer 1: Plane Depth Z=0 -->
-    <g transform="matrix(0.866, -0.5, 0.866, 0.5, -120, 120)" filter="url(#spDepthShadow)">
-      <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#spPlaneGrad1)" stroke="#503A60" stroke-width="1.5"/>
-      <g transform="translate(25, 25)">
-        <rect x="0" y="0" width="120" height="12" rx="6" fill="#A68BB8" opacity="0.6"/>
-        <rect x="0" y="24" width="220" height="8" rx="4" fill="#D9C9E3" opacity="0.3"/>
-        <rect x="0" y="40" width="180" height="8" rx="4" fill="#D9C9E3" opacity="0.3"/>
-        <g transform="translate(0, 70)">
-          <rect x="0" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
-          <rect x="95" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
-          <rect x="190" y="0" width="80" height="70" rx="8" fill="#251A2E"/>
-        </g>
-      </g>
-    </g>
-
-    <!-- Elevated Layer 2: Plane Depth Z=40 -->
-    <g transform="matrix(0.866, -0.5, 0.866, 0.5, -80, 20)" filter="url(#spDepthShadow)">
-      <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#spPlaneGrad2)" stroke="#74548C" stroke-width="1.8"/>
-      <g transform="translate(25, 25)">
-        <!-- Top Header inside 3D card -->
-        <rect x="0" y="0" width="160" height="14" rx="7" fill="#F5F0F8"/>
-        <rect x="0" y="26" width="240" height="8" rx="4" fill="#D9C9E3" opacity="0.5"/>
-        
-        <!-- Interactive 3D Sphere & Geometry -->
-        <g transform="translate(30, 60)">
-          <circle cx="50" cy="50" r="38" fill="url(#spAccent)"/>
-          <ellipse cx="42" cy="38" rx="14" ry="8" fill="#FFFFFF" opacity="0.4"/>
-          <text x="120" y="45" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">Tactile Shadow</text>
-          <text x="120" y="65" fill="#D9C9E3" font-family="'DM Sans', sans-serif" font-size="12">Z-Elevation 40px</text>
-        </g>
-
-        <!-- Dynamic Action Button inside 3D Layer -->
-        <g transform="translate(0, 160)">
-          <rect x="0" y="0" width="140" height="34" rx="17" fill="#A68BB8"/>
-          <text x="70" y="22" fill="#211A27" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" text-anchor="middle">MANIPULATE</text>
-        </g>
-      </g>
-    </g>
-
-    <!-- Spatial Dimension Callouts -->
-    <g transform="translate(180, 340)">
-      <circle cx="0" cy="0" r="6" fill="#D9C9E3"/>
-      <line x1="0" y1="0" x2="60" y2="-40" stroke="#D9C9E3" stroke-width="1.5" stroke-dasharray="3,3"/>
-      <rect x="65" y="-55" width="135" height="26" rx="13" fill="#2B1F34" stroke="#523B64" stroke-width="1"/>
-      <text x="132" y="-38" fill="#D9C9E3" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Z-AXIS ERGONOMICS</text>
-    </g>
-  </g>
-
-  <!-- Left Bottom Feature Specs -->
-  <g transform="translate(80, 310)">
+  <!-- ================= LEFT: EDITORIAL CONTEXT & EXPERIMENT DATA ================= -->
+  <g transform="translate(70, 70)">
+    <!-- Lab Category Badge -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
-      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">3D Depth &amp; Layer Occlusion</text>
-      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Testing whether elevation reduces cognitive clutter compared to flat cards</text>
+      <rect x="0" y="0" width="310" height="34" rx="17" fill="#2E113E" stroke="#5C267B" stroke-width="1.5"/>
+      <circle cx="17" cy="17" r="5" fill="#FF7A3D"/>
+      <text x="32" y="22" fill="#FCE7F3" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.4">SID NAGPUR · 3D / SPATIAL LAB 03</text>
     </g>
 
-    <g transform="translate(0, 100)">
-      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
-      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Blender Material &amp; Light Renders</text>
-      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Natural light falloff mimicking real-world object affordances</text>
+    <!-- Main Title & Research Narrative -->
+    <text x="0" y="85" fill="#FFFFFF" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="42" font-weight="800" letter-spacing="-0.8">Spatial &amp; 3D Ergonomics</text>
+    <text x="0" y="122" fill="#FF8EB4" font-family="'Playfair Display', Georgia, serif" font-size="22" font-style="italic">Volumetric Elevation, Depth Cues &amp; Directional Lighting</text>
+    <text x="0" y="156" fill="#E2D4EB" font-family="'DM Sans', sans-serif" font-size="14.5" font-weight="400">Tactile z-axis occlusion studies in Blender &amp; Unity to reduce cognitive overload in 3D viewports</text>
+
+    <!-- Telemetry Telemetry Strip -->
+    <g transform="translate(0, 185)">
+      <rect x="0" y="0" width="460" height="42" rx="10" fill="#220B2F" stroke="#46185D" stroke-width="1.2"/>
+      <text x="18" y="26" fill="#FFA86B" font-family="'Space Grotesk', monospace" font-size="12" font-weight="700">COORD: [X:+42.5 Y:-18.0 Z:+80.0mm]</text>
+      <text x="310" y="26" fill="#F472B6" font-family="'Space Grotesk', monospace" font-size="12" font-weight="700">RAYTRACE: 128 SPP</text>
     </g>
 
-    <g transform="translate(0, 200)">
-      <rect x="0" y="0" width="450" height="80" rx="12" fill="#241B2C" stroke="#453154" stroke-width="1"/>
-      <text x="24" y="32" fill="#F5F0F8" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Unity Spatial Interaction Simulation</text>
-      <text x="24" y="55" fill="#A68BB8" font-family="'DM Sans', sans-serif" font-size="12">Validating field-of-view comfort and interaction reach envelopes</text>
+    <!-- 3 High-Contrast Feature Data Cards -->
+    <g transform="translate(0, 248)">
+      <!-- Feature 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="460" height="88" rx="14" fill="#250D33" stroke="#5A1E74" stroke-width="1.5"/>
+        <circle cx="36" cy="44" r="18" fill="#3D1554"/>
+        <text x="36" y="50" fill="#FF7A3D" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" text-anchor="middle">Z</text>
+        <text x="68" y="36" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Volumetric Occlusion &amp; Z-Depth</text>
+        <text x="68" y="58" fill="#D8B4E2" font-family="'DM Sans', sans-serif" font-size="12.5">Testing whether tactile elevation planes reduce cognitive clutter vs. flat cards</text>
+        <!-- Status Pill -->
+        <rect x="365" y="16" width="75" height="22" rx="11" fill="#45185D"/>
+        <text x="402" y="31" fill="#FF8EB4" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Z = 80mm</text>
+      </g>
+
+      <!-- Feature 2 -->
+      <g transform="translate(0, 104)">
+        <rect x="0" y="0" width="460" height="88" rx="14" fill="#250D33" stroke="#5A1E74" stroke-width="1.5"/>
+        <circle cx="36" cy="44" r="18" fill="#3D1554"/>
+        <text x="36" y="50" fill="#DF4A7A" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" text-anchor="middle">☀</text>
+        <text x="68" y="36" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Directional Specular Lighting</text>
+        <text x="68" y="58" fill="#D8B4E2" font-family="'DM Sans', sans-serif" font-size="12.5">Key light at 45° with warm ground reflection to establish tactile affordances</text>
+        <!-- Status Pill -->
+        <rect x="355" y="16" width="85" height="22" rx="11" fill="#45185D"/>
+        <text x="397" y="31" fill="#FFA86B" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">KEY + RIM</text>
+      </g>
+
+      <!-- Feature 3 -->
+      <g transform="translate(0, 208)">
+        <rect x="0" y="0" width="460" height="88" rx="14" fill="#250D33" stroke="#5A1E74" stroke-width="1.5"/>
+        <circle cx="36" cy="44" r="18" fill="#3D1554"/>
+        <text x="36" y="50" fill="#F472B6" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" text-anchor="middle">👁</text>
+        <text x="68" y="36" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700">Ergonomic Gaze Reach Envelope</text>
+        <text x="68" y="58" fill="#D8B4E2" font-family="'DM Sans', sans-serif" font-size="12.5">Calibrating touchable interaction targets within 60° field of view in VR/AR</text>
+        <!-- Status Pill -->
+        <rect x="360" y="16" width="80" height="22" rx="11" fill="#45185D"/>
+        <text x="400" y="31" fill="#E9D5FF" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">FOV 60°</text>
+      </g>
     </g>
+  </g>
+
+  <!-- ================= RIGHT: 3D ISOMETRIC COMPUTING SUITE & GLOSSY 3D OBJECTS ================= -->
+  <g transform="translate(560, 60)">
+
+    <!-- ================= LAYER 1: BASE ISOMETRIC SLAB (Z = 0mm) ================= -->
+    <g transform="matrix(0.92, -0.38, 0.92, 0.38, 20, 220)" filter="url(#spDropShadowBase)">
+      <!-- Base Slab Face -->
+      <rect x="0" y="0" width="360" height="270" rx="20" fill="url(#spPlaneBase)" stroke="url(#spRimBase)" stroke-width="2.5"/>
+
+      <!-- Base Internal Coordinate Grid -->
+      <g opacity="0.35">
+        <line x1="30" y1="60" x2="330" y2="60" stroke="#C084FC" stroke-width="1"/>
+        <line x1="30" y1="120" x2="330" y2="120" stroke="#C084FC" stroke-width="1"/>
+        <line x1="30" y1="180" x2="330" y2="180" stroke="#C084FC" stroke-width="1"/>
+        <line x1="90" y1="30" x2="90" y2="240" stroke="#C084FC" stroke-width="1"/>
+        <line x1="180" y1="30" x2="180" y2="240" stroke="#C084FC" stroke-width="1"/>
+        <line x1="270" y1="30" x2="270" y2="240" stroke="#C084FC" stroke-width="1"/>
+      </g>
+
+      <!-- Base Data Nodes -->
+      <g transform="translate(30, 30)">
+        <rect x="0" y="0" width="110" height="18" rx="9" fill="#1C0928" stroke="#501C6D" stroke-width="1"/>
+        <text x="55" y="13" fill="#D8B4E2" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">GROUND PLANE Z: 0</text>
+        <circle cx="280" cy="9" r="6" fill="#DF4A7A"/>
+        <circle cx="280" cy="9" r="14" fill="none" stroke="#DF4A7A" stroke-width="1" opacity="0.6"/>
+      </g>
+    </g>
+
+    <!-- ================= LAYER 2: ELEVATED ISOMETRIC SLAB (Z = 45mm) ================= -->
+    <g transform="matrix(0.92, -0.38, 0.92, 0.38, 70, 110)" filter="url(#spDropShadowElevated)">
+      <!-- Elevated Slab Face with Rich Glass Highlight -->
+      <rect x="0" y="0" width="360" height="270" rx="20" fill="url(#spPlaneElevated)" stroke="url(#spRimElevated)" stroke-width="2.5"/>
+
+      <!-- Header Bar inside 3D Layer -->
+      <g transform="translate(24, 24)">
+        <rect x="0" y="0" width="180" height="22" rx="11" fill="#6B1F82" stroke="#DF4A7A" stroke-width="1"/>
+        <circle cx="14" cy="11" r="5" fill="#FF7A3D"/>
+        <text x="26" y="15" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">SPATIAL VIEWPORT · Z+45</text>
+
+        <!-- Toggle Switch in 3D -->
+        <rect x="250" y="0" width="60" height="22" rx="11" fill="#24072C" stroke="#76518E" stroke-width="1"/>
+        <circle cx="298" cy="11" r="8" fill="#FF7A3D"/>
+
+        <!-- Mini Wireframe Box -->
+        <g transform="translate(10, 48)">
+          <rect x="0" y="0" width="290" height="95" rx="12" fill="#20082B" stroke="#4F1A65" stroke-width="1.2"/>
+          <line x1="20" y1="30" x2="160" y2="30" stroke="#FF8EB4" stroke-width="6" stroke-linecap="round"/>
+          <line x1="20" y1="50" x2="220" y2="50" stroke="#A855F7" stroke-width="4" stroke-linecap="round"/>
+          <line x1="20" y1="68" x2="110" y2="68" stroke="#FFA86B" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- Mini 3D Axis Gizmo -->
+          <g transform="translate(240, 48)">
+            <line x1="0" y1="0" x2="26" y2="0" stroke="#FF6B35" stroke-width="2.5"/>
+            <text x="32" y="4" fill="#FF6B35" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="800">X</text>
+            <line x1="0" y1="0" x2="0" y2="-26" stroke="#DF4A7A" stroke-width="2.5"/>
+            <text x="-4" y="-30" fill="#DF4A7A" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="800">Y</text>
+            <line x1="0" y1="0" x2="-18" y2="18" stroke="#C084FC" stroke-width="2.5"/>
+            <text x="-26" y="26" fill="#C084FC" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="800">Z</text>
+          </g>
+        </g>
+
+        <!-- Dynamic Action Button inside 3D UI -->
+        <g transform="translate(10, 160)">
+          <rect x="0" y="0" width="160" height="38" rx="19" fill="#DF4A7A" stroke="#FF8EB4" stroke-width="1.5"/>
+          <text x="80" y="24" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1">CALIBRATE RAY</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= HERO 3D RENDERED OBJECTS (IN TRUE 3D PROJECTION) ================= -->
+
+    <!-- 1. Realistic Deep Ground Contact Shadow for Hero Sphere -->
+    <ellipse cx="280" cy="460" rx="100" ry="32" fill="#0A0210" opacity="0.9" filter="url(#spDropShadowBase)"/>
+
+    <!-- 2. Volumetric 3D Glossy Sphere -->
+    <g transform="translate(280, 360)">
+      <!-- Solid Sphere Body with Directional Radial Shading -->
+      <circle cx="0" cy="0" r="95" fill="url(#spSphere3D)"/>
+
+      <!-- Warm Fiery Orange Rim Light (Ground Light Bounce) -->
+      <circle cx="0" cy="0" r="95" fill="url(#spSphereRim)" mix-blend-mode="screen"/>
+
+      <!-- High-Gloss White Primary Specular Sheen (Off-center top-left) -->
+      <ellipse cx="-34" cy="-34" rx="38" ry="24" transform="rotate(-30, -34, -34)" fill="url(#spSpecularGlint)"/>
+      <circle cx="-38" cy="-38" r="8" fill="#FFFFFF" opacity="0.95"/>
+
+      <!-- Secondary Soft Curvature Glint -->
+      <path d="M -60, 15 A 85,85 0 0,0 20, 80" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+      <!-- 3D Coordinate Ring circling the sphere -->
+      <ellipse cx="0" cy="0" rx="135" ry="46" transform="rotate(-26)" fill="none" stroke="url(#spTorusGrad)" stroke-width="12" stroke-linecap="round" filter="url(#spDropShadowBase)"/>
+      <!-- Inner Specular edge on Torus -->
+      <ellipse cx="0" cy="0" rx="135" ry="46" transform="rotate(-26)" fill="none" stroke="#FFA86B" stroke-width="2" stroke-dasharray="140, 260" opacity="0.8"/>
+    </g>
+
+    <!-- 3. Floating 3D Faceted Octahedron / Gemstone (Z = 90mm) -->
+    <g transform="translate(480, 240)" filter="url(#spDropShadowElevated)">
+      <!-- Top Left Facet (Light key) -->
+      <polygon points="0,0 -40,50 0,65" fill="url(#spGemFacetTop)"/>
+      <!-- Top Right Facet -->
+      <polygon points="0,0 40,50 0,65" fill="url(#spGemFacetLeft)"/>
+      <!-- Bottom Left Facet -->
+      <polygon points="-40,50 0,115 0,65" fill="url(#spGemFacetRight)"/>
+      <!-- Bottom Right Facet (Deep Shadow) -->
+      <polygon points="40,50 0,115 0,65" fill="url(#spGemFacetBottom)"/>
+      <!-- Sharp Ridge Line Highlights -->
+      <line x1="0" y1="0" x2="0" y2="115" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8"/>
+      <line x1="-40" y1="50" x2="40" y2="50" stroke="#FFFFFF" stroke-width="1.2" opacity="0.6"/>
+      <!-- Specular Gleam on Top Vertex -->
+      <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="10" fill="#FF8EB4" opacity="0.5"/>
+    </g>
+
+    <!-- 4. Floating 3D Tactile Elevation Tag (Z = 90mm HUD) -->
+    <g transform="translate(180, 160)" filter="url(#spDropShadowElevated)">
+      <rect x="0" y="0" width="180" height="36" rx="18" fill="#1E0729" stroke="#FF7A3D" stroke-width="1.8"/>
+      <circle cx="18" cy="18" r="6" fill="#FF7A3D"/>
+      <circle cx="18" cy="18" r="10" fill="none" stroke="#FF7A3D" stroke-width="1" opacity="0.8"/>
+      <text x="36" y="23" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="11.5" font-weight="800">Z-ELEVATION: +90mm</text>
+      <!-- Connector dashed leader line to sphere -->
+      <line x1="90" y1="36" x2="90" y2="90" stroke="#FF7A3D" stroke-width="1.5" stroke-dasharray="4,4"/>
+      <circle cx="90" cy="92" r="4" fill="#FF7A3D"/>
+    </g>
+
+    <!-- 5. Depth Occlusion Callout (Bottom Right) -->
+    <g transform="translate(360, 560)">
+      <rect x="0" y="0" width="220" height="46" rx="12" fill="#240A33" stroke="#8A2EAD" stroke-width="1.5"/>
+      <circle cx="24" cy="23" r="8" fill="#DF4A7A"/>
+      <text x="44" y="20" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">DEPTH GRADIENT OK</text>
+      <text x="44" y="36" fill="#FFA86B" font-family="'Space Grotesk', monospace" font-size="11">PARALLAX ΔZ: 1.45x</text>
+    </g>
+
   </g>
 </svg>
-
