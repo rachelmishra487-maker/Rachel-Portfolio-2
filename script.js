@@ -190,15 +190,15 @@ const showToast = (message) => {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #392B45;
-      color: #F5F0F8;
-      border: 1.5px solid #A68BB8;
+      background: #30232D;
+      color: #FFF2DE;
+      border: 2px solid #FF633E;
       padding: 12px 22px;
       border-radius: 999px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Archivo Black', sans-serif;
       font-size: 0.88rem;
-      font-weight: 700;
-      box-shadow: 0 10px 30px rgba(33, 26, 39, 0.35);
+      font-weight: 900;
+      box-shadow: 4px 4px 0 #FF633E;
       z-index: 10000;
       opacity: 0;
       transform: translateY(14px);
@@ -380,8 +380,8 @@ const initTokenSandbox = () => {
   if (!demoCard || !demoBtn) return;
 
   let currentState = 'default';
-  let currentColor = '#392B45';
-  let currentTokenName = '$color-plum-primary';
+  let currentColor = '#FF633E';
+  let currentTokenName = '$color-pop-orange';
   let currentPadding = '14px 28px';
 
   const updateSandbox = () => {
@@ -450,10 +450,10 @@ const initTokenSandbox = () => {
   --btn-token: ${currentTokenName};
   padding: ${currentPadding};
   border-radius: 999px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 16px ${currentColor}55;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 900;
+  border: 2px solid #30232D;
+  box-shadow: 4px 4px 0 #30232D;
   /* Active Variant State: ${currentState} */
 }
 
@@ -647,7 +647,7 @@ if ('IntersectionObserver' in window && revealElements.length) {
 // 15. Playful Click Sparkle Particle Burst
 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   document.addEventListener('click', (e) => {
-    const colors = ['#A68BB8', '#D9C9E3', '#FF4F64', '#FF9F38'];
+    const colors = ['#FF633E', '#FF4F87', '#FFD43B', '#A7C957'];
     for (let i = 0; i < 4; i++) {
       const sparkle = document.createElement('div');
       sparkle.className = 'cursor-sparkle';
