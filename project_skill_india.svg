@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" width="1280" height="820">
+  <defs>
+    <linearGradient id="sidBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1C32"/>
+      <stop offset="60%" stop-color="#38243E"/>
+      <stop offset="100%" stop-color="#211425"/>
+    </linearGradient>
+    <linearGradient id="sidCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FAF5EE"/>
+    </linearGradient>
+    <linearGradient id="sidAccentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E97845"/>
+      <stop offset="100%" stop-color="#D85C85"/>
+    </linearGradient>
+    <filter id="sidSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#140B17" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="820" fill="url(#sidBgGrad)"/>
+
+  <!-- Subtle Editorial Grid -->
+  <g opacity="0.06">
+    <line x1="0" y1="80" x2="1280" y2="80" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1280" y2="200" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1280" y2="400" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1280" y2="600" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="820" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="820" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="820" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="880" y1="0" x2="880" y2="820" stroke="#F8F3EA" stroke-width="1"/>
+    <line x1="1080" y1="0" x2="1080" y2="820" stroke="#F8F3EA" stroke-width="1"/>
+  </g>
+
+  <!-- Left Editorial Context Column -->
+  <g transform="translate(70, 90)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="230" height="30" rx="15" fill="#4B3152" stroke="#684771" stroke-width="1"/>
+    <circle cx="15" cy="15" r="4" fill="#E97845"/>
+    <text x="28" y="19" fill="#F7E9E9" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1">PUBLIC SECTOR · PORTAL REDESIGN</text>
+
+    <!-- Main Title -->
+    <text x="0" y="75" fill="#F8F3EA" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="34" font-weight="700">Skill India Digital</text>
+    <text x="0" y="112" fill="#EFC3A9" font-family="'Cormorant Garamond', Georgia, serif" font-size="21" font-style="italic">Reimagining vocational discovery &amp; apprentice pathways</text>
+
+    <!-- Description -->
+    <text x="0" y="155" fill="#D3C1D8" font-family="'DM Sans', -apple-system, sans-serif" font-size="13" line-height="1.6">
+      <tspan x="0" dy="0">A systematic redesign of India’s national vocational skilling ecosystem.</tspan>
+      <tspan x="0" dy="22">Replaces complex bureaucratic taxonomies with intuitive, goal-based</tspan>
+      <tspan x="0" dy="22">career discovery, NSQF level mapping, and vernacular accessibility.</tspan>
+    </text>
+
+    <!-- 3 Key UX Interventions -->
+    <g transform="translate(0, 240)">
+      <!-- Intervention 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="310" height="74" rx="10" fill="#2E1C33" stroke="#4F3557" stroke-width="1"/>
+        <text x="20" y="30" fill="#F8F3EA" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Goal-Based Career Pathways</text>
+        <text x="20" y="52" fill="#BAA4C0" font-family="'DM Sans', sans-serif" font-size="11">Transition from trade codes to wage &amp; role clarity</text>
+      </g>
+
+      <!-- Intervention 2 -->
+      <g transform="translate(0, 92)">
+        <rect x="0" y="0" width="310" height="74" rx="10" fill="#2E1C33" stroke="#4F3557" stroke-width="1"/>
+        <text x="20" y="30" fill="#F8F3EA" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Multilingual Search &amp; Speech Input</text>
+        <text x="20" y="52" fill="#BAA4C0" font-family="'DM Sans', sans-serif" font-size="11">Zero-friction course discovery across regional dialects</text>
+      </g>
+
+      <!-- Intervention 3 -->
+      <g transform="translate(0, 184)">
+        <rect x="0" y="0" width="310" height="74" rx="10" fill="#2E1C33" stroke="#4F3557" stroke-width="1"/>
+        <text x="20" y="30" fill="#F8F3EA" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">Apprenticeship Verification HUD</text>
+        <text x="20" y="52" fill="#BAA4C0" font-family="'DM Sans', sans-serif" font-size="11">Real-time stipend transparency &amp; on-the-job milestones</text>
+      </g>
+    </g>
+
+    <!-- Metas -->
+    <g transform="translate(0, 545)">
+      <text x="0" y="0" fill="#8E7196" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" letter-spacing="1">PROJECT SCOPE</text>
+      <text x="0" y="20" fill="#F8F3EA" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600">Information Architecture · Design Tokens · Web Portal</text>
+    </g>
+  </g>
+
+  <!-- Right: Sophisticated Browser Viewport Mockup -->
+  <g transform="translate(440, 70)" filter="url(#sidSoftShadow)">
+    <rect x="0" y="0" width="770" height="680" rx="14" fill="#F8F3EA" stroke="#684771" stroke-width="1.5"/>
+
+    <!-- Browser Window Bar -->
+    <rect x="0" y="0" width="770" height="46" rx="14" fill="#38243E"/>
+    <rect x="0" y="28" width="770" height="18" fill="#38243E"/>
+    <circle cx="26" cy="23" r="5" fill="#E97845"/>
+    <circle cx="44" cy="23" r="5" fill="#EFC3A9"/>
+    <circle cx="62" cy="23" r="5" fill="#76518E"/>
+    <rect x="180" y="11" width="410" height="24" rx="12" fill="#25162A"/>
+    <text x="385" y="27" fill="#BAA4C0" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">skillindiadigital.gov.in/discover/pathways/green-energy</text>
+
+    <!-- Portal Navigation Bar -->
+    <g transform="translate(30, 66)">
+      <text x="0" y="22" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">SKILL INDIA</text>
+      <text x="110" y="22" fill="#D85C85" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">DIGITAL 2.0</text>
+
+      <!-- Nav Links -->
+      <text x="280" y="21" fill="#38243E" font-family="'DM Sans', sans-serif" font-size="12" font-weight="700">Explore Courses</text>
+      <text x="390" y="21" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12" font-weight="500">Apprenticeships</text>
+      <text x="495" y="21" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12" font-weight="500">Skill Centers</text>
+      <text x="585" y="21" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12" font-weight="500">Verify Certificate</text>
+
+      <rect x="665" y="4" width="45" height="24" rx="12" fill="#F7E9E9" stroke="#EFC3A9" stroke-width="1"/>
+      <text x="687" y="20" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">HI / EN</text>
+    </g>
+
+    <line x1="0" y1="110" x2="770" y2="110" stroke="#E7DDD0" stroke-width="1"/>
+
+    <!-- Hero Skilling Search Strip -->
+    <g transform="translate(30, 130)">
+      <text x="0" y="22" fill="#38243E" font-family="'Cormorant Garamond', Georgia, serif" font-size="26" font-style="italic">Find job-ready vocational training near you</text>
+      <text x="0" y="46" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12">14,200+ Government-certified programs with guaranteed apprentice linkage</text>
+
+      <!-- Search Input Box -->
+      <g transform="translate(0, 64)">
+        <rect x="0" y="0" width="710" height="52" rx="10" fill="#FFFFFF" stroke="#D3C1D8" stroke-width="1"/>
+        <text x="20" y="32" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="13">Search skill (e.g., Solar Technician, CNC Machinist, Drone Pilot)...</text>
+        <rect x="580" y="8" width="120" height="36" rx="8" fill="url(#sidAccentGrad)"/>
+        <text x="640" y="31" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Find Course →</text>
+      </g>
+    </g>
+
+    <!-- Filters Strip -->
+    <g transform="translate(30, 275)">
+      <rect x="0" y="0" width="115" height="28" rx="14" fill="#38243E"/>
+      <text x="57" y="18" fill="#F8F3EA" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">All Disciplines</text>
+
+      <rect x="125" y="0" width="125" height="28" rx="14" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+      <text x="187" y="18" fill="#38243E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Solar &amp; Clean Tech</text>
+
+      <rect x="260" y="0" width="130" height="28" rx="14" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+      <text x="325" y="18" fill="#38243E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Precision Machining</text>
+
+      <rect x="400" y="0" width="120" height="28" rx="14" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+      <text x="460" y="18" fill="#38243E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Healthcare Tech</text>
+
+      <rect x="530" y="0" width="110" height="28" rx="14" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+      <text x="585" y="18" fill="#38243E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" text-anchor="middle">Apparel Craft</text>
+    </g>
+
+    <!-- Course Cards Grid (2 Column Cards) -->
+    <g transform="translate(30, 325)">
+      <!-- Card 1: Solar PV Installer -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="345" height="295" rx="12" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+        <rect x="0" y="0" width="345" height="8" rx="4" fill="#E97845"/>
+
+        <g transform="translate(20, 24)">
+          <!-- Pill -->
+          <rect x="0" y="0" width="85" height="22" rx="11" fill="#F7E9E9"/>
+          <text x="42" y="15" fill="#D85C85" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">NSQF LEVEL 4</text>
+
+          <text x="95" y="15" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500">6 Months · Hybrid</text>
+
+          <text x="0" y="52" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Solar PV Technical Specialist</text>
+          <text x="0" y="74" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12">National Institute of Solar Energy (NISE)</text>
+
+          <line x1="0" y1="92" x2="305" y2="92" stroke="#F0E8DC" stroke-width="1"/>
+
+          <!-- Stats -->
+          <g transform="translate(0, 110)">
+            <text x="0" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">STIPEND</text>
+            <text x="0" y="18" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">₹14,500 / mo</text>
+
+            <text x="150" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">PLACEMENT RATE</text>
+            <text x="150" y="18" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">89% Verified</text>
+          </g>
+
+          <g transform="translate(0, 160)">
+            <text x="0" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">NEAREST CENTER</text>
+            <text x="0" y="18" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="11">Nagpur Central Skill Hub (3.2 km)</text>
+          </g>
+
+          <rect x="0" y="200" width="305" height="38" rx="8" fill="#38243E"/>
+          <text x="152" y="224" fill="#F8F3EA" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" text-anchor="middle">View Curriculum &amp; Apply →</text>
+        </g>
+      </g>
+
+      <!-- Card 2: Precision CNC Operator -->
+      <g transform="translate(365, 0)">
+        <rect x="0" y="0" width="345" height="295" rx="12" fill="#FFFFFF" stroke="#E0D3C5" stroke-width="1"/>
+        <rect x="0" y="0" width="345" height="8" rx="4" fill="#76518E"/>
+
+        <g transform="translate(20, 24)">
+          <rect x="0" y="0" width="85" height="22" rx="11" fill="#F7E9E9"/>
+          <text x="42" y="15" fill="#76518E" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">NSQF LEVEL 5</text>
+
+          <text x="95" y="15" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500">1 Year · Industry Co-op</text>
+
+          <text x="0" y="52" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700">Precision CNC Machine Operator</text>
+          <text x="0" y="74" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="12">Advanced Training Institute (ATI) Hub</text>
+
+          <line x1="0" y1="92" x2="305" y2="92" stroke="#F0E8DC" stroke-width="1"/>
+
+          <!-- Stats -->
+          <g transform="translate(0, 110)">
+            <text x="0" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">STIPEND</text>
+            <text x="0" y="18" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">₹18,200 / mo</text>
+
+            <text x="150" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">PLACEMENT RATE</text>
+            <text x="150" y="18" fill="#38243E" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">94% Verified</text>
+          </g>
+
+          <g transform="translate(0, 160)">
+            <text x="0" y="0" fill="#856E8A" font-family="'DM Sans', sans-serif" font-size="10" font-weight="600">NEAREST CENTER</text>
+            <text x="0" y="18" fill="#76518E" font-family="'DM Sans', sans-serif" font-size="11">MIDC Industrial Training Center (5.1 km)</text>
+          </g>
+
+          <rect x="0" y="200" width="305" height="38" rx="8" fill="#38243E"/>
+          <text x="152" y="224" fill="#F8F3EA" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" text-anchor="middle">View Curriculum &amp; Apply →</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

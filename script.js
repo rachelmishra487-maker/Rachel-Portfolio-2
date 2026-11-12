@@ -190,15 +190,15 @@ const showToast = (message) => {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #30232D;
-      color: #FFF2DE;
-      border: 2px solid #FF633E;
-      padding: 12px 22px;
+      background: #38243E;
+      color: #F8F3EA;
+      border: 1px solid #E97845;
+      padding: 12px 24px;
       border-radius: 999px;
-      font-family: 'Archivo Black', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       font-size: 0.88rem;
-      font-weight: 900;
-      box-shadow: 4px 4px 0 #FF633E;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(56, 36, 62, 0.25);
       z-index: 10000;
       opacity: 0;
       transform: translateY(14px);
@@ -380,8 +380,8 @@ const initTokenSandbox = () => {
   if (!demoCard || !demoBtn) return;
 
   let currentState = 'default';
-  let currentColor = '#FF633E';
-  let currentTokenName = '$color-pop-orange';
+  let currentColor = '#E97845';
+  let currentTokenName = '$color-burnt-orange';
   let currentPadding = '14px 28px';
 
   const updateSandbox = () => {
@@ -404,7 +404,7 @@ const initTokenSandbox = () => {
       demoBtn.style.cursor = 'pointer';
       if (demoStateBadge) demoStateBadge.textContent = 'STATE: ACTIVE';
       if (demoBtnLabel) demoBtnLabel.textContent = 'Pressed (Active)';
-      if (demoBtnIcon) demoBtnIcon.textContent = '✦';
+      if (demoBtnIcon) demoBtnIcon.textContent = '✓';
       if (demoBtnArrow) demoBtnArrow.textContent = '✓';
     } else if (currentState === 'loading') {
       demoBtn.style.opacity = '0.78';
@@ -431,7 +431,7 @@ const initTokenSandbox = () => {
       demoBtn.style.cursor = 'pointer';
       if (demoStateBadge) demoStateBadge.textContent = 'STATE: DEFAULT';
       if (demoBtnLabel) demoBtnLabel.textContent = 'Explore Prototype';
-      if (demoBtnIcon) demoBtnIcon.textContent = '★';
+      if (demoBtnIcon) demoBtnIcon.textContent = '→';
       if (demoBtnArrow) demoBtnArrow.textContent = '→';
     }
 
@@ -450,10 +450,10 @@ const initTokenSandbox = () => {
   --btn-token: ${currentTokenName};
   padding: ${currentPadding};
   border-radius: 999px;
-  font-family: 'Archivo Black', sans-serif;
-  font-weight: 900;
-  border: 2px solid #30232D;
-  box-shadow: 4px 4px 0 #30232D;
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(56, 36, 62, 0.12);
   /* Active Variant State: ${currentState} */
 }
 
@@ -644,27 +644,8 @@ if ('IntersectionObserver' in window && revealElements.length) {
   });
 }
 
-// 15. Playful Click Sparkle Particle Burst
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  document.addEventListener('click', (e) => {
-    const colors = ['#FF633E', '#FF4F87', '#FFD43B', '#A7C957'];
-    for (let i = 0; i < 4; i++) {
-      const sparkle = document.createElement('div');
-      sparkle.className = 'cursor-sparkle';
-      const angle = (Math.PI * 2 / 4) * i + (Math.random() * 0.4);
-      const dist = 18 + Math.random() * 16;
-      sparkle.style.left = `${e.clientX}px`;
-      sparkle.style.top = `${e.clientY}px`;
-      sparkle.style.setProperty('--dx', `${Math.cos(angle) * dist}px`);
-      sparkle.style.setProperty('--dy', `${Math.sin(angle) * dist}px`);
-      sparkle.style.background = colors[i % colors.length];
-      document.body.appendChild(sparkle);
-      setTimeout(() => {
-        if (sparkle.parentNode) sparkle.parentNode.removeChild(sparkle);
-      }, 550);
-    }
-  });
-}
+// 15. Accessible Restrained Interactions
+// (Particle bursts removed to preserve editorial studio focus)
 
 // 16. Smooth Offset Scroll for On-Page Anchor Links
 document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
