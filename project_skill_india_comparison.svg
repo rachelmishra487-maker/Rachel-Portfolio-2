@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 840" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <linearGradient id="siCompBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="45%" stop-color="#F5EFE8"/>
+      <stop offset="100%" stop-color="#EFE6DA"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filters -->
+    <filter id="siCompShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1F150D" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1300" height="840" fill="url(#siCompBg)"/>
+
+  <!-- Top Editorial Header & A/B Testing Credentials -->
+  <g transform="translate(60, 42)">
+    <rect width="280" height="28" rx="14" fill="#FFF2EC" stroke="#FF6B35" stroke-width="1.2"/>
+    <circle cx="16" cy="14" r="5" fill="#FF6B35"/>
+    <text x="28" y="18" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FF6B35" letter-spacing="1">EVIDENCE-BASED A/B REDESIGN</text>
+    
+    <text x="0" y="62" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" fill="#1C1814" letter-spacing="-0.5">Skill India Digital — Before vs. After Usability Study</text>
+    <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" fill="#6B625B">
+      Empirically validated redesign evaluated across 5 participants (students &amp; job seekers) measuring task completion, error frequency, and cognitive load.
+    </text>
+
+    <!-- Quantitative Comparison Banner Strip -->
+    <g transform="translate(0, 102)">
+      <rect width="1180" height="54" rx="14" fill="#1C1814"/>
+      
+      <g transform="translate(30, 16)">
+        <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#9CA3AF">TASK COMPLETION TIME</text>
+        <text x="0" y="32" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#EF4444">4.4 min <tspan fill="#10B981">&rarr; 2.04 min (-54%)</tspan></text>
+      </g>
+
+      <g transform="translate(320, 16)">
+        <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#9CA3AF">TASK SUCCESS RATE</text>
+        <text x="0" y="32" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#EF4444">60% <tspan fill="#10B981">&rarr; 100% (+40%)</tspan></text>
+      </g>
+
+      <g transform="translate(610, 16)">
+        <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#9CA3AF">USER ENROLLMENT DROP-OFF</text>
+        <text x="0" y="32" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#EF4444">40% <tspan fill="#10B981">&rarr; 0% (Zero Drop)</tspan></text>
+      </g>
+
+      <g transform="translate(930, 16)">
+        <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#9CA3AF">VALIDATION METHOD</text>
+        <text x="0" y="32" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#FF6B35">UCD Testing · 5 Users</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Side-by-Side Comparison Workspace -->
+  <g transform="translate(60, 226)">
+    
+    <!-- ================= LEFT: VERSION A (BEFORE / LEGACY PORTAL) ================= -->
+    <g transform="translate(0, 0)" filter="url(#siCompShadow)">
+      <rect width="570" height="570" rx="16" fill="#F4F0E8" stroke="#D8CEBF" stroke-width="1.5"/>
+
+      <!-- Window Top Header -->
+      <path d="M 0,16 Q 0,0 16,0 L 554,0 Q 570,0 570,16 L 570,44 L 0,44 Z" fill="#3D342A"/>
+      <circle cx="22" cy="22" r="5" fill="#EF4444"/>
+      <circle cx="38" cy="22" r="5" fill="#F59E0B"/>
+      <circle cx="54" cy="22" r="5" fill="#10B981"/>
+      <text x="285" y="27" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#E5DFD5" text-anchor="middle">
+        VERSION A · LEGACY GOVERNMENT PORTAL (BEFORE)
+      </text>
+
+      <!-- Sub-header Problem Badge -->
+      <g transform="translate(20, 58)">
+        <rect width="150" height="24" rx="12" fill="#FEE2E2" stroke="#FCA5A5" stroke-width="1"/>
+        <text x="75" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="800" fill="#991B1B" text-anchor="middle">4.4 MIN TASK TIME (HIGH ERRORS)</text>
+      </g>
+
+      <!-- Legacy UI Mockup Content -->
+      <g transform="translate(20, 94)">
+        <!-- Cluttered Nav -->
+        <rect width="530" height="36" fill="#1E3A8A"/>
+        <text x="16" y="23" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">Skill India Digital (Govt of India)</text>
+        <text x="260" y="23" font-family="sans-serif" font-size="10" fill="#BFDBFE">Schemes | Notices | Tenders | FAQ | NSQF</text>
+        
+        <!-- Big Cluttered Banner -->
+        <rect y="44" width="530" height="70" fill="#E2E8F0"/>
+        <text x="265" y="84" font-family="sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Banner Carousel: National Skill Development Mission 2024</text>
+        <circle cx="250" cy="104" r="3" fill="#64748B"/>
+        <circle cx="265" cy="104" r="3" fill="#CBD5E1"/>
+        <circle cx="280" cy="104" r="3" fill="#CBD5E1"/>
+
+        <!-- Buried Search -->
+        <rect y="122" width="530" height="34" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="14" y="144" font-family="sans-serif" font-size="11" fill="#94A3B8">Search for course ID, qualification pack or scheme number...</text>
+
+        <!-- Confusing Multi-column Grid -->
+        <g transform="translate(0, 164)">
+          <!-- Card 1 -->
+          <rect width="255" height="110" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="12" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0F172A">QP-ELE-4201: Solar PV</text>
+          <text x="12" y="42" font-family="sans-serif" font-size="10" fill="#64748B">Sector Skill Council: Electronics</text>
+          <text x="12" y="58" font-family="sans-serif" font-size="10" fill="#64748B">NSQF Level: Unspecified</text>
+          <text x="12" y="74" font-family="sans-serif" font-size="10" fill="#DC2626">Stipend: Contact Center for Details</text>
+          <rect x="12" y="82" width="100" height="20" fill="#0F172A"/>
+          <text x="62" y="96" font-family="sans-serif" font-size="9" fill="#FFFFFF" text-anchor="middle">Apply (Step 1/6)</text>
+
+          <!-- Card 2 -->
+          <rect x="275" width="255" height="110" fill="#FFFFFF" stroke="#CBD5E1"/>
+          <text x="287" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0F172A">QP-AUT-1022: CNC Machining</text>
+          <text x="287" y="42" font-family="sans-serif" font-size="10" fill="#64748B">Automotive Skills Development</text>
+          <text x="287" y="58" font-family="sans-serif" font-size="10" fill="#64748B">Center: Okhla Phase 3 (Delhi)</text>
+          <text x="287" y="74" font-family="sans-serif" font-size="10" fill="#DC2626">Hostel: Unavailable</text>
+          <rect x="287" y="82" width="100" height="20" fill="#0F172A"/>
+          <text x="337" y="96" font-family="sans-serif" font-size="9" fill="#FFFFFF" text-anchor="middle">Apply (Step 1/6)</text>
+        </g>
+
+        <!-- Usability Friction Callout Annotations -->
+        <g transform="translate(0, 290)">
+          <rect width="530" height="160" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+          <text x="16" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" fill="#991B1B">CRITICAL TESTER PAIN POINTS (VERSION A):</text>
+          <text x="16" y="50" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#7F1D1D">❌ Buried Search: Users struggled to locate vocational courses without knowing technical QP codes.</text>
+          <text x="16" y="74" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#7F1D1D">❌ Opaque Financials: Government DBT stipends and hostel fees were hidden behind phone inquiries.</text>
+          <text x="16" y="98" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#7F1D1D">❌ Enrollment Drop-off: 6-step multi-page form with zero mobile auto-fill caused 40% user abandonment.</text>
+          <text x="16" y="122" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#7F1D1D">❌ Jargon Overload: Non-English speaking candidates could not decipher NSQF accreditation tiers.</text>
+          <text x="16" y="144" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#DC2626">USER QUOTE: “I feel completely overwhelmed by the government acronyms and forms.”</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= RIGHT: VERSION B (AFTER / RACHEL'S UCD REDESIGN) ================= -->
+    <g transform="translate(610, 0)" filter="url(#siCompShadow)">
+      <rect width="570" height="570" rx="16" fill="#FFFFFF" stroke="#E2D4C3" stroke-width="1.5"/>
+
+      <!-- Window Top Header -->
+      <path d="M 0,16 Q 0,0 16,0 L 554,0 Q 570,0 570,16 L 570,44 L 0,44 Z" fill="#1C1814"/>
+      <circle cx="22" cy="22" r="5" fill="#EF4444"/>
+      <circle cx="38" cy="22" r="5" fill="#F59E0B"/>
+      <circle cx="68" cy="22" r="5" fill="#10B981"/>
+      <text x="285" y="27" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FF6B35" text-anchor="middle">
+        VERSION B · EVIDENCE-BASED REDESIGN (AFTER)
+      </text>
+
+      <!-- Sub-header Result Badge -->
+      <g transform="translate(20, 58)">
+        <rect width="180" height="24" rx="12" fill="#DEF7EC" stroke="#10B981" stroke-width="1"/>
+        <text x="90" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="800" fill="#03543F" text-anchor="middle">2.04 MIN TASK TIME · 100% SUCCESS</text>
+      </g>
+
+      <!-- Redesigned UI Mockup Content -->
+      <g transform="translate(20, 94)">
+        <!-- Clean Modern Nav -->
+        <rect width="530" height="40" rx="8" fill="#FAF8F5" stroke="#EAE5DF"/>
+        <circle cx="22" cy="20" r="12" fill="#FF6B35"/>
+        <text x="22" y="25" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">SI</text>
+        <text x="44" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" fill="#1C1814">Skill India Digital</text>
+
+        <!-- 12 Language Selector Pill -->
+        <rect x="360" y="8" width="85" height="24" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+        <text x="402" y="24" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#1E2937" text-anchor="middle">🇮🇳 हिंदी / EN</text>
+
+        <!-- DigiLocker Profile -->
+        <rect x="452" y="8" width="70" height="24" rx="12" fill="#10B981"/>
+        <text x="487" y="24" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">DigiLocker</text>
+
+        <!-- Search-First Hero -->
+        <g transform="translate(0, 48)">
+          <rect width="530" height="64" rx="10" fill="#FFF7ED" stroke="#FED7AA"/>
+          <text x="18" y="24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="800" fill="#9A3412">What vocational skill do you want to learn?</text>
+          
+          <!-- Search Bar -->
+          <rect x="18" y="32" width="494" height="26" rx="6" fill="#FFFFFF" stroke="#FDBA74"/>
+          <text x="32" y="49" font-family="'DM Sans', sans-serif" font-size="10" fill="#78350F">Search CNC operator, solar technician, healthcare aide, logistics...</text>
+          <rect x="445" y="34" width="62" height="22" rx="4" fill="#FF6B35"/>
+          <text x="476" y="49" font-family="'Space Grotesk', sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Find Course</text>
+        </g>
+
+        <!-- NSQF Certification Cards with Transparent Financials -->
+        <g transform="translate(0, 120)">
+          <!-- Redesigned Card 1 -->
+          <rect width="255" height="154" rx="10" fill="#FFFFFF" stroke="#E2D4C3" stroke-width="1.2"/>
+          <rect x="12" y="12" width="85" height="20" rx="10" fill="#ECFDF5"/>
+          <text x="54" y="26" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#047857" text-anchor="middle">NSQF LEVEL 4 ✓</text>
+          
+          <text x="12" y="48" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="800" fill="#1C1814">Solar PV Installation</text>
+          <text x="12" y="64" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#6B7280">National Institute of Solar Energy</text>
+
+          <rect x="12" y="74" width="231" height="34" rx="6" fill="#F8FAFC"/>
+          <text x="20" y="90" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D">STIPEND: ₹8,000 / month (Direct DBT)</text>
+          <text x="20" y="102" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#64748B">Placement: 88% hire rate · Free hostel</text>
+
+          <rect x="12" y="116" width="231" height="26" rx="13" fill="#FF6B35"/>
+          <text x="127" y="133" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Enroll in 1 Click &rarr;</text>
+
+          <!-- Redesigned Card 2 -->
+          <rect x="275" width="255" height="154" rx="10" fill="#FFFFFF" stroke="#E2D4C3" stroke-width="1.2"/>
+          <rect x="287" y="12" width="85" height="20" rx="10" fill="#ECFDF5"/>
+          <text x="329" y="26" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#047857" text-anchor="middle">NSQF LEVEL 5 ✓</text>
+          
+          <text x="287" y="48" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="800" fill="#1C1814">Precision CNC Machining</text>
+          <text x="287" y="64" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#6B7280">Indo-German Tool Room (IGTR)</text>
+
+          <rect x="287" y="74" width="231" height="34" rx="6" fill="#F8FAFC"/>
+          <text x="295" y="90" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D">STIPEND: ₹9,500 / month (Direct DBT)</text>
+          <text x="295" y="102" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#64748B">Partner: Tata Motors &amp; L&amp;T Auto</text>
+
+          <rect x="287" y="116" width="231" height="26" rx="13" fill="#1C1814"/>
+          <text x="402" y="133" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Enroll in 1 Click &rarr;</text>
+        </g>
+
+        <!-- Redesign Validation Success Callout -->
+        <g transform="translate(0, 290)">
+          <rect width="530" height="160" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+          <text x="16" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" fill="#065F46">VALIDATED UX OUTCOMES (VERSION B):</text>
+          <text x="16" y="50" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#047857">✅ Search-First Discovery: Immediate job-intent query box reduced initial cognitive search friction by 54%.</text>
+          <text x="16" y="74" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#047857">✅ Transparent DBT Stipends: Explicit stipend amount and verified hostel status boosted candidate enrollment trust.</text>
+          <text x="16" y="98" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#047857">✅ 1-Click DigiLocker Auth: Streamlined national credential fetch eliminated repetitive form entry (0% drop-off).</text>
+          <text x="16" y="122" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#047857">✅ Plain-Language Microcopy: Clear NSQF certification level badges removed jargon for first-generation learners.</text>
+          <text x="16" y="144" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#059669">TESTER FEEDBACK: “Everything I need to know about money and classes is right on the front card.”</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

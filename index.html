@@ -502,65 +502,148 @@
           </a>
         </div>
 
-        <!-- Real Showcase Container -->
-        <div class="project-showcase-box">
-          <div class="showcase-header">
-            <div class="showcase-header-left">
-              <div class="window-dots">
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
+        <!-- Hero Showcase Container: Dual-Surface Clinical Telemetry & Mobile Decompression -->
+        <div class="project-hero-showcase hc-hero-showcase">
+          <div class="gouni-hero-header-bar">
+            <span class="gouni-stage-pill">🏥 HEALTHCARE UX · DUAL-SURFACE SYSTEM</span>
+            <span class="gouni-stage-hint">Click any interface to inspect in high-resolution 🔍</span>
+          </div>
+
+          <div class="layered-stage-container hc-stage-composition">
+            <!-- Desktop Frame: Hospital Burnout Telemetry -->
+            <div class="hc-desktop-mockup" data-screen-id="hc-dashboard" role="button" tabindex="0" aria-label="Inspect Hospital Burnout Telemetry Dashboard">
+              <div class="desktop-window-bar">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">https://healingcircle.hospital.org/admin/telemetry/icu-burnout-prevention?ward=pediatrics</span>
               </div>
-              <span class="showcase-path">The Healing Circle / USDR Research Deck / Interactive Gallery</span>
+              <img src="project_healing_circle_dashboard.svg" alt="Clinical Staff Cognitive Load &amp; Burnout Telemetry Dashboard" loading="lazy">
+              <span class="device-hover-badge">Hospital ICU Telemetry · Click to Inspect 🔍</span>
             </div>
-            <div class="showcase-tabs">
-              <button class="screen-tab hc-tab active" data-screen="concept" type="button">1. Concept &amp; Ecosystem</button>
-              <button class="screen-tab hc-tab" data-screen="interviews" type="button">2. Doctor Field Research</button>
-              <button class="screen-tab hc-tab" data-screen="rituals" type="button">3. Debrief Sanctuary &amp; Rituals</button>
-              <button class="screen-tab hc-tab" data-screen="flow" type="button">4. 5-Stage Journey Flow</button>
+
+            <!-- Overlapping Mobile Frame: Doctor Clinical Shift Decompression -->
+            <div class="hc-mobile-mockup" data-screen-id="hc-mobile" role="button" tabindex="0" aria-label="Inspect Doctor Clinical Shift Decompression App">
+              <img src="project_healing_circle_mobile.svg" alt="Doctor Clinical Shift Decompression Mobile App" loading="lazy">
+              <span class="device-hover-badge">Doctor Decompression App · Click to Inspect 🔍</span>
             </div>
           </div>
 
-          <div class="showcase-viewport">
-            <img src="project_healing_circle_concept.svg" alt="The Healing Circle Concept Architecture" class="showcase-main-img" id="hcMainScreen" loading="lazy">
+          <div class="gouni-hero-footer-bar">
+            <span class="gouni-footer-spec">DUAL-SURFACE CLINICAL SYSTEM</span>
+            <span class="gouni-footer-spec">Hospital ICU Telemetry (1200×800) + Doctor Clinical Companion (iPhone 16 Pro)</span>
           </div>
+        </div>
 
-          <div class="showcase-caption">
-            <p class="showcase-caption-text" id="hcScreenCaption">
-              <strong>Real Academic Artifact:</strong> Concentric Healing Circle architecture separating the inner physical recovery sanctuary (Debrief zones, micro-rituals, peer circles) from the outer organizational layer.
+        <!-- Inside The Healing Circle Screen Gallery -->
+        <div class="inside-project-section inside-hc-section">
+          <div class="inside-gouni-header">
+            <div class="inside-eyebrow-row">
+              <span class="inside-pill">CLINICAL SYSTEM SUITE</span>
+              <span class="gouni-stage-hint">6 Interactive Screens &amp; Blueprints · Click to Inspect</span>
+            </div>
+            <h4 class="inside-gouni-title">Inside The Healing Circle</h4>
+            <p class="inside-gouni-subtitle">
+              Explore the complete clinical well-being ecosystem—from live ICU cognitive load telemetry and restorative debrief sanctuaries to primary clinician interviews and five-stage touchpoint mapping.
             </p>
-            <span class="provenance-pill">✔ Sem 5 USDR Assignment</span>
           </div>
 
-          <div class="showcase-thumbs">
-            <button class="showcase-thumb-btn hc-thumb active" data-screen="concept" type="button">
-              <img src="project_healing_circle_concept.svg" alt="Concept Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 1: Concept Diagram</h4>
-                <p>Inner restorative sanctuary</p>
+          <div class="inside-screens-grid">
+            <!-- Screen 1: Mobile Decompression -->
+            <div class="inside-screen-card" data-screen-id="hc-mobile" role="button" tabindex="0" aria-label="Inspect Mobile Decompression App">
+              <div class="inside-card-preview">
+                <img src="project_healing_circle_mobile.svg" alt="Clinical Shift Decompression Mobile App" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
               </div>
-            </button>
-            <button class="showcase-thumb-btn hc-thumb" data-screen="interviews" type="button">
-              <img src="project_healing_circle_interviews.svg" alt="Interviews Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 2: Doctor Interviews</h4>
-                <p>Pediatrics, Gastro, Forensic</p>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 01</span>
+                  <span class="inside-tag">Mobile UX</span>
+                </div>
+                <h5>Shift Decompression &amp; Rituals</h5>
+                <p>Tactile doctor companion featuring 1-min vagus nerve breathing reset, soundscape debriefing, and Sanctuary Pod bookings.</p>
               </div>
-            </button>
-            <button class="showcase-thumb-btn hc-thumb" data-screen="rituals" type="button">
-              <img src="project_healing_circle_rituals.svg" alt="Rituals Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 3: Debrief &amp; Rituals</h4>
-                <p>4 reset moments for trauma</p>
+            </div>
+
+            <!-- Screen 2: ICU Burnout Telemetry -->
+            <div class="inside-screen-card" data-screen-id="hc-dashboard" role="button" tabindex="0" aria-label="Inspect Hospital Burnout Telemetry Dashboard">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_healing_circle_dashboard.svg" alt="Clinical Staff Cognitive Load &amp; Burnout Telemetry Dashboard" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
               </div>
-            </button>
-            <button class="showcase-thumb-btn hc-thumb" data-screen="flow" type="button">
-              <img src="project_healing_circle_flow.svg" alt="Flow Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 4: 5-Stage Journey</h4>
-                <p>Trauma to shift recalibration</p>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 02</span>
+                  <span class="inside-tag">Telemetry OS</span>
+                </div>
+                <h5>ICU Burnout Telemetry Dashboard</h5>
+                <p>Real-time clinical saturation monitoring for department heads tracking Code Blue stress spikes and debrief compliance.</p>
               </div>
-            </button>
+            </div>
+
+            <!-- Screen 3: Debrief Sanctuary & Micro-Rituals -->
+            <div class="inside-screen-card" data-screen-id="hc-rituals" role="button" tabindex="0" aria-label="Inspect Sanctuary & Micro-Rituals Blueprint">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_healing_circle_rituals.svg" alt="Physical Debrief Sanctuary &amp; 4 Clinical Micro-Rituals" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 03</span>
+                  <span class="inside-tag">Spatial UX</span>
+                </div>
+                <h5>Debrief Sanctuary &amp; Micro-Rituals</h5>
+                <p>Sound-dampened restorative rooms featuring 2700K circadian lighting, tactile weighted grounding stones, and peer reflection.</p>
+              </div>
+            </div>
+
+            <!-- Screen 4: Doctor Qualitative Interviews -->
+            <div class="inside-screen-card" data-screen-id="hc-interviews" role="button" tabindex="0" aria-label="Inspect Doctor Qualitative Research">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_healing_circle_interviews.svg" alt="Primary Doctor Interviews &amp; Personas" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 04</span>
+                  <span class="inside-tag">User Research</span>
+                </div>
+                <h5>Doctor Qualitative Field Studies</h5>
+                <p>Contextual research with specialist physicians across Pediatrics, Gastroenterology, and Forensic Medicine mapping empathy fatigue.</p>
+              </div>
+            </div>
+
+            <!-- Screen 5: Concentric Ecosystem Blueprint -->
+            <div class="inside-screen-card" data-screen-id="hc-concept" role="button" tabindex="0" aria-label="Inspect Concentric Architecture">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_healing_circle_concept.svg" alt="Concentric Well-being Ecosystem Architecture" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 05</span>
+                  <span class="inside-tag">Systems Design</span>
+                </div>
+                <h5>Concentric Well-being Ecosystem</h5>
+                <p>Architectural model protecting inner physical recovery zones from organizational and digital burdens.</p>
+              </div>
+            </div>
+
+            <!-- Screen 6: 5-Stage Touchpoint Flow -->
+            <div class="inside-screen-card" data-screen-id="hc-flow" role="button" tabindex="0" aria-label="Inspect Touchpoint Flow">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_healing_circle_flow.svg" alt="5-Stage Clinical Recovery Flow" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 06</span>
+                  <span class="inside-tag">Journey Mapping</span>
+                </div>
+                <h5>5-Stage Clinical Recovery Flow</h5>
+                <p>End-to-end journey transforming acute trauma moments into restorative debrief pauses and shift workload recalibration.</p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -618,52 +701,126 @@
           </a>
         </div>
 
-        <!-- Real Showcase Container -->
-        <div class="project-showcase-box">
-          <div class="showcase-header">
-            <div class="showcase-header-left">
-              <div class="window-dots">
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
+        <!-- Hero Showcase Container: Multi-Device Operations & Verification Ecosystem -->
+        <div class="project-hero-showcase pb-hero-showcase">
+          <div class="gouni-hero-header-bar">
+            <span class="gouni-stage-pill">🐾 ANIMAL WELFARE PLATFORM · DUAL-SURFACE ECOSYSTEM</span>
+            <span class="gouni-stage-hint">Click any interface to inspect in high-resolution 🔍</span>
+          </div>
+
+          <div class="layered-stage-container pb-stage-composition">
+            <!-- Desktop Frame: Shelter Operations Workspace -->
+            <div class="pb-desktop-mockup" data-screen-id="pb-operations" role="button" tabindex="0" aria-label="Inspect Shelter Operations Workspace">
+              <div class="desktop-window-bar light-bar">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">https://pawbridge.org/app/workspace/admissions-triage</span>
               </div>
-              <span class="showcase-path">PawBridge / Final UEDP-5 / Desktop Platform &amp; Research</span>
+              <img src="project_pawbridge.png" alt="PawBridge Desktop Shelter Operations Dashboard" loading="lazy">
+              <span class="device-hover-badge">Shelter Operations OS · Click to Inspect 🔍</span>
             </div>
-            <div class="showcase-tabs">
-              <button class="screen-tab pb-tab active" data-screen="workspace" type="button">1. Desktop Operations Workspace</button>
-              <button class="screen-tab pb-tab" data-screen="research" type="button">2. Supporter Psychology &amp; Research</button>
+
+            <!-- Overlapping Mobile Frame: SOS Field Rescue App -->
+            <div class="pb-mobile-mockup" data-screen-id="pb-rescue" role="button" tabindex="0" aria-label="Inspect SOS Field Rescue App">
+              <img src="project_pawbridge_mobile.svg" alt="PawBridge Mobile SOS Field Rescue App" loading="lazy">
+              <span class="device-hover-badge">Field SOS Rescue · Click to Inspect 🔍</span>
+            </div>
+
+            <!-- Overlapping Audit Frame: AWBI NGO Verification Engine -->
+            <div class="pb-badge-mockup" data-screen-id="pb-verification" role="button" tabindex="0" aria-label="Inspect AWBI NGO Verification Dossier">
+              <img src="project_pawbridge_verification.svg" alt="PawBridge AWBI NGO Verification Dossier" loading="lazy">
+              <span class="device-hover-badge">AWBI Audit Engine · Click to Inspect 🔍</span>
             </div>
           </div>
 
-          <div class="showcase-viewport">
-            <img src="project_pawbridge.png" alt="PawBridge Desktop Shelter Operations Dashboard" class="showcase-main-img" id="pbMainScreen" loading="lazy">
+          <div class="gouni-hero-footer-bar">
+            <span class="gouni-footer-spec">DUAL-SIDED ECOSYSTEM</span>
+            <span class="gouni-footer-spec">High-Density Desktop (1440×1024) + Mobile Field Rescue + AWBI NGO Audit Engine</span>
           </div>
+        </div>
 
-          <div class="showcase-caption">
-            <p class="showcase-caption-text" id="pbScreenCaption">
-              <strong>Real Project Artifact:</strong> High-fidelity desktop operations workspace (1440×1024) featuring patient admission, live kennel capacity management, and medical case tracking.
+        <!-- Inside PawBridge Screen Gallery -->
+        <div class="inside-project-section inside-pb-section">
+          <div class="inside-gouni-header">
+            <div class="inside-eyebrow-row">
+              <span class="inside-pill">PLATFORM ARCHITECTURE</span>
+              <span class="gouni-stage-hint">4 Interactive Screens &amp; Systems · Click to Inspect</span>
+            </div>
+            <h4 class="inside-gouni-title">Inside PawBridge</h4>
+            <p class="inside-gouni-subtitle">
+              Explore the complete operational and verification ecosystem—from keyboard-first shelter intake and live kennel capacity management to field ambulance triage and donor trust research.
             </p>
-            <span class="provenance-pill">✔ Final UEDP-5 System</span>
           </div>
 
-          <div class="showcase-thumbs">
-            <button class="showcase-thumb-btn pb-thumb active" data-screen="workspace" type="button">
-              <img src="project_pawbridge.png" alt="Workspace Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 1: Operations Workspace</h4>
-                <p>1440×1024 triage &amp; live capacity</p>
+          <div class="inside-screens-grid">
+            <!-- Screen 1: Shelter Operations OS -->
+            <div class="inside-screen-card" data-screen-id="pb-operations" role="button" tabindex="0" aria-label="Inspect Operations Workspace">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_pawbridge.png" alt="PawBridge Desktop Shelter Operations Dashboard" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
               </div>
-            </button>
-            <button class="showcase-thumb-btn pb-thumb" data-screen="research" type="button">
-              <img src="project_pawbridge_presentation.png" alt="Research Thumbnail" class="showcase-thumb-img">
-              <div class="showcase-thumb-info">
-                <h4>Screen 2: Supporter Psychology</h4>
-                <p>Donor hesitation &amp; trust research</p>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 01</span>
+                  <span class="inside-tag">Operations OS</span>
+                </div>
+                <h5>Shelter Operations &amp; Intake Triage</h5>
+                <p>1440×1024 high-density workspace featuring keyboard-first triage shortcuts, live kennel capacity, and medical case tracking.</p>
               </div>
-            </button>
+            </div>
+
+            <!-- Screen 2: NGO Trust & Verification -->
+            <div class="inside-screen-card" data-screen-id="pb-verification" role="button" tabindex="0" aria-label="Inspect NGO Verification Engine">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_pawbridge_verification.svg" alt="PawBridge AWBI NGO Verification Dossier" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 02</span>
+                  <span class="inside-tag">Governance</span>
+                </div>
+                <h5>NGO Trust &amp; AWBI Audit Engine</h5>
+                <p>Ministry compliance dossier linking veterinary clinic bills, AWBI certifications, and 12A/80G tax receipt tracking.</p>
+              </div>
+            </div>
+
+            <!-- Screen 3: Field Ambulance SOS Rescue -->
+            <div class="inside-screen-card" data-screen-id="pb-rescue" role="button" tabindex="0" aria-label="Inspect Field Rescue App">
+              <div class="inside-card-preview">
+                <img src="project_pawbridge_mobile.svg" alt="PawBridge Mobile SOS Field Rescue App" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 03</span>
+                  <span class="inside-tag">Field Mobile</span>
+                </div>
+                <h5>SOS Field Rescue &amp; Trauma Triage</h5>
+                <p>Critical field ambulance application featuring live radar GPS beacon tracking, severe trauma scoring, and instant dispatch.</p>
+              </div>
+            </div>
+
+            <!-- Screen 4: Supporter Psychology & Trust -->
+            <div class="inside-screen-card" data-screen-id="pb-psychology" role="button" tabindex="0" aria-label="Inspect Supporter Research">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_pawbridge_presentation.png" alt="PawBridge Supporter Psychology &amp; Research" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 04</span>
+                  <span class="inside-tag">UX Research</span>
+                </div>
+                <h5>Supporter Psychology &amp; Trust Study</h5>
+                <p>Empirical user research analyzing donor hesitation barriers and the psychological progression from discovery to verifiable support.</p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
+
       <!-- PROJECT 04: SKILL INDIA DIGITAL REDESIGN -->
       <article class="project-editorial-card" id="project-skill-india">
         <div class="project-card-top">
@@ -715,31 +872,103 @@
           </a>
         </div>
 
-        <!-- Real Showcase Container -->
-        <div class="project-showcase-box">
-          <div class="showcase-header">
-            <div class="showcase-header-left">
-              <div class="window-dots">
-                <span class="dot-1"></span>
-                <span class="dot-2"></span>
-                <span class="dot-3"></span>
-              </div>
-              <span class="showcase-path">Skill India Digital / Redesign / National Vocational Portal</span>
-            </div>
-            <div class="showcase-tabs">
-              <button class="screen-tab active" type="button">1. National Discovery Portal Interface</button>
+        <!-- Hero Showcase Container: Evidence-Based A/B Testing & Usability Benchmark -->
+        <div class="project-hero-showcase si-hero-showcase">
+          <div class="gouni-hero-header-bar">
+            <span class="gouni-stage-pill">⚡ PUBLIC SYSTEMS REDESIGN · EVIDENCE-BASED A/B TESTING</span>
+            <span class="gouni-stage-hint">Click comparison to inspect in high-resolution 🔍</span>
+          </div>
+
+          <div class="layered-stage-container si-stage-composition">
+            <div class="si-comparison-mockup" data-screen-id="si-comparison" role="button" tabindex="0" aria-label="Inspect Skill India Digital A/B Usability Benchmark Study">
+              <img src="project_skill_india_comparison.svg" alt="Skill India Digital Before vs After A/B Usability Benchmark Study" loading="lazy">
+              <span class="device-hover-badge">Empirical A/B Usability Benchmark · Click to Inspect 🔍</span>
             </div>
           </div>
 
-          <div class="showcase-viewport">
-            <img src="project_skill_india.svg" alt="Skill India Digital Redesigned National Vocational Portal Interface" class="showcase-main-img" loading="lazy">
+          <div class="gouni-hero-footer-bar">
+            <span class="gouni-footer-spec">EMPIRICALLY TESTED WITH 5 USERS</span>
+            <span class="gouni-footer-spec">Task Time: 4.4m &rarr; 2.04m (-54%) · Success: 60% &rarr; 100% · Drop-off: 40% &rarr; 0%</span>
           </div>
+        </div>
 
-          <div class="showcase-caption">
-            <p class="showcase-caption-text">
-              <strong>Redesigned System Artifact:</strong> Task-based discovery portal featuring NSQF Level 4/5 certification filters, transparent government stipend disclosures, verified apprenticeship tracking, and 12-language accessibility.
+        <!-- Inside Skill India Digital Screen Gallery -->
+        <div class="inside-project-section inside-si-section">
+          <div class="inside-gouni-header">
+            <div class="inside-eyebrow-row">
+              <span class="inside-pill">NATIONAL SYSTEMS SUITE</span>
+              <span class="gouni-stage-hint">4 Interactive Screens &amp; Benchmarks · Click to Inspect</span>
+            </div>
+            <h4 class="inside-gouni-title">Inside Skill India Digital</h4>
+            <p class="inside-gouni-subtitle">
+              Explore the evidence-driven redesign transforming vocational skill discovery: search-first architectures, transparent ₹8,000/mo DBT stipends, and 1-click DigiLocker enrollment.
             </p>
-            <span class="provenance-pill">✔ National Portal Redesign</span>
+          </div>
+
+          <div class="inside-screens-grid">
+            <!-- Screen 1: A/B Testing Usability Study -->
+            <div class="inside-screen-card" data-screen-id="si-comparison" role="button" tabindex="0" aria-label="Inspect A/B Usability Study">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_skill_india_comparison.svg" alt="Skill India Digital A/B Usability Benchmark Study" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 01</span>
+                  <span class="inside-tag">Usability Study</span>
+                </div>
+                <h5>A/B Usability Benchmark Study</h5>
+                <p>Empirical validation comparing legacy portal against redesigned task-first architecture with verified speed and success metrics.</p>
+              </div>
+            </div>
+
+            <!-- Screen 2: Redesigned National Portal -->
+            <div class="inside-screen-card" data-screen-id="si-portal" role="button" tabindex="0" aria-label="Inspect Redesigned National Portal">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_skill_india.svg" alt="Skill India Digital Redesigned National Discovery Portal Interface" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 02</span>
+                  <span class="inside-tag">National Portal</span>
+                </div>
+                <h5>Task-Based Discovery Portal</h5>
+                <p>Search-first discovery homepage featuring NSQF Level 4/5 certification filters, transparent stipends, and 12-language accessibility.</p>
+              </div>
+            </div>
+
+            <!-- Screen 3: NSQF Course Details & Stipend Hub -->
+            <div class="inside-screen-card" data-screen-id="si-course" role="button" tabindex="0" aria-label="Inspect Course Details & Stipend Hub">
+              <div class="inside-card-preview desktop-preview">
+                <img src="project_skill_india_course.svg" alt="Skill India Digital NSQF Course Details &amp; DBT Stipend Hub" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 03</span>
+                  <span class="inside-tag">Course Hub</span>
+                </div>
+                <h5>NSQF Course Details &amp; Stipend Hub</h5>
+                <p>Solar PV installer curriculum breakdown (70% practical), verified PMKK training centers, and ₹8,000/mo DBT stipend disclosures.</p>
+              </div>
+            </div>
+
+            <!-- Screen 4: Mobile Apprentice Discovery & DigiLocker -->
+            <div class="inside-screen-card" data-screen-id="si-mobile" role="button" tabindex="0" aria-label="Inspect Mobile Apprentice App">
+              <div class="inside-card-preview">
+                <img src="project_skill_india_mobile.svg" alt="Skill India Digital Mobile Apprentice Discovery App" loading="lazy">
+                <span class="inside-inspect-btn">Inspect Screen 🔍</span>
+              </div>
+              <div class="inside-card-content">
+                <div class="inside-card-meta">
+                  <span class="inside-screen-num">SCREEN 04</span>
+                  <span class="inside-tag">Mobile UX</span>
+                </div>
+                <h5>Mobile Apprentice &amp; DigiLocker Flow</h5>
+                <p>Accessible smartphone experience with regional language toggles, monthly stipend calculator, and 1-click DigiLocker KYC sync.</p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -1251,14 +1480,14 @@
   <span>Symbiosis Institute of Design · Nagpur, India</span>
 </footer>
 
-<!-- GOUNI HIGH-RESOLUTION SCREEN LIGHTBOX MODAL -->
-<div class="gouni-lightbox" id="gouniLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="GoUni High-Resolution Mobile Screen Inspector">
+<!-- HIGH-RESOLUTION SCREEN & SYSTEMS LIGHTBOX MODAL -->
+<div class="gouni-lightbox" id="gouniLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="High-Resolution Screen and Systems Inspector">
   <div class="gouni-lightbox-backdrop" id="gouniLightboxBackdrop"></div>
   <div class="gouni-lightbox-container">
     <button class="gouni-lightbox-close" id="gouniLightboxClose" type="button" aria-label="Close Inspector">&times;</button>
     <div class="gouni-lightbox-body">
       <div class="gouni-lightbox-media">
-        <img src="project_gouni_screen_dashboard.svg" alt="GoUni Screen Preview" id="gouniLightboxImg" class="gouni-lightbox-img">
+        <img src="project_gouni_screen_dashboard.svg" alt="Screen Preview" id="gouniLightboxImg" class="gouni-lightbox-img">
       </div>
       <div class="gouni-lightbox-info">
         <div class="gouni-lightbox-badge" id="gouniLightboxBadge">SCREEN 04 · ROADMAP</div>
@@ -1268,14 +1497,14 @@
         <div class="gouni-lightbox-specs">
           <div class="gouni-spec-row">
             <strong>Device Viewport</strong>
-            <span>iPhone 16 Pro (393 × 852 pt)</span>
+            <span id="gouniLightboxViewport">iPhone 16 Pro (393 × 852 pt)</span>
           </div>
           <div class="gouni-spec-row">
             <strong>Key UI Patterns</strong>
             <span id="gouniLightboxPatterns">Progressive disclosure, status badges, bottom-nav</span>
           </div>
           <div class="gouni-spec-row">
-            <strong>Figma Tokens</strong>
+            <strong>System Tokens</strong>
             <span id="gouniLightboxTokens">Primary Orange (#FF6B35), Surface Light (#FAF9F6)</span>
           </div>
         </div>

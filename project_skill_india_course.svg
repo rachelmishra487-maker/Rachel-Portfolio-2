@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <linearGradient id="siCourseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="50%" stop-color="#F5EFE8"/>
+      <stop offset="100%" stop-color="#EFE6DA"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="siCourseShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1F150D" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="800" fill="url(#siCourseBg)"/>
+
+  <!-- Desktop Browser Window Frame -->
+  <g transform="translate(60, 50)" filter="url(#siCourseShadow)">
+    <rect width="1080" height="700" rx="18" fill="#FFFFFF" stroke="#E3DBD0" stroke-width="1.5"/>
+
+    <!-- Window Top Header Bar -->
+    <path d="M 0,18 Q 0,0 18,0 L 1062,0 Q 1080,0 1080,18 L 1080,54 L 0,54 Z" fill="#1C1814"/>
+    
+    <!-- Window Traffic Light Dots -->
+    <circle cx="28" cy="27" r="6" fill="#EF4444"/>
+    <circle cx="48" cy="27" r="6" fill="#F59E0B"/>
+    <circle cx="68" cy="27" r="6" fill="#10B981"/>
+
+    <!-- Address / Path Bar -->
+    <rect x="180" y="14" width="720" height="26" rx="13" fill="#120F0D" stroke="#2F2923" stroke-width="1"/>
+    <text x="540" y="31" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="middle">
+      https://skillindiadigital.gov.in/courses/solar-pv-installer-nsqf-level-4?center=pmkk-noida
+    </text>
+
+    <!-- Top Navigation Sub-bar -->
+    <g transform="translate(36, 75)">
+      <!-- Ashoka Emblem & Skill India Logo -->
+      <circle cx="20" cy="20" r="18" fill="#FFF2EC" stroke="#FF6B35" stroke-width="1.2"/>
+      <text x="20" y="26" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="900" fill="#FF6B35" text-anchor="middle">SI</text>
+      
+      <text x="48" y="20" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="800" fill="#1C1814">Skill India Digital</text>
+      <text x="48" y="36" font-family="'DM Sans', sans-serif" font-size="11" fill="#78716C">Ministry of Skill Development &amp; Entrepreneurship (MSDE) · Government of India</text>
+
+      <!-- Language & User Profile -->
+      <g transform="translate(860, 6)">
+        <rect width="145" height="30" rx="15" fill="#F5F5F4" stroke="#E7E5E4" stroke-width="1"/>
+        <text x="72" y="20" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#44403C" text-anchor="middle">🌐 हिंदी / English ▾</text>
+      </g>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="0" y1="130" x2="1080" y2="130" stroke="#F0ECE4" stroke-width="1.5"/>
+
+    <!-- Main Course Content Area (Two Columns) -->
+    <g transform="translate(40, 150)">
+      
+      <!-- LEFT COLUMN: Course Hero & Core Modules (Width: 620) -->
+      <g transform="translate(0, 0)">
+        
+        <!-- Breadcrumb -->
+        <text x="0" y="16" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#A8A29E">
+          Home &gt; Green Energy &amp; Electrical &gt; Solar PV Installer (NSQF Level 4)
+        </text>
+
+        <!-- Course Title & Badges -->
+        <g transform="translate(0, 32)">
+          <rect width="115" height="24" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+          <text x="57" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#047857" text-anchor="middle">✓ NCVET APPROVED</text>
+
+          <rect x="125" y="0" width="130" height="24" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1"/>
+          <text x="190" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#C2410C" text-anchor="middle">⚡ HIGH EMPLOYABILITY</text>
+
+          <text x="0" y="58" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="800" fill="#1C1814">
+            Solar PV Technical Specialist &amp; Grid Installer
+          </text>
+          <text x="0" y="80" font-family="'DM Sans', sans-serif" font-size="13" fill="#57534E">
+            Comprehensive hands-on training for rooftop &amp; commercial solar installations, inverter wiring, micro-grid maintenance, and safety compliance under Suryamitra scheme.
+          </text>
+        </g>
+
+        <!-- Key Metrics Strip -->
+        <g transform="translate(0, 135)">
+          <rect width="620" height="74" rx="12" fill="#FAF8F5" stroke="#E7E5E4" stroke-width="1.2"/>
+
+          <g transform="translate(24, 18)">
+            <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#78716C">COURSE DURATION</text>
+            <text x="0" y="36" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#1C1814">360 Hours <tspan font-size="12" font-weight="500" fill="#78716C">(3 Months)</tspan></text>
+          </g>
+
+          <line x1="165" y1="14" x2="165" y2="60" stroke="#E7E5E4" stroke-width="1"/>
+
+          <g transform="translate(185, 18)">
+            <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#78716C">NSQF LEVEL</text>
+            <text x="0" y="36" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FF6B35">Level 4 Certified</text>
+          </g>
+
+          <line x1="315" y1="14" x2="315" y2="60" stroke="#E7E5E4" stroke-width="1"/>
+
+          <g transform="translate(335, 18)">
+            <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#78716C">GOVT. DBT STIPEND</text>
+            <text x="0" y="36" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#10B981">₹8,000 / month</text>
+          </g>
+
+          <line x1="480" y1="14" x2="480" y2="60" stroke="#E7E5E4" stroke-width="1"/>
+
+          <g transform="translate(500, 18)">
+            <text x="0" y="14" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#78716C">PLACEMENTS</text>
+            <text x="0" y="36" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#2563EB">92% Hired</text>
+          </g>
+        </g>
+
+        <!-- Curriculum & Practical Skills Breakdown -->
+        <g transform="translate(0, 230)">
+          <text x="0" y="18" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#1C1814">What You Will Learn (70% Practical · 30% Theory)</text>
+
+          <!-- Module 1 -->
+          <g transform="translate(0, 32)">
+            <rect width="620" height="52" rx="10" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1"/>
+            <circle cx="28" cy="26" r="14" fill="#FFF2EC"/>
+            <text x="28" y="31" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#FF6B35" text-anchor="middle">01</text>
+            <text x="54" y="24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#1C1814">Rooftop Solar Survey &amp; Shadow Analysis</text>
+            <text x="54" y="40" font-family="'DM Sans', sans-serif" font-size="11" fill="#78716C">Site irradiance calculation, tilt angle optimization, structural safety</text>
+            <text x="590" y="32" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="end">80 Hrs</text>
+          </g>
+
+          <!-- Module 2 -->
+          <g transform="translate(0, 94)">
+            <rect width="620" height="52" rx="10" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1"/>
+            <circle cx="28" cy="26" r="14" fill="#ECFDF5"/>
+            <text x="28" y="31" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#059669" text-anchor="middle">02</text>
+            <text x="54" y="24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#1C1814">Inverter Wiring, Grid Tie &amp; Net Metering</text>
+            <text x="54" y="40" font-family="'DM Sans', sans-serif" font-size="11" fill="#78716C">AC/DC cabling, circuit breaker ratings, discom net-metering protocols</text>
+            <text x="590" y="32" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="end">140 Hrs</text>
+          </g>
+
+          <!-- Module 3 -->
+          <g transform="translate(0, 156)">
+            <rect width="620" height="52" rx="10" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1"/>
+            <circle cx="28" cy="26" r="14" fill="#EFF6FF"/>
+            <text x="28" y="31" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#2563EB" text-anchor="middle">03</text>
+            <text x="54" y="24" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#1C1814">Preventive Maintenance, Fault Finding &amp; HSE</text>
+            <text x="54" y="40" font-family="'DM Sans', sans-serif" font-size="11" fill="#78716C">Thermal imaging of PV modules, grounding verification, fall protection</text>
+            <text x="590" y="32" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981" text-anchor="end">140 Hrs</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- RIGHT COLUMN: Verified Training Center & Instant DigiLocker Enroll Box (Width: 350) -->
+      <g transform="translate(650, 16)">
+        <rect width="350" height="480" rx="16" fill="#FAF8F5" stroke="#E3DBD0" stroke-width="1.5"/>
+
+        <!-- Training Center Card Header -->
+        <g transform="translate(24, 24)">
+          <rect width="80" height="22" rx="11" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+          <text x="40" y="15" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#047857" text-anchor="middle">5-STAR CENTER</text>
+          
+          <text x="0" y="46" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#1C1814">PMKK National Center Noida</text>
+          <text x="0" y="64" font-family="'DM Sans', sans-serif" font-size="12" fill="#78716C">Plot 14, Sector 62, Noida, Uttar Pradesh</text>
+          <text x="0" y="80" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">📍 2.4 km from Noida Electronic City Metro</text>
+        </g>
+
+        <!-- Batch & Seat Status -->
+        <g transform="translate(24, 126)">
+          <rect width="302" height="64" rx="10" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1"/>
+          
+          <g transform="translate(16, 16)">
+            <text x="0" y="12" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#A8A29E">NEXT BATCH STARTS</text>
+            <text x="0" y="30" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#1C1814">18 November 2026</text>
+          </g>
+
+          <g transform="translate(180, 16)">
+            <text x="0" y="12" font-family="'DM Sans', sans-serif" font-size="10" font-weight="700" fill="#A8A29E">AVAILABLE SEATS</text>
+            <text x="0" y="30" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#EF4444">6 Seats Left!</text>
+          </g>
+        </g>
+
+        <!-- Eligibility Checklist -->
+        <g transform="translate(24, 210)">
+          <text x="0" y="14" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="800" fill="#1C1814">Eligibility Requirements:</text>
+          
+          <text x="0" y="34" font-family="'DM Sans', sans-serif" font-size="11" fill="#44403C">✓ Minimum 10th Standard Pass (or ITI Electrical)</text>
+          <text x="0" y="52" font-family="'DM Sans', sans-serif" font-size="11" fill="#44403C">✓ Age between 18 – 35 years</text>
+          <text x="0" y="70" font-family="'DM Sans', sans-serif" font-size="11" fill="#44403C">✓ Aadhaar Card linked with Bank Account (for DBT)</text>
+          <text x="0" y="88" font-family="'DM Sans', sans-serif" font-size="11" fill="#44403C">✓ 100% Free Tuition under Govt. Sponsorship</text>
+        </g>
+
+        <!-- 1-Click DigiLocker Apply CTA -->
+        <g transform="translate(24, 326)">
+          <rect width="302" height="52" rx="26" fill="#FF6B35"/>
+          <text x="151" y="32" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+            ⚡ 1-Click Apply via DigiLocker
+          </text>
+          <text x="151" y="72" font-family="'DM Sans', sans-serif" font-size="11" fill="#78716C" text-anchor="middle">
+            Instant KYC verification · Zero paperwork
+          </text>
+        </g>
+
+        <!-- Call Center Helpline -->
+        <g transform="translate(24, 420)">
+          <rect width="302" height="38" rx="8" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+          <text x="151" y="24" font-family="'DM Sans', sans-serif" font-size="11" font-weight="700" fill="#C2410C" text-anchor="middle">
+            📞 Need Help? Call Toll-Free 1800-123-9626
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

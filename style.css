@@ -3630,3 +3630,442 @@ body.subpage main.section-light {
     height: 290px;
   }
 }
+
+/* ==========================================================================
+   FLAGSHIP MULTI-DEVICE SHOWCASES FOR ALL PROJECTS
+   (Healing Circle, PawBridge, Skill India Digital)
+   ========================================================================== */
+
+/* Shared Hero Showcase Container */
+.project-hero-showcase {
+  border-radius: 28px;
+  padding: clamp(1.5rem, 3.5vw, 2.6rem) clamp(1rem, 2.5vw, 2.2rem);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 65px rgba(50, 18, 62, 0.09);
+  margin-bottom: 3.5rem;
+}
+
+/* 1. HEALING CIRCLE SHOWCASE THEME */
+.hc-hero-showcase {
+  background: linear-gradient(135deg, #F6EEF8 0%, #EFE5F5 35%, #FBF1F5 70%, #F5ECF8 100%);
+  border: 1.5px solid rgba(118, 81, 142, 0.28);
+}
+
+.hc-hero-showcase::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 255, 0, 0.18) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hc-hero-showcase::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(118, 81, 142, 0.22) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 2. PAWBRIDGE SHOWCASE THEME */
+.pb-hero-showcase {
+  background: linear-gradient(135deg, #FBF4ED 0%, #F8E9DC 35%, #FDF2EB 70%, #FAF1E6 100%);
+  border: 1.5px solid rgba(233, 120, 69, 0.28);
+}
+
+.pb-hero-showcase::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(233, 120, 69, 0.2) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pb-hero-showcase::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(46, 64, 50, 0.16) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 3. SKILL INDIA DIGITAL SHOWCASE THEME */
+.si-hero-showcase {
+  background: linear-gradient(135deg, #FAF4EB 0%, #FEF0E6 35%, #FDF7EF 70%, #FAF3E8 100%);
+  border: 1.5px solid rgba(255, 107, 53, 0.28);
+}
+
+.si-hero-showcase::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.18) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.si-hero-showcase::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Browser Window Chrome Bars */
+.desktop-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  background: #181E29;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.desktop-window-bar.light-bar {
+  background: #243026;
+}
+
+.desktop-window-bar.warm-bar {
+  background: #1F1915;
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.window-dot.red { background: #EF4444; }
+.window-dot.yellow { background: #F59E0B; }
+.window-dot.green { background: #10B981; }
+
+.window-title {
+  margin-left: 0.8rem;
+  font-family: var(--ff-code, monospace);
+  font-size: 0.72rem;
+  color: #94A3B8;
+  letter-spacing: 0.03em;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.25rem 0.8rem;
+  border-radius: 12px;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Layered Compositions */
+.layered-stage-container {
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: 1;
+}
+
+/* Healing Circle Stage */
+.hc-stage-composition {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.hc-desktop-mockup {
+  width: 90%;
+  max-width: 980px;
+  background: #111620;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(10, 15, 25, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  position: relative;
+}
+
+.hc-desktop-mockup:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 80px rgba(10, 15, 25, 0.45);
+}
+
+.hc-desktop-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hc-mobile-mockup {
+  position: absolute;
+  right: 0%;
+  bottom: 0px;
+  width: clamp(230px, 24vw, 310px);
+  cursor: pointer;
+  z-index: 10;
+  filter: drop-shadow(0 25px 50px rgba(10, 12, 18, 0.5));
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.hc-mobile-mockup:hover {
+  transform: translateY(-20px) scale(1.06) rotate(-1deg);
+  filter: drop-shadow(0 35px 70px rgba(10, 12, 18, 0.65));
+}
+
+.hc-mobile-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* PawBridge Stage */
+.pb-stage-composition {
+  position: relative;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.pb-desktop-mockup {
+  width: 88%;
+  max-width: 960px;
+  background: #243026;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(33, 24, 18, 0.28);
+  border: 1px solid rgba(233, 120, 69, 0.2);
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  position: relative;
+}
+
+.pb-desktop-mockup:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 80px rgba(33, 24, 18, 0.38);
+}
+
+.pb-desktop-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pb-mobile-mockup {
+  position: absolute;
+  right: 2%;
+  bottom: 10px;
+  width: clamp(220px, 23vw, 295px);
+  cursor: pointer;
+  z-index: 12;
+  filter: drop-shadow(0 25px 50px rgba(30, 18, 12, 0.45));
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.pb-mobile-mockup:hover {
+  transform: translateY(-20px) scale(1.06) rotate(1.5deg);
+  filter: drop-shadow(0 35px 70px rgba(30, 18, 12, 0.6));
+}
+
+.pb-mobile-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pb-badge-mockup {
+  position: absolute;
+  left: 2%;
+  bottom: -15px;
+  width: clamp(240px, 28vw, 360px);
+  cursor: pointer;
+  z-index: 14;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(28, 20, 14, 0.32);
+  border: 1.5px solid #FFFFFF;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.pb-badge-mockup:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(28, 20, 14, 0.45);
+}
+
+.pb-badge-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Skill India Digital Stage */
+.si-stage-composition {
+  position: relative;
+  width: 100%;
+}
+
+.si-comparison-mockup {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 65px rgba(45, 20, 10, 0.2);
+  border: 1.5px solid rgba(255, 107, 53, 0.25);
+  background: #FAF8F5;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  position: relative;
+}
+
+.si-comparison-mockup:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 85px rgba(45, 20, 10, 0.28);
+}
+
+.si-comparison-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hover Badges for Devices */
+.device-hover-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(45, 21, 55, 0.92);
+  color: #FFFFFF;
+  padding: 0.4rem 0.95rem;
+  border-radius: 20px;
+  font-family: var(--ff-display);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  z-index: 30;
+}
+
+.hc-desktop-mockup:hover .device-hover-badge,
+.hc-mobile-mockup:hover .device-hover-badge,
+.pb-desktop-mockup:hover .device-hover-badge,
+.pb-mobile-mockup:hover .device-hover-badge,
+.pb-badge-mockup:hover .device-hover-badge,
+.si-comparison-mockup:hover .device-hover-badge {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+/* Unified Inside-Project Section & Responsive Screen Grid */
+.inside-project-section {
+  margin-top: 3.5rem;
+  padding-top: 2.8rem;
+  border-top: 1.5px dashed rgba(223, 74, 122, 0.24);
+}
+
+.inside-screens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.inside-card-preview.desktop-preview {
+  height: 240px;
+  padding: 0.75rem 0.75rem 0 0.75rem;
+  align-items: flex-start;
+  background: #F8F5F2;
+}
+
+.inside-card-preview.desktop-preview img {
+  width: 98%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Lightbox Modal Tweaks for Desktop vs Mobile */
+.gouni-lightbox-img.desktop-mode {
+  border-radius: 12px;
+  max-height: 68vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Adaptations for Multi-Device Stages */
+@media (max-width: 1100px) {
+  .inside-screens-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hc-desktop-mockup,
+  .pb-desktop-mockup {
+    width: 100%;
+  }
+
+  .hc-mobile-mockup,
+  .pb-mobile-mockup {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 1.5rem auto 0 auto;
+    width: clamp(220px, 60vw, 290px);
+  }
+
+  .pb-badge-mockup {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 1rem auto 0 auto;
+    width: 90%;
+  }
+
+  .inside-card-preview.desktop-preview {
+    height: 210px;
+  }
+}
+
+@media (max-width: 640px) {
+  .inside-screens-grid {
+    grid-template-columns: 1fr;
+  }
+}

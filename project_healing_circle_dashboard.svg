@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hcDashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1117"/>
+      <stop offset="60%" stop-color="#141923"/>
+      <stop offset="100%" stop-color="#090B0E"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="hcDashShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="800" fill="url(#hcDashBg)"/>
+
+  <!-- Desktop Browser Window Frame -->
+  <g transform="translate(60, 50)" filter="url(#hcDashShadow)">
+    <rect width="1080" height="700" rx="18" fill="#111620" stroke="#252D3D" stroke-width="1.5"/>
+
+    <!-- Window Top Header Bar -->
+    <path d="M 0,18 Q 0,0 18,0 L 1062,0 Q 1080,0 1080,18 L 1080,54 L 0,54 Z" fill="#18202E"/>
+    
+    <!-- Window Traffic Light Dots -->
+    <circle cx="28" cy="27" r="6" fill="#EF4444"/>
+    <circle cx="48" cy="27" r="6" fill="#F59E0B"/>
+    <circle cx="68" cy="27" r="6" fill="#10B981"/>
+
+    <!-- Address / Path Bar -->
+    <rect x="180" y="14" width="720" height="26" rx="13" fill="#0E131C" stroke="#283348" stroke-width="1"/>
+    <text x="540" y="31" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">
+      https://healingcircle.hospital.org/admin/telemetry/icu-burnout-prevention?ward=pediatrics
+    </text>
+
+    <!-- Top Navigation Sub-bar -->
+    <g transform="translate(36, 75)">
+      <!-- Healing Circle Logo & Title -->
+      <circle cx="20" cy="20" r="18" fill="#202A14" stroke="#D4FF00" stroke-width="1"/>
+      <text x="20" y="26" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#D4FF00" text-anchor="middle">HC</text>
+      
+      <text x="48" y="22" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Clinical Staff Cognitive Load &amp; Burnout Telemetry</text>
+      <text x="48" y="38" font-family="'DM Sans', sans-serif" font-size="12" fill="#94A3B8">Live ICU Monitoring · Shift Decompression Compliance &amp; Restorative Pod Operations</text>
+
+      <!-- Live Shift Badge -->
+      <g transform="translate(860, 6)">
+        <rect width="145" height="30" rx="15" fill="#1F2812" stroke="#D4FF00" stroke-width="1.2"/>
+        <circle cx="16" cy="15" r="5" fill="#D4FF00"/>
+        <text x="28" y="20" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#D4FF00">HOSPITAL LIVE 24/7</text>
+      </g>
+    </g>
+
+    <!-- 4 High-Impact KPI Metric Cards -->
+    <g transform="translate(36, 140)">
+      
+      <!-- Metric 1: Clinical Staff on Duty -->
+      <g transform="translate(0, 0)">
+        <rect width="235" height="92" rx="14" fill="#171D27" stroke="#2A3445" stroke-width="1"/>
+        <text x="20" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#94A3B8">ACTIVE SURGICAL &amp; ICU STAFF</text>
+        <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">48 Doctors</text>
+        <text x="20" y="78" font-family="'DM Sans', sans-serif" font-size="11" fill="#D4FF00">Full shift staffing</text>
+      </g>
+
+      <!-- Metric 2: High-Fatigue Alerts -->
+      <g transform="translate(258, 0)">
+        <rect width="235" height="92" rx="14" fill="#171D27" stroke="#2A3445" stroke-width="1"/>
+        <text x="20" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#94A3B8">HIGH COGNITIVE STRAIN ALERTS</text>
+        <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#EF4444">6 Critical</text>
+        <text x="20" y="78" font-family="'DM Sans', sans-serif" font-size="11" fill="#F87171">&gt;8 hrs screen monitor time</text>
+      </g>
+
+      <!-- Metric 3: Sanctuary Utilization -->
+      <g transform="translate(516, 0)">
+        <rect width="235" height="92" rx="14" fill="#171D27" stroke="#2A3445" stroke-width="1"/>
+        <text x="20" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#94A3B8">DEBRIEF POD UTILIZATION</text>
+        <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#60A5FA">84.2%</text>
+        <text x="20" y="78" font-family="'DM Sans', sans-serif" font-size="11" fill="#93C5FD">5 of 6 Sanctuary Pods active</text>
+      </g>
+
+      <!-- Metric 4: Burnout Reduction -->
+      <g transform="translate(774, 0)">
+        <rect width="235" height="92" rx="14" fill="#171D27" stroke="#2A3445" stroke-width="1"/>
+        <text x="20" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#94A3B8">BURNOUT DROP OVER 90 DAYS</text>
+        <text x="20" y="60" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" fill="#10B981">-38.5%</text>
+        <text x="20" y="78" font-family="'DM Sans', sans-serif" font-size="11" fill="#34D399">Verified via Maslach Burnout Inventory</text>
+      </g>
+    </g>
+
+    <!-- Main Workspace Split Grid -->
+    <g transform="translate(36, 255)">
+      
+      <!-- LEFT: Departmental Stress Index & Live Shift Chart (620px) -->
+      <g transform="translate(0, 0)">
+        <rect width="620" height="395" rx="16" fill="#161B24" stroke="#252D3D" stroke-width="1"/>
+        
+        <g transform="translate(24, 24)">
+          <text x="0" y="16" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Departmental Cognitive Strain vs Shift Hours</text>
+          <text x="0" y="34" font-family="'DM Sans', sans-serif" font-size="12" fill="#94A3B8">Real-time telemetry showing when clinical fatigue triggers attention drift</text>
+
+          <!-- Interactive Chart Axes -->
+          <g transform="translate(40, 60)">
+            <!-- Grid Lines -->
+            <line x1="0" y1="0" x2="520" y2="0" stroke="#283244" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="0" y1="60" x2="520" y2="60" stroke="#283244" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="0" y1="120" x2="520" y2="120" stroke="#283244" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="0" y1="180" x2="520" y2="180" stroke="#374151" stroke-width="1.5"/>
+
+            <text x="-10" y="5" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="end">100%</text>
+            <text x="-10" y="65" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="end">60%</text>
+            <text x="-10" y="125" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="end">30%</text>
+            <text x="-10" y="185" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="end">0%</text>
+
+            <!-- X-axis hours -->
+            <text x="60" y="202" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">2h</text>
+            <text x="160" y="202" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">4h</text>
+            <text x="260" y="202" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">6h (Warning)</text>
+            <text x="380" y="202" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">8h (Critical)</text>
+            <text x="480" y="202" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">12h</text>
+
+            <!-- Danger Zone Threshold -->
+            <rect x="260" y="0" width="260" height="180" fill="#EF4444" opacity="0.08"/>
+            <line x1="260" y1="0" x2="260" y2="180" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <text x="265" y="20" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#EF4444">DECOMPRESSION MANDATORY</text>
+
+            <!-- Fatigue Curves -->
+            <!-- Without Decompression (Red Line) -->
+            <path d="M 0,160 Q 160,140 260,80 T 480,15" fill="none" stroke="#EF4444" stroke-width="2.5"/>
+            <!-- With Healing Circle Decompression (Lime Line) -->
+            <path d="M 0,160 Q 160,140 260,110 T 360,125 T 480,95" fill="none" stroke="#D4FF00" stroke-width="3"/>
+          </g>
+
+          <!-- Legend -->
+          <g transform="translate(40, 305)">
+            <line x1="0" y1="0" x2="24" y2="0" stroke="#EF4444" stroke-width="2.5"/>
+            <text x="32" y="4" font-family="'DM Sans', sans-serif" font-size="11.5" fill="#EF4444">Unmitigated EHR &amp; Clinical Fatigue Curve</text>
+
+            <line x1="280" y1="0" x2="304" y2="0" stroke="#D4FF00" stroke-width="3"/>
+            <text x="312" y="4" font-family="'DM Sans', sans-serif" font-size="11.5" font-weight="700" fill="#D4FF00">With Healing Circle 3-Min Micro-Rituals</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- RIGHT: Live Debrief Pod Availability Grid (365px) -->
+      <g transform="translate(645, 0)">
+        <rect width="365" height="395" rx="16" fill="#161B24" stroke="#252D3D" stroke-width="1"/>
+        
+        <g transform="translate(24, 24)">
+          <text x="0" y="16" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Physical Sanctuary Pods</text>
+          <text x="0" y="34" font-family="'DM Sans', sans-serif" font-size="12" fill="#94A3B8">Zone B2 Corridor · Real-time occupancy</text>
+
+          <!-- Pods List -->
+          <g transform="translate(0, 52)">
+            <!-- Pod 1 -->
+            <g transform="translate(0, 0)">
+              <rect width="317" height="42" rx="10" fill="#1B2230" stroke="#283348" stroke-width="1"/>
+              <circle cx="18" cy="21" r="5" fill="#EF4444"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 01 (Acoustic Foam)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#EF4444" text-anchor="end">OCCUPIED · 8m left</text>
+            </g>
+
+            <!-- Pod 2 -->
+            <g transform="translate(0, 48)">
+              <rect width="317" height="42" rx="10" fill="#1B2230" stroke="#283348" stroke-width="1"/>
+              <circle cx="18" cy="21" r="5" fill="#EF4444"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 02 (Recliner + 2700K)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#EF4444" text-anchor="end">OCCUPIED · 12m left</text>
+            </g>
+
+            <!-- Pod 3 -->
+            <g transform="translate(0, 96)">
+              <rect width="317" height="42" rx="10" fill="#1B2230" stroke="#283348" stroke-width="1"/>
+              <circle cx="18" cy="21" r="5" fill="#EF4444"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 03 (Sensory Zero-G)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#EF4444" text-anchor="end">OCCUPIED · 4m left</text>
+            </g>
+
+            <!-- Pod 4 (AVAILABLE) -->
+            <g transform="translate(0, 144)">
+              <rect width="317" height="42" rx="10" fill="#1F2815" stroke="#D4FF00" stroke-width="1.2"/>
+              <circle cx="18" cy="21" r="5" fill="#D4FF00"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 04 (Vagal Acoustic)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="800" fill="#D4FF00" text-anchor="end">READY TO USE</text>
+            </g>
+
+            <!-- Pod 5 -->
+            <g transform="translate(0, 192)">
+              <rect width="317" height="42" rx="10" fill="#1B2230" stroke="#283348" stroke-width="1"/>
+              <circle cx="18" cy="21" r="5" fill="#EF4444"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 05 (Biophilic Green)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#EF4444" text-anchor="end">OCCUPIED · 15m left</text>
+            </g>
+
+            <!-- Pod 6 -->
+            <g transform="translate(0, 240)">
+              <rect width="317" height="42" rx="10" fill="#1B2230" stroke="#283348" stroke-width="1"/>
+              <circle cx="18" cy="21" r="5" fill="#EF4444"/>
+              <text x="34" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Pod 06 (Quiet Debrief)</text>
+              <text x="295" y="25" font-family="'Space Grotesk', sans-serif" font-size="10.5" font-weight="700" fill="#EF4444" text-anchor="end">OCCUPIED · 6m left</text>
+            </g>
+          </g>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>
