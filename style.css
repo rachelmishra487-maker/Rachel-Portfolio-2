@@ -16,17 +16,28 @@
      - Refined Body:     'DM Sans', -apple-system, sans-serif
    ========================================================================== */
 
-/* ---------- 1. CSS VARIABLES & EDITORIAL TOKENS ---------- */
+/* ---------- 1. CSS VARIABLES & EDITORIAL TOKENS (CHIC ROSE PINK) ---------- */
 :root {
-  /* Exact Refined Palette */
-  --warm-ivory: #F8F3EA;
-  --warm-ivory-dark: #EDE7DC;
-  --soft-blush: #F7E9E9;
-  --soft-blush-subtle: #FAF2F2;
+  /* Prominent Chic Rose & Editorial Pink Palette */
+  --rose-primary: #DF4A7A;
+  --rose-primary-hover: #C53664;
+  --rose-primary-light: rgba(223, 74, 122, 0.12);
+  --rose-primary-glow: rgba(223, 74, 122, 0.28);
 
-  --dusty-rose: #D85C85;
-  --dusty-rose-hover: #C54B73;
-  --dusty-rose-light: rgba(216, 92, 133, 0.10);
+  --rose-deep: #B83363;
+  --rose-petal: #F2A2BC;
+  --rose-blush: #FCEEF2;
+  --rose-porcelain: #FAF2F5;
+
+  --dusty-rose: #DF4A7A;
+  --dusty-rose-hover: #C53664;
+  --dusty-rose-light: rgba(223, 74, 122, 0.12);
+
+  --soft-blush: #FCEEF2;
+  --soft-blush-subtle: #FFF5F8;
+
+  --warm-ivory: #FAF2F5;
+  --warm-ivory-dark: #F3E4EB;
 
   --muted-mauve: #76518E;
   --muted-mauve-hover: #633F7A;
@@ -37,12 +48,12 @@
   --deep-plum-subtle: #4D3354;
   --deep-plum-light: rgba(56, 36, 62, 0.06);
 
-  --burnt-orange: #E97845;
-  --burnt-orange-hover: #D76735;
-  --burnt-orange-light: rgba(233, 120, 69, 0.12);
+  --burnt-orange: #DF4A7A; /* unified into chic rose */
+  --burnt-orange-hover: #C53664;
+  --burnt-orange-light: rgba(223, 74, 122, 0.12);
 
-  --warm-peach: #EFC3A9;
-  --warm-peach-light: rgba(239, 195, 169, 0.35);
+  --warm-peach: #F2A2BC;
+  --warm-peach-light: rgba(242, 162, 188, 0.35);
 
   --white: #FFFFFF;
 
@@ -51,25 +62,25 @@
   --bg-secondary: var(--soft-blush);
   --bg-card: var(--white);
   --text-primary: var(--deep-plum);
-  --text-secondary: #5C4762;
-  --text-muted: #856E8A;
-  --line: rgba(56, 36, 62, 0.14);
-  --line-strong: rgba(56, 36, 62, 0.28);
-  --line-accent: rgba(216, 92, 133, 0.30);
+  --text-secondary: #58415E;
+  --text-muted: #8E6D8A;
+  --line: rgba(223, 74, 122, 0.16);
+  --line-strong: rgba(223, 74, 122, 0.30);
+  --line-accent: rgba(223, 74, 122, 0.45);
 
-  /* Aliases to guarantee 100% theme consistency across all legacy templates */
+  /* Aliases */
   --plum: var(--deep-plum);
   --plum-deep: var(--deep-plum-dark);
   --almost-black: var(--deep-plum-dark);
-  --pop-orange: var(--burnt-orange);
-  --hot-pink: var(--dusty-rose);
-  --sunshine-yellow: var(--warm-peach);
+  --pop-orange: var(--rose-primary);
+  --hot-pink: var(--rose-primary);
+  --sunshine-yellow: var(--rose-petal);
   --vanilla-cream: var(--warm-ivory);
   --fresh-lime: var(--muted-mauve);
   --dusty-lavender: var(--muted-mauve);
   --soft-lilac: var(--soft-blush);
   --soft-lilac-subtle: var(--soft-blush-subtle);
-  --muted-rose: var(--dusty-rose);
+  --muted-rose: var(--rose-primary);
 
   /* Typography */
   --ff-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
@@ -461,16 +472,16 @@ body.cursor-hover .cursor-ring {
 }
 
 .btn-primary {
-  background: var(--burnt-orange);
+  background: linear-gradient(135deg, #E65A8C 0%, #DF4A7A 100%);
   color: #FFFFFF;
-  border-color: var(--burnt-orange);
-  box-shadow: 0 4px 14px rgba(233, 120, 69, 0.20);
+  border-color: #D44373;
+  box-shadow: 0 4px 16px rgba(223, 74, 122, 0.28);
 }
 
 .btn-primary:hover {
-  background: var(--burnt-orange-hover);
-  border-color: var(--burnt-orange-hover);
-  box-shadow: 0 8px 22px rgba(233, 120, 69, 0.28);
+  background: linear-gradient(135deg, #DF4A7A 0%, #C53664 100%);
+  border-color: #B83363;
+  box-shadow: 0 8px 24px rgba(223, 74, 122, 0.38);
   transform: translateY(-1.5px);
 }
 
@@ -513,11 +524,11 @@ body.cursor-hover .cursor-ring {
 /* ---------- 7. CONTINUOUS EDITORIAL MARQUEE ---------- */
 .marquee-wrapper {
   overflow: hidden;
-  background: var(--deep-plum);
-  color: var(--warm-ivory);
-  padding: 1.1rem 0;
-  border-top: 1px solid var(--deep-plum-dark);
-  border-bottom: 1px solid var(--deep-plum-dark);
+  background: var(--soft-blush);
+  color: var(--deep-plum);
+  padding: 1.15rem 0;
+  border-top: 1px solid rgba(223, 74, 122, 0.22);
+  border-bottom: 1px solid rgba(223, 74, 122, 0.22);
   user-select: none;
 }
 
@@ -547,8 +558,8 @@ body.cursor-hover .cursor-ring {
 .marquee-item span::after {
   content: '·';
   margin-left: 3rem;
-  color: var(--warm-peach);
-  font-size: 1.2rem;
+  color: var(--rose-primary);
+  font-size: 1.3rem;
 }
 
 @keyframes marqueeSlide {
@@ -580,7 +591,7 @@ body.cursor-hover .cursor-ring {
 .shape-plum {
   width: 580px;
   height: 580px;
-  background: rgba(216, 92, 133, 0.15);
+  background: rgba(223, 74, 122, 0.24);
   top: -80px;
   right: -80px;
 }
@@ -643,7 +654,10 @@ body.cursor-hover .cursor-ring {
 }
 
 @keyframes pulseBurnt {
-  0% { box-shadow: 0 0 0 0 rgba(233, 120, 69, 0.5); }
+  0% { box-shadow: 0 0 0 0 rgba(223, 74, 122, 0.55); }
+  70% { box-shadow: 0 0 0 7px rgba(223, 74, 122, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(223, 74, 122, 0); }
+}
   70% { box-shadow: 0 0 0 6px rgba(233, 120, 69, 0); }
   100% { box-shadow: 0 0 0 0 rgba(233, 120, 69, 0); }
 }

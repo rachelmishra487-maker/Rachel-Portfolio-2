@@ -192,7 +192,7 @@ const showToast = (message) => {
       right: 24px;
       background: #38243E;
       color: #F8F3EA;
-      border: 1px solid #E97845;
+      border: 1px solid #DF4A7A;
       padding: 12px 24px;
       border-radius: 999px;
       font-family: 'DM Sans', sans-serif;
@@ -380,8 +380,8 @@ const initTokenSandbox = () => {
   if (!demoCard || !demoBtn) return;
 
   let currentState = 'default';
-  let currentColor = '#E97845';
-  let currentTokenName = '$color-burnt-orange';
+  let currentColor = '#DF4A7A';
+  let currentTokenName = '$color-chic-rose';
   let currentPadding = '14px 28px';
 
   const updateSandbox = () => {
