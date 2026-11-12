@@ -480,6 +480,14 @@ const projectGroups = {
 let currentActiveGroup = 'gouni';
 let currentActiveScreenIndex = 0;
 
+// Ensure lightbox modal is closed on page load
+const initialLightbox = document.getElementById('gouniLightbox');
+if (initialLightbox) {
+  initialLightbox.classList.remove('active');
+  initialLightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
 function openProjectLightbox(screenId) {
   const lightbox = document.getElementById('gouniLightbox');
   if (!lightbox) return;
@@ -597,27 +605,13 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Gentle scroll entrance for GoUni overlapping phone mockups
+// Phone mockups visibility and entrance
 const gouniPhonesStage = document.getElementById('gouniPhonesStage');
-if (gouniPhonesStage && 'IntersectionObserver' in window) {
+if (gouniPhonesStage) {
   const phoneMockups = gouniPhonesStage.querySelectorAll('.gouni-phone-mockup');
-  phoneMockups.forEach((phone, idx) => {
-    phone.style.opacity = '0';
-    phone.style.transition = `transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 0.08}s, opacity 0.5s ease ${idx * 0.08}s, filter 0.4s ease`;
+  phoneMockups.forEach(phone => {
+    phone.style.opacity = '1';
   });
-
-  const phonesObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        phoneMockups.forEach(phone => {
-          phone.style.opacity = '1';
-        });
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  phonesObserver.observe(gouniPhonesStage);
 }
 
 // 8. The Healing Circle Real Screen Switcher
