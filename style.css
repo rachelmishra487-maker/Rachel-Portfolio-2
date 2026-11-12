@@ -544,52 +544,7 @@ body.cursor-hover .cursor-ring {
 
 /* ---------- 7. CONTINUOUS EDITORIAL MARQUEE ---------- */
 .marquee-wrapper {
-  overflow: hidden;
-  background: #F8CCCB;
-  color: var(--deep-plum);
-  padding: 1.15rem 0;
-  border-top: 1.5px solid rgba(252, 81, 35, 0.22);
-  border-bottom: 1.5px solid rgba(252, 81, 35, 0.22);
-  user-select: none;
-}
-
-.marquee-content {
-  display: flex;
-  white-space: nowrap;
-  width: max-content;
-  animation: marqueeSlide 34s linear infinite;
-  font-family: var(--ff-display);
-  font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  gap: 3rem;
-}
-
-.marquee-wrapper:hover .marquee-content {
-  animation-play-state: paused;
-}
-
-.marquee-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.marquee-item span::after {
-  content: '·';
-  margin-left: 3rem;
-  color: var(--pop-orange);
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-  color: var(--rose-primary);
-  font-size: 1.3rem;
-}
-
-@keyframes marqueeSlide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  display: none !important;
 }
 
 /* ---------- 8. HERO SECTION (EDITORIAL STUDIO OPENING) ---------- */
@@ -597,39 +552,18 @@ body.cursor-hover .cursor-ring {
   position: relative;
   min-height: calc(100vh - 74px);
   padding: clamp(3.5rem, 6vw, 6.5rem) clamp(1.4rem, 5vw, 4.5rem);
-  background: linear-gradient(135deg, #FFF8F7 0%, #FFF0F3 40%, #FFF5ED 75%, #FFF8F7 100%);
+  background: #FFF8F7 !important;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-/* Volumetric 3D Ambient Lighting Spheres */
-.hero-abstract-shape {
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-  filter: blur(55px);
-  opacity: 0.85;
-  z-index: 0;
-  transition: transform 0.6s ease;
-}
-
-.shape-plum {
-  width: 580px;
-  height: 580px;
-  background: radial-gradient(circle at 35% 35%, rgba(244, 163, 199, 0.42) 0%, rgba(233, 79, 145, 0.28) 45%, rgba(255, 155, 84, 0.18) 75%, transparent 100%);
-  top: -60px;
-  right: -60px;
-  animation: floatOrbPlum 18s ease-in-out infinite alternate;
-}
-
-.shape-lilac {
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle at 40% 40%, rgba(255, 155, 84, 0.35) 0%, rgba(255, 206, 158, 0.28) 42%, rgba(232, 223, 245, 0.32) 75%, transparent 100%);
-  bottom: -40px;
-  left: -60px;
-  animation: floatOrbLilac 22s ease-in-out infinite alternate;
+/* Abstract Shape Layers Permanently Removed */
+.hero-abstract-shape,
+.shape-plum,
+.shape-lilac,
+.contact-abstract-shape {
+  display: none !important;
 }
 
 @keyframes floatOrbPlum {
