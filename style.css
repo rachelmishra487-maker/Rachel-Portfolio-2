@@ -16,84 +16,90 @@
      - Refined Body:     'DM Sans', -apple-system, sans-serif
    ========================================================================== */
 
-/* ---------- 1. CSS VARIABLES & SOLAR POP TOKENS (EXACT MATCH) ---------- */
+/* ---------- 1. CSS VARIABLES & REFINED EDITORIAL PALETTE (LIGHT, PINK, ROSE & ORANGE) ---------- */
 :root {
-  /* 1. Signature Pop Coral Orange (Primary Highlight, CTAs, Big Titles, Works Banner) */
-  --pop-orange: #FC5123;
-  --pop-orange-hover: #E34114;
-  --pop-orange-light: rgba(252, 81, 35, 0.12);
-  --pop-orange-glow: rgba(252, 81, 35, 0.35);
-
-  --burnt-orange: #FC5123;
-  --burnt-orange-hover: #E34114;
-  --burnt-orange-light: rgba(252, 81, 35, 0.14);
-
-  --rose-primary: #FC5123;
-  --rose-primary-hover: #E34114;
-  --rose-primary-light: rgba(252, 81, 35, 0.12);
-  --rose-primary-glow: rgba(252, 81, 35, 0.35);
-  --rose-deep: #FA5028;
-
-  /* 2. Signature Pop Rose Pink (Floral Bursts, Star Sparkles, Stat Card, Subtitles) */
-  --hot-pink: #FA7E96;
-  --hot-pink-vibrant: #FF6B8B;
-  --hot-pink-hover: #EB577B;
-  --hot-pink-light: rgba(250, 126, 150, 0.18);
-
-  --dusty-rose: #FA7E96;
-  --dusty-rose-hover: #EB577B;
-  --dusty-rose-light: rgba(250, 126, 150, 0.18);
-
-  --muted-mauve: #FA7E96;
-  --muted-mauve-hover: #EB577B;
-  --muted-mauve-light: rgba(250, 126, 150, 0.18);
-  --muted-rose: #FA7E96;
-
-  /* 3. Soft Peaches, Apricots & Blush Tones (Stat Cards, Arches & Tags) */
-  --peach-soft: #FAD6BE;
-  --peach-blush: #FBD4C3;
-  --apricot-warm: #F9C184;
-  --warm-peach: #FAD6BE;
-  --warm-peach-light: rgba(250, 214, 190, 0.45);
-  --sunshine-yellow: #F9C184;
-
-  --soft-blush: #F8CCCB;
-  --soft-blush-subtle: #FEEBED;
-  --soft-lilac: #F8CCCB;
-  --soft-lilac-subtle: #FEEBED;
-  --rose-petal: #F8CCCB;
-  --rose-blush: #FEEBED;
-  --rose-porcelain: #FAF2E8;
-
-  /* 4. Warm Sunny Butter Cream & Canvas Backgrounds */
-  --vanilla-cream: #FBF2E1;
-  --warm-ivory: #FBF2E1;
-  --warm-ivory-dark: #F4E5D1;
-  --cream-surface: #FCF4E7;
+  /* 1. Base Canvas Backgrounds: Warm, very light blush / off-white (#FFF8F7) */
+  --warm-ivory: #FFF8F7;
+  --vanilla-cream: #FFF8F7;
+  --warm-ivory-dark: #FCECE8;
+  --cream-surface: #FFF5F3;
   --white: #FFFFFF;
+  --bg-primary: #FFF8F7;
+  --bg-secondary: #FFF1EF;
+  --bg-card: #FFFFFF;
 
-  /* 5. Rich Warm Espresso & Chocolate Typography (High Contrast WCAG AAA) */
-  --deep-plum: #3D2618;
-  --deep-plum-dark: #24150C;
-  --deep-plum-subtle: #543825;
-  --deep-plum-light: rgba(61, 38, 24, 0.08);
-  --plum: #3D2618;
-  --plum-deep: #24150C;
-  --almost-black: #24150C;
+  /* 2. Brand Colourful Accents: Pink, Vibrant Rose, Orange & Soft Lavender */
+  --accent-pink: #F4A3C7;
+  --accent-rose: #E94F91;
+  --accent-orange: #FF9B54;
+  --accent-lavender: #E8DFF5;
 
-  --text-primary: #3D2618;
-  --text-secondary: #5D483A;
-  --text-muted: #78604F;
+  /* 3. Pop Orange & Coral Accents */
+  --pop-orange: #FF6B35;
+  --pop-orange-hover: #E85720;
+  --pop-orange-light: rgba(255, 107, 53, 0.12);
+  --pop-orange-glow: rgba(255, 107, 53, 0.35);
 
-  /* 6. Semantic Theme Mappings */
-  --bg-primary: var(--warm-ivory);
-  --bg-secondary: #FCF4E7;
-  --bg-card: var(--white);
-  --line: rgba(252, 81, 35, 0.18);
-  --line-strong: rgba(252, 81, 35, 0.36);
-  --line-accent: var(--pop-orange);
+  --burnt-orange: #FF9B54;
+  --burnt-orange-hover: #E88338;
+  --burnt-orange-light: rgba(255, 155, 84, 0.16);
+
+  --rose-primary: #E94F91;
+  --rose-primary-hover: #D4397B;
+  --rose-primary-light: rgba(233, 79, 145, 0.14);
+  --rose-primary-glow: rgba(233, 79, 145, 0.35);
+  --rose-deep: #D4397B;
+
+  /* 4. Signature Pink, Rose & Lavender Tones */
+  --hot-pink: #E94F91;
+  --hot-pink-vibrant: #FA579A;
+  --hot-pink-hover: #D4397B;
+  --hot-pink-light: rgba(233, 79, 145, 0.16);
+
+  --dusty-rose: #E94F91;
+  --dusty-rose-hover: #D4397B;
+  --dusty-rose-light: rgba(233, 79, 145, 0.16);
+
+  --muted-mauve: #E94F91;
+  --muted-mauve-hover: #D4397B;
+  --muted-mauve-light: rgba(233, 79, 145, 0.16);
+  --muted-rose: #E94F91;
+
+  /* 5. Soft Peaches, Apricots, Blush & Lavender Badges */
+  --peach-soft: #FFE5D4;
+  --peach-blush: #FFDAC7;
+  --apricot-warm: #FFCE9E;
+  --warm-peach: #FFD5BE;
+  --warm-peach-light: rgba(255, 213, 190, 0.45);
+  --sunshine-yellow: #FFCE9E;
+
+  --soft-blush: #FCE8ED;
+  --soft-blush-subtle: #FFF0F4;
+  --soft-lilac: #E8DFF5;
+  --soft-lilac-subtle: #F6F1FB;
+  --rose-petal: #FCE8ED;
+  --rose-blush: #FFF0F4;
+  --rose-porcelain: #FFF5F7;
+
+  /* 6. Typography: Rich Dark Chocolate / Charcoal (WCAG AAA >= 12:1 Contrast on #FFF8F7) */
+  --deep-plum: #2D1A24;
+  --deep-plum-dark: #1E0F17;
+  --deep-plum-subtle: #4D3342;
+  --deep-plum-light: rgba(45, 26, 36, 0.08);
+  --plum: #2D1A24;
+  --plum-deep: #1E0F17;
+  --almost-black: #1E0F17;
+
+  --text-primary: #2D1A24;
+  --text-secondary: #5C4350;
+  --text-muted: #7E6372;
+
+  /* 7. Lines and Borders */
+  --line: rgba(233, 79, 145, 0.16);
+  --line-strong: rgba(233, 79, 145, 0.32);
+  --line-accent: var(--accent-rose);
   --fresh-lime: var(--apricot-warm);
-  --dusty-lavender: var(--soft-blush);
+  --dusty-lavender: var(--accent-lavender);
 
   /* Typography */
   --ff-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
@@ -591,7 +597,7 @@ body.cursor-hover .cursor-ring {
   position: relative;
   min-height: calc(100vh - 74px);
   padding: clamp(3.5rem, 6vw, 6.5rem) clamp(1.4rem, 5vw, 4.5rem);
-  background: linear-gradient(135deg, #FDECF0 0%, #F5ECF8 45%, #FDF1E7 100%);
+  background: linear-gradient(135deg, #FFF8F7 0%, #FFF0F3 40%, #FFF5ED 75%, #FFF8F7 100%);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -611,7 +617,7 @@ body.cursor-hover .cursor-ring {
 .shape-plum {
   width: 580px;
   height: 580px;
-  background: radial-gradient(circle at 35% 35%, rgba(255, 90, 150, 0.48) 0%, rgba(223, 74, 122, 0.40) 45%, rgba(118, 81, 142, 0.28) 75%, transparent 100%);
+  background: radial-gradient(circle at 35% 35%, rgba(244, 163, 199, 0.42) 0%, rgba(233, 79, 145, 0.28) 45%, rgba(255, 155, 84, 0.18) 75%, transparent 100%);
   top: -60px;
   right: -60px;
   animation: floatOrbPlum 18s ease-in-out infinite alternate;
@@ -620,7 +626,7 @@ body.cursor-hover .cursor-ring {
 .shape-lilac {
   width: 520px;
   height: 520px;
-  background: radial-gradient(circle at 40% 40%, rgba(255, 120, 60, 0.42) 0%, rgba(233, 120, 69, 0.32) 40%, rgba(118, 81, 142, 0.26) 75%, transparent 100%);
+  background: radial-gradient(circle at 40% 40%, rgba(255, 155, 84, 0.35) 0%, rgba(255, 206, 158, 0.28) 42%, rgba(232, 223, 245, 0.32) 75%, transparent 100%);
   bottom: -40px;
   left: -60px;
   animation: floatOrbLilac 22s ease-in-out infinite alternate;
@@ -1123,21 +1129,21 @@ body.cursor-hover .cursor-ring {
 }
 
 .section-dark {
-  background: var(--deep-plum);
-  color: var(--warm-ivory);
+  background: #FFF5F2;
+  color: var(--text-primary);
   padding: clamp(5rem, 8vw, 8rem) clamp(1.4rem, 5vw, 4.5rem);
-  border-top: 1px solid var(--deep-plum-dark);
-  border-bottom: 1px solid var(--deep-plum-dark);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .section-dark h2,
 .section-dark h3,
 .section-dark h4 {
-  color: var(--warm-ivory);
+  color: var(--text-primary);
 }
 
 .section-dark p {
-  color: #D3C1D8;
+  color: var(--text-secondary);
 }
 
 .section-inner {
@@ -1220,7 +1226,7 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-body);
   font-size: 0.78rem;
   font-weight: 600;
-  color: #5C3E5A;
+  color: var(--text-secondary);
   padding: 0.32rem 0.6rem;
 }
 
@@ -1356,22 +1362,22 @@ body.cursor-hover .cursor-ring {
 
 /* Large Project Showcase Container */
 .project-showcase-box {
-  background: #1C1220;
-  border: 1px solid var(--deep-plum-subtle);
+  background: #FFFFFF;
+  border: 1.5px solid rgba(233, 79, 145, 0.20);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 16px 40px rgba(45, 26, 36, 0.08);
 }
 
 .showcase-header {
-  background: var(--deep-plum);
+  background: #FFF5F7;
   padding: 0.85rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.8rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(233, 79, 145, 0.14);
 }
 
 .showcase-header-left {
@@ -1391,15 +1397,15 @@ body.cursor-hover .cursor-ring {
   border-radius: 50%;
 }
 
-.dot-1 { background: #E97845; }
-.dot-2 { background: #EFC3A9; }
-.dot-3 { background: #76518E; }
+.dot-1 { background: #FF9B54; }
+.dot-2 { background: #F4A3C7; }
+.dot-3 { background: #E94F91; }
 
 .showcase-path {
   font-family: var(--ff-display);
   font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--warm-peach);
+  font-weight: 600;
+  color: var(--accent-rose);
   letter-spacing: 0.04em;
 }
 
@@ -1415,35 +1421,36 @@ body.cursor-hover .cursor-ring {
   font-weight: 500;
   padding: 0.38rem 0.85rem;
   border-radius: var(--radius-pill);
-  background: rgba(248, 243, 234, 0.08);
-  border: 1px solid rgba(248, 243, 234, 0.18);
-  color: var(--warm-ivory);
+  background: #FFFFFF;
+  border: 1px solid rgba(233, 79, 145, 0.22);
+  color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .screen-tab:hover {
-  background: rgba(248, 243, 234, 0.16);
-  color: #FFFFFF;
+  background: #FFF0F4;
+  border-color: var(--accent-rose);
+  color: var(--accent-rose);
 }
 
 .screen-tab.active {
-  background: var(--burnt-orange);
-  border-color: var(--burnt-orange);
+  background: var(--accent-rose);
+  border-color: var(--accent-rose);
   color: #FFFFFF;
   font-weight: 600;
-  box-shadow: 0 2px 10px rgba(233, 120, 69, 0.35);
+  box-shadow: 0 2px 10px rgba(233, 79, 145, 0.35);
 }
 
 .showcase-viewport {
-  background: #140C17;
+  background: #FAF6F6;
   width: 100%;
   min-height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(233, 79, 145, 0.14);
   padding: 1.5rem;
 }
 
@@ -1454,7 +1461,7 @@ body.cursor-hover .cursor-ring {
   object-fit: contain;
   display: block;
   border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 30px rgba(45, 26, 36, 0.12);
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
 }
 
@@ -1464,34 +1471,35 @@ body.cursor-hover .cursor-ring {
 
 .showcase-caption {
   padding: 1rem 1.6rem;
-  background: var(--deep-plum);
-  color: var(--warm-ivory);
+  background: #FFF5F7;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  border-top: 1px solid rgba(233, 79, 145, 0.12);
 }
 
 .showcase-caption-text {
   font-size: 0.90rem;
-  color: #E8D9EC;
+  color: var(--text-secondary);
   line-height: 1.6;
   max-width: 860px;
 }
 
 .showcase-caption-text strong {
-  color: var(--warm-peach);
+  color: var(--accent-rose);
 }
 
 .provenance-pill {
   font-family: var(--ff-display);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--warm-ivory);
-  background: var(--muted-mauve);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #684880;
+  background: #E8DFF5;
+  border: 1px solid #D6C4E9;
   padding: 0.28rem 0.75rem;
   border-radius: var(--radius-pill);
   white-space: nowrap;
@@ -1499,7 +1507,7 @@ body.cursor-hover .cursor-ring {
 
 .showcase-thumbs {
   padding: 0.95rem 1.4rem;
-  background: #180F1B;
+  background: #FFFFFF;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 0.85rem;
@@ -1510,8 +1518,8 @@ body.cursor-hover .cursor-ring {
   align-items: center;
   gap: 0.85rem;
   padding: 0.60rem 0.85rem;
-  background: rgba(248, 243, 234, 0.04);
-  border: 1px solid rgba(248, 243, 234, 0.12);
+  background: #FFF8F7;
+  border: 1px solid rgba(233, 79, 145, 0.16);
   border-radius: var(--radius-sm);
   text-align: left;
   cursor: pointer;
@@ -1519,13 +1527,13 @@ body.cursor-hover .cursor-ring {
 }
 
 .showcase-thumb-btn:hover {
-  background: rgba(248, 243, 234, 0.10);
-  border-color: var(--warm-peach);
+  background: #FFF0F4;
+  border-color: var(--accent-rose);
 }
 
 .showcase-thumb-btn.active {
-  background: rgba(233, 120, 69, 0.18);
-  border-color: var(--burnt-orange);
+  background: #FFEBF2;
+  border-color: var(--accent-rose);
 }
 
 .showcase-thumb-img {
@@ -1533,20 +1541,20 @@ body.cursor-hover .cursor-ring {
   height: 42px;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(233, 79, 145, 0.20);
   flex-shrink: 0;
 }
 
 .showcase-thumb-info h4 {
   font-size: 0.82rem;
-  color: var(--warm-ivory);
+  color: var(--text-primary);
   margin-bottom: 0.15rem;
   line-height: 1.25;
 }
 
 .showcase-thumb-info p {
   font-size: 0.74rem;
-  color: #B59FB9;
+  color: var(--text-muted);
   line-height: 1.35;
 }
 
@@ -1865,18 +1873,18 @@ body.cursor-hover .cursor-ring {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #552D68;
+  color: var(--accent-rose);
 }
 
 .skills-category-card h3 {
   font-size: 1.3rem;
-  color: #2D1435;
+  color: var(--text-primary);
   margin-bottom: 0.6rem;
 }
 
 .skills-category-card p {
   font-size: 0.94rem;
-  color: #4A334E;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -1893,18 +1901,18 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-body);
   font-size: 0.80rem;
   font-weight: 550;
-  color: #2D1435;
-  background: #FAF3EC;
-  border: 1px solid #DFC9D9;
+  color: var(--text-primary);
+  background: #FFF5F7;
+  border: 1px solid rgba(233, 79, 145, 0.20);
   padding: 0.28rem 0.75rem;
   border-radius: var(--radius-pill);
   transition: all 0.2s ease;
 }
 
 .skill-pill:hover {
-  background: #F7E4EC;
-  border-color: #D85C85;
-  color: #2D1435;
+  background: #FFE8F0;
+  border-color: var(--accent-rose);
+  color: var(--accent-rose);
 }
 
 /* ---------- 14. PLAYGROUND (GALLERY-LIKE 4 LABS) ---------- */
@@ -1963,9 +1971,9 @@ body.cursor-hover .cursor-ring {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #2D1435;
-  background: #F8E8F0;
-  border: 1px solid #DFC9D9;
+  color: var(--accent-rose);
+  background: #FFE8F0;
+  border: 1px solid rgba(233, 79, 145, 0.28);
   padding: 0.28rem 0.75rem;
   border-radius: var(--radius-pill);
 }
@@ -1973,19 +1981,19 @@ body.cursor-hover .cursor-ring {
 .playground-status-pill {
   font-family: var(--ff-body);
   font-size: 0.75rem;
-  font-weight: 500;
-  color: #5C3E5A;
+  font-weight: 600;
+  color: var(--accent-orange);
 }
 
 .playground-preview-frame {
   width: 100%;
   height: 220px;
-  background: #18111D;
+  background: #FFF5F7;
   border-radius: var(--radius-sm);
   overflow: hidden;
   position: relative;
   margin-bottom: 1.25rem;
-  border: 1.5px solid rgba(223, 74, 122, 0.25);
+  border: 1.5px solid rgba(233, 79, 145, 0.22);
 }
 
 .playground-preview-frame img {
@@ -2022,7 +2030,7 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-display);
   font-size: 0.72rem;
   font-weight: 700;
-  color: #552D68;
+  color: var(--accent-rose);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 0.35rem;
@@ -2105,18 +2113,18 @@ body.cursor-hover .cursor-ring {
 
 /* ---------- 15. REFINED TOKEN SANDBOX ---------- */
 .token-sandbox-wrapper {
-  background: #231627;
-  border: 1px solid var(--deep-plum-subtle);
+  background: #FFF6F8;
+  border: 1.5px solid rgba(233, 79, 145, 0.22);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 16px 40px rgba(45, 26, 36, 0.08);
   margin-top: 2.5rem;
 }
 
 .sandbox-topbar {
-  background: var(--deep-plum);
+  background: #FFFFFF;
   padding: 1.4rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(233, 79, 145, 0.16);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2126,13 +2134,13 @@ body.cursor-hover .cursor-ring {
 
 .sandbox-topbar h3 {
   font-size: 1.35rem;
-  color: var(--warm-ivory);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
 .sandbox-topbar p {
   font-size: 0.90rem;
-  color: var(--warm-peach);
+  color: var(--text-muted);
 }
 
 .sandbox-main-grid {
@@ -2143,8 +2151,8 @@ body.cursor-hover .cursor-ring {
 
 .sandbox-controls {
   padding: 2rem;
-  background: #1B101E;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: #FFF5F7;
+  border-right: 1px solid rgba(233, 79, 145, 0.16);
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -2153,10 +2161,10 @@ body.cursor-hover .cursor-ring {
 .sandbox-group-label {
   font-family: var(--ff-display);
   font-size: 0.74rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--warm-peach);
+  color: var(--accent-rose);
   margin-bottom: 0.65rem;
   display: block;
 }
@@ -2170,10 +2178,10 @@ body.cursor-hover .cursor-ring {
 .sandbox-btn-pill {
   font-family: var(--ff-body);
   font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--warm-ivory);
-  background: rgba(248, 243, 234, 0.06);
-  border: 1px solid rgba(248, 243, 234, 0.16);
+  font-weight: 600;
+  color: var(--text-primary);
+  background: #FFFFFF;
+  border: 1px solid rgba(233, 79, 145, 0.22);
   padding: 0.38rem 0.85rem;
   border-radius: var(--radius-pill);
   cursor: pointer;
@@ -2181,12 +2189,13 @@ body.cursor-hover .cursor-ring {
 }
 
 .sandbox-btn-pill:hover {
-  background: rgba(248, 243, 234, 0.14);
+  background: #FFE8F0;
+  border-color: var(--accent-rose);
 }
 
 .sandbox-btn-pill.active {
-  background: var(--burnt-orange);
-  border-color: var(--burnt-orange);
+  background: var(--accent-rose);
+  border-color: var(--accent-rose);
   color: #FFFFFF;
   font-weight: 600;
 }
@@ -2202,8 +2211,8 @@ body.cursor-hover .cursor-ring {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #FFFFFF;
+  border: 1px solid rgba(233, 79, 145, 0.18);
   padding: 0.42rem 0.85rem;
   border-radius: var(--radius-pill);
   cursor: pointer;
@@ -2212,13 +2221,13 @@ body.cursor-hover .cursor-ring {
 }
 
 .swatch-item-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--warm-peach);
+  background: #FFF0F4;
+  border-color: var(--accent-rose);
 }
 
 .swatch-item-btn.active {
-  background: rgba(233, 120, 69, 0.18);
-  border-color: var(--burnt-orange);
+  background: #FFEBF2;
+  border-color: var(--accent-rose);
 }
 
 .swatch-left-col {
@@ -2232,38 +2241,39 @@ body.cursor-hover .cursor-ring {
   height: 18px;
   border-radius: 50%;
   background: var(--c);
-  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(45, 26, 36, 0.15);
 }
 
 .swatch-token-label {
   font-family: var(--ff-body);
   font-size: 0.80rem;
-  font-weight: 500;
-  color: var(--warm-ivory);
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .swatch-hex-val {
   font-family: monospace;
   font-size: 0.76rem;
-  color: var(--warm-peach);
+  color: var(--accent-rose);
+  font-weight: 600;
 }
 
 .sandbox-stage {
   padding: 2.5rem;
-  background: #140C17;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .sandbox-preview-card {
-  background: #201323;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #FFF8F7;
+  border: 1.5px solid rgba(233, 79, 145, 0.20);
   border-radius: var(--radius-md);
   padding: 2.2rem;
   max-width: 400px;
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(45, 26, 36, 0.07);
   text-align: center;
 }
 
@@ -2277,11 +2287,12 @@ body.cursor-hover .cursor-ring {
 .sandbox-state-badge {
   font-family: var(--ff-display);
   font-size: 0.68rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--warm-ivory);
-  background: var(--muted-mauve);
+  color: #684880;
+  background: #E8DFF5;
+  border: 1px solid #D6C4E9;
   padding: 0.28rem 0.75rem;
   border-radius: var(--radius-pill);
 }
@@ -2290,7 +2301,7 @@ body.cursor-hover .cursor-ring {
   font-family: monospace;
   font-size: 0.72rem;
   color: #FFFFFF;
-  background: var(--burnt-orange);
+  background: var(--accent-orange);
   padding: 0.28rem 0.75rem;
   border-radius: var(--radius-pill);
 }
@@ -2299,9 +2310,9 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-display);
   font-size: 0.74rem;
   font-weight: 600;
-  color: var(--warm-peach);
-  background: rgba(239, 195, 169, 0.12);
-  border: 1px solid rgba(239, 195, 169, 0.25);
+  color: var(--accent-rose);
+  background: #FFE8F0;
+  border: 1px solid rgba(233, 79, 145, 0.25);
   padding: 0.28rem 0.8rem;
   border-radius: var(--radius-pill);
   display: inline-block;
@@ -2312,7 +2323,7 @@ body.cursor-hover .cursor-ring {
   font-size: 0.92rem;
   font-weight: 600;
   color: #FFFFFF;
-  background: var(--burnt-orange);
+  background: var(--accent-rose);
   padding: 13px 26px;
   border-radius: var(--radius-pill);
   display: inline-flex;
@@ -2321,14 +2332,14 @@ body.cursor-hover .cursor-ring {
   gap: 0.6rem;
   cursor: pointer;
   transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(233, 120, 69, 0.25);
+  box-shadow: 0 4px 14px rgba(233, 79, 145, 0.30);
 }
 
 .sandbox-inspector {
   padding: 2rem;
-  background: #100813;
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--warm-ivory);
+  background: #2D1A24;
+  border-left: 1px solid rgba(233, 79, 145, 0.20);
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
@@ -2392,12 +2403,12 @@ body.cursor-hover .cursor-ring {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ---------- 16. ELEGANT CLOSING CONTACT SECTION (SOLAR POP PALETTE) ---------- */
+/* ---------- 16. ELEGANT CLOSING CONTACT SECTION (WARM BLUSH PALETTE) ---------- */
 .section-contact-deep {
-  background: #FBF2E1 !important;
-  color: #3D2618 !important;
+  background: linear-gradient(180deg, #FFF8F7 0%, #FFF1ED 50%, #FFEBE4 100%) !important;
+  color: #2D1A24 !important;
   padding: clamp(5.5rem, 9vw, 9rem) clamp(1.4rem, 5vw, 4.5rem);
-  border-top: 1.5px solid rgba(252, 81, 35, 0.18) !important;
+  border-top: 1.5px solid rgba(233, 79, 145, 0.18) !important;
   position: relative;
   overflow: hidden;
 }
@@ -2407,8 +2418,8 @@ body.cursor-hover .cursor-ring {
   width: 580px;
   height: 580px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, rgba(250, 126, 150, 0.25) 0%, rgba(250, 214, 190, 0.35) 50%, transparent 100%);
-  filter: blur(48px);
+  background: radial-gradient(circle at 40% 40%, rgba(244, 163, 199, 0.28) 0%, rgba(255, 155, 84, 0.22) 50%, transparent 100%);
+  filter: blur(55px);
   top: -80px;
   right: -80px;
   pointer-events: none;
@@ -2422,7 +2433,7 @@ body.cursor-hover .cursor-ring {
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  color: #FC5123 !important;
+  color: #E94F91 !important;
   margin-bottom: 1.5rem;
 }
 
@@ -2430,7 +2441,7 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-serif);
   font-style: italic;
   font-weight: 400;
-  color: #FA7E96 !important;
+  color: #FF9B54 !important;
 }
 
 .contact-sub {
@@ -2615,20 +2626,20 @@ body.cursor-hover .cursor-ring {
 
 .contact-plum-tile {
   background: #FFFFFF !important;
-  border: 1.5px solid rgba(252, 81, 35, 0.18) !important;
+  border: 1.5px solid rgba(233, 79, 145, 0.18) !important;
   border-radius: var(--radius-md);
   padding: 2.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 10px 30px rgba(61, 38, 24, 0.06) !important;
+  box-shadow: 0 10px 30px rgba(45, 26, 36, 0.06) !important;
   transition: all 0.25s ease;
 }
 
 .contact-plum-tile:hover {
   transform: translateY(-3px);
-  border-color: #FA7E96 !important;
-  box-shadow: 0 16px 36px rgba(61, 38, 24, 0.12) !important;
+  border-color: #E94F91 !important;
+  box-shadow: 0 16px 36px rgba(45, 26, 36, 0.12) !important;
 }
 
 .contact-tile-type {
@@ -2637,7 +2648,7 @@ body.cursor-hover .cursor-ring {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #FA7E96 !important;
+  color: #E94F91 !important;
   margin-bottom: 0.8rem;
 }
 
@@ -2645,7 +2656,7 @@ body.cursor-hover .cursor-ring {
   font-family: var(--ff-display);
   font-size: clamp(1.15rem, 2vw, 1.35rem);
   font-weight: 700;
-  color: #FC5123 !important;
+  color: #2D1A24 !important;
   margin-bottom: 0.5rem;
   word-break: break-word;
 }
@@ -2947,7 +2958,7 @@ body.cursor-hover .cursor-ring {
 
 /* ---------- COLORFUL SECTION THEMES & PASTEL BLOCKS (SOLAR POP PALETTE) ---------- */
 #featured-work {
-  background: #FBF2E1 !important;
+  background: #FFF8F7 !important;
   position: relative;
   overflow: visible;
 }
@@ -2959,43 +2970,43 @@ body.cursor-hover .cursor-ring {
   right: -80px;
   width: 560px;
   height: 560px;
-  background: radial-gradient(circle, rgba(250, 214, 190, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 155, 84, 0.22) 0%, transparent 70%);
   filter: blur(85px);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Massive Vibrant Pop Orange Selected Works Showcase Container */
+/* Crisp Clean Selected Works Showcase Container on Warm Light Base */
 .projects-editorial-list {
-  background: #FC5123 !important;
-  border-radius: 32px !important;
-  padding: clamp(2rem, 4.5vw, 3.8rem) !important;
-  position: relative !important;
-  box-shadow: 0 25px 70px rgba(252, 81, 35, 0.28) !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 3.5rem !important;
+  gap: clamp(4rem, 6vw, 6.5rem) !important;
+  position: relative !important;
 }
 
-/* Iconic 8-Petal Hot Pink Flower Burst on Top-Right Corner of Orange Box */
+/* Iconic 8-Petal Rose Flower Burst on Selected Works Section */
 .projects-editorial-list::before {
   content: '';
   position: absolute;
-  top: -38px;
-  right: -28px;
-  width: 120px;
-  height: 120px;
+  top: -45px;
+  right: 10px;
+  width: 105px;
+  height: 105px;
   background-image: url('decor_pop_flower.svg');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 6;
   pointer-events: none;
-  filter: drop-shadow(0 12px 28px rgba(61, 38, 24, 0.25));
+  filter: drop-shadow(0 10px 24px rgba(233, 79, 145, 0.25));
 }
 
 #about {
-  background: #FBF2E1 !important;
-  color: #3D2618 !important;
+  background: #FFF8F7 !important;
+  color: #2D1A24 !important;
   position: relative;
   overflow: hidden;
 }
@@ -3007,7 +3018,7 @@ body.cursor-hover .cursor-ring {
   left: -80px;
   width: 580px;
   height: 580px;
-  background: radial-gradient(circle, rgba(250, 126, 150, 0.24) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(244, 163, 199, 0.24) 0%, transparent 70%);
   filter: blur(90px);
   pointer-events: none;
   z-index: 0;
@@ -3020,14 +3031,14 @@ body.cursor-hover .cursor-ring {
   right: -60px;
   width: 520px;
   height: 520px;
-  background: radial-gradient(circle, rgba(250, 214, 190, 0.40) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 155, 84, 0.22) 0%, transparent 70%);
   filter: blur(90px);
   pointer-events: none;
   z-index: 0;
 }
 
 #experience {
-  background: linear-gradient(180deg, #FDF6EE 0%, #FAF0E4 50%, #FCF5EC 100%) !important;
+  background: linear-gradient(180deg, #FFF8F7 0%, #FFF2F0 50%, #FFF5F2 100%) !important;
   position: relative;
   overflow: hidden;
 }
@@ -3039,14 +3050,14 @@ body.cursor-hover .cursor-ring {
   left: -80px;
   width: 540px;
   height: 540px;
-  background: radial-gradient(circle, rgba(250, 214, 190, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 155, 84, 0.20) 0%, transparent 70%);
   filter: blur(85px);
   pointer-events: none;
   z-index: 0;
 }
 
 #skills {
-  background: linear-gradient(180deg, #FBF2E1 0%, #FAF1DF 50%, #FDF4EA 100%) !important;
+  background: linear-gradient(180deg, #FFF8F7 0%, #FFF0F4 50%, #FFF6F8 100%) !important;
   position: relative;
   overflow: hidden;
 }
@@ -3058,14 +3069,14 @@ body.cursor-hover .cursor-ring {
   right: -80px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(250, 126, 150, 0.20) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(244, 163, 199, 0.22) 0%, transparent 70%);
   filter: blur(80px);
   pointer-events: none;
   z-index: 0;
 }
 
 #playground {
-  background: linear-gradient(135deg, #FCF5ED 0%, #FDF1EA 50%, #FAECE3 100%) !important;
+  background: linear-gradient(135deg, #FFF8F7 0%, #FFF3EE 50%, #FFF8F7 100%) !important;
   position: relative;
   overflow: hidden;
 }
@@ -3077,23 +3088,23 @@ body.cursor-hover .cursor-ring {
   left: -60px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(250, 214, 190, 0.30) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 155, 84, 0.22) 0%, transparent 70%);
   filter: blur(85px);
   pointer-events: none;
   z-index: 0;
 }
 
 #contact {
-  background: #FBF2E1 !important;
-  color: #3D2618 !important;
-  border-top: 1.5px solid rgba(252, 81, 35, 0.18) !important;
+  background: linear-gradient(180deg, #FFF8F7 0%, #FFF1ED 50%, #FFEBE4 100%) !important;
+  color: #2D1A24 !important;
+  border-top: 1.5px solid rgba(233, 79, 145, 0.18) !important;
   position: relative;
   overflow: hidden;
 }
 
 /* Subpage Canvas Backgrounds */
 body.subpage main.section-light {
-  background: linear-gradient(180deg, #FBF2E1 0%, #FAF1DF 50%, #FDF5EB 100%) !important;
+  background: #FFF8F7 !important;
 }
 
 /* ==========================================================================
@@ -3176,7 +3187,7 @@ body.subpage main.section-light {
   font-family: var(--ff-body);
   font-size: 0.88rem;
   line-height: 1.45;
-  color: #2D1435;
+  color: var(--text-primary);
   font-weight: 500;
 }
 
@@ -3188,13 +3199,13 @@ body.subpage main.section-light {
    1. HERO SHOWCASE: OVERLAPPING REAL PHONE SMARTPHONES
    ========================================================================== */
 .gouni-hero-showcase {
-  background: linear-gradient(135deg, #FDE8EE 0%, #F5ECF8 32%, #FDE9DF 68%, #FFEADB 100%);
-  border: 1.5px solid rgba(223, 74, 122, 0.24);
+  background: linear-gradient(135deg, #FFF3F6 0%, #FFE8F1 35%, #FFF1EA 70%, #FFF8F4 100%) !important;
+  border: 1.5px solid rgba(233, 79, 145, 0.22) !important;
   border-radius: 28px;
   padding: clamp(1.5rem, 3.5vw, 2.6rem) clamp(1rem, 2.5vw, 2.2rem);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 25px 65px rgba(50, 18, 62, 0.09);
+  box-shadow: 0 20px 50px rgba(45, 26, 36, 0.07) !important;
   margin-bottom: 3.5rem;
 }
 
@@ -3206,7 +3217,7 @@ body.subpage main.section-light {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.16) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 155, 84, 0.20) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
@@ -3220,7 +3231,7 @@ body.subpage main.section-light {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(223, 74, 122, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(233, 79, 145, 0.18) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
@@ -3242,13 +3253,13 @@ body.subpage main.section-light {
   align-items: center;
   gap: 0.6rem;
   background: #FFFFFF;
-  border: 1px solid rgba(223, 74, 122, 0.3);
+  border: 1px solid rgba(233, 79, 145, 0.3);
   padding: 0.45rem 1.1rem;
   border-radius: 30px;
   font-family: var(--ff-display);
   font-size: 0.78rem;
   font-weight: 700;
-  color: #DF4A7A;
+  color: var(--accent-rose);
   letter-spacing: 0.08em;
   box-shadow: var(--shadow-sm);
 }
@@ -3257,7 +3268,7 @@ body.subpage main.section-light {
   font-family: var(--ff-body);
   font-size: 0.82rem;
   font-weight: 600;
-  color: #76518E;
+  color: var(--accent-rose);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -3352,7 +3363,7 @@ body.subpage main.section-light {
   top: -38px;
   left: 50%;
   transform: translateX(-50%);
-  background: #2D1537;
+  background: #2D1A24;
   color: #FFFFFF;
   padding: 0.35rem 0.85rem;
   border-radius: 20px;
@@ -3364,8 +3375,8 @@ body.subpage main.section-light {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
-  border: 1px solid #FF6B35;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(244, 163, 199, 0.4);
+  box-shadow: 0 4px 14px rgba(45, 26, 36, 0.3);
   z-index: 40;
 }
 
@@ -3381,7 +3392,7 @@ body.subpage main.section-light {
   flex-wrap: wrap;
   gap: 0.8rem;
   padding-top: 1.4rem;
-  border-top: 1px solid rgba(223, 74, 122, 0.16);
+  border-top: 1px solid rgba(233, 79, 145, 0.16);
   position: relative;
   z-index: 2;
 }
@@ -3390,7 +3401,7 @@ body.subpage main.section-light {
   font-family: var(--ff-display);
   font-size: 0.74rem;
   font-weight: 600;
-  color: #76518E;
+  color: var(--text-secondary);
   letter-spacing: 0.04em;
 }
 
@@ -3400,7 +3411,7 @@ body.subpage main.section-light {
 .inside-gouni-section {
   margin-top: 3.5rem;
   padding-top: 2.8rem;
-  border-top: 1.5px dashed rgba(223, 74, 122, 0.24);
+  border-top: 1.5px dashed rgba(233, 79, 145, 0.24);
 }
 
 .inside-gouni-header {
@@ -3415,9 +3426,9 @@ body.subpage main.section-light {
 }
 
 .inside-pill {
-  background: #F4EBF8;
-  color: #76518E;
-  border: 1px solid #E4D5EC;
+  background: #FFEBF2;
+  color: #D83B76;
+  border: 1px solid #FCD4E2;
   font-family: var(--ff-display);
   font-size: 0.72rem;
   font-weight: 700;
@@ -3545,9 +3556,9 @@ body.subpage main.section-light {
   font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #552D68;
-  background: #F4EBF8;
-  border: 1px solid #DFC9E9;
+  color: #D83B76;
+  background: #FFF0F5;
+  border: 1px solid #FCD4E2;
   padding: 0.2rem 0.55rem;
   border-radius: 12px;
 }
@@ -3564,7 +3575,7 @@ body.subpage main.section-light {
   font-family: var(--ff-body);
   font-size: 0.84rem;
   line-height: 1.5;
-  color: #4A3348;
+  color: var(--text-secondary);
   margin: 0;
 }
   margin: 0;
@@ -3730,7 +3741,8 @@ body.subpage main.section-light {
 }
 
 .gouni-spec-row span {
-  color: #76518E;
+  color: var(--accent-rose);
+  font-weight: 600;
 }
 
 .gouni-lightbox-nav {
@@ -4028,7 +4040,7 @@ body.subpage main.section-light {
   width: clamp(230px, 24vw, 310px);
   cursor: pointer;
   z-index: 10;
-  filter: drop-shadow(0 28px 56px rgba(10, 12, 18, 0.70)) drop-shadow(0 8px 18px rgba(118, 81, 142, 0.35));
+  filter: drop-shadow(0 28px 56px rgba(10, 12, 18, 0.70)) drop-shadow(0 8px 18px rgba(233, 79, 145, 0.25));
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
@@ -4157,7 +4169,7 @@ body.subpage main.section-light {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: rgba(45, 21, 55, 0.92);
+  background: rgba(45, 26, 36, 0.94);
   color: #FFFFFF;
   padding: 0.4rem 0.95rem;
   border-radius: 20px;
