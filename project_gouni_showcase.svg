@@ -123,7 +123,7 @@
         <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Business MBA</text>
 
         <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#FF6B35">Tuition: $40,000 CAD/yr</text>
-        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &#8594;</text>
       </g>
     </g>
 
@@ -148,7 +148,7 @@
         <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Law &amp; Ethics</text>
 
         <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Tuition: £38,500 GBP/yr</text>
-        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &#8594;</text>
       </g>
     </g>
 
@@ -452,7 +452,7 @@
         <text x="38" y="44" font-family="'DM Sans', sans-serif" font-size="20" text-anchor="middle">🏡</text>
         <text x="74" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#1E1915">Downtown Student Residence</text>
         <text x="74" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">0.5 miles from St. George Campus</text>
-        <text x="310" y="46" font-family="'DM Sans', sans-serif" font-size="14" fill="#756F6B">&rarr;</text>
+        <text x="310" y="46" font-family="'DM Sans', sans-serif" font-size="14" fill="#756F6B">&#8594;</text>
       </g>
 
       <!-- Item 3: Peer Network & Roommates -->
@@ -472,7 +472,7 @@
       <rect width="354" height="74" rx="18" fill="#FFF2EC" stroke="#FF6B35" stroke-dasharray="4 4" stroke-width="1.2"/>
       <text x="20" y="32" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Need 1-on-1 Visa Counselor Review?</text>
       <text x="20" y="52" font-family="'DM Sans', sans-serif" font-size="12" fill="#756F6B">Free document verification with alumni mentors</text>
-      <text x="300" y="42" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Book &rarr;</text>
+      <text x="300" y="42" font-family="'DM Sans', sans-serif" font-size="13" font-weight="700" fill="#FF6B35">Book &#8594;</text>
     </g>
   
       

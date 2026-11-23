@@ -131,7 +131,7 @@
     <!-- Bottom Actions -->
     <g transform="translate(32, 730)">
       <rect width="354" height="52" rx="26" fill="#FF6B35"/>
-      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Proceed to Review &rarr;</text>
+      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Proceed to Review &#8594;</text>
     </g>
   
       

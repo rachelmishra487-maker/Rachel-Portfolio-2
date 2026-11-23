@@ -3228,18 +3228,18 @@ body.subpage main.section-light {
 .gouni-phones-stage {
   position: relative;
   width: 100%;
-  min-height: 640px;
+  min-height: 560px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   perspective: 1200px;
-  padding-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
   z-index: 1;
 }
 
 .gouni-phone-mockup {
   position: absolute;
-  width: clamp(240px, 21.5vw, 295px);
+  width: clamp(230px, 20vw, 275px);
   cursor: pointer;
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease, z-index 0.1s;
   will-change: transform;
@@ -3271,8 +3271,8 @@ body.subpage main.section-light {
 
 /* Slot 1: Left Phone (Onboarding & Welcome) - Subtle inward tilt */
 .phone-slot-1 {
-  left: calc(50% - clamp(180px, 18.5vw, 255px));
-  bottom: 14px;
+  left: calc(50% - clamp(170px, 17vw, 235px));
+  bottom: 12px;
   transform: translateX(-50%) rotate(-4.5deg) scale(0.92);
   z-index: 2;
 }
@@ -3280,15 +3280,15 @@ body.subpage main.section-light {
 /* Slot 2: Center Hero Phone (Student Dashboard & Departure Roadmap - Node 33-2) - Dominant Focal Point */
 .phone-slot-2.phone-center-hero {
   left: 50%;
-  bottom: 24px;
+  bottom: 20px;
   transform: translateX(-50%) rotate(0deg) scale(1.05);
   z-index: 5;
 }
 
 /* Slot 3: Right Phone (University & Course Discovery) - Subtle inward tilt */
 .phone-slot-3 {
-  left: calc(50% + clamp(180px, 18.5vw, 255px));
-  bottom: 14px;
+  left: calc(50% + clamp(170px, 17vw, 235px));
+  bottom: 12px;
   transform: translateX(-50%) rotate(4.5deg) scale(0.92);
   z-index: 2;
 }
@@ -3413,6 +3413,7 @@ body.subpage main.section-light {
   flex-direction: column;
   outline: none;
   box-shadow: 0 4px 16px rgba(45, 17, 54, 0.06);
+  height: 100%;
 }
 
 .inside-screen-card:hover {
@@ -3426,28 +3427,88 @@ body.subpage main.section-light {
   box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
 }
 
+/* Base Card Preview (Shared) */
 .inside-card-preview {
-  height: 340px;
+  height: 220px;
   background: #FAF7F4;
   overflow: hidden;
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-top: 1rem;
+  padding: 0.85rem;
   border-bottom: 1.5px solid #E8DFD5;
 }
 
-.inside-card-preview img {
-  width: 88%;
-  height: auto;
-  border-radius: 28px 28px 0 0;
-  transition: transform 0.4s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+/* GoUni All-Mobile Gallery Specific Preview */
+.inside-gouni-grid .inside-card-preview {
+  height: 250px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.inside-screen-card:hover .inside-card-preview img {
-  transform: translateY(-4px) scale(1.02);
+.inside-gouni-grid .inside-card-preview img {
+  height: 100%;
+  max-height: 225px;
+  width: auto;
+  aspect-ratio: 440 / 900;
+  object-fit: contain;
+  border-radius: 24px;
+  filter: drop-shadow(0 8px 18px rgba(35, 10, 44, 0.14));
+  transition: transform 0.4s ease;
+}
+
+.inside-gouni-grid .inside-screen-card:hover .inside-card-preview img {
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* Desktop Previews in Mixed Projects */
+.inside-card-preview.desktop-preview {
+  height: 220px;
+  padding: 0.85rem;
+  align-items: center;
+  justify-content: center;
+  background: #F8F5F2;
+}
+
+.inside-card-preview.desktop-preview img {
+  width: 100%;
+  height: 100%;
+  max-height: 195px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(28, 20, 14, 0.08);
+  transition: transform 0.4s ease;
+}
+
+.inside-screen-card:hover .inside-card-preview.desktop-preview img {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Mobile Previews in Mixed Projects */
+.inside-card-preview.mobile-preview {
+  height: 220px;
+  padding: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  background: #FAF7F4;
+}
+
+.inside-card-preview.mobile-preview img {
+  height: 100%;
+  max-height: 195px;
+  width: auto;
+  aspect-ratio: 440 / 900;
+  object-fit: contain;
+  border-radius: 20px;
+  filter: drop-shadow(0 6px 14px rgba(28, 20, 14, 0.12));
+  transition: transform 0.4s ease;
+}
+
+.inside-screen-card:hover .inside-card-preview.mobile-preview img {
+  transform: translateY(-4px) scale(1.04);
 }
 
 .inside-inspect-btn {
@@ -3466,6 +3527,7 @@ body.subpage main.section-light {
   transform: translateY(6px);
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
 }
 
 .inside-screen-card:hover .inside-inspect-btn {
@@ -3520,8 +3582,6 @@ body.subpage main.section-light {
   font-size: 0.84rem;
   line-height: 1.5;
   color: var(--text-secondary);
-  margin: 0;
-}
   margin: 0;
 }
 
@@ -3638,6 +3698,13 @@ body.subpage main.section-light {
   filter: drop-shadow(0 25px 50px rgba(31, 13, 36, 0.28));
 }
 
+.gouni-lightbox-img.desktop-mode {
+  border-radius: 12px;
+  max-height: 68vh;
+  width: 100%;
+  object-fit: contain;
+}
+
 .gouni-lightbox-info {
   padding: 3rem 2.5rem;
   display: flex;
@@ -3732,66 +3799,6 @@ body.subpage main.section-light {
 }
 
 /* ==========================================================================
-   RESPONSIVE ADAPTATIONS FOR GOUNI FLAGSHIP
-   ========================================================================== */
-@media (max-width: 1100px) {
-  .inside-gouni-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .gouni-specs-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 992px) {
-  .gouni-phones-stage {
-    min-height: auto;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 1.5rem 0.5rem;
-    gap: 1.25rem;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .gouni-phone-mockup {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    flex: 0 0 clamp(230px, 65vw, 280px);
-    scroll-snap-align: center;
-  }
-  .gouni-phone-mockup:hover {
-    transform: translateY(-10px) !important;
-  }
-  .gouni-lightbox-body {
-    grid-template-columns: 1fr;
-    max-height: 85vh;
-  }
-  .gouni-lightbox-media {
-    max-height: 45vh;
-    padding: 1.5rem;
-  }
-  .gouni-lightbox-info {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .inside-gouni-grid {
-    grid-template-columns: 1fr;
-  }
-  .gouni-specs-grid {
-    grid-template-columns: 1fr;
-  }
-  .inside-card-preview {
-    height: 290px;
-  }
-}
-
-/* ==========================================================================
    FLAGSHIP MULTI-DEVICE SHOWCASES FOR ALL PROJECTS
    (Healing Circle, PawBridge, Skill India Digital)
    ========================================================================== */
@@ -3799,10 +3806,10 @@ body.subpage main.section-light {
 /* Shared Hero Showcase Container */
 .project-hero-showcase {
   border-radius: 28px;
-  padding: clamp(1.5rem, 3.5vw, 2.6rem) clamp(1rem, 2.5vw, 2.2rem);
+  padding: clamp(1.6rem, 3.5vw, 2.8rem) clamp(1rem, 2.5vw, 2.4rem);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 25px 65px rgba(50, 18, 62, 0.09);
+  box-shadow: 0 24px 60px rgba(50, 18, 62, 0.08);
   margin-bottom: 3.5rem;
 }
 
@@ -3961,20 +3968,24 @@ body.subpage main.section-light {
   z-index: 1;
 }
 
-/* Healing Circle Stage */
+/* 1. Healing Circle Stage: Side-by-side Coordinated Dual-Device Showcase */
 .hc-stage-composition {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
   width: 100%;
-  padding-bottom: 2rem;
+  padding: 1.2rem 0 0.8rem 0;
+  position: relative;
 }
 
 .hc-desktop-mockup {
-  width: 90%;
-  max-width: 980px;
+  flex: 1 1 70%;
+  max-width: 780px;
   background: #111620;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 28px 70px rgba(10, 15, 25, 0.55);
+  box-shadow: 0 24px 60px rgba(10, 15, 25, 0.45);
   border: 1.5px solid rgba(212, 255, 0, 0.30);
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
@@ -3983,52 +3994,60 @@ body.subpage main.section-light {
 
 .hc-desktop-mockup:hover {
   transform: translateY(-8px);
-  box-shadow: 0 38px 88px rgba(10, 15, 25, 0.65);
-  border-color: rgba(212, 255, 0, 0.55);
+  box-shadow: 0 34px 80px rgba(10, 15, 25, 0.60);
+  border-color: rgba(212, 255, 0, 0.60);
 }
 
 .hc-desktop-mockup img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1200 / 800;
+  object-fit: contain;
 }
 
 .hc-mobile-mockup {
-  position: absolute;
-  right: 0%;
-  bottom: 0px;
-  width: clamp(230px, 24vw, 310px);
+  flex: 0 0 clamp(190px, 22vw, 250px);
+  position: relative;
+  right: auto;
+  bottom: auto;
   cursor: pointer;
   z-index: 10;
-  filter: drop-shadow(0 28px 56px rgba(10, 12, 18, 0.70)) drop-shadow(0 8px 18px rgba(233, 79, 145, 0.25));
+  filter: drop-shadow(0 24px 50px rgba(10, 12, 18, 0.55)) drop-shadow(0 6px 14px rgba(233, 79, 145, 0.20));
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
 .hc-mobile-mockup:hover {
-  transform: translateY(-20px) scale(1.06) rotate(-1deg);
-  filter: drop-shadow(0 38px 76px rgba(10, 12, 18, 0.85)) drop-shadow(0 12px 24px rgba(212, 255, 0, 0.30));
+  transform: translateY(-16px) scale(1.04);
+  filter: drop-shadow(0 34px 68px rgba(10, 12, 18, 0.75)) drop-shadow(0 10px 22px rgba(212, 255, 0, 0.35));
 }
 
 .hc-mobile-mockup img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 440 / 900;
+  object-fit: contain;
 }
 
-/* PawBridge Stage */
+/* 2. PawBridge Stage: Side-by-side Coordinated Dual-Device Showcase */
 .pb-stage-composition {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
   width: 100%;
-  padding-bottom: 3rem;
+  padding: 1.2rem 0 0.8rem 0;
+  position: relative;
 }
 
 .pb-desktop-mockup {
-  width: 88%;
-  max-width: 960px;
+  flex: 1 1 70%;
+  max-width: 780px;
   background: #243026;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 28px 70px rgba(33, 24, 18, 0.40);
+  box-shadow: 0 24px 60px rgba(33, 24, 18, 0.35);
   border: 1.5px solid rgba(233, 120, 69, 0.35);
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
@@ -4037,7 +4056,7 @@ body.subpage main.section-light {
 
 .pb-desktop-mockup:hover {
   transform: translateY(-8px);
-  box-shadow: 0 38px 88px rgba(33, 24, 18, 0.50);
+  box-shadow: 0 34px 80px rgba(33, 24, 18, 0.50);
   border-color: rgba(233, 120, 69, 0.60);
 }
 
@@ -4045,66 +4064,49 @@ body.subpage main.section-light {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1440 / 900;
+  object-fit: contain;
 }
 
 .pb-mobile-mockup {
-  position: absolute;
-  right: 2%;
-  bottom: 10px;
-  width: clamp(220px, 23vw, 295px);
+  flex: 0 0 clamp(190px, 22vw, 250px);
+  position: relative;
+  right: auto;
+  bottom: auto;
   cursor: pointer;
-  z-index: 12;
-  filter: drop-shadow(0 28px 56px rgba(30, 18, 12, 0.65)) drop-shadow(0 8px 18px rgba(233, 120, 69, 0.35));
+  z-index: 10;
+  filter: drop-shadow(0 24px 50px rgba(30, 18, 12, 0.55)) drop-shadow(0 6px 14px rgba(233, 120, 69, 0.25));
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
 .pb-mobile-mockup:hover {
-  transform: translateY(-20px) scale(1.06) rotate(1.5deg);
-  filter: drop-shadow(0 38px 76px rgba(30, 18, 12, 0.80)) drop-shadow(0 12px 24px rgba(233, 120, 69, 0.45));
+  transform: translateY(-16px) scale(1.04);
+  filter: drop-shadow(0 34px 68px rgba(30, 18, 12, 0.70)) drop-shadow(0 10px 22px rgba(233, 120, 69, 0.40));
 }
 
 .pb-mobile-mockup img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 440 / 900;
+  object-fit: contain;
 }
 
-.pb-badge-mockup {
-  position: absolute;
-  left: 2%;
-  bottom: -15px;
-  width: clamp(240px, 28vw, 360px);
-  cursor: pointer;
-  z-index: 14;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 24px 50px rgba(28, 20, 14, 0.45);
-  border: 1.5px solid #FFFFFF;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
-}
-
-.pb-badge-mockup:hover {
-  transform: translateY(-12px) scale(1.05);
-  box-shadow: 0 34px 68px rgba(28, 20, 14, 0.55);
-}
-
-.pb-badge-mockup img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Skill India Digital Stage */
+/* 3. Skill India Digital Stage */
 .si-stage-composition {
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .si-comparison-mockup {
   width: 100%;
+  max-width: 960px;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 28px 75px rgba(45, 20, 10, 0.28);
+  box-shadow: 0 24px 65px rgba(45, 20, 10, 0.24);
   border: 1.5px solid rgba(255, 107, 53, 0.35);
   background: #FAF8F5;
   cursor: pointer;
@@ -4113,8 +4115,8 @@ body.subpage main.section-light {
 }
 
 .si-comparison-mockup:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 38px 90px rgba(45, 20, 10, 0.35);
+  transform: translateY(-8px);
+  box-shadow: 0 34px 85px rgba(45, 20, 10, 0.35);
   border-color: rgba(255, 107, 53, 0.60);
 }
 
@@ -4122,6 +4124,8 @@ body.subpage main.section-light {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1300 / 840;
+  object-fit: contain;
 }
 
 /* Hover Badges for Devices */
@@ -4152,7 +4156,6 @@ body.subpage main.section-light {
 .hc-mobile-mockup:hover .device-hover-badge,
 .pb-desktop-mockup:hover .device-hover-badge,
 .pb-mobile-mockup:hover .device-hover-badge,
-.pb-badge-mockup:hover .device-hover-badge,
 .si-comparison-mockup:hover .device-hover-badge {
   opacity: 1;
   visibility: visible;
@@ -4173,64 +4176,95 @@ body.subpage main.section-light {
   margin-top: 2rem;
 }
 
-.inside-card-preview.desktop-preview {
-  height: 240px;
-  padding: 0.75rem 0.75rem 0 0.75rem;
-  align-items: flex-start;
-  background: #F8F5F2;
-}
-
-.inside-card-preview.desktop-preview img {
-  width: 98%;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-/* Lightbox Modal Tweaks for Desktop vs Mobile */
-.gouni-lightbox-img.desktop-mode {
-  border-radius: 12px;
-  max-height: 68vh;
-  width: 100%;
-  object-fit: contain;
-}
-
-/* Responsive Adaptations for Multi-Device Stages */
+/* ==========================================================================
+   RESPONSIVE ADAPTATIONS FOR ALL SHOWCASES & GRIDS
+   ========================================================================== */
 @media (max-width: 1100px) {
   .inside-screens-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .inside-gouni-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 }
 
 @media (max-width: 900px) {
+  .hc-stage-composition,
+  .pb-stage-composition {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
   .hc-desktop-mockup,
   .pb-desktop-mockup {
     width: 100%;
+    flex: 1 1 100%;
   }
 
   .hc-mobile-mockup,
   .pb-mobile-mockup {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    margin: 1.5rem auto 0 auto;
-    width: clamp(220px, 60vw, 290px);
+    flex: 0 0 auto;
+    width: clamp(200px, 50vw, 260px);
+    margin: 0 auto;
   }
 
-  .pb-badge-mockup {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    margin: 1rem auto 0 auto;
-    width: 90%;
+  .gouni-phones-stage {
+    min-height: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1.5rem 0.5rem;
+    gap: 1.25rem;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: flex-start;
   }
-
-  .inside-card-preview.desktop-preview {
-    height: 210px;
+  .gouni-phone-mockup {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    flex: 0 0 clamp(230px, 65vw, 280px);
+    scroll-snap-align: center;
+  }
+  .gouni-phone-mockup:hover {
+    transform: translateY(-10px) !important;
+  }
+  .gouni-lightbox-body {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+  }
+  .gouni-lightbox-media {
+    max-height: 45vh;
+    padding: 1.5rem;
+  }
+  .gouni-lightbox-info {
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .inside-screens-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .inside-gouni-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .inside-card-preview {
+    height: 200px;
+  }
+  .inside-card-preview.desktop-preview {
+    height: 200px;
+  }
+  .inside-card-preview.mobile-preview {
+    height: 200px;
+  }
+  .inside-gouni-grid .inside-card-preview {
+    height: 230px;
   }
 }

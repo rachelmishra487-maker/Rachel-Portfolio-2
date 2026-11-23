@@ -270,7 +270,7 @@
         <rect x="190" y="38" width="70" height="24" rx="6" fill="#F4F1ED"/>
         <text x="225" y="54" font-family="'DM Sans', sans-serif" font-size="11" fill="#1E1915" text-anchor="middle">Gym &amp; Study</text>
 
-        <text x="0" y="92" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">Book Tour or Reserve Spot &rarr;</text>
+        <text x="0" y="92" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#FF6B35">Book Tour or Reserve Spot &#8594;</text>
       </g>
     </g>
 
@@ -401,7 +401,7 @@
         <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Business MBA</text>
 
         <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#FF6B35">Tuition: $40,000 CAD/yr</text>
-        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &#8594;</text>
       </g>
     </g>
 
@@ -425,7 +425,7 @@
         <text x="268" y="45" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#1E1915" text-anchor="middle">Law &amp; Ethics</text>
 
         <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="14" font-weight="700" fill="#1E1915">Tuition: £38,500 GBP/yr</text>
-        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &rarr;</text>
+        <text x="220" y="86" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#1E1915">View Details &#8594;</text>
       </g>
     </g>
 
@@ -596,7 +596,7 @@
     <!-- Bottom Actions -->
     <g transform="translate(32, 730)">
       <rect width="354" height="52" rx="26" fill="#FF6B35"/>
-      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Proceed to Review &rarr;</text>
+      <text x="177" y="32" font-family="'DM Sans', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Proceed to Review &#8594;</text>
     </g>
   
       

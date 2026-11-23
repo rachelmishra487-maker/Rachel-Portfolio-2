@@ -112,7 +112,7 @@
     <g transform="translate(24, 75)">
       <text x="0" y="14" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#A8A29E">STATE 01 · RESTING (y: 0px)</text>
       <rect y="22" width="272" height="48" rx="24" fill="#321045" stroke="#632085" stroke-width="1.2"/>
-      <text x="136" y="52" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Confirm Transaction &rarr;</text>
+      <text x="136" y="52" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Confirm Transaction &#8594;</text>
     </g>
 
     <!-- State 2: Active / Hover State (Elevated with Glow) -->
@@ -121,7 +121,7 @@
       <!-- Glow Drop Shadow -->
       <rect y="20" width="272" height="50" rx="25" fill="none" stroke="#FF3377" stroke-width="4" opacity="0.4" filter="blur(6px)"/>
       <rect y="20" width="272" height="50" rx="25" fill="url(#miBtnPrimary)" stroke="#FF85B3" stroke-width="1.5"/>
-      <text x="136" y="51" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">Confirm Transaction &rarr;</text>
+      <text x="136" y="51" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">Confirm Transaction &#8594;</text>
     </g>
 
     <!-- State 3: Success Spring Settle State -->
