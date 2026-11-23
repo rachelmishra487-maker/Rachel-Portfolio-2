@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="440" height="900"><g transform="translate(10, 10)">
   <!-- iPhone 16 Pro Mockup Frame -->
   <defs>
-    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+    <filter id="comm_phoneShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#1A0D22" flood-opacity="0.25"/>
     </filter>
-    <linearGradient id="titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="comm_titaniumRim" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#E8E2D8"/>
       <stop offset="50%" stop-color="#B8AF9F"/>
       <stop offset="100%" stop-color="#8A8275"/>
     </linearGradient>
-    <linearGradient id="screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="comm_screenGlass" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
       <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.03"/>
       <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="screenClip">
+    <clipPath id="comm_screenClip">
       <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
     </clipPath>
   </defs>
 
-  <g filter="url(#phoneShadow)">
+  <g filter="url(#comm_phoneShadow)">
     <!-- Outer Titanium Chasis -->
-    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim)" stroke="#3E3832" stroke-width="2"/>
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#comm_titaniumRim)" stroke="#3E3832" stroke-width="2"/>
     <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#181514"/>
     
     <!-- Screen Surface (Clipped) -->
-    <g clip-path="url(#screenClip)">
+    <g clip-path="url(#comm_screenClip)">
       <!-- Background of App Screen -->
       <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
       
@@ -119,6 +119,6 @@
       <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
       
       <!-- Screen Glass Reflection Sheen -->
-      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass)" pointer-events="none"/>
+      <rect x="14" y="14" width="390" height="844" fill="url(#comm_screenGlass)" pointer-events="none"/>
     </g>
   </g></g></svg>

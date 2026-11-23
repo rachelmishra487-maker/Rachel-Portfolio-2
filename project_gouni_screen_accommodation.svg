@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="100%" height="100%"><g transform="translate(10, 10)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 900" width="440" height="900"><g transform="translate(10, 10)">
   <defs>
-    <filter id="phoneShadow_acc_iso" x="-20%" y="-15%" width="140%" height="135%" filterUnits="userSpaceOnUse">
+    <filter id="acc_phoneShadow_acc_iso" x="-20%" y="-15%" width="140%" height="135%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#1F0D24" flood-opacity="0.28"/>
       <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2D1136" flood-opacity="0.14"/>
     </filter>
-    <linearGradient id="titaniumRim_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="acc_titaniumRim_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#F2EDE4"/>
       <stop offset="40%" stop-color="#C2B7A7"/>
       <stop offset="70%" stop-color="#8F8576"/>
       <stop offset="100%" stop-color="#D9D2C5"/>
     </linearGradient>
-    <linearGradient id="screenGlass_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="acc_screenGlass_acc_iso" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
       <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.04"/>
       <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="screenClip_acc_iso">
+    <clipPath id="acc_screenClip_acc_iso">
       <rect x="14" y="14" width="390" height="844" rx="46" ry="46"/>
     </clipPath>
   </defs>
 
-  <g filter="url(#phoneShadow_acc_iso)">
+  <g filter="url(#acc_phoneShadow_acc_iso)">
     <!-- Titanium Chassis Outer -->
-    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#titaniumRim_acc_iso)" stroke="#42392F" stroke-width="2.5"/>
+    <rect x="8" y="8" width="402" height="856" rx="52" ry="52" fill="url(#acc_titaniumRim_acc_iso)" stroke="#42392F" stroke-width="2.5"/>
     <rect x="11" y="11" width="396" height="850" rx="49" ry="49" fill="#141210"/>
     
     <!-- Screen Surface (Clipped) -->
-    <g clip-path="url(#screenClip_acc_iso)">
+    <g clip-path="url(#acc_screenClip_acc_iso)">
       <!-- Background of App Screen -->
       <rect x="14" y="14" width="390" height="844" fill="#FAF9F6"/>
       
@@ -120,6 +120,6 @@
       <rect x="145" y="842" width="134" height="4.5" rx="2.25" ry="2.25" fill="#1C1B1F" opacity="0.8"/>
       
       <!-- Screen Glass Reflection -->
-      <rect x="14" y="14" width="390" height="844" fill="url(#screenGlass_acc_iso)" pointer-events="none"/>
+      <rect x="14" y="14" width="390" height="844" fill="url(#acc_screenGlass_acc_iso)" pointer-events="none"/>
     </g>
   </g></g></svg>
