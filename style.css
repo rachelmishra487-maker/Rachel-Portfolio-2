@@ -3224,107 +3224,103 @@ body.subpage main.section-light {
   gap: 0.4rem;
 }
 
-/* The Art-Directed 3-Phone Stage */
-.gouni-phones-stage {
-  position: relative;
-  width: 100%;
-  min-height: 560px;
+/* Verified Original GoUni Figma Artifacts Stage */
+.gouni-verified-stage {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  perspective: 1200px;
-  padding-bottom: 1.5rem;
+  gap: clamp(1.2rem, 2.5vw, 2.5rem);
+  width: 100%;
+  padding: 1.5rem 0 1rem 0;
+  position: relative;
   z-index: 1;
 }
 
-.gouni-phone-mockup {
-  position: absolute;
-  width: clamp(230px, 20vw, 275px);
-  cursor: pointer;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease, z-index 0.1s;
-  will-change: transform;
-  filter: drop-shadow(0 24px 44px rgba(35, 10, 44, 0.28)) drop-shadow(0 6px 14px rgba(35, 10, 44, 0.14));
-  outline: none;
-}
-
-.gouni-phone-mockup:focus-visible {
-  filter: drop-shadow(0 0 0 3px #FF6B35) drop-shadow(0 28px 50px rgba(31, 13, 36, 0.35));
-}
-
-.gouni-phone-mockup .phone-frame {
-  border-radius: 46px;
+.gouni-artifact-card {
+  border-radius: 18px;
   overflow: hidden;
-  background: transparent !important;
-  aspect-ratio: 440 / 900;
-  width: 100%;
-  height: auto;
-  transition: transform 0.35s ease;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+  position: relative;
+  background: #FFFFFF;
 }
 
-.gouni-phone-mockup img {
+.gouni-artifact-primary {
+  flex: 1 1 54%;
+  max-width: 640px;
+  box-shadow: 0 24px 60px rgba(45, 26, 36, 0.12);
+  border: 1.5px solid rgba(233, 79, 145, 0.30);
+}
+
+.gouni-artifact-primary:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 34px 80px rgba(45, 26, 36, 0.20);
+  border-color: #DF4A7A;
+}
+
+.gouni-artifact-secondary {
+  flex: 1 1 46%;
+  max-width: 540px;
+  box-shadow: 0 24px 55px rgba(45, 26, 36, 0.10);
+  border: 1.5px solid rgba(255, 155, 84, 0.35);
+}
+
+.gouni-artifact-secondary:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 34px 75px rgba(45, 26, 36, 0.18);
+  border-color: #FF6B35;
+}
+
+.artifact-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  background: #2D1A24;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.artifact-window-title {
+  margin-left: 0.6rem;
+  font-family: var(--ff-code, monospace);
+  font-size: 0.72rem;
+  color: #F4A3C7;
+  letter-spacing: 0.02em;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.artifact-img-wrap {
+  width: 100%;
+  background: #FAF7F4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artifact-img-wrap img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  pointer-events: none;
+  transition: transform 0.4s ease;
 }
 
-/* Slot 1: Left Phone (Onboarding & Welcome) - Subtle inward tilt */
-.phone-slot-1 {
-  left: calc(50% - clamp(170px, 17vw, 235px));
-  bottom: 12px;
-  transform: translateX(-50%) rotate(-4.5deg) scale(0.92);
-  z-index: 2;
+.gouni-artifact-card:hover .artifact-img-wrap img {
+  transform: scale(1.02);
 }
 
-/* Slot 2: Center Hero Phone (Student Dashboard & Departure Roadmap - Node 33-2) - Dominant Focal Point */
-.phone-slot-2.phone-center-hero {
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%) rotate(0deg) scale(1.05);
-  z-index: 5;
-}
-
-/* Slot 3: Right Phone (University & Course Discovery) - Subtle inward tilt */
-.phone-slot-3 {
-  left: calc(50% + clamp(170px, 17vw, 235px));
-  bottom: 12px;
-  transform: translateX(-50%) rotate(4.5deg) scale(0.92);
-  z-index: 2;
-}
-
-/* Hover Interaction: Smooth lift and elevation */
-.gouni-phone-mockup:hover {
-  transform: translateX(-50%) translateY(-22px) scale(1.08) rotate(0deg) !important;
-  z-index: 30 !important;
-  filter: drop-shadow(0 38px 70px rgba(31, 13, 36, 0.45)) drop-shadow(0 14px 26px rgba(223, 74, 122, 0.25));
-}
-
-.phone-hover-badge {
-  position: absolute;
-  top: -38px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2D1A24;
-  color: #FFFFFF;
-  padding: 0.35rem 0.85rem;
-  border-radius: 20px;
-  font-family: var(--ff-display);
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  border: 1px solid rgba(244, 163, 199, 0.4);
-  box-shadow: 0 4px 14px rgba(45, 26, 36, 0.3);
-  z-index: 40;
-}
-
-.gouni-phone-mockup:hover .phone-hover-badge {
+.gouni-artifact-card:hover .device-hover-badge {
   opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
+  visibility: visible;
+  transform: translateY(2px);
 }
 
 .gouni-hero-footer-bar {
@@ -3440,28 +3436,33 @@ body.subpage main.section-light {
   border-bottom: 1.5px solid #E8DFD5;
 }
 
-/* GoUni All-Mobile Gallery Specific Preview */
-.inside-gouni-grid .inside-card-preview {
-  height: 250px;
-  padding: 0.75rem;
+/* GoUni Verified Gallery Grid (2 Large Authentic Artifact Cards) */
+.gouni-verified-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.8rem;
+}
+
+.gouni-verified-grid .inside-card-preview {
+  height: 250px !important;
+  padding: 0.85rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #FAF7F4;
 }
 
-.inside-gouni-grid .inside-card-preview img {
-  height: 100%;
-  max-height: 225px;
-  width: auto;
-  aspect-ratio: 440 / 900;
-  object-fit: contain;
-  border-radius: 24px;
-  filter: drop-shadow(0 8px 18px rgba(35, 10, 44, 0.14));
+.gouni-verified-grid .inside-card-preview img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 220px !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px rgba(28, 20, 14, 0.08);
   transition: transform 0.4s ease;
 }
 
-.inside-gouni-grid .inside-screen-card:hover .inside-card-preview img {
-  transform: translateY(-4px) scale(1.04);
+.gouni-verified-grid .inside-screen-card:hover .inside-card-preview img {
+  transform: translateY(-3px) scale(1.02);
 }
 
 /* Desktop Previews in Mixed Projects */
@@ -4191,6 +4192,18 @@ body.subpage main.section-light {
 }
 
 @media (max-width: 900px) {
+  .gouni-verified-stage {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+  .gouni-artifact-primary,
+  .gouni-artifact-secondary {
+    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
   .hc-stage-composition,
   .pb-stage-composition {
     flex-direction: column;
@@ -4247,6 +4260,9 @@ body.subpage main.section-light {
 }
 
 @media (max-width: 640px) {
+  .gouni-verified-grid {
+    grid-template-columns: 1fr !important;
+  }
   .inside-screens-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;

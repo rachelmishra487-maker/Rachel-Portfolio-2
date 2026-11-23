@@ -218,94 +218,28 @@ const showToast = (message) => {
 
 // 7. COMPREHENSIVE PROJECT SCREEN & SYSTEMS DATABASE FOR ALL CASE STUDIES
 const projectScreenRegistry = {
-  // ===================== GOUNI =====================
-  onboarding: {
+  // ===================== GOUNI (VERIFIED ORIGINAL FIGMA WORK) =====================
+  'gouni-components': {
     project: 'gouni',
-    src: 'project_gouni_screen_onboarding.svg',
-    badge: 'GOUNI · ONBOARDING & PERSONALIZATION',
-    title: 'Student Onboarding & Country Preference',
-    desc: 'Low-friction onboarding flow establishing candidate country targets (UK, Germany, Canada), academic background (B.Des / B.Tech), and intake timelines to generate tailored recommendations.',
-    patterns: 'Segmented country chips, degree selector, floating CTA, progress stepper',
-    tokens: 'Peach Cream Surface (#FFF2DE), Brand Orange (#FF633E), Deep Plum (#30232D)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
+    src: 'project_gouni_components.png',
+    badge: 'GOUNI · FIGMA COMPONENT SYSTEM (NODE 33-2)',
+    title: 'Figma Token & UI Component Architecture',
+    desc: 'Original component system architected in Figma for the GoUni study-abroad portal: auto-layout program specification cards with multi-state variants, fee transparency badges ($55,000/yr), institutional profiles, and responsive navigation tokens.',
+    patterns: 'Auto-layout cards, interactive button states, tuition cost chips, institutional specs accordion',
+    tokens: 'Brand Orange (#FF633E), Deep Plum (#30232D), Neutral Elevated (#FFFFFF), Surface Light (#FAF9F6)',
+    viewport: 'Figma Auto-Layout Component Canvas (Node 33-2)',
+    isDesktop: true
   },
-  discovery: {
+  'gouni-storyboard': {
     project: 'gouni',
-    src: 'project_gouni_screen_discovery.svg',
-    badge: 'GOUNI · DISCOVERY & SEARCH',
-    title: 'University & Course Discovery',
-    desc: 'Structured multi-country filtering, live search autocomplete, QS World Rankings, and estimated tuition fees to eliminate multi-tab comparison fatigue.',
-    patterns: 'Horizontal filter pills, university cards, comparative badges, fee calculator',
-    tokens: 'Active Orange (#FF6B35), Neutral Border (#EAE5DF), Surface Elevated (#FFFFFF)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  details: {
-    project: 'gouni',
-    src: 'project_gouni_screen_details.svg',
-    badge: 'GOUNI · UNIVERSITY DETAILS',
-    title: 'Academic Thresholds & Living Costs',
-    desc: 'Comprehensive university specifications for University of Toronto: GPA & IELTS requirements with eligibility checks, living cost breakdown, and single-click checklist enrollment.',
-    patterns: 'Key metrics strip, accordion criteria cards, living cost breakdown, sticky application CTA',
-    tokens: 'Purple Accent (#2D1537), Success Green (#10B981), Orange Primary (#FF6B35)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  dashboard: {
-    project: 'gouni',
-    src: 'project_gouni_screen_dashboard.svg',
-    badge: 'GOUNI · ROADMAP & DASHBOARD',
-    title: 'Student Dashboard & Departure Roadmap',
-    desc: 'Centralized student command center featuring departure readiness progress (52%), multi-university application tracker (Imperial, TU Munich), and urgent milestone notifications.',
-    patterns: 'Progress ring/bar, multi-state status badges, actionable deadline cards, bottom tab-bar',
-    tokens: 'Brand Orange (#FF6B35), Success Green (#10B981), Dark Plum Text (#1E1915)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  documents: {
-    project: 'gouni',
-    src: 'project_gouni_screen_documents.svg',
-    badge: 'GOUNI · DOCUMENT VAULT',
-    title: 'Document Upload & Verification Hub',
-    desc: 'Secure academic credential vault with automatic verification tracking, passport validity checks, SOP review statuses, and banking solvency compliance alerts.',
-    patterns: 'Progress indicators, verification badges, secure upload dropzones, file preview modals',
-    tokens: 'Verified Green (#10B981), Pending Amber (#F59E0B), Border Default (#EAE5DF)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  visa: {
-    project: 'gouni',
-    src: 'project_gouni_screen_visa.svg',
-    badge: 'GOUNI · VISA GUIDANCE',
-    title: 'Visa Guidance & Compliance Hub',
-    desc: 'Demystifying UK Student Route & Canadian SDS visa requirements: CAS code tracking, biometric appointment scheduling, and maintenance fund calculators ($1,334/mo).',
-    patterns: 'Step-by-step compliance checklist, currency conversion helper, biometric appointment booking',
-    tokens: 'Warning Amber (#F59E0B), Brand Orange (#FF6B35), Neutral Surface (#FFFFFF)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  accommodation: {
-    project: 'gouni',
-    src: 'project_gouni_screen_accommodation.svg',
-    badge: 'GOUNI · ACCOMMODATION',
-    title: 'Student Housing & Dormitory Finder',
-    desc: 'Curated on-campus university halls and vetted private student apartments sorted by commute distance to faculties, weekly budget, and verified roommate compatibility.',
-    patterns: 'Filter pills (Ensuite, Budget), distance-to-faculty badges, escrow verification badge',
-    tokens: 'Brand Orange (#FF6B35), Success Pill (#10B981), Surface Card (#FFFFFF)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  },
-  community: {
-    project: 'gouni',
-    src: 'project_gouni_screen_community.svg',
-    badge: 'GOUNI · COHORT COMMUNITY',
-    title: 'Student Community & Peer Network',
-    desc: 'Connecting incoming international students with city cohort discussion channels, flatmate matching, flight sharing, and verified senior student alumni mentors.',
-    patterns: 'Cohort discussion feed, verified student badge, direct peer messaging, event countdown',
-    tokens: 'Community Purple (#76518E), Brand Orange (#FF6B35), Surface Light (#FAF9F6)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
+    src: 'project_gouni.jpg',
+    badge: 'GOUNI · UX JOURNEY STORYBOARD',
+    title: '6-Stage Study-Abroad Applicant Journey Storyboard',
+    desc: 'Original illustrated UX storyboard mapping the candidate emotional journey: addressing confusion around scattered visa rules and IELTS criteria, introducing GoUni personalized planning, application milestone tracking, and confident international departure.',
+    patterns: '6-stage user narrative, problem empathy mapping, milestone tracking, emotional valence curve',
+    tokens: 'Brand Orange Line-Art (#E85A35), Warm Cream (#FAF8F5), Dark Charcoal (#1E1915)',
+    viewport: 'Illustrated Storyboard Canvas (1536 × 1024 px)',
+    isDesktop: true
   },
 
   // ===================== THE HEALING CIRCLE =====================
@@ -471,7 +405,7 @@ const projectScreenRegistry = {
 
 // Project Groups for Next/Prev Navigation
 const projectGroups = {
-  gouni: ['onboarding', 'discovery', 'details', 'dashboard', 'documents', 'visa', 'accommodation', 'community'],
+  gouni: ['gouni-components', 'gouni-storyboard'],
   healing: ['hc-mobile', 'hc-dashboard', 'hc-rituals', 'hc-interviews', 'hc-concept', 'hc-flow'],
   pawbridge: ['pb-operations', 'pb-verification', 'pb-rescue', 'pb-psychology'],
   skillindia: ['si-comparison', 'si-portal', 'si-course', 'si-mobile']
