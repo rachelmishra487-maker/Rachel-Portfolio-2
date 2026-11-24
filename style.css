@@ -558,6 +558,36 @@ body.cursor-hover .cursor-ring {
   transform: translateY(-2px);
 }
 
+.btn-figma {
+  background: #2D1A24;
+  color: #FFFFFF !important;
+  border: 1.5px solid rgba(244, 163, 199, 0.45);
+  box-shadow: 0 4px 14px rgba(45, 26, 36, 0.18);
+}
+
+.btn-figma:hover {
+  background: #3E2432;
+  color: #FFFFFF !important;
+  border-color: var(--accent-rose);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(223, 74, 122, 0.28);
+}
+
+.btn-canva {
+  background: #FFF8F7;
+  color: var(--deep-plum) !important;
+  border: 1.5px solid var(--pop-orange);
+  box-shadow: 0 4px 14px rgba(255, 107, 53, 0.14);
+}
+
+.btn-canva:hover {
+  background: #FFF0E8;
+  color: var(--pop-orange) !important;
+  border-color: #E0531B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.25);
+}
+
 /* ---------- 7. CONTINUOUS EDITORIAL MARQUEE ---------- */
 .marquee-wrapper {
   display: none !important;
@@ -4260,6 +4290,15 @@ body.subpage main.section-light {
 }
 
 @media (max-width: 640px) {
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .project-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
   .gouni-verified-grid {
     grid-template-columns: 1fr !important;
   }
