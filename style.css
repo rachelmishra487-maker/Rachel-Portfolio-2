@@ -3831,7 +3831,7 @@ body.subpage main.section-light {
 
 /* ==========================================================================
    FLAGSHIP MULTI-DEVICE SHOWCASES FOR ALL PROJECTS
-   (Healing Circle, PawBridge, Skill India Digital)
+   (Healing Circle, PawBridge)
    ========================================================================== */
 
 /* Shared Hero Showcase Container */
@@ -3912,39 +3912,7 @@ body.subpage main.section-light {
   z-index: 0;
 }
 
-/* 3. SKILL INDIA DIGITAL SHOWCASE THEME */
-.si-hero-showcase {
-  background: linear-gradient(135deg, #FBF2E1 0%, #FEF0E4 35%, #FDF6EC 70%, #FAF3E8 100%);
-  border: 1.5px solid rgba(252, 81, 35, 0.24);
-}
 
-.si-hero-showcase::before {
-  content: '';
-  position: absolute;
-  top: -80px;
-  right: -80px;
-  width: 440px;
-  height: 440px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.18) 0%, transparent 70%);
-  filter: blur(65px);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.si-hero-showcase::after {
-  content: '';
-  position: absolute;
-  bottom: -60px;
-  left: -60px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, transparent 70%);
-  filter: blur(65px);
-  pointer-events: none;
-  z-index: 0;
-}
 
 /* Browser Window Chrome Bars */
 .desktop-window-bar {
@@ -4123,71 +4091,10 @@ body.subpage main.section-light {
   object-fit: contain;
 }
 
-/* 3. Skill India Digital Stage */
-.si-stage-composition {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.si-comparison-mockup {
-  width: 100%;
-  max-width: 960px;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 24px 65px rgba(45, 20, 10, 0.24);
-  border: 1.5px solid rgba(255, 107, 53, 0.35);
-  background: #FAF8F5;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
-  position: relative;
-}
-
-.si-comparison-mockup:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 34px 85px rgba(45, 20, 10, 0.35);
-  border-color: rgba(255, 107, 53, 0.60);
-}
-
-.si-comparison-mockup img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1300 / 840;
-  object-fit: contain;
-}
-
-/* Hover Badges for Devices */
-.device-hover-badge {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: rgba(45, 26, 36, 0.94);
-  color: #FFFFFF;
-  padding: 0.4rem 0.95rem;
-  border-radius: 20px;
-  font-family: var(--ff-display);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  z-index: 30;
-}
-
 .hc-desktop-mockup:hover .device-hover-badge,
 .hc-mobile-mockup:hover .device-hover-badge,
 .pb-desktop-mockup:hover .device-hover-badge,
-.pb-mobile-mockup:hover .device-hover-badge,
-.si-comparison-mockup:hover .device-hover-badge {
+.pb-mobile-mockup:hover .device-hover-badge {
   opacity: 1;
   visibility: visible;
   transform: translateY(2px);

@@ -356,59 +356,13 @@ const projectScreenRegistry = {
     isDesktop: true
   },
 
-  // ===================== SKILL INDIA DIGITAL =====================
-  'si-comparison': {
-    project: 'skillindia',
-    src: 'project_skill_india_comparison.svg',
-    badge: 'SKILL INDIA · A/B USABILITY BENCHMARK',
-    title: 'Skill India Digital — Before vs. After Usability Study',
-    desc: 'Empirically tested redesign comparing Version A (legacy bureaucratic portal) against Version B (task-first redesigned portal): Task completion time reduced from 4.4 min to 2.04 min (-54%), task success increased from 60% to 100%, and enrollment drop-off reduced from 40% to 0%.',
-    patterns: 'Side-by-side heuristic evaluation, task completion delta meters, visual bug taxonomy, usability testing metrics',
-    tokens: 'Success Emerald (#10B981), Error Red (#EF4444), Primary Orange (#FF6B35)',
-    viewport: 'A/B Usability Benchmark Study (1300 × 840 px)',
-    isDesktop: true
-  },
-  'si-portal': {
-    project: 'skillindia',
-    src: 'project_skill_india.svg',
-    badge: 'SKILL INDIA · NATIONAL PORTAL',
-    title: 'Redesigned National Vocational Discovery Portal',
-    desc: 'Task-driven, search-first national portal interface dismantling cognitive friction for non-tech-savvy learners across 12 official Indian languages, with NSQF Level 4/5 filtering and verified training center badges.',
-    patterns: 'Task-based quick search bar, 12-language localization switch, NSQF level filter pills, verified training center badge',
-    tokens: 'National Orange (#FF6B35), Deep Plum (#1C1814), Light Surface (#FAF8F5)',
-    viewport: 'Desktop Portal Interface (1200 × 800 px)',
-    isDesktop: true
-  },
-  'si-course': {
-    project: 'skillindia',
-    src: 'project_skill_india_course.svg',
-    badge: 'SKILL INDIA · COURSE & STIPEND HUB',
-    title: 'NSQF Course Details & ₹8,000/mo DBT Stipend Breakdown',
-    desc: 'Course enrollment page for Solar PV Installer highlighting transparent curriculum breakdown (70% practical, 30% theory), direct benefit transfer (DBT) stipend disclosures, and 1-click DigiLocker application flow.',
-    patterns: 'Stipend transparency badge, practical vs theory curriculum meter, training center metro proximity, 1-click DigiLocker apply',
-    tokens: 'Stipend Emerald (#10B981), High-Employability Orange (#FF6B35), Deep Charcoal (#1C1814)',
-    viewport: 'Desktop Course Hub (1200 × 800 px)',
-    isDesktop: true
-  },
-  'si-mobile': {
-    project: 'skillindia',
-    src: 'project_skill_india_mobile.svg',
-    badge: 'SKILL INDIA · MOBILE APPRENTICE APP',
-    title: 'Mobile Vocational Discovery & DigiLocker Flow',
-    desc: 'Accessible smartphone interface tailored for emerging tradespeople in tier-2 and tier-3 towns, featuring Hindi/regional voice search, instant DBT stipend calculator, and Aadhaar biometric KYC sync.',
-    patterns: 'Regional language switch, guaranteed stipend calculator card, trade discovery feed, bottom navigation',
-    tokens: 'Brand Orange (#FF6B35), DigiLocker Green (#10B981), Warm Surface (#FAF8F5)',
-    viewport: 'iPhone 16 Pro (393 × 852 pt)',
-    isDesktop: false
-  }
-};
+  };
 
 // Project Groups for Next/Prev Navigation
 const projectGroups = {
   gouni: ['gouni-components', 'gouni-storyboard'],
   healing: ['hc-mobile', 'hc-dashboard', 'hc-rituals', 'hc-interviews', 'hc-concept', 'hc-flow'],
-  pawbridge: ['pb-operations', 'pb-verification', 'pb-rescue', 'pb-psychology'],
-  skillindia: ['si-comparison', 'si-portal', 'si-course', 'si-mobile']
+  pawbridge: ['pb-operations', 'pb-verification', 'pb-rescue', 'pb-psychology']
 };
 
 let currentActiveGroup = 'gouni';
